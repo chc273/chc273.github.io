@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>cython on Chi&#39;s blog</title>
+    <link>https://chc273.github.io/tags/cython/</link>
+    <description>Recent content in cython on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://chc273.github.io/tags/cython/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Speed comparison among numpy, cython, numba and tensorflow 2.0</title>
+      <link>https://chc273.github.io/posts/2019-10-04-speed-comparison-among-numpy-cython-numba-and-tensorflow/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chc273.github.io/posts/2019-10-04-speed-comparison-among-numpy-cython-numba-and-tensorflow/</guid>
+      <description>Speed comparison among numpy, cython, numba and tensorflow 2.0 Recently I have been working on speeding up some codes in pymatgen for finding the atomic neighbors within a cutoff radius. I was searching online and found that cython is a rather powerful tool for accelerating python loops, and decided to give it a try.
+A common comparison for cython is numba and I have heard many good things about it. A less common competitor is the recently released tensorflow 2.</description>
+      <content:encoded><![CDATA[<h2 id="speed-comparison-among-numpy-cython-numba-and-tensorflow-20">Speed comparison among numpy, cython, numba and tensorflow 2.0</h2>
+<p>Recently I have been working on speeding up some codes in pymatgen for finding the atomic neighbors within a cutoff radius. I was searching online and found that <code>cython</code> is a rather powerful tool for accelerating python loops, and decided to give it a try.</p>
+<p>A common comparison for <code>cython</code> is <code>numba</code> and I have heard many good things about it. A less common competitor is the recently released <code>tensorflow 2.0</code>. In fact, back in the <code>tensorflow 1.x</code> era, I did some simple comparisons and found that the speed was in fact faster than <code>numpy</code>. The new <code>tensorflow 2.0</code> is boasted to be 3x faster than <code>tensorflow 1.x</code>, and it makes me wonder how faster would <code>tensorflow 2.0</code> be for some simple computing tasks.</p>
+<h3 id="function-decorate-to-record-time">Function decorate to record time</h3>
+<p>I like to do simple things myself so that I know what exactly happens in the code. So I am writing a timeit decorator instead of using <code>timeit</code> package.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">functools</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">timeit</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Decorator to run function n times and print out the total time elapsed.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">dec</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nd">@functools.wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">wrapped</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%s</span><span class="s2"> iterated </span><span class="si">%d</span><span class="s2"> times</span><span class="se">\n</span><span class="s2">Time elapsed </span><span class="si">%.3f</span><span class="s2">s</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">wrapped</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dec</span>
+</span></span></code></pre></div><h3 id="computing-functions-using-different-methods">Computing functions using different methods</h3>
+<p>Here I am computing</p>
+<p>\[matrix[i, j] = i^2 + j^2\]</p>
+<p>for a matrix of size <code>[m, n]</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># import numba, tensorflow and numpy, load cython</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numba</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">%</span><span class="n">load_ext</span> <span class="n">cython</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nd">@tf.function</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">compute_tf</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tracing &#39;</span><span class="p">,</span>  <span class="n">m</span><span class="p">,</span>  <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x1</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">+</span> <span class="n">x2</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">:]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">compute_tf</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="c1"># trace once</span>
+</span></span></code></pre></div><pre><code>Tracing  Tensor(&quot;m:0&quot;, shape=(), dtype=int32) Tensor(&quot;n:0&quot;, shape=(), dtype=int32)
+&lt;tf.Tensor: id=261, shape=(0, 0), dtype=int32, numpy=array([], shape=(0, 0), dtype=int32)&gt;
+</code></pre>
+<p>I used the <code>tf.function</code> decorate to define the graph and avoided repeated tracing the graph by using <code>tf.constant</code> as input and perform the initial graph tracing. You will see that running this function will not invoke the <code>print</code> function. It is only traced once</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">compute_numpy</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x1</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">+</span> <span class="n">x2</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">:]</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nd">@numba.njit</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">compute_numba</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span>  <span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">j</span><span class="o">**</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">compute_numba</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># JIT compile first</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nd">@numba.njit</span><span class="p">(</span><span class="n">parallel</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">compute_numba_parallel</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numba</span><span class="o">.</span><span class="n">prange</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">numba</span><span class="o">.</span><span class="n">prange</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span>  <span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">j</span><span class="o">**</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span>
+</span></span><span class="line"><span class="cl"><span class="n">compute_numba_parallel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># JIT compile first</span>
+</span></span></code></pre></div><pre><code>array([[0.]])
+</code></pre>
+<p>Numpy and numba are almost the same. <code>numba</code> is really handy in terms of turning on parallel computations.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">cython</span>
+</span></span><span class="line"><span class="cl"><span class="n">cimport</span> <span class="n">cython</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="n">cimport</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@cython.boundscheck</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@cython.wraparound</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">compute_cython</span><span class="p">(</span><span class="nb">int</span> <span class="n">m</span><span class="p">,</span> <span class="nb">int</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cdef</span> <span class="n">long</span> <span class="p">[:,</span> <span class="p">::</span><span class="mi">1</span><span class="p">]</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cdef</span> <span class="nb">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span><span class="n">j</span><span class="o">*</span><span class="n">j</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span>
+</span></span></code></pre></div><p><code>cython</code> needs more work and i am delegating the memory management to <code>numpy</code> here and use <code>memoryview</code> x. Basically it is like <code>C</code>. Note that <code>cython</code> can also turn on parallel computations like <code>numba</code> by using <code>cython.parallel.prange</code>. However it does require <code>openmp</code>, which does not ship with <code>clang</code> compiler in macos. So I am not testing the parallel version here.</p>
+<h3 id="results">Results</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="mi">2000</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">10000</span>
+</span></span><span class="line"><span class="cl"><span class="n">n_loop</span> <span class="o">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timeit</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n_loop</span><span class="p">)(</span><span class="n">compute_numpy</span><span class="p">)(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timeit</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n_loop</span><span class="p">)(</span><span class="n">compute_numba</span><span class="p">)(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timeit</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n_loop</span><span class="p">)(</span><span class="n">compute_numba_parallel</span><span class="p">)(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timeit</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n_loop</span><span class="p">)(</span><span class="n">compute_cython</span><span class="p">)(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timeit</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n_loop</span><span class="p">)(</span><span class="n">compute_tf</span><span class="p">)(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">m</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>compute_numpy iterated 10 times
+Time elapsed 0.971s
+
+compute_numba iterated 10 times
+Time elapsed 1.110s
+
+compute_numba_parallel iterated 10 times
+Time elapsed 0.651s
+
+compute_cython iterated 10 times
+Time elapsed 1.098s
+
+compute_tf iterated 10 times
+Time elapsed 0.190s
+</code></pre>
+<h3 id="conclusion">Conclusion</h3>
+<p><code>Tensorflow 2.0</code> is amazing.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
