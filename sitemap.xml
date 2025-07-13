@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chc273.github.io/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+    <loc>https://chc273.github.io/posts/2022-02-02-density-functional-theory-1/</loc>
+    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chc273.github.io/posts/2022-01-01-fitting-parameters-in-sto-lg/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+    <loc>https://chc273.github.io/</loc>
+    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chc273.github.io/tags/computational-physics/</loc>
+    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chc273.github.io/tags/density-functional-theory/</loc>
+    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chc273.github.io/posts/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chc273.github.io/tags/python/</loc>
+    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chc273.github.io/tags/quantum-chemistry/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chc273.github.io/tags/</loc>
+    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chc273.github.io/posts/2022-01-01-fitting-parameters-in-sto-lg/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chc273.github.io/posts/2021-12-11-sympy-for-hamiltonian/</loc>
