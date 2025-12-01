@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>numpy on Chi&#39;s blog</title>
-    <link>https://chc273.github.io/tags/numpy/</link>
-    <description>Recent content in numpy on Chi&#39;s blog</description>
+    <title>Numpy on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/numpy/</link>
+    <description>Recent content in Numpy on Chi&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://chc273.github.io/tags/numpy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/numpy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Speed comparison among numpy, cython, numba and tensorflow 2.0</title>
-      <link>https://chc273.github.io/posts/2019-10-04-speed-comparison-among-numpy-cython-numba-and-tensorflow/</link>
+      <link>https://cchen.me/posts/2019-10-04-speed-comparison-among-numpy-cython-numba-and-tensorflow/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chc273.github.io/posts/2019-10-04-speed-comparison-among-numpy-cython-numba-and-tensorflow/</guid>
-      <description>Speed comparison among numpy, cython, numba and tensorflow 2.0 Recently I have been working on speeding up some codes in pymatgen for finding the atomic neighbors within a cutoff radius. I was searching online and found that cython is a rather powerful tool for accelerating python loops, and decided to give it a try.
-A common comparison for cython is numba and I have heard many good things about it. A less common competitor is the recently released tensorflow 2.</description>
+      <guid>https://cchen.me/posts/2019-10-04-speed-comparison-among-numpy-cython-numba-and-tensorflow/</guid>
+      <description>&lt;h2 id=&#34;speed-comparison-among-numpy-cython-numba-and-tensorflow-20&#34;&gt;Speed comparison among numpy, cython, numba and tensorflow 2.0&lt;/h2&gt;
+&lt;p&gt;Recently I have been working on speeding up some codes in pymatgen for finding the atomic neighbors within a cutoff radius. I was searching online and found that &lt;code&gt;cython&lt;/code&gt; is a rather powerful tool for accelerating python loops, and decided to give it a try.&lt;/p&gt;
+&lt;p&gt;A common comparison for &lt;code&gt;cython&lt;/code&gt; is &lt;code&gt;numba&lt;/code&gt; and I have heard many good things about it. A less common competitor is the recently released &lt;code&gt;tensorflow 2.0&lt;/code&gt;. In fact, back in the &lt;code&gt;tensorflow 1.x&lt;/code&gt; era, I did some simple comparisons and found that the speed was in fact faster than &lt;code&gt;numpy&lt;/code&gt;. The new &lt;code&gt;tensorflow 2.0&lt;/code&gt; is boasted to be 3x faster than &lt;code&gt;tensorflow 1.x&lt;/code&gt;, and it makes me wonder how faster would &lt;code&gt;tensorflow 2.0&lt;/code&gt; be for some simple computing tasks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="speed-comparison-among-numpy-cython-numba-and-tensorflow-20">Speed comparison among numpy, cython, numba and tensorflow 2.0</h2>
 <p>Recently I have been working on speeding up some codes in pymatgen for finding the atomic neighbors within a cutoff radius. I was searching online and found that <code>cython</code> is a rather powerful tool for accelerating python loops, and decided to give it a try.</p>
 <p>A common comparison for <code>cython</code> is <code>numba</code> and I have heard many good things about it. A less common competitor is the recently released <code>tensorflow 2.0</code>. In fact, back in the <code>tensorflow 1.x</code> era, I did some simple comparisons and found that the speed was in fact faster than <code>numpy</code>. The new <code>tensorflow 2.0</code> is boasted to be 3x faster than <code>tensorflow 1.x</code>, and it makes me wonder how faster would <code>tensorflow 2.0</code> be for some simple computing tasks.</p>

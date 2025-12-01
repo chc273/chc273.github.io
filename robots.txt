@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://chc273.github.io/sitemap.xml
+Sitemap: https://cchen.me/sitemap.xml

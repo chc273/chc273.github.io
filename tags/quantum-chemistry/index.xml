@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>quantum-chemistry on Chi&#39;s blog</title>
-    <link>https://chc273.github.io/tags/quantum-chemistry/</link>
-    <description>Recent content in quantum-chemistry on Chi&#39;s blog</description>
+    <title>Quantum-Chemistry on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/quantum-chemistry/</link>
+    <description>Recent content in Quantum-Chemistry on Chi&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chc273.github.io/tags/quantum-chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/quantum-chemistry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fitting the parameters in STO-LG</title>
-      <link>https://chc273.github.io/posts/2022-01-01-fitting-parameters-in-sto-lg/</link>
+      <link>https://cchen.me/posts/2022-01-01-fitting-parameters-in-sto-lg/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://chc273.github.io/posts/2022-01-01-fitting-parameters-in-sto-lg/</guid>
-      <description>Fitting the parameters in STO-LG In computational chemistry, the Slater-type orbital (STO) more accurately describes the qualitative features of the molecular orbitals than Gaussian functions (GF). However, calculating the two-electron integral using STO can be costly. On the other hand, integrating GFs is relatively cheap. One way to solve this problem is to use a linear combination of GFs to approximate a STO. Such linear combination of Gaussian functions is called contracted Gaussian functions (CGF).</description>
+      <guid>https://cchen.me/posts/2022-01-01-fitting-parameters-in-sto-lg/</guid>
+      <description>&lt;h2 id=&#34;fitting-the-parameters-in-sto-lg&#34;&gt;Fitting the parameters in STO-LG&lt;/h2&gt;
+&lt;p&gt;In computational chemistry, the Slater-type orbital (STO) more accurately describes the qualitative features of the molecular orbitals than Gaussian functions (GF). However, calculating the two-electron integral using STO can be costly. On the other hand, integrating GFs is relatively cheap. One way to solve this problem is to use a linear combination of GFs to approximate a STO. Such linear combination of Gaussian functions is called &lt;em&gt;contracted Gaussian functions&lt;/em&gt; (CGF).&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="fitting-the-parameters-in-sto-lg">Fitting the parameters in STO-LG</h2>
 <p>In computational chemistry, the Slater-type orbital (STO) more accurately describes the qualitative features of the molecular orbitals than Gaussian functions (GF). However, calculating the two-electron integral using STO can be costly. On the other hand, integrating GFs is relatively cheap. One way to solve this problem is to use a linear combination of GFs to approximate a STO. Such linear combination of Gaussian functions is called <em>contracted Gaussian functions</em> (CGF).</p>
 <p>$$\phi_\mu^{CGF}(\vec{r}-\vec{R}_A) = \sum_{p=1}^L d_{p\mu} \phi_p^{GF} (\alpha_{p\mu}, \vec{r} - \vec{R}_A)$$</p>
 <p>where <code>L</code> is the length of the contraction, $d_{p\mu}$ and $\alpha_{p\mu}$ are contraction coefficients and contraction exponents, respectively. Hence, the so-called STO-LG strategy uses <code>L</code> Gaussian-type orbitals to approximate one STO function.</p>
 <h2 id="approximating-1s-slater-type-function-using-sto-lg">Approximating 1s Slater-type function using STO-LG</h2>
 <p>The expressions for 1s STO and GF are</p>
-<p>\begin{align}
-\phi_{1s}^{STO} (\zeta, \vec{r}) = \left( \frac{\zeta^3}{\pi} \right)^{1/2} e^{-\zeta |\vec{r}-{\vec{R_A}}|} \notag \\
-\phi_{1s}^{GF}(\alpha, \vec{r}) = \left(\frac{2\alpha}{\pi}\right)^{3/4} e^{-\alpha |\vec{r}-{\vec{R
+<p>$$
+\begin{align}
+\phi*{1s}^{STO} (\zeta, \vec{r}) = \left( \frac{\zeta^3}{\pi} \right)^{1/2} e^{-\zeta |\vec{r}-{\vec{R_A}}|} \notag \\
+\phi*{1s}^{GF}(\alpha, \vec{r}) = \left(\frac{2\alpha}{\pi}\right)^{3/4} e^{-\alpha |\vec{r}-{\vec{R
 _A}}|^2} \notag
-\end{align}</p>
+\end{align}
+$$</p>
 <p>where both orbitals have their corresponding parameters. The goal is to find the $d_{p}$ and $\alpha_{p}$ in the following equation</p>
 <p>$$
 \phi_{1s}^{STO} (\zeta, \vec{r}) = \sum_p^L d_{p}\phi_{1s}^{GF}(\alpha_p, \vec{r})
@@ -62,7 +65,7 @@ def func(a):
 </code></pre>
 <pre><code>0.2709502078346618
 </code></pre>
-<p>We get the $\alpha_{11}$ value as 0.2709497296298158. This is almost identical to the result from Szabo&rsquo;s book.</p>
+<p>We get the $\alpha_{11}$ value as 0.2709497296298158. This is almost identical to the result from <span class="citation">(Szabo &amp; Ostlund, 1996)</span>.</p>
 <h4 id="show-the-sto-1g-plot">Show the STO-1G plot</h4>
 <pre><code class="language-python">import matplotlib.pyplot as plt
 %matplotlib inline
@@ -104,7 +107,7 @@ class STOLG:
         self.gg_int = self.gg_int.evalf()
         self.sto = sto.subs(zeta, zta)
         self.S = integrate(self.GF_sum * self.sto * r**2, (r, 0, oo)) * 4 * pi
-        
+
     def fit(self):
         def _func(x):
             subs = {i: j for i, j in zip(self.ds[1:]+self.alphas, x)}
@@ -114,31 +117,31 @@ class STOLG:
             # print(subs)
             self.subs = subs
             return -float(val)
-          
+
         # initial guesses
         d_vals = np.linspace(0.1, 0.9, self.L-1).tolist()
         alpha_vals = np.linspace(0.1, 0.9, self.L).tolist()
         self.res = minimize(_func, x0=d_vals + alpha_vals, bounds=[(0, 10)] * (2 * self.L - 1))
         return self.res
-    
+
     @property
     def expression(self):
         expr = []
         for i, j in zip(self.ds, self.alphas):
             expr.append(r&quot;%.6f\phi^{GF}(%.6f)&quot; % (self.subs[i], self.subs[j]))
         return display(Math('+'.join(expr)))
-    
+
     @property
     def func(self):
         return lambdify(r, self.GF_sum.subs(self.subs), &quot;numpy&quot;)
-    
+
     @property
     def funcs(self):
         return [lambdify(r, i.subs(self.subs), &quot;numpy&quot;) for i in self.GFs]
-    
+
     def __call__(self, r):
         return self.func(r)
-    
+
     def plot(self, r):
         plt.plot(r, self(r), '-', label=f'STO-{self.L}G')
         for i in range(self.L):
@@ -161,10 +164,10 @@ sto2g.fit()
         x: array([0.43013353, 0.15162213, 0.85180271])
 </code></pre>
 <p>The overlap has reached 0.998 with only two GFs.</p>
-<pre><code class="language-python">sto2g.expression  
+<pre><code class="language-python">sto2g.expression
 </code></pre>
 <p>$$0.678908\phi^{GF}(0.151622)+0.430134\phi^{GF}(0.851803)$$</p>
-<p>The expression above matches with Equation (3.220) in Szabo&rsquo;s book.</p>
+<p>The expression above matches with Equation (3.220) in <span class="citation">(Szabo &amp; Ostlund, 1996)</span>.</p>
 <pre><code class="language-python">sto2g.plot(r_np)
 </code></pre>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/STO-NG_28_0.png" alt="" class="full">
@@ -186,24 +189,192 @@ sto3g.fit()
 <pre><code class="language-python">sto3g.expression
 </code></pre>
 <p>$$0.444642\phi^{GF}(0.109820)+0.535324\phi^{GF}(0.405786)+0.154329\phi^{GF}(2.227842)$$</p>
-<p>Again the STO-3G expression matches with Equation (3.221) in Szabo&rsquo;s book.</p>
+<p>Again the STO-3G expression matches with Equation (3.221) in <span class="citation">(Szabo &amp; Ostlund, 1996)</span>.</p>
 <pre><code class="language-python">sto3g.plot(r_np)
 </code></pre>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/STO-NG_33_0.png" alt="" class="full">
+<h3 id="interactive-comparison-with-echarts">Interactive Comparison with ECharts</h3>
+<p>Here&rsquo;s an interactive plot comparing STO with different STO-LG approximations using ECharts. This demonstrates the integration of ECharts into the blog for interactive visualizations.</p>
+<div id="sto-lg-comparison" class="echarts-container"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Data points for r from 0 to 10
+    const r = [];
+    for (let i = 0; i <= 100; i++) {
+        r.push(i * 0.1);
+    }
+    
+    // STO function with zeta = 1.0
+    const sto = r.map(x => {
+        const zeta = 1.0;
+        return Math.sqrt(Math.pow(zeta, 3) / Math.PI) * Math.exp(-zeta * x);
+    });
+    
+    // STO-1G: alpha = 0.27095
+    const sto1g = r.map(x => {
+        const alpha = 0.27095;
+        return Math.pow(2 * alpha / Math.PI, 3/4) * Math.exp(-alpha * x * x);
+    });
+    
+    // STO-2G: 0.678908*GF(0.151622) + 0.430134*GF(0.851803)
+    const sto2g = r.map(x => {
+        const d1 = 0.678908, alpha1 = 0.151622;
+        const d2 = 0.430134, alpha2 = 0.851803;
+        const gf1 = Math.pow(2 * alpha1 / Math.PI, 3/4) * Math.exp(-alpha1 * x * x);
+        const gf2 = Math.pow(2 * alpha2 / Math.PI, 3/4) * Math.exp(-alpha2 * x * x);
+        return d1 * gf1 + d2 * gf2;
+    });
+    
+    // STO-3G: 0.444642*GF(0.109820) + 0.535324*GF(0.405786) + 0.154329*GF(2.227842)
+    const sto3g = r.map(x => {
+        const d1 = 0.444642, alpha1 = 0.109820;
+        const d2 = 0.535324, alpha2 = 0.405786;
+        const d3 = 0.154329, alpha3 = 2.227842;
+        const gf1 = Math.pow(2 * alpha1 / Math.PI, 3/4) * Math.exp(-alpha1 * x * x);
+        const gf2 = Math.pow(2 * alpha2 / Math.PI, 3/4) * Math.exp(-alpha2 * x * x);
+        const gf3 = Math.pow(2 * alpha3 / Math.PI, 3/4) * Math.exp(-alpha3 * x * x);
+        return d1 * gf1 + d2 * gf2 + d3 * gf3;
+    });
+    
+    // Initialize ECharts instance
+    const chartDom = document.getElementById('sto-lg-comparison');
+    const myChart = echarts.init(chartDom);
+    
+    const option = {
+        title: {
+            text: 'STO vs STO-LG Approximations',
+            left: 'center',
+            textStyle: {
+                fontSize: 16
+            }
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross'
+            }
+        },
+        legend: {
+            data: ['STO (ζ=1.0)', 'STO-1G', 'STO-2G', 'STO-3G'],
+            bottom: 0
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '15%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'value',
+            name: 'r',
+            nameLocation: 'middle',
+            nameGap: 30
+        },
+        yAxis: {
+            type: 'value',
+            name: 'φ(r)',
+            nameLocation: 'middle',
+            nameGap: 50
+        },
+        series: [
+            {
+                name: 'STO (ζ=1.0)',
+                type: 'line',
+                data: sto.map((y, i) => [r[i], y]),
+                lineStyle: {
+                    width: 2,
+                    type: 'solid'
+                },
+                symbol: 'none'
+            },
+            {
+                name: 'STO-1G',
+                type: 'line',
+                data: sto1g.map((y, i) => [r[i], y]),
+                lineStyle: {
+                    width: 2,
+                    type: 'dashed'
+                },
+                symbol: 'none'
+            },
+            {
+                name: 'STO-2G',
+                type: 'line',
+                data: sto2g.map((y, i) => [r[i], y]),
+                lineStyle: {
+                    width: 2,
+                    type: 'dashed'
+                },
+                symbol: 'none'
+            },
+            {
+                name: 'STO-3G',
+                type: 'line',
+                data: sto3g.map((y, i) => [r[i], y]),
+                lineStyle: {
+                    width: 2,
+                    type: 'dashed'
+                },
+                symbol: 'none'
+            }
+        ]
+    };
+    
+    myChart.setOption(option);
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        myChart.resize();
+    });
+});
+</script>
+<p>This interactive plot allows you to zoom, pan, and hover over data points to see exact values. As we can see, STO-3G provides the best approximation to the original STO function, with STO-2G also performing quite well.</p>
 <h3 id="summary">Summary</h3>
 <p>In this notebook, I show how we can fit the parameters in the contracted Gaussian functions. The results are relatively sensitive to the initial guesses given the optimizers. I believe it will be more so if <code>L</code> further increases.</p>
 <p>I also see that with changing $\zeta$, the optimizer gives me results different from the scaling relationships. It will be interesting to further investigate the cause.</p>
+<div class="bibliography">
+    <h2>References</h2>
+    <ol><li class="apa-citation">Szabo, A &amp; Ostlund, N (1996).<em>Modern Quantum Chemistry: Introduction to Advanced Electronic Structure Theory</em>.Mineola, NY: Dover Publications.ISBN: 978-0486691862.</li></ol>
+  </div>
+  
+  <style>
+    .bibliography {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .bibliography h2 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5em;
+    }
+    .bibliography ol {
+      list-style: decimal;
+      padding-left: 2em;
+    }
+    .apa-citation {
+      margin-bottom: 1rem;
+      text-indent: -2rem;
+      padding-left: 2rem;
+      line-height: 1.6;
+    }
+    .citation {
+      font-style: italic;
+    }
+  </style>
 ]]></content:encoded>
     </item>
     
     <item>
       <title>Calculating energy of 1D Schrödinger equation using Sympy</title>
-      <link>https://chc273.github.io/posts/2021-12-11-sympy-for-hamiltonian/</link>
+      <link>https://cchen.me/posts/2021-12-11-sympy-for-hamiltonian/</link>
       <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://chc273.github.io/posts/2021-12-11-sympy-for-hamiltonian/</guid>
-      <description>Calculating energy of 1D Schrödinger equation using Sympy I was reading Szabo&amp;rsquo;s book &amp;ldquo;Modern Quantum Chemistry&amp;rdquo; and saw the exercise questions that seem to be solvable via programming. Hence I decided to give it a try and pick up sympy at the same time. I was a mathematica user back in undergrad, but have not used it ever since. Maybe sympy will just do the same trick.
-Here is the question (exercise 1.</description>
+      <guid>https://cchen.me/posts/2021-12-11-sympy-for-hamiltonian/</guid>
+      <description>&lt;h2 id=&#34;calculating-energy-of-1d-schrödinger-equation-using-sympy&#34;&gt;Calculating energy of 1D Schrödinger equation using Sympy&lt;/h2&gt;
+&lt;p&gt;I was reading Szabo&amp;rsquo;s book &amp;ldquo;Modern Quantum Chemistry&amp;rdquo; and saw the exercise questions that seem to be solvable via programming. Hence I decided to give it a try and pick up &lt;code&gt;sympy&lt;/code&gt; at the same time. I was a &lt;code&gt;mathematica&lt;/code&gt; user back in undergrad, but have not used it ever since. Maybe &lt;code&gt;sympy&lt;/code&gt; will just do the same trick.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p&gt;Here is the question (exercise 1.18 from the book)&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="calculating-energy-of-1d-schrödinger-equation-using-sympy">Calculating energy of 1D Schrödinger equation using Sympy</h2>
 <p>I was reading Szabo&rsquo;s book &ldquo;Modern Quantum Chemistry&rdquo; and saw the exercise questions that seem to be solvable via programming. Hence I decided to give it a try and pick up <code>sympy</code> at the same time. I was a <code>mathematica</code> user back in undergrad, but have not used it ever since. Maybe <code>sympy</code> will just do the same trick.</p>
 <hr/>
@@ -216,7 +387,7 @@ $$</p>
 <p>$$
 | \tilde \Phi \rangle = N e^{-ax^2}
 $$</p>
-<p><strong>to show that $$-\pi^{-1}$$ is an upper bound to the exact group state energy (which is -0.5)</strong>.</p>
+<p><strong>to show that $-\pi^{-1}$ is an upper bound to the exact group state energy (which is -0.5)</strong>.</p>
 <hr/>
 <p>From the variational principle, we know if the normalized wavefunction satisfies the appropriate boundary condition, then the expectation of the Hamiltonian is an upper bound to the exact ground state energy. In math expressions, if</p>
 <p>$$
@@ -243,12 +414,12 @@ phi = N * exp(-a * x ** 2)  # this is our trial function
 $$</p>
 <pre><code class="language-python">phi2_int = integrate(phi * phi, (x, -oo, oo))  # the integration of phi * phi. Our function is real here
 
-phi2_int 
+phi2_int
 </code></pre>
 <p>$$\frac{\sqrt{2} \sqrt{\pi} N^{2}}{2 \sqrt{a}}$$</p>
 <p>This expression equals to 1 from our normalization condition. Hence we can solve for $$N$$</p>
 <pre><code class="language-python">n_cond = solve(phi2_int-1)
-n_cond 
+n_cond
 </code></pre>
 <p>$$\left [ \left { N : \frac{\sqrt[4]{2} \sqrt[4]{a}}{\sqrt[4]{\pi}}\right }\right ]$$</p>
 <h3 id="2-calculate-the-hamiltonian-with-the-trial-function">2. Calculate the Hamiltonian with the trial function</h3>
@@ -263,7 +434,7 @@ H
 <h3 id="3-substitute-the-normalization-condition">3. Substitute the normalization condition</h3>
 <pre><code class="language-python">H_sol = H.subs(n_cond[0])
 
-H_sol 
+H_sol
 </code></pre>
 <p>$$- \frac{\sqrt{2} \sqrt{a}}{\sqrt{\pi}} + 0.5 a$$</p>
 <p>This expression still contains $$a$$. To find the minimum of this equation, we will need to solve for $$a$$</p>
