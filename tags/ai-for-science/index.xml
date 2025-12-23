@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI for Science on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/ai-for-science/</link>
+    <description>Recent content in AI for Science on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/ai-for-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 Reflection on AI and Agents</title>
+      <link>https://cchen.me/posts/2025-12-23-ai-reflection/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/posts/2025-12-23-ai-reflection/</guid>
+      <description>&lt;h2 id=&#34;the-2022-chatgpt-moment&#34;&gt;The 2022 ChatGPT Moment&lt;/h2&gt;
+&lt;p&gt;When ChatGPT was announced at the end of 2022, I spent hours talking to it, genuinely amazed at how it was a step up compared to the previous GPT-3 models (davinci, curie, if those ring a bell). Around that time, I had been on-and-off playing with &lt;a href=&#34;https://www.langchain.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LangChain&lt;/a&gt; to build tool-using agents. While the agents felt unreliable, they made for great demo-ware. The pace of innovation was staggering. The LangChain team shipped new features in a matter of hours, a sign that the AI space was heating up fast.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="the-2022-chatgpt-moment">The 2022 ChatGPT Moment</h2>
+<p>When ChatGPT was announced at the end of 2022, I spent hours talking to it, genuinely amazed at how it was a step up compared to the previous GPT-3 models (davinci, curie, if those ring a bell). Around that time, I had been on-and-off playing with <a href="https://www.langchain.com/" target="_blank" rel="noopener">LangChain</a> to build tool-using agents. While the agents felt unreliable, they made for great demo-ware. The pace of innovation was staggering. The LangChain team shipped new features in a matter of hours, a sign that the AI space was heating up fast.</p>
+<p>For the next few weeks, I was playing with ChatGPT almost non-stop, with mixed feelings. Hallucination was real, and it was really hard to get the 3.5-turbo models to follow instructions reliably. It constantly made up wrong citations and could not do simple math. Even GPT-4 could not count the number of letters in a word.</p>
+<img src="/images/chatgpt.png" alt="ChatGPT" style="max-width: 70%;">
+<h2 id="building-copilot-for-chemistry">Building Copilot for Chemistry</h2>
+<p>At the time, I was working on Azure Quantum Elements, which aimed to bring together HPC, AI, and quantum computing for scientific discovery. We had data and models for molecules and materials, so it was natural to try LangChain&rsquo;s ReAct agent for coordinating the execution of those tools. The agent worked well when the problem space and user&rsquo;s questions matched the narrow fields it was designed for.</p>
+<p>Based on the demo&rsquo;s promise, we realized this seemed to be the future. We rallied a team to intensely work on developing Copilot in Azure Quantum for chemistry and materials. Around the same time, the ChemCrow <a href="#ref-chemcrow2023" class="citation-link"><span class="citation">(Bran et al., 2023)</span></a> paper came out, and the results gave us a lot of confidence.</p>
+<p>We announced the Copilot in June 2023. It was a really fun time when a small group of us worked day and night, including weekends for months to make that happen, navigating the responsible AI process along the way. Nobody was asked to work overtime, but everyone was always online to deploy, test, and fix things fast.</p>
+<img src="/images/copilot.png" alt="Copilot in Azure Quantum" style="max-width: 70%;">
+<p>Looking back, we had a few good ideas that were probably ahead of their time. We had a rendering window for molecules and calculation results. Later people invented a new term for this UX, namely &ldquo;Generative UI.&rdquo; In the scientific field, we deal with big data objects in addition to text responses. Passing large calculation data was nontrivial, and we invented a new way to do that given the limited context of language models.</p>
+<h2 id="workflow-vs-agent">Workflow vs Agent</h2>
+<p>In an ideal world, I envisioned that the service would evolve into what we now call an &ldquo;AI Scientist.&rdquo; The reality is like many early AI services: the churn rate was high. It was reasonably popular for some time, then user engagement dropped and it no longer made sense to maintain. To this date, the only thing I could quickly find was in this blog post <a href="#ref-copilotaquantum2023" class="citation-link"><span class="citation">(Chen &amp; Almulla, 2023)</span></a>. AI (even with GPT-4, the best model at the time) was still not great at understanding human instructions, and the system was not very reliable, as people reported edge cases all the time. We tried to automate the tests, but the APIs were slow and those are more like regression tests, instead of trying to predict what new queries users may come up with. Again, if we were to build it today, the development of LLM evaluation field and automated red teaming would help us solve some of those.</p>
+<p>This made us wonder if a workflow-based system would make more sense. The LangChain blog had a nice analysis on this topic <a href="#ref-langchain2023" class="citation-link"><span class="citation">(Chase, 2025)</span></a>.</p>
+<img src="/images/workflow-agent.png" alt="Workflow Agent Tradeoff" style="max-width: 60%;">
+<p>Obviously, people in the AI space realized this earlier than we did, and LangGraph was developed to address these reliability concerns using more deterministic execution graphs (perhaps also fixing the confusing interface from LangChain). The concept of agentic workflows was later integrated into Microsoft&rsquo;s Agentic Framework, after a few branding iterations and mergers with other tools like Semantic Kernel, AutoGen, etc. <a href="#ref-microsoft2025agentic" class="citation-link"><span class="citation">(Microsoft, 2025)</span></a>.</p>
+<h2 id="the-reasoning-revolution">The Reasoning Revolution</h2>
+<p>Beyond the reliability issues, we also realized something deeper was missing. A scientific process (or arguably any complex task) requires more than a chatbot. They require more of &ldquo;System 2&rdquo; thinking (slow/deliberate/reflective processes) than &ldquo;System 1&rdquo; thinking (fast/automatic/intuitive processes) <a href="#ref-kahneman2011thinking" class="citation-link"><span class="citation">(Kahneman, 2011)</span></a>.</p>
+<img src="/images/system1_system2.png" alt="system1_system2" style="max-width:70%">
+<p>The famous Chain-of-Thought paper <a href="#ref-wei2022chain" class="citation-link"><span class="citation">(Wei et al., 2022)</span></a> was groundbreaking, albeit simple. By eliciting reasoning steps, language models like ChatGPT were able to achieve better results, mimicking how humans work. Then there were several very interesting prompting techniques. Something I recall trying with a colleague was adding &ldquo;take a deep breath&rdquo; from DeepMind <a href="#ref-yang2023optimization" class="citation-link"><span class="citation">(Yang et al., 2023)</span></a>. It&rsquo;s funny, but in some cases it worked.</p>
+<p>The o-series reasoning models from OpenAI made a splash. They pioneered test-time compute and extended the chain-of-thought idea by spending more tokens to achieve much better results. This unlocked so many doors and was perhaps a key moment for AI in scientific discovery.</p>
+<p>I was switching between ChatGPT, Gemini, and Claude around that time. Then Deep Research from both Gemini and ChatGPT really won me over as a user, and Claude was just in its own league for software engineering tasks. I ended up paying for all of them to this day. It seemed inches away to connect deep research with automated software engineering for autonomous research engineering work.</p>
+<h2 id="the-rise-of-ai-scientists-and-the-return-of-agents">The Rise of AI Scientists and the Return of Agents</h2>
+<p>While many teams were looking into deterministic workflows due to reliability concerns, the rapid improvements in reasoning capabilities quietly made fully autonomous agents viable again. While Microsoft was pitching the concept of &ldquo;Copilot&rdquo;, a related concept of &ldquo;AI (co-)Scientist&rdquo; took off. It started with Gomes&rsquo; team publishing their results on Coscientist in <a href="#ref-coscientist2023" class="citation-link"><span class="citation">(Boiko et al., 2023)</span></a>. Later, Google shared their AI co-Scientist <a href="#ref-aicoscientist2025" class="citation-link"><span class="citation">(Gottweis et al., 2025)</span></a>, and fast forward to recent news where FutureHouse released Kosmos after a few product iterations <a href="#ref-kosmos2025" class="citation-link"><span class="citation">(Mitchener et al., 2025)</span></a>.</p>
+<img src="/images/ai_scientist.png" alt="AI Scientist" style="max-width:70%">
+<p>The fundamental idea is surprisingly simple. In some way, it is running reasoning and tool calling in a loop. Lilian Weng&rsquo;s blog <a href="#ref-weng2023agent" class="citation-link"><span class="citation">(Weng, 2023)</span></a> is a great resource on the high-level concepts. But of course, building a reliable one is extremely hard, something we faced every day during the Copilot development.</p>
+<p>With frontier AI labs pushing intelligence forward, the distinction between workflows and AI agents becomes blurrier. I personally found, particularly in the last few months, that agentic systems can achieve fairly reliable execution while being more flexible across many tasks. I started to truly feel that we are entering the agentic era from the chatbot generative AI era. Jensen Huang was definitely right on this.</p>
+<img src="/images/nvidia-timeline.png" alt="Nvidia Timeline" style="max-width:70%">
+<p>The Copilot for Chemistry initiative was not completely lost. Earlier this year, Microsoft Discovery <a href="#ref-msdiscovery2025" class="citation-link"><span class="citation">(Microsoft, 2025)</span></a> was announced, pushing to build an agentic platform for science. My previous work on AI-accelerated battery electrolyte discovery <a href="#ref-chen2024battery" class="citation-link"><span class="citation">(Chen et al., 2024)</span></a> was used as an example of how AI can help accelerate scientific discovery. AI brings unique value to science.</p>
+<h2 id="whats-next">What&rsquo;s Next?</h2>
+<p>One big trend in 2025 was seeing startups in AI for materials science or physical AI companies with a heavy component in materials raising big funding rounds, again reiterating Jensen&rsquo;s vision about the future of physical AI. The Genesis Mission executive order <a href="#ref-genesismission2025" class="citation-link"><span class="citation">(The White House, 2025)</span></a> pushes the heat to another level. It all makes a lot of sense, as materials and engineering serve as the building blocks for our society. From my past work in this space, it was very clear to me that AI is going to help discover a lot of materials, and it is only a matter of execution, validation, and scale. Perhaps this by itself will be another blog post at a later stage.</p>
+<p>The data question is becoming central: the whole internet&rsquo;s data is somewhat exhausted, so you would need to generate synthetic data or experimental data. Lots of experiments in science, if you capture all the data, can be extremely valuable if one knows how to merge that data with existing data and figure out a path towards scientific superintelligence.</p>
+<p>This is likely where quantum computing enters the picture. As I work in the quantum computing industry, I see a natural connection: materials and molecules fundamentally operate on quantum mechanics principles, which classical computers struggle to simulate accurately. Quantum computers could generate training data that captures physics classical systems cannot, potentially unlocking new frontiers for AI in science. 2026 is going to be another exciting year for AI for Science.</p>
+<h2 id="what-i-learned">What I Learned</h2>
+<p>If I had to summarize what the past few years taught me:</p>
+<p>We kept hitting reliability problems, not capability problems. The demos were always impressive, but getting things to work in production was a different story. Users found edge cases we never thought of, and maintenance became a full-time job that few want to take.</p>
+<p>The reasoning models (o1, o3) were the unlock. Before that, we were patching unreliable systems with workflows. After that, agents actually started working.</p>
+<p>We went from agents to workflows and back to agents. It felt like going in circles, but the second time around, the agents were better. Sometimes you have to retreat before you can advance.</p>
+<p>And now everyone is talking about data. The internet is tapped out. Science has data that nobody else has, and that might be the edge. The nice part about science is that you can validate in real world.</p>
+<h2 id="final-words">Final Words</h2>
+<p>I have long hoped to build an agent that can automate myself. Deep Research was probably the first tool that I felt was powerful enough to replace part of myself for literature review and information gathering. The barrier to entering a new field has never been lower. During the break, I decided to build an agent for writing research review articles for me. The following is a 148-page zero-shot generation (plus answering the clarification questions) of my &ldquo;literature-reviewer&rdquo; agent using the prompt &ldquo;Impacts and potentials of quantum computing for artificial intelligence&rdquo;.</p>
+<p>If you&rsquo;re curious about how quantum computing can help build better AI, take a look:</p>
+<p><a href="/files/quantum_ai_review.pdf" target="_blank">Impacts and Potentials of Quantum Computing for Artificial Intelligence: A Comprehensive Review</a></p>
+<p>It is not perfect, but it is a fitting way to close 2025. A year where the tools we dreamed of building finally started building themselves.</p>
+<div class="bibliography">
+    <h2>References</h2>
+    <ol class="reference-list"><li class="reference-item" id="ref-chemcrow2023">
+            <span class="ref-number">1.</span>
+            <div class="ref-content"><span class="ref-authors">Bran, A., Cox, S., Schilter, O., Baldassari, C., White, A. &amp; Schwaller, P.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">ChemCrow: Augmenting large-language models with chemistry tools</span>. <span class="ref-journal">arXiv preprint</span>. <a href="https://doi.org/10.48550/arXiv.2304.05376" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2304.05376</a>
+            </div>
+          </li><li class="reference-item" id="ref-coscientist2023">
+            <span class="ref-number">2.</span>
+            <div class="ref-content"><span class="ref-authors">Boiko, D., MacKnight, R., Kline, B. &amp; Gomes, G.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">Autonomous chemical research with large language models</span>. <span class="ref-journal">Nature</span>, <span class="ref-volume">624</span>, 570-578. <a href="https://doi.org/10.1038/s41586-023-06792-0" target="_blank" class="ref-link">https://doi.org/10.1038/s41586-023-06792-0</a>
+            </div>
+          </li><li class="reference-item" id="ref-aicoscientist2025">
+            <span class="ref-number">3.</span>
+            <div class="ref-content"><span class="ref-authors">Gottweis, J., Weng, W., Daryin, A., Tu, T., Palepu, A. &amp; et al.</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Towards an AI co-scientist</span>. <span class="ref-journal">arXiv preprint</span>. <a href="https://doi.org/10.48550/arXiv.2502.18864" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2502.18864</a>
+            </div>
+          </li><li class="reference-item" id="ref-kosmos2025">
+            <span class="ref-number">4.</span>
+            <div class="ref-content"><span class="ref-authors">Mitchener, L., Yiu, A., Chang, B., Bourdenx, M. &amp; et al.</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Kosmos: An AI Scientist for Autonomous Discovery</span>. <span class="ref-journal">arXiv preprint</span>. FutureHouse. <a href="https://doi.org/10.48550/arXiv.2511.02824" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2511.02824</a>
+            </div>
+          </li><li class="reference-item" id="ref-weng2023agent">
+            <span class="ref-number">5.</span>
+            <div class="ref-content"><span class="ref-authors">Weng, L.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">LLM Powered Autonomous Agents</span>. <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank" class="ref-link">https://lilianweng.github.io/posts/2023-06-23-agent/</a>
+            </div>
+          </li><li class="reference-item" id="ref-copilotaquantum2023">
+            <span class="ref-number">6.</span>
+            <div class="ref-content"><span class="ref-authors">Chen, C. &amp; Almulla, Y.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">Increasing research and development productivity with Copilot in Azure Quantum Elements</span>. <a href="https://azure.microsoft.com/en-us/blog/quantum/2023/12/12/increasing-research-and-development-productivity-with-copilot-in-azure-quantum-elements/" target="_blank" class="ref-link">https://azure.microsoft.com/en-us/blog/quantum/2023/12/12/increasing-research-and-development-productivity-with-copilot-in-azure-quantum-elements/</a>
+            </div>
+          </li><li class="reference-item" id="ref-msdiscovery2025">
+            <span class="ref-number">7.</span>
+            <div class="ref-content"><span class="ref-authors">Microsoft</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Transforming R&amp;D with agentic AI: Introducing Microsoft Discovery</span>. <a href="https://azure.microsoft.com/en-us/blog/transforming-rd-with-agentic-ai-introducing-microsoft-discovery/" target="_blank" class="ref-link">https://azure.microsoft.com/en-us/blog/transforming-rd-with-agentic-ai-introducing-microsoft-discovery/</a>
+            </div>
+          </li><li class="reference-item" id="ref-langchain2023">
+            <span class="ref-number">8.</span>
+            <div class="ref-content"><span class="ref-authors">Chase, H.</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">How to Think About Agent Frameworks</span>. <a href="https://blog.langchain.com/how-to-think-about-agent-frameworks/" target="_blank" class="ref-link">https://blog.langchain.com/how-to-think-about-agent-frameworks/</a>
+            </div>
+          </li><li class="reference-item" id="ref-microsoft2025agentic">
+            <span class="ref-number">9.</span>
+            <div class="ref-content"><span class="ref-authors">Microsoft</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Agent Framework Workflow Overview</span>. <a href="https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/overview" target="_blank" class="ref-link">https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/overview</a>
+            </div>
+          </li><li class="reference-item" id="ref-yang2023optimization">
+            <span class="ref-number">10.</span>
+            <div class="ref-content"><span class="ref-authors">Yang, C., Wang, X., Lu, Y., Liu, H., Le, Q., Zhou, D. &amp; Chen, X.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">Large Language Models as Optimizers</span>. <span class="ref-journal">arXiv preprint</span>. <a href="https://doi.org/10.48550/arXiv.2309.03409" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2309.03409</a>
+            </div>
+          </li><li class="reference-item" id="ref-kahneman2011thinking">
+            <span class="ref-number">11.</span>
+            <div class="ref-content"><span class="ref-authors">Kahneman, D.</span><span class="ref-year"> (2011)</span>.
+            <span class="ref-title">Thinking, Fast and Slow</span>. New York, NY: Farrar, Straus and Giroux. ISBN: 9780374275631.
+            </div>
+          </li><li class="reference-item" id="ref-wei2022chain">
+            <span class="ref-number">12.</span>
+            <div class="ref-content"><span class="ref-authors">Wei, J., Shazeer, N., Gaussier, E. &amp; Brown, Q.</span><span class="ref-year"> (2022)</span>.
+            <span class="ref-title">Chain of Thought Prompting Elicits Reasoning in Large Language Models</span>. <span class="ref-journal">Advances in Neural Information Processing Systems</span>, <span class="ref-volume">35</span>. <a href="https://doi.org/10.48550/arXiv.2201.11903" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2201.11903</a>
+            </div>
+          </li><li class="reference-item" id="ref-chen2024battery">
+            <span class="ref-number">13.</span>
+            <div class="ref-content"><span class="ref-authors">Chen, C., Nguyen, D., Lee, S., Baker, N., Karakoti, A., Lauw, L., Owen, C., Mueller, K., Bilodeau, B., Murugesan, V. &amp; Troyer, M.</span><span class="ref-year"> (2024)</span>.
+            <span class="ref-title">Accelerating Computational Materials Discovery with Machine Learning and Cloud High-Performance Computing: from Large-Scale Screening to Experimental Validation</span>. <span class="ref-journal">Journal of the American Chemical Society</span>, <span class="ref-volume">146</span>, 20009-20018. American Chemical Society. <a href="https://doi.org/10.1021/jacs.4c04074" target="_blank" class="ref-link">https://doi.org/10.1021/jacs.4c04074</a>
+            </div>
+          </li><li class="reference-item" id="ref-genesismission2025">
+            <span class="ref-number">14.</span>
+            <div class="ref-content"><span class="ref-authors">The White House</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Launching the Genesis Mission</span>. <a href="https://www.whitehouse.gov/presidential-actions/2025/11/launching-the-genesis-mission/" target="_blank" class="ref-link">https://www.whitehouse.gov/presidential-actions/2025/11/launching-the-genesis-mission/</a>
+            </div>
+          </li></ol>
+  </div>
+  
+  <style>
+    .bibliography {
+      margin-top: 2.5em;
+      margin-bottom: 2em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .bibliography h2 {
+      font-size: 1.4em;
+      margin-bottom: 1.2em;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5em;
+    }
+    .reference-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .reference-item {
+      display: grid;
+      grid-template-columns: 2.5em 1fr;
+      gap: 0;
+      margin-bottom: 1.25rem;
+      line-height: 1.7;
+      text-align: left;
+      font-size: 1rem;
+    }
+    .ref-number {
+      font-weight: 500;
+      color: var(--secondary);
+      text-align: right;
+      padding-right: 0.75em;
+    }
+    .ref-content {
+      font-size: 1rem;
+    }
+    .ref-authors {
+      font-weight: normal;
+    }
+    .ref-year {
+      font-weight: normal;
+    }
+    .ref-title {
+      font-style: normal !important;
+      font-weight: normal !important;
+      text-decoration: none !important;
+      box-shadow: none !important;
+    }
+    a.ref-title {
+      text-decoration: none !important;
+      box-shadow: none !important;
+      color: inherit;
+      font-style: normal !important;
+      font-weight: normal !important;
+    }
+    a.ref-title:hover {
+      color: var(--primary);
+      box-shadow: none !important;
+    }
+    .ref-journal {
+      font-style: normal;
+    }
+    .ref-volume {
+      font-style: normal;
+    }
+    .ref-link {
+      word-break: break-all;
+      color: var(--secondary);
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+    .ref-link:hover {
+      color: var(--primary);
+    }
+    .citation {
+      font-style: normal;
+    }
+    .citation-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .citation-link:hover .citation {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .reference-item:target {
+      background-color: var(--code-bg);
+      border-radius: 4px;
+      padding: 0.5em;
+      margin: -0.5em;
+    }
+  </style>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

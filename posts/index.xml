@@ -6,580 +6,224 @@
     <description>Recent content in Posts on Chi&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fitting the parameters in STO-LG</title>
-      <link>https://cchen.me/posts/2022-01-01-fitting-parameters-in-sto-lg/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <title>2025 Reflection on AI and Agents</title>
+      <link>https://cchen.me/posts/2025-12-23-ai-reflection/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://cchen.me/posts/2022-01-01-fitting-parameters-in-sto-lg/</guid>
-      <description>&lt;h2 id=&#34;fitting-the-parameters-in-sto-lg&#34;&gt;Fitting the parameters in STO-LG&lt;/h2&gt;
-&lt;p&gt;In computational chemistry, the Slater-type orbital (STO) more accurately describes the qualitative features of the molecular orbitals than Gaussian functions (GF). However, calculating the two-electron integral using STO can be costly. On the other hand, integrating GFs is relatively cheap. One way to solve this problem is to use a linear combination of GFs to approximate a STO. Such linear combination of Gaussian functions is called &lt;em&gt;contracted Gaussian functions&lt;/em&gt; (CGF).&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="fitting-the-parameters-in-sto-lg">Fitting the parameters in STO-LG</h2>
-<p>In computational chemistry, the Slater-type orbital (STO) more accurately describes the qualitative features of the molecular orbitals than Gaussian functions (GF). However, calculating the two-electron integral using STO can be costly. On the other hand, integrating GFs is relatively cheap. One way to solve this problem is to use a linear combination of GFs to approximate a STO. Such linear combination of Gaussian functions is called <em>contracted Gaussian functions</em> (CGF).</p>
-<p>$$\phi_\mu^{CGF}(\vec{r}-\vec{R}_A) = \sum_{p=1}^L d_{p\mu} \phi_p^{GF} (\alpha_{p\mu}, \vec{r} - \vec{R}_A)$$</p>
-<p>where <code>L</code> is the length of the contraction, $d_{p\mu}$ and $\alpha_{p\mu}$ are contraction coefficients and contraction exponents, respectively. Hence, the so-called STO-LG strategy uses <code>L</code> Gaussian-type orbitals to approximate one STO function.</p>
-<h2 id="approximating-1s-slater-type-function-using-sto-lg">Approximating 1s Slater-type function using STO-LG</h2>
-<p>The expressions for 1s STO and GF are</p>
-<p>$$
-\begin{align}
-\phi*{1s}^{STO} (\zeta, \vec{r}) = \left( \frac{\zeta^3}{\pi} \right)^{1/2} e^{-\zeta |\vec{r}-{\vec{R_A}}|} \notag \\
-\phi*{1s}^{GF}(\alpha, \vec{r}) = \left(\frac{2\alpha}{\pi}\right)^{3/4} e^{-\alpha |\vec{r}-{\vec{R
-_A}}|^2} \notag
-\end{align}
-$$</p>
-<p>where both orbitals have their corresponding parameters. The goal is to find the $d_{p}$ and $\alpha_{p}$ in the following equation</p>
-<p>$$
-\phi_{1s}^{STO} (\zeta, \vec{r}) = \sum_p^L d_{p}\phi_{1s}^{GF}(\alpha_p, \vec{r})
-$$</p>
-<h3 id="sto-1g-with-zeta--10">STO-1G with $\zeta = 1.0$</h3>
-<p>In the first case, we will show the process of fitting the simplest function STO-1G by assuming $\zeta=1.0$ in the STO. Basically we will solve the following equation for $\alpha_{11}$</p>
-<p>$$
-\phi_{1s}^{STO} (\zeta=1.0, \vec{r}) = \phi_{1s}^{GF}(\alpha_{11}, \vec{r})
-$$</p>
-<pre><code class="language-python">from sympy import *
-import numpy as np
-
-zeta, r, alpha, a11 = symbols(&quot;zeta r alpha a11&quot;, positive=True)  # define the variables
-
-sto = (zeta **3 / pi) ** (1/2) * exp(-zeta * r)  # general expression for one STO
-gf = (2 * alpha /pi) ** (3/4) * exp(-alpha * r**2)  # general expression for one GF
-
-sto_1 = sto.subs(zeta, 1.0)  # zeta = 1.0
-gf_1 = gto.subs(alpha, a11)  # alpha = a11
-</code></pre>
-<p>Instead of minimize the differences between the two functions, we will maximize the overlap between the GF and the STO following Szabo&rsquo;s book.</p>
-<pre><code class="language-python">S = integrate(sto_1 * gf_1 * r**2, (r, 0, oo)) * 4 * pi  # the overlap between STO(1.0, r) and GF(alpha, r)
-</code></pre>
-<p>We will maximize this overlap in terms of $a_{11}$. Since we will use scipy, we turn the maximization problem into minimzation of the negative of the overlap <code>S</code>.</p>
-<pre><code class="language-python"># function to minimize
-def func(a):
-    res = S.subs(a11, a[0]).evalf()
-    return -res
-</code></pre>
-<pre><code class="language-python">from scipy.optimize import minimize
-</code></pre>
-<pre><code class="language-python">res = minimize(func, x0=[0.2], bounds=[(0.1, 1)])
-</code></pre>
-<pre><code class="language-python">res.x[0]
-</code></pre>
-<pre><code>0.2709502078346618
-</code></pre>
-<p>We get the $\alpha_{11}$ value as 0.2709497296298158. This is almost identical to the result from <span class="citation">(Szabo &amp; Ostlund, 1996)</span>.</p>
-<h4 id="show-the-sto-1g-plot">Show the STO-1G plot</h4>
-<pre><code class="language-python">import matplotlib.pyplot as plt
-%matplotlib inline
-
-plt.rcParams['font.size'] = 22
-plt.rcParams['font.family'] = 'Arial'
-gf_a1 = lambdify(r, gf_1.subs(a11, res.x[0]), &quot;numpy&quot;)
-sto_1_np = lambdify(r, sto_1, &quot;numpy&quot;)
-r_np = np.linspace(0, 10, 101)
-
-plt.plot(r_np, gf_a1(r_np), label='STO-1G')
-plt.plot(r_np, sto_1_np(r_np), label='STO')
-plt.legend()
-plt.xlabel(&quot;$r$&quot;)
-</code></pre>
-<pre><code>&lt;matplotlib.text.Text at 0x7fcc2089b898&gt;
-</code></pre>
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/STO-NG_18_1.png" alt="" class="full">
-<p>The results are reasonably good.</p>
-<h3 id="sto-lg">STO-LG</h3>
-<p>We will code the general procedure to calculate $L&gt;1$ CGFs.</p>
-<pre><code class="language-python">from IPython.display import display, Math
-
-def get_gto(d, alpha):
-    return d * (2 * alpha /pi) ** (3/4) * exp(-alpha * r**2)
-
-def get_symbols(L):
-    ds = symbols(f'd:{L}', positive=True)
-    alphas = symbols(f'alpha:{L}', positive=True)
-    return ds, alphas
-
-class STOLG:
-    def __init__(self, L=3, zta=1.0):
-        self.L = L
-        self.ds, self.alphas = get_symbols(L)
-        self.GFs = [get_gto(d, a) for d, a in zip(self.ds, self.alphas)]
-        self.GF_sum = sum(self.GFs)
-        self.gg_int = integrate(self.GF_sum * self.GF_sum * r**2, (r, 0, oo)) * 4 * pi
-        self.gg_int = self.gg_int.evalf()
-        self.sto = sto.subs(zeta, zta)
-        self.S = integrate(self.GF_sum * self.sto * r**2, (r, 0, oo)) * 4 * pi
-
-    def fit(self):
-        def _func(x):
-            subs = {i: j for i, j in zip(self.ds[1:]+self.alphas, x)}
-            d0_val = solve(self.gg_int.subs(subs) - 1)
-            subs[self.ds[0]] = d0_val[0]
-            val = self.S.subs(subs).evalf()
-            # print(subs)
-            self.subs = subs
-            return -float(val)
-
-        # initial guesses
-        d_vals = np.linspace(0.1, 0.9, self.L-1).tolist()
-        alpha_vals = np.linspace(0.1, 0.9, self.L).tolist()
-        self.res = minimize(_func, x0=d_vals + alpha_vals, bounds=[(0, 10)] * (2 * self.L - 1))
-        return self.res
-
-    @property
-    def expression(self):
-        expr = []
-        for i, j in zip(self.ds, self.alphas):
-            expr.append(r&quot;%.6f\phi^{GF}(%.6f)&quot; % (self.subs[i], self.subs[j]))
-        return display(Math('+'.join(expr)))
-
-    @property
-    def func(self):
-        return lambdify(r, self.GF_sum.subs(self.subs), &quot;numpy&quot;)
-
-    @property
-    def funcs(self):
-        return [lambdify(r, i.subs(self.subs), &quot;numpy&quot;) for i in self.GFs]
-
-    def __call__(self, r):
-        return self.func(r)
-
-    def plot(self, r):
-        plt.plot(r, self(r), '-', label=f'STO-{self.L}G')
-        for i in range(self.L):
-            plt.plot(r, self.funcs[i](r), '--', label=f'GF-{i}')
-        plt.plot(r, sto_1_np(r), '-', label='STO')
-        plt.legend()
-</code></pre>
-<h3 id="sto-2g">STO-2G</h3>
-<pre><code class="language-python">sto2g = STOLG(L=2)
-sto2g.fit()
-</code></pre>
-<pre><code>      fun: -0.9984197028799346
- hess_inv: &lt;3x3 LbfgsInvHessProduct with dtype=float64&gt;
-      jac: array([ 0.00000000e+00,  2.40918396e-06, -4.10782519e-07])
-  message: b'CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_&lt;=_PGTOL'
-     nfev: 96
-      nit: 19
-   status: 0
-  success: True
-        x: array([0.43013353, 0.15162213, 0.85180271])
-</code></pre>
-<p>The overlap has reached 0.998 with only two GFs.</p>
-<pre><code class="language-python">sto2g.expression
-</code></pre>
-<p>$$0.678908\phi^{GF}(0.151622)+0.430134\phi^{GF}(0.851803)$$</p>
-<p>The expression above matches with Equation (3.220) in <span class="citation">(Szabo &amp; Ostlund, 1996)</span>.</p>
-<pre><code class="language-python">sto2g.plot(r_np)
-</code></pre>
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/STO-NG_28_0.png" alt="" class="full">
-<h3 id="sto-3g">STO-3G</h3>
-<pre><code class="language-python">sto3g = STOLG(3)
-sto3g.fit()
-</code></pre>
-<pre><code>      fun: -0.9998347361981794
- hess_inv: &lt;5x5 LbfgsInvHessProduct with dtype=float64&gt;
-      jac: array([5.09592368e-06, 1.04027897e-05, 1.17794663e-05, 5.55111512e-06,
-       2.22044605e-08])
-  message: b'CONVERGENCE: REL_REDUCTION_OF_F_&lt;=_FACTR*EPSMCH'
-     nfev: 276
-      nit: 39
-   status: 0
-  success: True
-        x: array([0.53532369, 0.15432918, 0.10982016, 0.40578573, 2.22784233])
-</code></pre>
-<pre><code class="language-python">sto3g.expression
-</code></pre>
-<p>$$0.444642\phi^{GF}(0.109820)+0.535324\phi^{GF}(0.405786)+0.154329\phi^{GF}(2.227842)$$</p>
-<p>Again the STO-3G expression matches with Equation (3.221) in <span class="citation">(Szabo &amp; Ostlund, 1996)</span>.</p>
-<pre><code class="language-python">sto3g.plot(r_np)
-</code></pre>
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/STO-NG_33_0.png" alt="" class="full">
-<h3 id="interactive-comparison-with-echarts">Interactive Comparison with ECharts</h3>
-<p>Here&rsquo;s an interactive plot comparing STO with different STO-LG approximations using ECharts. This demonstrates the integration of ECharts into the blog for interactive visualizations.</p>
-<div id="sto-lg-comparison" class="echarts-container"></div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Data points for r from 0 to 10
-    const r = [];
-    for (let i = 0; i <= 100; i++) {
-        r.push(i * 0.1);
-    }
-    
-    // STO function with zeta = 1.0
-    const sto = r.map(x => {
-        const zeta = 1.0;
-        return Math.sqrt(Math.pow(zeta, 3) / Math.PI) * Math.exp(-zeta * x);
-    });
-    
-    // STO-1G: alpha = 0.27095
-    const sto1g = r.map(x => {
-        const alpha = 0.27095;
-        return Math.pow(2 * alpha / Math.PI, 3/4) * Math.exp(-alpha * x * x);
-    });
-    
-    // STO-2G: 0.678908*GF(0.151622) + 0.430134*GF(0.851803)
-    const sto2g = r.map(x => {
-        const d1 = 0.678908, alpha1 = 0.151622;
-        const d2 = 0.430134, alpha2 = 0.851803;
-        const gf1 = Math.pow(2 * alpha1 / Math.PI, 3/4) * Math.exp(-alpha1 * x * x);
-        const gf2 = Math.pow(2 * alpha2 / Math.PI, 3/4) * Math.exp(-alpha2 * x * x);
-        return d1 * gf1 + d2 * gf2;
-    });
-    
-    // STO-3G: 0.444642*GF(0.109820) + 0.535324*GF(0.405786) + 0.154329*GF(2.227842)
-    const sto3g = r.map(x => {
-        const d1 = 0.444642, alpha1 = 0.109820;
-        const d2 = 0.535324, alpha2 = 0.405786;
-        const d3 = 0.154329, alpha3 = 2.227842;
-        const gf1 = Math.pow(2 * alpha1 / Math.PI, 3/4) * Math.exp(-alpha1 * x * x);
-        const gf2 = Math.pow(2 * alpha2 / Math.PI, 3/4) * Math.exp(-alpha2 * x * x);
-        const gf3 = Math.pow(2 * alpha3 / Math.PI, 3/4) * Math.exp(-alpha3 * x * x);
-        return d1 * gf1 + d2 * gf2 + d3 * gf3;
-    });
-    
-    // Initialize ECharts instance
-    const chartDom = document.getElementById('sto-lg-comparison');
-    const myChart = echarts.init(chartDom);
-    
-    const option = {
-        title: {
-            text: 'STO vs STO-LG Approximations',
-            left: 'center',
-            textStyle: {
-                fontSize: 16
-            }
-        },
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'cross'
-            }
-        },
-        legend: {
-            data: ['STO (ζ=1.0)', 'STO-1G', 'STO-2G', 'STO-3G'],
-            bottom: 0
-        },
-        grid: {
-            left: '3%',
-            right: '4%',
-            bottom: '15%',
-            containLabel: true
-        },
-        xAxis: {
-            type: 'value',
-            name: 'r',
-            nameLocation: 'middle',
-            nameGap: 30
-        },
-        yAxis: {
-            type: 'value',
-            name: 'φ(r)',
-            nameLocation: 'middle',
-            nameGap: 50
-        },
-        series: [
-            {
-                name: 'STO (ζ=1.0)',
-                type: 'line',
-                data: sto.map((y, i) => [r[i], y]),
-                lineStyle: {
-                    width: 2,
-                    type: 'solid'
-                },
-                symbol: 'none'
-            },
-            {
-                name: 'STO-1G',
-                type: 'line',
-                data: sto1g.map((y, i) => [r[i], y]),
-                lineStyle: {
-                    width: 2,
-                    type: 'dashed'
-                },
-                symbol: 'none'
-            },
-            {
-                name: 'STO-2G',
-                type: 'line',
-                data: sto2g.map((y, i) => [r[i], y]),
-                lineStyle: {
-                    width: 2,
-                    type: 'dashed'
-                },
-                symbol: 'none'
-            },
-            {
-                name: 'STO-3G',
-                type: 'line',
-                data: sto3g.map((y, i) => [r[i], y]),
-                lineStyle: {
-                    width: 2,
-                    type: 'dashed'
-                },
-                symbol: 'none'
-            }
-        ]
-    };
-    
-    myChart.setOption(option);
-    
-    // Handle window resize
-    window.addEventListener('resize', function() {
-        myChart.resize();
-    });
-});
-</script>
-<p>This interactive plot allows you to zoom, pan, and hover over data points to see exact values. As we can see, STO-3G provides the best approximation to the original STO function, with STO-2G also performing quite well.</p>
-<h3 id="summary">Summary</h3>
-<p>In this notebook, I show how we can fit the parameters in the contracted Gaussian functions. The results are relatively sensitive to the initial guesses given the optimizers. I believe it will be more so if <code>L</code> further increases.</p>
-<p>I also see that with changing $\zeta$, the optimizer gives me results different from the scaling relationships. It will be interesting to further investigate the cause.</p>
+      <guid>https://cchen.me/posts/2025-12-23-ai-reflection/</guid>
+      <description>&lt;h2 id=&#34;the-2022-chatgpt-moment&#34;&gt;The 2022 ChatGPT Moment&lt;/h2&gt;
+&lt;p&gt;When ChatGPT was announced at the end of 2022, I spent hours talking to it, genuinely amazed at how it was a step up compared to the previous GPT-3 models (davinci, curie, if those ring a bell). Around that time, I had been on-and-off playing with &lt;a href=&#34;https://www.langchain.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LangChain&lt;/a&gt; to build tool-using agents. While the agents felt unreliable, they made for great demo-ware. The pace of innovation was staggering. The LangChain team shipped new features in a matter of hours, a sign that the AI space was heating up fast.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="the-2022-chatgpt-moment">The 2022 ChatGPT Moment</h2>
+<p>When ChatGPT was announced at the end of 2022, I spent hours talking to it, genuinely amazed at how it was a step up compared to the previous GPT-3 models (davinci, curie, if those ring a bell). Around that time, I had been on-and-off playing with <a href="https://www.langchain.com/" target="_blank" rel="noopener">LangChain</a> to build tool-using agents. While the agents felt unreliable, they made for great demo-ware. The pace of innovation was staggering. The LangChain team shipped new features in a matter of hours, a sign that the AI space was heating up fast.</p>
+<p>For the next few weeks, I was playing with ChatGPT almost non-stop, with mixed feelings. Hallucination was real, and it was really hard to get the 3.5-turbo models to follow instructions reliably. It constantly made up wrong citations and could not do simple math. Even GPT-4 could not count the number of letters in a word.</p>
+<img src="/images/chatgpt.png" alt="ChatGPT" style="max-width: 70%;">
+<h2 id="building-copilot-for-chemistry">Building Copilot for Chemistry</h2>
+<p>At the time, I was working on Azure Quantum Elements, which aimed to bring together HPC, AI, and quantum computing for scientific discovery. We had data and models for molecules and materials, so it was natural to try LangChain&rsquo;s ReAct agent for coordinating the execution of those tools. The agent worked well when the problem space and user&rsquo;s questions matched the narrow fields it was designed for.</p>
+<p>Based on the demo&rsquo;s promise, we realized this seemed to be the future. We rallied a team to intensely work on developing Copilot in Azure Quantum for chemistry and materials. Around the same time, the ChemCrow <a href="#ref-chemcrow2023" class="citation-link"><span class="citation">(Bran et al., 2023)</span></a> paper came out, and the results gave us a lot of confidence.</p>
+<p>We announced the Copilot in June 2023. It was a really fun time when a small group of us worked day and night, including weekends for months to make that happen, navigating the responsible AI process along the way. Nobody was asked to work overtime, but everyone was always online to deploy, test, and fix things fast.</p>
+<img src="/images/copilot.png" alt="Copilot in Azure Quantum" style="max-width: 70%;">
+<p>Looking back, we had a few good ideas that were probably ahead of their time. We had a rendering window for molecules and calculation results. Later people invented a new term for this UX, namely &ldquo;Generative UI.&rdquo; In the scientific field, we deal with big data objects in addition to text responses. Passing large calculation data was nontrivial, and we invented a new way to do that given the limited context of language models.</p>
+<h2 id="workflow-vs-agent">Workflow vs Agent</h2>
+<p>In an ideal world, I envisioned that the service would evolve into what we now call an &ldquo;AI Scientist.&rdquo; The reality is like many early AI services: the churn rate was high. It was reasonably popular for some time, then user engagement dropped and it no longer made sense to maintain. To this date, the only thing I could quickly find was in this blog post <a href="#ref-copilotaquantum2023" class="citation-link"><span class="citation">(Chen &amp; Almulla, 2023)</span></a>. AI (even with GPT-4, the best model at the time) was still not great at understanding human instructions, and the system was not very reliable, as people reported edge cases all the time. We tried to automate the tests, but the APIs were slow and those are more like regression tests, instead of trying to predict what new queries users may come up with. Again, if we were to build it today, the development of LLM evaluation field and automated red teaming would help us solve some of those.</p>
+<p>This made us wonder if a workflow-based system would make more sense. The LangChain blog had a nice analysis on this topic <a href="#ref-langchain2023" class="citation-link"><span class="citation">(Chase, 2025)</span></a>.</p>
+<img src="/images/workflow-agent.png" alt="Workflow Agent Tradeoff" style="max-width: 60%;">
+<p>Obviously, people in the AI space realized this earlier than we did, and LangGraph was developed to address these reliability concerns using more deterministic execution graphs (perhaps also fixing the confusing interface from LangChain). The concept of agentic workflows was later integrated into Microsoft&rsquo;s Agentic Framework, after a few branding iterations and mergers with other tools like Semantic Kernel, AutoGen, etc. <a href="#ref-microsoft2025agentic" class="citation-link"><span class="citation">(Microsoft, 2025)</span></a>.</p>
+<h2 id="the-reasoning-revolution">The Reasoning Revolution</h2>
+<p>Beyond the reliability issues, we also realized something deeper was missing. A scientific process (or arguably any complex task) requires more than a chatbot. They require more of &ldquo;System 2&rdquo; thinking (slow/deliberate/reflective processes) than &ldquo;System 1&rdquo; thinking (fast/automatic/intuitive processes) <a href="#ref-kahneman2011thinking" class="citation-link"><span class="citation">(Kahneman, 2011)</span></a>.</p>
+<img src="/images/system1_system2.png" alt="system1_system2" style="max-width:70%">
+<p>The famous Chain-of-Thought paper <a href="#ref-wei2022chain" class="citation-link"><span class="citation">(Wei et al., 2022)</span></a> was groundbreaking, albeit simple. By eliciting reasoning steps, language models like ChatGPT were able to achieve better results, mimicking how humans work. Then there were several very interesting prompting techniques. Something I recall trying with a colleague was adding &ldquo;take a deep breath&rdquo; from DeepMind <a href="#ref-yang2023optimization" class="citation-link"><span class="citation">(Yang et al., 2023)</span></a>. It&rsquo;s funny, but in some cases it worked.</p>
+<p>The o-series reasoning models from OpenAI made a splash. They pioneered test-time compute and extended the chain-of-thought idea by spending more tokens to achieve much better results. This unlocked so many doors and was perhaps a key moment for AI in scientific discovery.</p>
+<p>I was switching between ChatGPT, Gemini, and Claude around that time. Then Deep Research from both Gemini and ChatGPT really won me over as a user, and Claude was just in its own league for software engineering tasks. I ended up paying for all of them to this day. It seemed inches away to connect deep research with automated software engineering for autonomous research engineering work.</p>
+<h2 id="the-rise-of-ai-scientists-and-the-return-of-agents">The Rise of AI Scientists and the Return of Agents</h2>
+<p>While many teams were looking into deterministic workflows due to reliability concerns, the rapid improvements in reasoning capabilities quietly made fully autonomous agents viable again. While Microsoft was pitching the concept of &ldquo;Copilot&rdquo;, a related concept of &ldquo;AI (co-)Scientist&rdquo; took off. It started with Gomes&rsquo; team publishing their results on Coscientist in <a href="#ref-coscientist2023" class="citation-link"><span class="citation">(Boiko et al., 2023)</span></a>. Later, Google shared their AI co-Scientist <a href="#ref-aicoscientist2025" class="citation-link"><span class="citation">(Gottweis et al., 2025)</span></a>, and fast forward to recent news where FutureHouse released Kosmos after a few product iterations <a href="#ref-kosmos2025" class="citation-link"><span class="citation">(Mitchener et al., 2025)</span></a>.</p>
+<img src="/images/ai_scientist.png" alt="AI Scientist" style="max-width:70%">
+<p>The fundamental idea is surprisingly simple. In some way, it is running reasoning and tool calling in a loop. Lilian Weng&rsquo;s blog <a href="#ref-weng2023agent" class="citation-link"><span class="citation">(Weng, 2023)</span></a> is a great resource on the high-level concepts. But of course, building a reliable one is extremely hard, something we faced every day during the Copilot development.</p>
+<p>With frontier AI labs pushing intelligence forward, the distinction between workflows and AI agents becomes blurrier. I personally found, particularly in the last few months, that agentic systems can achieve fairly reliable execution while being more flexible across many tasks. I started to truly feel that we are entering the agentic era from the chatbot generative AI era. Jensen Huang was definitely right on this.</p>
+<img src="/images/nvidia-timeline.png" alt="Nvidia Timeline" style="max-width:70%">
+<p>The Copilot for Chemistry initiative was not completely lost. Earlier this year, Microsoft Discovery <a href="#ref-msdiscovery2025" class="citation-link"><span class="citation">(Microsoft, 2025)</span></a> was announced, pushing to build an agentic platform for science. My previous work on AI-accelerated battery electrolyte discovery <a href="#ref-chen2024battery" class="citation-link"><span class="citation">(Chen et al., 2024)</span></a> was used as an example of how AI can help accelerate scientific discovery. AI brings unique value to science.</p>
+<h2 id="whats-next">What&rsquo;s Next?</h2>
+<p>One big trend in 2025 was seeing startups in AI for materials science or physical AI companies with a heavy component in materials raising big funding rounds, again reiterating Jensen&rsquo;s vision about the future of physical AI. The Genesis Mission executive order <a href="#ref-genesismission2025" class="citation-link"><span class="citation">(The White House, 2025)</span></a> pushes the heat to another level. It all makes a lot of sense, as materials and engineering serve as the building blocks for our society. From my past work in this space, it was very clear to me that AI is going to help discover a lot of materials, and it is only a matter of execution, validation, and scale. Perhaps this by itself will be another blog post at a later stage.</p>
+<p>The data question is becoming central: the whole internet&rsquo;s data is somewhat exhausted, so you would need to generate synthetic data or experimental data. Lots of experiments in science, if you capture all the data, can be extremely valuable if one knows how to merge that data with existing data and figure out a path towards scientific superintelligence.</p>
+<p>This is likely where quantum computing enters the picture. As I work in the quantum computing industry, I see a natural connection: materials and molecules fundamentally operate on quantum mechanics principles, which classical computers struggle to simulate accurately. Quantum computers could generate training data that captures physics classical systems cannot, potentially unlocking new frontiers for AI in science. 2026 is going to be another exciting year for AI for Science.</p>
+<h2 id="what-i-learned">What I Learned</h2>
+<p>If I had to summarize what the past few years taught me:</p>
+<p>We kept hitting reliability problems, not capability problems. The demos were always impressive, but getting things to work in production was a different story. Users found edge cases we never thought of, and maintenance became a full-time job that few want to take.</p>
+<p>The reasoning models (o1, o3) were the unlock. Before that, we were patching unreliable systems with workflows. After that, agents actually started working.</p>
+<p>We went from agents to workflows and back to agents. It felt like going in circles, but the second time around, the agents were better. Sometimes you have to retreat before you can advance.</p>
+<p>And now everyone is talking about data. The internet is tapped out. Science has data that nobody else has, and that might be the edge. The nice part about science is that you can validate in real world.</p>
+<h2 id="final-words">Final Words</h2>
+<p>I have long hoped to build an agent that can automate myself. Deep Research was probably the first tool that I felt was powerful enough to replace part of myself for literature review and information gathering. The barrier to entering a new field has never been lower. During the break, I decided to build an agent for writing research review articles for me. The following is a 148-page zero-shot generation (plus answering the clarification questions) of my &ldquo;literature-reviewer&rdquo; agent using the prompt &ldquo;Impacts and potentials of quantum computing for artificial intelligence&rdquo;.</p>
+<p>If you&rsquo;re curious about how quantum computing can help build better AI, take a look:</p>
+<p><a href="/files/quantum_ai_review.pdf" target="_blank">Impacts and Potentials of Quantum Computing for Artificial Intelligence: A Comprehensive Review</a></p>
+<p>It is not perfect, but it is a fitting way to close 2025. A year where the tools we dreamed of building finally started building themselves.</p>
 <div class="bibliography">
     <h2>References</h2>
-    <ol><li class="apa-citation">Szabo, A &amp; Ostlund, N (1996).<em>Modern Quantum Chemistry: Introduction to Advanced Electronic Structure Theory</em>.Mineola, NY: Dover Publications.ISBN: 978-0486691862.</li></ol>
+    <ol class="reference-list"><li class="reference-item" id="ref-chemcrow2023">
+            <span class="ref-number">1.</span>
+            <div class="ref-content"><span class="ref-authors">Bran, A., Cox, S., Schilter, O., Baldassari, C., White, A. &amp; Schwaller, P.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">ChemCrow: Augmenting large-language models with chemistry tools</span>. <span class="ref-journal">arXiv preprint</span>. <a href="https://doi.org/10.48550/arXiv.2304.05376" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2304.05376</a>
+            </div>
+          </li><li class="reference-item" id="ref-coscientist2023">
+            <span class="ref-number">2.</span>
+            <div class="ref-content"><span class="ref-authors">Boiko, D., MacKnight, R., Kline, B. &amp; Gomes, G.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">Autonomous chemical research with large language models</span>. <span class="ref-journal">Nature</span>, <span class="ref-volume">624</span>, 570-578. <a href="https://doi.org/10.1038/s41586-023-06792-0" target="_blank" class="ref-link">https://doi.org/10.1038/s41586-023-06792-0</a>
+            </div>
+          </li><li class="reference-item" id="ref-aicoscientist2025">
+            <span class="ref-number">3.</span>
+            <div class="ref-content"><span class="ref-authors">Gottweis, J., Weng, W., Daryin, A., Tu, T., Palepu, A. &amp; et al.</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Towards an AI co-scientist</span>. <span class="ref-journal">arXiv preprint</span>. <a href="https://doi.org/10.48550/arXiv.2502.18864" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2502.18864</a>
+            </div>
+          </li><li class="reference-item" id="ref-kosmos2025">
+            <span class="ref-number">4.</span>
+            <div class="ref-content"><span class="ref-authors">Mitchener, L., Yiu, A., Chang, B., Bourdenx, M. &amp; et al.</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Kosmos: An AI Scientist for Autonomous Discovery</span>. <span class="ref-journal">arXiv preprint</span>. FutureHouse. <a href="https://doi.org/10.48550/arXiv.2511.02824" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2511.02824</a>
+            </div>
+          </li><li class="reference-item" id="ref-weng2023agent">
+            <span class="ref-number">5.</span>
+            <div class="ref-content"><span class="ref-authors">Weng, L.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">LLM Powered Autonomous Agents</span>. <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank" class="ref-link">https://lilianweng.github.io/posts/2023-06-23-agent/</a>
+            </div>
+          </li><li class="reference-item" id="ref-copilotaquantum2023">
+            <span class="ref-number">6.</span>
+            <div class="ref-content"><span class="ref-authors">Chen, C. &amp; Almulla, Y.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">Increasing research and development productivity with Copilot in Azure Quantum Elements</span>. <a href="https://azure.microsoft.com/en-us/blog/quantum/2023/12/12/increasing-research-and-development-productivity-with-copilot-in-azure-quantum-elements/" target="_blank" class="ref-link">https://azure.microsoft.com/en-us/blog/quantum/2023/12/12/increasing-research-and-development-productivity-with-copilot-in-azure-quantum-elements/</a>
+            </div>
+          </li><li class="reference-item" id="ref-msdiscovery2025">
+            <span class="ref-number">7.</span>
+            <div class="ref-content"><span class="ref-authors">Microsoft</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Transforming R&amp;D with agentic AI: Introducing Microsoft Discovery</span>. <a href="https://azure.microsoft.com/en-us/blog/transforming-rd-with-agentic-ai-introducing-microsoft-discovery/" target="_blank" class="ref-link">https://azure.microsoft.com/en-us/blog/transforming-rd-with-agentic-ai-introducing-microsoft-discovery/</a>
+            </div>
+          </li><li class="reference-item" id="ref-langchain2023">
+            <span class="ref-number">8.</span>
+            <div class="ref-content"><span class="ref-authors">Chase, H.</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">How to Think About Agent Frameworks</span>. <a href="https://blog.langchain.com/how-to-think-about-agent-frameworks/" target="_blank" class="ref-link">https://blog.langchain.com/how-to-think-about-agent-frameworks/</a>
+            </div>
+          </li><li class="reference-item" id="ref-microsoft2025agentic">
+            <span class="ref-number">9.</span>
+            <div class="ref-content"><span class="ref-authors">Microsoft</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Agent Framework Workflow Overview</span>. <a href="https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/overview" target="_blank" class="ref-link">https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/overview</a>
+            </div>
+          </li><li class="reference-item" id="ref-yang2023optimization">
+            <span class="ref-number">10.</span>
+            <div class="ref-content"><span class="ref-authors">Yang, C., Wang, X., Lu, Y., Liu, H., Le, Q., Zhou, D. &amp; Chen, X.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">Large Language Models as Optimizers</span>. <span class="ref-journal">arXiv preprint</span>. <a href="https://doi.org/10.48550/arXiv.2309.03409" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2309.03409</a>
+            </div>
+          </li><li class="reference-item" id="ref-kahneman2011thinking">
+            <span class="ref-number">11.</span>
+            <div class="ref-content"><span class="ref-authors">Kahneman, D.</span><span class="ref-year"> (2011)</span>.
+            <span class="ref-title">Thinking, Fast and Slow</span>. New York, NY: Farrar, Straus and Giroux. ISBN: 9780374275631.
+            </div>
+          </li><li class="reference-item" id="ref-wei2022chain">
+            <span class="ref-number">12.</span>
+            <div class="ref-content"><span class="ref-authors">Wei, J., Shazeer, N., Gaussier, E. &amp; Brown, Q.</span><span class="ref-year"> (2022)</span>.
+            <span class="ref-title">Chain of Thought Prompting Elicits Reasoning in Large Language Models</span>. <span class="ref-journal">Advances in Neural Information Processing Systems</span>, <span class="ref-volume">35</span>. <a href="https://doi.org/10.48550/arXiv.2201.11903" target="_blank" class="ref-link">https://doi.org/10.48550/arXiv.2201.11903</a>
+            </div>
+          </li><li class="reference-item" id="ref-chen2024battery">
+            <span class="ref-number">13.</span>
+            <div class="ref-content"><span class="ref-authors">Chen, C., Nguyen, D., Lee, S., Baker, N., Karakoti, A., Lauw, L., Owen, C., Mueller, K., Bilodeau, B., Murugesan, V. &amp; Troyer, M.</span><span class="ref-year"> (2024)</span>.
+            <span class="ref-title">Accelerating Computational Materials Discovery with Machine Learning and Cloud High-Performance Computing: from Large-Scale Screening to Experimental Validation</span>. <span class="ref-journal">Journal of the American Chemical Society</span>, <span class="ref-volume">146</span>, 20009-20018. American Chemical Society. <a href="https://doi.org/10.1021/jacs.4c04074" target="_blank" class="ref-link">https://doi.org/10.1021/jacs.4c04074</a>
+            </div>
+          </li><li class="reference-item" id="ref-genesismission2025">
+            <span class="ref-number">14.</span>
+            <div class="ref-content"><span class="ref-authors">The White House</span><span class="ref-year"> (2025)</span>.
+            <span class="ref-title">Launching the Genesis Mission</span>. <a href="https://www.whitehouse.gov/presidential-actions/2025/11/launching-the-genesis-mission/" target="_blank" class="ref-link">https://www.whitehouse.gov/presidential-actions/2025/11/launching-the-genesis-mission/</a>
+            </div>
+          </li></ol>
   </div>
   
   <style>
     .bibliography {
-      margin-top: 2em;
+      margin-top: 2.5em;
       margin-bottom: 2em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     .bibliography h2 {
-      font-size: 1.5em;
-      margin-bottom: 1em;
+      font-size: 1.4em;
+      margin-bottom: 1.2em;
       border-bottom: 2px solid var(--border);
       padding-bottom: 0.5em;
     }
-    .bibliography ol {
-      list-style: decimal;
-      padding-left: 2em;
+    .reference-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
     }
-    .apa-citation {
-      margin-bottom: 1rem;
-      text-indent: -2rem;
-      padding-left: 2rem;
-      line-height: 1.6;
+    .reference-item {
+      display: grid;
+      grid-template-columns: 2.5em 1fr;
+      gap: 0;
+      margin-bottom: 1.25rem;
+      line-height: 1.7;
+      text-align: left;
+      font-size: 1rem;
+    }
+    .ref-number {
+      font-weight: 500;
+      color: var(--secondary);
+      text-align: right;
+      padding-right: 0.75em;
+    }
+    .ref-content {
+      font-size: 1rem;
+    }
+    .ref-authors {
+      font-weight: normal;
+    }
+    .ref-year {
+      font-weight: normal;
+    }
+    .ref-title {
+      font-style: normal !important;
+      font-weight: normal !important;
+      text-decoration: none !important;
+      box-shadow: none !important;
+    }
+    a.ref-title {
+      text-decoration: none !important;
+      box-shadow: none !important;
+      color: inherit;
+      font-style: normal !important;
+      font-weight: normal !important;
+    }
+    a.ref-title:hover {
+      color: var(--primary);
+      box-shadow: none !important;
+    }
+    .ref-journal {
+      font-style: normal;
+    }
+    .ref-volume {
+      font-style: normal;
+    }
+    .ref-link {
+      word-break: break-all;
+      color: var(--secondary);
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+    .ref-link:hover {
+      color: var(--primary);
     }
     .citation {
-      font-style: italic;
+      font-style: normal;
+    }
+    .citation-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .citation-link:hover .citation {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .reference-item:target {
+      background-color: var(--code-bg);
+      border-radius: 4px;
+      padding: 0.5em;
+      margin: -0.5em;
     }
   </style>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Calculating energy of 1D Schrödinger equation using Sympy</title>
-      <link>https://cchen.me/posts/2021-12-11-sympy-for-hamiltonian/</link>
-      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/posts/2021-12-11-sympy-for-hamiltonian/</guid>
-      <description>&lt;h2 id=&#34;calculating-energy-of-1d-schrödinger-equation-using-sympy&#34;&gt;Calculating energy of 1D Schrödinger equation using Sympy&lt;/h2&gt;
-&lt;p&gt;I was reading Szabo&amp;rsquo;s book &amp;ldquo;Modern Quantum Chemistry&amp;rdquo; and saw the exercise questions that seem to be solvable via programming. Hence I decided to give it a try and pick up &lt;code&gt;sympy&lt;/code&gt; at the same time. I was a &lt;code&gt;mathematica&lt;/code&gt; user back in undergrad, but have not used it ever since. Maybe &lt;code&gt;sympy&lt;/code&gt; will just do the same trick.&lt;/p&gt;
-&lt;hr/&gt;
-&lt;p&gt;Here is the question (exercise 1.18 from the book)&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="calculating-energy-of-1d-schrödinger-equation-using-sympy">Calculating energy of 1D Schrödinger equation using Sympy</h2>
-<p>I was reading Szabo&rsquo;s book &ldquo;Modern Quantum Chemistry&rdquo; and saw the exercise questions that seem to be solvable via programming. Hence I decided to give it a try and pick up <code>sympy</code> at the same time. I was a <code>mathematica</code> user back in undergrad, but have not used it ever since. Maybe <code>sympy</code> will just do the same trick.</p>
-<hr/>
-<p>Here is the question (exercise 1.18 from the book)</p>
-<p><strong>The Schrödinger equation (in atomic units) of an electron moving in one dimension under the influence of the potential $$-\delta(x)$$ is</strong></p>
-<p>$$
-\left(-\frac{1}{2}\frac{d^2}{dx^2} - \delta(x)\right) | \Phi\rangle = \epsilon | \Phi\rangle
-$$</p>
-<p><strong>Use the variation method with the trial function</strong></p>
-<p>$$
-| \tilde \Phi \rangle = N e^{-ax^2}
-$$</p>
-<p><strong>to show that $-\pi^{-1}$ is an upper bound to the exact group state energy (which is -0.5)</strong>.</p>
-<hr/>
-<p>From the variational principle, we know if the normalized wavefunction satisfies the appropriate boundary condition, then the expectation of the Hamiltonian is an upper bound to the exact ground state energy. In math expressions, if</p>
-<p>$$
-\langle\tilde\Phi|\tilde\Phi \rangle = 1
-$$</p>
-<p>then</p>
-<p>$$
-\langle\tilde\Phi| \mathcal{H} | \tilde\Phi \rangle \ge \epsilon_0
-$$</p>
-<p>I will show how we can use <code>sympy</code> to solve this problem</p>
-<pre><code class="language-python">from sympy import *  # I dislike this way to import everything, but it seems to be common in sympy
-init_printing()
-
-
-x = symbols(&quot;x&quot;)  # define the symbols
-N, a = symbols(&quot;N a&quot;, positive=True)  # a should be positive to satisfy boundary cond at infinity
-
-phi = N * exp(-a * x ** 2)  # this is our trial function
-</code></pre>
-<h3 id="1-normalization-conditions">1. Normalization conditions</h3>
-<p>We will need to normalize the wavefunction</p>
-<p>$$
-\langle\tilde\Phi|\tilde\Phi \rangle = 1
-$$</p>
-<pre><code class="language-python">phi2_int = integrate(phi * phi, (x, -oo, oo))  # the integration of phi * phi. Our function is real here
-
-phi2_int
-</code></pre>
-<p>$$\frac{\sqrt{2} \sqrt{\pi} N^{2}}{2 \sqrt{a}}$$</p>
-<p>This expression equals to 1 from our normalization condition. Hence we can solve for $$N$$</p>
-<pre><code class="language-python">n_cond = solve(phi2_int-1)
-n_cond
-</code></pre>
-<p>$$\left [ \left { N : \frac{\sqrt[4]{2} \sqrt[4]{a}}{\sqrt[4]{\pi}}\right }\right ]$$</p>
-<h3 id="2-calculate-the-hamiltonian-with-the-trial-function">2. Calculate the Hamiltonian with the trial function</h3>
-<pre><code class="language-python">term1 = integrate(phi * (-0.5 * diff(diff(phi, x), x)), (x, -oo, oo))
-term2 = integrate(-phi * DiracDelta(x) * phi, (x, -oo, oo))
-
-H = term1 + term2
-
-H
-</code></pre>
-<p>$$0.25 \sqrt{2} \sqrt{\pi} N^{2} \sqrt{a} - N^{2}$$</p>
-<h3 id="3-substitute-the-normalization-condition">3. Substitute the normalization condition</h3>
-<pre><code class="language-python">H_sol = H.subs(n_cond[0])
-
-H_sol
-</code></pre>
-<p>$$- \frac{\sqrt{2} \sqrt{a}}{\sqrt{\pi}} + 0.5 a$$</p>
-<p>This expression still contains $$a$$. To find the minimum of this equation, we will need to solve for $$a$$</p>
-<h3 id="4-minimize-with-respect-to-a">4. Minimize with respect to $$a$$</h3>
-<p>$$a$$ is minimal when $$\partial H_{sol}/\partial a = 0$$</p>
-<pre><code class="language-python">a_sol = solve(diff(H_sol, a))[0]
-a_sol
-</code></pre>
-<p>$$0.636619772367581$$</p>
-<p>substitute $$a$$ solution into the solution for $$H$$, we get</p>
-<pre><code class="language-python">H_sol.subs({a: a_sol}).evalf()
-</code></pre>
-<p>$$-0.318309886183791$$</p>
-<p>which is exactly $$-\pi^{-1}$$</p>
-<p>In summary, in this notebook, I show how we can use <code>sympy</code> to solve simple Schrödinger equation. Sometimes, using <code>sympy</code> can be unintuitive especially if the bounds of the variables are not properly set. In that case, you will get piecewise function results, and you will need to manually select the correct solutions.</p>
-<p>I found the use of expression <code>oo</code> to represent infinity quite interesting and brilliant.</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Speed comparison among numpy, cython, numba and tensorflow 2.0</title>
-      <link>https://cchen.me/posts/2019-10-04-speed-comparison-among-numpy-cython-numba-and-tensorflow/</link>
-      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/posts/2019-10-04-speed-comparison-among-numpy-cython-numba-and-tensorflow/</guid>
-      <description>&lt;h2 id=&#34;speed-comparison-among-numpy-cython-numba-and-tensorflow-20&#34;&gt;Speed comparison among numpy, cython, numba and tensorflow 2.0&lt;/h2&gt;
-&lt;p&gt;Recently I have been working on speeding up some codes in pymatgen for finding the atomic neighbors within a cutoff radius. I was searching online and found that &lt;code&gt;cython&lt;/code&gt; is a rather powerful tool for accelerating python loops, and decided to give it a try.&lt;/p&gt;
-&lt;p&gt;A common comparison for &lt;code&gt;cython&lt;/code&gt; is &lt;code&gt;numba&lt;/code&gt; and I have heard many good things about it. A less common competitor is the recently released &lt;code&gt;tensorflow 2.0&lt;/code&gt;. In fact, back in the &lt;code&gt;tensorflow 1.x&lt;/code&gt; era, I did some simple comparisons and found that the speed was in fact faster than &lt;code&gt;numpy&lt;/code&gt;. The new &lt;code&gt;tensorflow 2.0&lt;/code&gt; is boasted to be 3x faster than &lt;code&gt;tensorflow 1.x&lt;/code&gt;, and it makes me wonder how faster would &lt;code&gt;tensorflow 2.0&lt;/code&gt; be for some simple computing tasks.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="speed-comparison-among-numpy-cython-numba-and-tensorflow-20">Speed comparison among numpy, cython, numba and tensorflow 2.0</h2>
-<p>Recently I have been working on speeding up some codes in pymatgen for finding the atomic neighbors within a cutoff radius. I was searching online and found that <code>cython</code> is a rather powerful tool for accelerating python loops, and decided to give it a try.</p>
-<p>A common comparison for <code>cython</code> is <code>numba</code> and I have heard many good things about it. A less common competitor is the recently released <code>tensorflow 2.0</code>. In fact, back in the <code>tensorflow 1.x</code> era, I did some simple comparisons and found that the speed was in fact faster than <code>numpy</code>. The new <code>tensorflow 2.0</code> is boasted to be 3x faster than <code>tensorflow 1.x</code>, and it makes me wonder how faster would <code>tensorflow 2.0</code> be for some simple computing tasks.</p>
-<h3 id="function-decorate-to-record-time">Function decorate to record time</h3>
-<p>I like to do simple things myself so that I know what exactly happens in the code. So I am writing a timeit decorator instead of using <code>timeit</code> package.</p>
-<pre><code class="language-python">from time import time
-import functools
-
-def timeit(n=10):
-    &quot;&quot;&quot;
-    Decorator to run function n times and print out the total time elapsed.
-    &quot;&quot;&quot;
-    def dec(func):
-        @functools.wraps(func)
-        def wrapped(*args, **kwargs):
-            t0 = time()
-            for i in range(n):
-                func(*args, **kwargs)
-            print(&quot;%s iterated %d times\nTime elapsed %.3fs\n&quot; % (
-                func.__name__, n, time() - t0))
-        return wrapped
-    return dec
-</code></pre>
-<h3 id="computing-functions-using-different-methods">Computing functions using different methods</h3>
-<p>Here I am computing</p>
-<p>\[matrix[i, j] = i^2 + j^2\]</p>
-<p>for a matrix of size <code>[m, n]</code></p>
-<pre><code class="language-python"># import numba, tensorflow and numpy, load cython
-import numba
-import tensorflow as tf
-import numpy as np
-
-%load_ext cython
-</code></pre>
-<pre><code class="language-python">@tf.function
-def compute_tf(m, n):
-    print('Tracing ',  m,  n)
-    x1 = tf.range(0, m-1, 1) ** 2
-    x2 = tf.range(0, n-1, 1) ** 2
-    return x1[:, None] + x2[None, :]
-
-compute_tf(tf.constant(1), tf.constant(1)) # trace once
-</code></pre>
-<pre><code>Tracing  Tensor(&quot;m:0&quot;, shape=(), dtype=int32) Tensor(&quot;n:0&quot;, shape=(), dtype=int32)
-&lt;tf.Tensor: id=261, shape=(0, 0), dtype=int32, numpy=array([], shape=(0, 0), dtype=int32)&gt;
-</code></pre>
-<p>I used the <code>tf.function</code> decorate to define the graph and avoided repeated tracing the graph by using <code>tf.constant</code> as input and perform the initial graph tracing. You will see that running this function will not invoke the <code>print</code> function. It is only traced once</p>
-<pre><code class="language-python">def compute_numpy(m, n):
-    x1 = np.linspace(0., m-1, m) ** 2
-    x2 = np.linspace(0., n-1, n) ** 2
-    return x1[:, None] + x2[None, :]
-</code></pre>
-<pre><code class="language-python">@numba.njit
-def compute_numba(m, n):
-    x = np.empty((m, n))
-    for i in range(m):
-        for j in range(n):
-            x[i, j] =  i**2 + j**2
-    return x
-
-compute_numba(1, 1) # JIT compile first
-</code></pre>
-<pre><code class="language-python">@numba.njit(parallel=True)
-def compute_numba_parallel(m, n):
-    x = np.empty((m, n))
-    for i in numba.prange(m):
-        for j in numba.prange(n):
-            x[i, j] =  i**2 + j**2
-    return x
-compute_numba_parallel(1, 1) # JIT compile first
-</code></pre>
-<pre><code>array([[0.]])
-</code></pre>
-<p>Numpy and numba are almost the same. <code>numba</code> is really handy in terms of turning on parallel computations.</p>
-<pre><code class="language-python">%%cython
-cimport cython
-import numpy as np
-cimport numpy as np
-@cython.boundscheck(False)
-@cython.wraparound(False)
-def compute_cython(int m, int n):
-    cdef long [:, ::1] x = np.empty((m, n), dtype=int)
-    cdef int i, j
-    for i in range(m):
-        for j in range(n):
-            x[i, j] = i*i +j*j
-    return x
-</code></pre>
-<p><code>cython</code> needs more work and i am delegating the memory management to <code>numpy</code> here and use <code>memoryview</code> x. Basically it is like <code>C</code>. Note that <code>cython</code> can also turn on parallel computations like <code>numba</code> by using <code>cython.parallel.prange</code>. However it does require <code>openmp</code>, which does not ship with <code>clang</code> compiler in macos. So I am not testing the parallel version here.</p>
-<h3 id="results">Results</h3>
-<pre><code class="language-python">m = 2000
-n = 10000
-n_loop = 10
-
-timeit(n=n_loop)(compute_numpy)(m, n)
-timeit(n=n_loop)(compute_numba)(m, n)
-timeit(n=n_loop)(compute_numba_parallel)(m, n)
-timeit(n=n_loop)(compute_cython)(m, n)
-timeit(n=n_loop)(compute_tf)(tf.constant(m), tf.constant(n))
-</code></pre>
-<pre><code>compute_numpy iterated 10 times
-Time elapsed 0.971s
-
-compute_numba iterated 10 times
-Time elapsed 1.110s
-
-compute_numba_parallel iterated 10 times
-Time elapsed 0.651s
-
-compute_cython iterated 10 times
-Time elapsed 1.098s
-
-compute_tf iterated 10 times
-Time elapsed 0.190s
-</code></pre>
-<h3 id="conclusion">Conclusion</h3>
-<p><code>Tensorflow 2.0</code> is amazing.</p>
 ]]></content:encoded>
     </item>
     
