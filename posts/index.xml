@@ -22,7 +22,7 @@
 <h2 id="building-copilot-for-chemistry">Building Copilot for Chemistry</h2>
 <p>At the time, I was working on Azure Quantum Elements, which aimed to bring together HPC, AI, and quantum computing for scientific discovery. We had data and models for molecules and materials, so it was natural to try LangChain&rsquo;s ReAct agent for coordinating the execution of those tools. The agent worked well when the problem space and user&rsquo;s questions matched the narrow fields it was designed for.</p>
 <p>Based on the demo&rsquo;s promise, we realized this seemed to be the future. We rallied a team to intensely work on developing Copilot in Azure Quantum for chemistry and materials. Around the same time, the ChemCrow <a href="#ref-chemcrow2023" class="citation-link"><span class="citation">(Bran et al., 2023)</span></a> paper came out, and the results gave us a lot of confidence.</p>
-<p>We announced the Copilot in June 2023. It was a really fun time when a small group of us worked day and night, including weekends for months to make that happen, navigating the responsible AI process along the way. Nobody was asked to work overtime, but everyone was always online to deploy, test, and fix things fast.</p>
+<p>We announced Azure Quantum Elements and the Copilot in June 2023 <a href="#ref-azurequantum2023" class="citation-link"><span class="citation">(Zander, 2023)</span></a>. It was a really fun time when a small group of us worked day and night, including weekends for months to make that happen, navigating the responsible AI process along the way. Nobody was asked to work overtime, but everyone was always online to deploy, test, and fix things fast.</p>
 <img src="/images/copilot.png" alt="Copilot in Azure Quantum" style="max-width: 70%;">
 <p>Looking back, we had a few good ideas that were probably ahead of their time. We had a rendering window for molecules and calculation results. Later people invented a new term for this UX, namely &ldquo;Generative UI.&rdquo; In the scientific field, we deal with big data objects in addition to text responses. Passing large calculation data was nontrivial, and we invented a new way to do that given the limited context of language models.</p>
 <h2 id="workflow-vs-agent">Workflow vs Agent</h2>
@@ -129,6 +129,11 @@
             <span class="ref-number">14.</span>
             <div class="ref-content"><span class="ref-authors">The White House</span><span class="ref-year"> (2025)</span>.
             <span class="ref-title">Launching the Genesis Mission</span>. <a href="https://www.whitehouse.gov/presidential-actions/2025/11/launching-the-genesis-mission/" target="_blank" class="ref-link">https://www.whitehouse.gov/presidential-actions/2025/11/launching-the-genesis-mission/</a>
+            </div>
+          </li><li class="reference-item" id="ref-azurequantum2023">
+            <span class="ref-number">15.</span>
+            <div class="ref-content"><span class="ref-authors">Zander, J.</span><span class="ref-year"> (2023)</span>.
+            <span class="ref-title">Accelerating scientific discovery with Azure Quantum</span>. <a href="https://blogs.microsoft.com/blog/2023/06/21/accelerating-scientific-discovery-with-azure-quantum/" target="_blank" class="ref-link">https://blogs.microsoft.com/blog/2023/06/21/accelerating-scientific-discovery-with-azure-quantum/</a>
             </div>
           </li></ol>
   </div>
