@@ -108,18 +108,15 @@
   }
 
   /**
-   * Update view count display elements
+   * Update a single view count display element
    */
-  function updateViewCountDisplay(count) {
+  function updateElementDisplay(element, count) {
     if (count === null || count === undefined) return;
 
-    const elements = document.querySelectorAll('[data-view-count]');
-    elements.forEach(element => {
-      element.textContent = count === 1 ? '1 view' : `${count.toLocaleString()} views`;
-      element.style.display = '';
-      element.classList.remove('view-count-loading');
-      element.classList.add('view-count-loaded');
-    });
+    element.textContent = count === 1 ? '1 view' : `${count.toLocaleString()} views`;
+    element.style.display = '';
+    element.classList.remove('view-count-loading');
+    element.classList.add('view-count-loaded');
   }
 
   /**
@@ -131,24 +128,34 @@
       return;
     }
 
-    // Only track on post pages (check if view-count element exists)
+    // Find all view count elements
     const viewCountElements = document.querySelectorAll('[data-view-count]');
     if (viewCountElements.length === 0) return;
 
-    const path = getPagePath();
+    const currentPath = getPagePath();
 
-    if (!hasVisitedInSession(path)) {
-      // Increment view and display
-      const count = await incrementView(path);
-      if (count !== null) {
-        updateViewCountDisplay(count);
-      }
-      markAsVisited(path);
-    } else {
-      // Just fetch and display the count
-      const count = await getViewCount(path);
-      if (count !== null) {
-        updateViewCountDisplay(count);
+    // Process each view count element
+    for (const element of viewCountElements) {
+      const postPath = element.dataset.postPath;
+      
+      if (!postPath) continue;
+
+      // Check if we're on the actual post page (not a list page)
+      const isOnPostPage = currentPath === postPath;
+
+      if (isOnPostPage && !hasVisitedInSession(postPath)) {
+        // We're on the post's own page and haven't visited recently - increment view
+        const count = await incrementView(postPath);
+        if (count !== null) {
+          updateElementDisplay(element, count);
+        }
+        markAsVisited(postPath);
+      } else {
+        // Either on a list page, or already visited - just fetch and display the count
+        const count = await getViewCount(postPath);
+        if (count !== null) {
+          updateElementDisplay(element, count);
+        }
       }
     }
   }
@@ -156,4 +163,3 @@
   // Start tracking
   init();
 })();
-
