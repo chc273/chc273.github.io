@@ -1,0 +1,58 @@
+{
+  "models": {
+    "e_form": {
+      "name": "Formation Energy",
+      "unit": "eV/atom",
+      "description": "Formation energy per atom",
+      "file": "e_form-weights.json"
+    },
+    "band_gap": {
+      "name": "Band Gap",
+      "unit": "eV",
+      "description": "Electronic band gap",
+      "file": "band_gap-weights.json"
+    },
+    "is_metal": {
+      "name": "Is Metal",
+      "unit": "",
+      "description": "Metal (1) or non-metal (0) classification",
+      "file": "is_metal-weights.json"
+    },
+    "dielectric": {
+      "name": "Dielectric Constant",
+      "unit": "",
+      "description": "Refractive index (dielectric constant)",
+      "file": "dielectric-weights.json"
+    },
+    "shear_mod": {
+      "name": "Shear Modulus",
+      "unit": "log(GPa)",
+      "description": "Log10 of VRH average shear modulus",
+      "file": "shear_mod-weights.json"
+    },
+    "bulk_mod": {
+      "name": "Bulk Modulus",
+      "unit": "log(GPa)",
+      "description": "Log10 of VRH average bulk modulus",
+      "file": "bulk_mod-weights.json"
+    },
+    "phonons": {
+      "name": "Phonon Peak",
+      "unit": "cm\u207b\u00b9",
+      "description": "Phonon density of states peak frequency",
+      "file": "phonons-weights.json"
+    },
+    "perovskites": {
+      "name": "Perovskite Formation",
+      "unit": "eV",
+      "description": "Formation energy for perovskite structures",
+      "file": "perovskites-weights.json"
+    },
+    "exfoliation": {
+      "name": "Exfoliation Energy",
+      "unit": "meV/atom",
+      "description": "2D material exfoliation energy",
+      "file": "exfoliation-weights.json"
+    }
+  }
+}
