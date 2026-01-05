@@ -6,15 +6,5 @@
     <description>Recent content in Fun on Chi&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://cchen.me/fun/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>M3GNet-Web</title>
-      <link>https://cchen.me/fun/m3gnet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/fun/m3gnet/</guid>
-      <description>Browser-based materials property prediction with M3GNet</description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
   </channel>
 </rss>
