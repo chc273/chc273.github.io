@@ -113,6 +113,13 @@
   function updateElementDisplay(element, count) {
     if (count === null || count === undefined) return;
 
+    // Skip display update for hidden tracking elements
+    if (element.classList.contains('view-count-hidden') ||
+        element.style.cssText.includes('display:none') ||
+        element.style.cssText.includes('display: none')) {
+      return;
+    }
+
     element.textContent = count === 1 ? '1 view' : `${count.toLocaleString()} views`;
     element.style.display = '';
     element.classList.remove('view-count-loading');
