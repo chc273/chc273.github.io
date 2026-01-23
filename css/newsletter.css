@@ -1,0 +1,240 @@
+/**
+ * Newsletter Styles
+ * Includes collapsible date groups and signup form
+ */
+
+/* ============================================
+   Collapsible Newsletter Groups
+   ============================================ */
+.newsletter-groups {
+  margin-top: 1rem;
+}
+
+.newsletter-group {
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.newsletter-group summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: var(--entry);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+
+.newsletter-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.newsletter-group summary:hover {
+  background: var(--border);
+}
+
+.group-title {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.group-count {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  background: var(--code-bg);
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+}
+
+.chevron {
+  margin-left: auto;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.newsletter-group[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.group-content {
+  border-top: 1px solid var(--border);
+}
+
+.newsletter-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s ease;
+}
+
+.newsletter-item:last-child {
+  border-bottom: none;
+}
+
+.newsletter-item:hover {
+  background: var(--entry);
+}
+
+.item-date {
+  flex-shrink: 0;
+  width: 50px;
+  font-size: 0.85rem;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.item-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-title a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.4;
+  display: block;
+}
+
+.item-title a:hover {
+  color: var(--tertiary);
+}
+
+/* ============================================
+   Newsletter Signup Box
+   ============================================ */
+.newsletter-signup {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.newsletter-signup-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.newsletter-signup-content > p {
+  margin: 0 0 1rem 0;
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+/* Newsletter Form */
+.newsletter-form .form-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  background: var(--theme);
+  color: var(--primary);
+}
+
+.newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.newsletter-form button {
+  padding: 0.6rem 1.2rem;
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.newsletter-form button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.newsletter-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Form Messages */
+.form-message {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+}
+
+.form-message.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.form-message.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+/* Privacy and count */
+.newsletter-privacy,
+.newsletter-count {
+  margin: 0.5rem 0 0 0;
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+
+.newsletter-privacy a {
+  color: var(--primary);
+}
+
+/* Spinner */
+.spinner {
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 480px) {
+  .newsletter-form .form-group {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .newsletter-item {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .item-date {
+    width: auto;
+    font-size: 0.8rem;
+  }
+}

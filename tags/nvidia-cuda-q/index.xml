@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nvidia CUDA-Q on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/nvidia-cuda-q/</link>
+    <description>Recent content in Nvidia CUDA-Q on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/nvidia-cuda-q/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Meets Quantum: How Machine Learning is Accelerating the Path from Molecules to Materials</title>
+      <link>https://cchen.me/newsletter/2026-01-22-quantum-chemistry/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2026-01-22-quantum-chemistry/</guid>
+      <description>&lt;p&gt;This week marked a turning point in quantum chemistry: AI isn&amp;rsquo;t just helping us understand quantum systems anymore - it&amp;rsquo;s actively designing them. From molecules generated in 100 steps instead of 1000, to LLMs autonomously running quantum simulations, the convergence of artificial and quantum intelligence is reshaping how we discover drugs and materials.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+  &#34;metrics&#34;: [
+    {&#34;label&#34;: &#34;Molecular Design Speedup&#34;, &#34;value&#34;: &#34;10x&#34;, &#34;context&#34;: &#34;PropMolFlow vs existing methods&#34;},
+    {&#34;label&#34;: &#34;LLM Simulation Accuracy&#34;, &#34;value&#34;: &#34;90%&#34;, &#34;context&#34;: &#34;Autonomous quantum simulations&#34;},
+    {&#34;label&#34;: &#34;Quantum Interference Scale&#34;, &#34;value&#34;: &#34;7,000 atoms&#34;, &#34;context&#34;: &#34;Largest nanoparticles showing quantum effects&#34;},
+    {&#34;label&#34;: &#34;AI Synthesis Experts&#34;, &#34;value&#34;: &#34;2,498&#34;, &#34;context&#34;: &#34;MOSAIC platform&#39;s specialized agents&#34;}
+  ]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;the-ai-acceleration-designing-molecules-10x-faster&#34;&gt;The AI Acceleration: Designing Molecules 10x Faster&lt;/h2&gt;
+&lt;p&gt;The traditional approach to molecular design has been a computational bottleneck: generate random structures, test their properties, repeat thousands of times. This week, researchers flipped the script entirely.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This week marked a turning point in quantum chemistry: AI isn&rsquo;t just helping us understand quantum systems anymore - it&rsquo;s actively designing them. From molecules generated in 100 steps instead of 1000, to LLMs autonomously running quantum simulations, the convergence of artificial and quantum intelligence is reshaping how we discover drugs and materials.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+  "metrics": [
+    {"label": "Molecular Design Speedup", "value": "10x", "context": "PropMolFlow vs existing methods"},
+    {"label": "LLM Simulation Accuracy", "value": "90%", "context": "Autonomous quantum simulations"},
+    {"label": "Quantum Interference Scale", "value": "7,000 atoms", "context": "Largest nanoparticles showing quantum effects"},
+    {"label": "AI Synthesis Experts", "value": "2,498", "context": "MOSAIC platform's specialized agents"}
+  ]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-ai-acceleration-designing-molecules-10x-faster">The AI Acceleration: Designing Molecules 10x Faster</h2>
+<p>The traditional approach to molecular design has been a computational bottleneck: generate random structures, test their properties, repeat thousands of times. This week, researchers flipped the script entirely.</p>
+<h3 id="from-random-search-to-targeted-design">From Random Search to Targeted Design</h3>
+<p><strong>PropMolFlow</strong>, a new generative AI method from the <strong>University of Florida</strong> and <strong>New York University</strong>, <a href="https://phys.org/news/2026-01-scientists-molecules-discovery.html" target="_blank" rel="noopener noreferrer">generates molecules 10 times faster</a>
+ than existing approaches while maintaining <a href="https://phys.org/news/2026-01-scientists-molecules-discovery.html" target="_blank" rel="noopener noreferrer"><strong>90%</strong> chemical validity</a>
+. The breakthrough lies in its &ldquo;backward design&rdquo; approach: instead of randomly generating molecules and checking if they have desired properties, PropMolFlow uses flow matching - a technique that creates smooth paths through chemical space - to generate structures that already target specific properties.</p>
+<p>The efficiency gains are dramatic. Where previous diffusion-based methods required <a href="https://phys.org/news/2026-01-scientists-molecules-discovery.html" target="_blank" rel="noopener noreferrer">1,000 computational steps</a>
+ to generate a molecule, PropMolFlow needs only <a href="https://phys.org/news/2026-01-scientists-molecules-discovery.html" target="_blank" rel="noopener noreferrer">100 steps</a>
+. More importantly, the method validates its results with physics-based density functional theory calculations, ensuring the generated molecules aren&rsquo;t just chemically valid but physically realistic. Published in <a href="https://www.nature.com/articles/s43588-025-00946-y" target="_blank" rel="noopener noreferrer">Nature Computational Science</a>
+, the work integrates five different property embedding methods, making it adaptable to diverse drug discovery and materials design challenges.</p>
+<p>&ldquo;This is about solving inverse problems efficiently,&rdquo; explains <strong>Stefano Martiniani</strong>, assistant professor at <strong>NYU</strong>. Rather than asking &ldquo;what properties does this molecule have?&rdquo;, the system asks &ldquo;what molecule has these properties?&rdquo; - and answers in a fraction of the time.</p>
+<h3 id="collective-intelligence-for-chemistry">Collective Intelligence for Chemistry</h3>
+<p>Speed isn&rsquo;t the only way AI is transforming molecular design. <strong>MOSAIC</strong>, an open-source platform from <strong>Yale University</strong> and <strong>Boehringer Ingelheim</strong>, takes a radically different approach: instead of one large AI model, it deploys <a href="https://phys.org/news/2026-01-mosaic-platform-chemistry-protocols-faster.html" target="_blank" rel="noopener noreferrer"><strong>2,498</strong> individual AI &ldquo;experts&rdquo;</a>
+, each specialized in specific chemical reactions or synthesis techniques.</p>
+<p>The collective intelligence approach outperforms single large language models because chemistry isn&rsquo;t a monolithic domain - it&rsquo;s thousands of specialized techniques, each with its own nuances. MOSAIC&rsquo;s experts collaborate to generate complete experimental protocols, transforming vast chemical knowledge into actionable lab procedures. The results speak for themselves: the platform has already <a href="https://phys.org/news/2026-01-mosaic-platform-chemistry-protocols-faster.html" target="_blank" rel="noopener noreferrer">synthesized <strong>35</strong> previously unreported compounds</a>
+.</p>
+<p>The story emerging from these advances is clear: AI is moving from analysis to active design. It&rsquo;s no longer just predicting properties of molecules we already know - it&rsquo;s creating entirely new ones, faster and more efficiently than ever before.</p>
+<h2 id="llms-enter-the-lab-autonomous-quantum-simulation">LLMs Enter the Lab: Autonomous Quantum Simulation</h2>
+<p>While AI accelerates molecular design, another breakthrough is democratizing access to quantum simulation itself - traditionally a domain requiring years of specialist training.</p>
+<h3 id="90-accuracy-without-years-of-training">90% Accuracy Without Years of Training</h3>
+<p>Researchers from <strong>Beijing Normal University</strong> and <strong>The Hong Kong University of Science and Technology</strong> demonstrated that large language model agents can <a href="https://quantumzeitgeist.com/90-percent-quantum-models-large-language-success-autonomous-simulation/" target="_blank" rel="noopener noreferrer">autonomously conduct tensor network simulations with <strong>90%</strong> accuracy</a>
+. Tensor networks are powerful mathematical tools for simulating quantum systems, but they&rsquo;ve been notoriously difficult to use - requiring deep expertise in quantum physics, numerical methods, and specialized software packages.</p>
+<p>The LLM-based system bypasses this barrier through in-context learning. The researchers embedded <a href="https://quantumzeitgeist.com/90-percent-quantum-models-large-language-success-autonomous-simulation/" target="_blank" rel="noopener noreferrer"><strong>43,000 tokens</strong> of curated documentation</a>
+ from the <strong>Renormalizer</strong> tensor network package directly into the system prompt, including Jupyter notebook tutorials, Python examples, and refactored source code. A multi-agent architecture then coordinates specialized agents - one for planning, one for coding, one for debugging - to autonomously set up and run quantum simulations.</p>
+<p>The implications are profound. What once required years of training can now be accomplished by researchers with domain knowledge but no tensor network expertise. The system doesn&rsquo;t replace human insight - it amplifies it, handling the technical complexity while researchers focus on the physics.</p>
+<p>Meanwhile, <strong>quantum machine learning</strong> itself is maturing. A new chapter by <strong>Insilico Medicine</strong> scientists details how <a href="https://thequantuminsider.com/2026/01/21/quantum-machine-learning-is-emerging-as-a-practical-tool-for-drug-discovery/" target="_blank" rel="noopener noreferrer">QML is transitioning from theory to targeted drug discovery applications</a>
+. The work outlines practical applications across molecular representation, optimization, and generative design within hybrid quantum-classical workflows, acknowledging current limitations like hardware constraints and barren plateaus while positioning QML as a complement to classical methods rather than a replacement.</p>
+<h3 id="open-source-tools-for-the-quantum-era">Open-Source Tools for the Quantum Era</h3>
+<p>The democratization trend extends to infrastructure. <strong>Microsoft</strong> <a href="https://quantumcomputingreport.com/microsoft-releases-open-source-quantum-development-tools-for-error-correction-and-chemistry/" target="_blank" rel="noopener noreferrer">released an updated, open-source Quantum Development Kit</a>
+ focused on fault-tolerant applications and molecular modeling. The <strong>QDK for Chemistry</strong> module includes AI-assisted tools for Hamiltonian generation, active space selection, and molecular visualization - and it delivers dramatic efficiency gains.</p>
+<p>For specific molecular modeling problems, the QDK <a href="https://quantumcomputingreport.com/microsoft-releases-open-source-quantum-development-tools-for-error-correction-and-chemistry/" target="_blank" rel="noopener noreferrer">reduces gate counts from thousands to single digits</a>
+. This isn&rsquo;t just an incremental improvement - it&rsquo;s the difference between problems that are intractable on near-term hardware and those that might run today. The toolkit integrates with <strong>VS Code</strong>, <strong>GitHub Copilot</strong>, and major quantum frameworks like <strong>Qiskit</strong> and <strong>Cirq</strong>, making it accessible to developers already familiar with classical tools.</p>
+<p><strong>Microsoft</strong> is also co-developing the <strong>Magne</strong> system with <strong>Atom Computing</strong>, with technical benchmarks scheduled for release on January 26, 2026. The full error correction suite is expected in late 2026.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Tool/Platform</th>
+          <th>Capability</th>
+          <th>Key Metric</th>
+          <th>Availability</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>PropMolFlow</strong></td>
+          <td>Property-guided molecular design</td>
+          <td>10x faster, 90% validity</td>
+          <td>Research (Nature)</td>
+      </tr>
+      <tr>
+          <td><strong>MOSAIC</strong></td>
+          <td>AI-assisted synthesis protocols</td>
+          <td>2,498 experts, 35 compounds</td>
+          <td>Open-source</td>
+      </tr>
+      <tr>
+          <td><strong>LLM Agents</strong></td>
+          <td>Autonomous quantum simulations</td>
+          <td>90% accuracy</td>
+          <td>Research</td>
+      </tr>
+      <tr>
+          <td><strong>Microsoft QDK</strong></td>
+          <td>Quantum chemistry &amp; error correction</td>
+          <td>Gate count: 1000s → single digits</td>
+          <td>Open-source</td>
+      </tr>
+      <tr>
+          <td><strong>Nvidia CUDA-Q</strong></td>
+          <td>Quantum-classical workflows</td>
+          <td>656x speedup</td>
+          <td>Late 2026</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="experimental-breakthroughs-new-pathways-to-quantum-materials">Experimental Breakthroughs: New Pathways to Quantum Materials</h2>
+<p>While AI accelerates computation, experimental advances are making quantum materials engineering more practical. This week brought four fundamental breakthroughs that expand what&rsquo;s possible.</p>
+<h3 id="a-shortcut-to-quantum-materials">A Shortcut to Quantum Materials</h3>
+<p><strong>Floquet engineering</strong> - using periodic light pulses to temporarily modify material properties - has been limited by a harsh reality: it requires intense laser light that damages samples and takes tens of hours to collect data. Researchers from the <strong>Okinawa Institute of Science and Technology</strong> and <strong>Stanford University</strong> discovered a shortcut.</p>
+<p>Instead of using light directly, they use <strong>excitons</strong> - bound electron-hole pairs that form when light is absorbed. Excitons couple more strongly with materials, requiring <a href="https://www.sciencedaily.com/releases/2026/01/260121233404.htm" target="_blank" rel="noopener noreferrer">more than an order of magnitude less light intensity</a>
+ than optical methods. The practical impact is immediate: data acquisition time dropped from <a href="https://www.sciencedaily.com/releases/2026/01/260121233404.htm" target="_blank" rel="noopener noreferrer">tens of hours to around two hours</a>
+.</p>
+<p>&ldquo;This opens a new pathway for designing quantum materials on demand,&rdquo; explains <strong>Keshav Dani</strong>, professor at <strong>OIST</strong>. The reduced energy requirements mean less sample damage, faster experiments, and access to material states that were previously too fragile to study.</p>
+<h3 id="quantum-superposition-at-unprecedented-scale">Quantum Superposition at Unprecedented Scale</h3>
+<p>How large can an object be and still exhibit quantum behavior? A team pushed that boundary dramatically, demonstrating quantum interference with sodium nanoparticles containing <a href="https://www.nature.com/articles/s41586-025-09917-9" target="_blank" rel="noopener noreferrer">over <strong>7,000 atoms</strong></a>
+ and masses exceeding <strong>170,000 Da</strong>.</p>
+<p>Using a Talbot-Lau matter-wave interferometer, the researchers showed these massive particles in quantum superposition - simultaneously taking multiple paths through space. The experiment achieved a <a href="https://www.nature.com/articles/s41586-025-09917-9" target="_blank" rel="noopener noreferrer">macroscopicity measure of μ=15.5</a>
+, surpassing previous experiments by an order of magnitude. Published in <strong>Nature</strong>, the work provides the most stringent test to date of theories proposing modifications to quantum mechanics at macroscopic scales - and standard quantum theory passed with flying colors.</p>
+<p>The de Broglie wavelength of these nanoparticles? Just 10-22 femtometers - far smaller than an atomic nucleus, yet still producing measurable interference patterns. It&rsquo;s a testament to both quantum mechanics&rsquo; reach and experimental precision.</p>
+<h3 id="spin-size-flips-quantum-behavior">Spin Size Flips Quantum Behavior</h3>
+<p>Not all quantum boundaries are about size. A team from <strong>Osaka Metropolitan University</strong> discovered that the <strong>Kondo effect</strong> - a key quantum phenomenon where magnetic impurities interact with conduction electrons - behaves fundamentally differently depending on quantum spin size.</p>
+<p>Using a custom-designed organic-inorganic hybrid material, they showed that <a href="https://www.eurekalert.org/news-releases/1112581" target="_blank" rel="noopener noreferrer">spin-1/2 systems form non-magnetic singlets, while spin-1 systems promote magnetic order</a>
+. This overturns the traditional view that the Kondo effect always suppresses magnetism. The discovery <a href="https://www.eurekalert.org/news-releases/1112581" target="_blank" rel="noopener noreferrer">solves a 50-year experimental challenge</a>
+ in realizing the Kondo necklace model, first proposed in 1977.</p>
+<p>The practical implication: spin size is a design knob for quantum materials. Want to suppress magnetism? Use spin-1/2. Want to enhance it? Use spin-1. It&rsquo;s a new principle for engineering quantum states in materials.</p>
+<h3 id="watching-electrons-break-bonds-in-real-time">Watching Electrons Break Bonds in Real Time</h3>
+<p>Finally, researchers from <strong>Shanghai Jiao Tong University</strong> achieved something chemists have long dreamed of: <a href="https://interestingengineering.com/science/capture-electrons-and-atoms-in-real-time" target="_blank" rel="noopener noreferrer">direct imaging of electrons in motion during chemical bond breaking</a>
+.</p>
+<p>Using ultrafast electron diffraction with charge pair distribution function analysis, they visualized electron and atomic nucleus dynamics as an ammonia molecule dissociated. Previous techniques could track nuclei or infer electron behavior, but this is the first direct observation of electronic activity during a chemical reaction.</p>
+<p>The technique opens a new window into quantum chemistry. Instead of inferring reaction mechanisms from before-and-after snapshots, researchers can now watch the quantum electronic dance that governs chemical transformations. It&rsquo;s a tool for testing quantum theory in real chemical systems and understanding energy transfer at the most fundamental level.</p>
+<h2 id="building-the-quantum-classical-bridge">Building the Quantum-Classical Bridge</h2>
+<p>The convergence of AI and quantum chemistry requires infrastructure that seamlessly integrates quantum processors with classical supercomputers. This week brought major announcements on that front.</p>
+<p><strong>Nvidia</strong> detailed its <strong>NVQLink</strong> interconnect and <strong>CUDA-Q</strong> software platform, designed to tightly couple quantum processing units with GPU-accelerated supercomputers. The performance gains are striking: in a quantum chemistry workflow, <a href="https://www.hpcwire.com/2026/01/21/how-nvidia-plans-to-usher-in-the-age-of-the-quantum-accelerated-supercomputers-with-nvqlink-and-cuda-q/" target="_blank" rel="noopener noreferrer">GPU post-processing enabled a <strong>656x</strong> speedup</a>
+ in time-to-solution. <a href="https://www.hpcwire.com/2026/01/21/how-nvidia-plans-to-usher-in-the-age-of-the-quantum-accelerated-supercomputers-with-nvqlink-and-cuda-q/" target="_blank" rel="noopener noreferrer">Dozens of quantum companies have signed up</a>
+ for NVQLink integration, with hardware shipping late 2026.</p>
+<p>The platform focuses on three initial applications: quantum error correction, AI-driven calibration, and hybrid quantum-classical algorithms. By handling the classical pre- and post-processing on GPUs while quantum processors tackle the quantum-native parts, the system plays to each architecture&rsquo;s strengths.</p>
+<p><strong>Microsoft&rsquo;s</strong> open-source QDK, mentioned earlier, complements this hardware push with software tools. The combination of accessible development environments and high-performance interconnects is creating an ecosystem where quantum chemistry applications can move from research code to production workflows.</p>
+<p>On the industry side, <strong>Quantumzyme Corp.</strong> <a href="https://www.marketscreener.com/news/quantumzyme-corp-announces-memorandum-of-understanding-with-predictive-research-inc-to-explore-ai-ce7e58dcd88af227" target="_blank" rel="noopener noreferrer">announced a partnership with Predictive Research Inc.</a>
+ to explore AI-enabled enzyme engineering and green chemistry. The collaboration combines Quantumzyme&rsquo;s computational enzyme design expertise with Predictive Research&rsquo;s AI and data analytics capabilities, targeting more sustainable industrial and pharmaceutical processes.</p>
+<h2 id="the-convergence-ahead">The Convergence Ahead</h2>
+<p>Connect the dots across this week&rsquo;s developments, and a clear picture emerges: we&rsquo;re entering a new era where quantum chemistry becomes a practical, AI-accelerated engineering discipline rather than a purely theoretical pursuit.</p>
+<p>AI is accelerating both the design side - <strong>PropMolFlow</strong> generating molecules 10x faster, <strong>MOSAIC</strong> coordinating thousands of synthesis experts - and the simulation side - LLM agents achieving 90% accuracy in autonomous quantum simulations, quantum machine learning moving into targeted drug discovery. Experimental advances are making quantum materials more accessible, from exciton-based Floquet engineering to real-time electron imaging. And infrastructure is being built to integrate quantum and classical computing at scale.</p>
+<p>The convergence of these trends suggests a question worth watching: when will the first AI-designed, quantum-simulated molecule enter clinical trials? With the tools released this week, that timeline just got shorter.</p>
+<p>The barriers to entry are falling. Open-source platforms like <strong>MOSAIC</strong> and <strong>Microsoft&rsquo;s QDK</strong> mean researchers don&rsquo;t need proprietary software or years of specialist training. LLM agents can handle the technical complexity of tensor network simulations. And hardware partnerships like <strong>Nvidia&rsquo;s NVQLink</strong> are creating the infrastructure to run these workflows at scale.</p>
+<p>What was once the domain of a few elite research groups is becoming accessible to anyone with domain knowledge and computational resources. That democratization, more than any single technical breakthrough, may be this week&rsquo;s most significant development.</p>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+  "events": [
+    {"date": "Jan 16", "title": "Quantumzyme announces AI partnership for enzyme engineering", "description": "Partnership with Predictive Research Inc. to explore AI-enabled applications in green chemistry and biocatalysis"},
+    {"date": "Jan 19", "title": "LLMs achieve 90% accuracy in autonomous quantum simulations", "description": "Multi-agent architecture with 43,000 tokens of documentation enables tensor network simulations without specialist training"},
+    {"date": "Jan 19", "title": "MOSAIC platform demonstrates 2,498 AI experts for synthesis", "description": "Open-source collective intelligence framework synthesizes 35 previously unreported compounds"},
+    {"date": "Jan 21", "title": "PropMolFlow achieves 10x speedup in molecular design", "description": "Flow matching method generates property-targeted molecules in 100 steps vs 1000, published in Nature"},
+    {"date": "Jan 21", "title": "7,000-atom nanoparticles show quantum interference (Nature)", "description": "Matter-wave interferometry achieves macroscopicity measure μ=15.5, surpassing previous experiments by order of magnitude"},
+    {"date": "Jan 21", "title": "Nvidia details NVQLink for quantum-classical integration", "description": "656x speedup in quantum chemistry workflows, dozens of companies signed up, shipping late 2026"},
+    {"date": "Jan 22", "title": "OIST discovers exciton shortcut to quantum materials", "description": "Floquet engineering with 10x less light intensity, data acquisition time reduced from tens of hours to two"},
+    {"date": "Jan 22", "title": "Microsoft releases open-source Quantum Development Kit", "description": "QDK reduces molecular modeling gate counts from thousands to single digits, includes AI-assisted tools"}
+  ]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
