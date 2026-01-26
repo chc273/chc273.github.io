@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Topological Materials on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/topological-materials/</link>
+    <description>Recent content in Topological Materials on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/topological-materials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft&#39;s MatterGen: AI That Designs Materials on Demand</title>
+      <link>https://cchen.me/newsletter/2025-01-31-materials-discovery/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-01-31-materials-discovery/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;24 articles&lt;/strong&gt; published between &lt;strong&gt;January 2-31, 2025&lt;/strong&gt;, surveying the latest developments in AI-driven materials discovery. &lt;strong&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/research/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Microsoft Research&lt;/a&gt;
+&lt;/strong&gt; has introduced MatterGen, a generative AI system that designs novel materials with specific properties. In a proof-of-concept demonstration, an AI-designed material was successfully synthesized in the lab, validating a new approach that could accelerate materials discovery for batteries, solar cells, and carbon capture.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Stability Improvement&#34;, &#34;value&#34;: &#34;2x&#34;, &#34;context&#34;: &#34;MatterGen vs. previous AI&#34;},
+{&#34;label&#34;: &#34;Energy Minimization&#34;, &#34;value&#34;: &#34;10x&#34;, &#34;context&#34;: &#34;Closer to local minimum&#34;},
+{&#34;label&#34;: &#34;Property Accuracy&#34;, &#34;value&#34;: &#34;20%&#34;, &#34;context&#34;: &#34;Deviation from target&#34;},
+{&#34;label&#34;: &#34;Superconductor Precision&#34;, &#34;value&#34;: &#34;5x&#34;, &#34;context&#34;: &#34;Better than random&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;the-big-story&#34;&gt;The Big Story&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/research/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Microsoft Research&lt;/a&gt;
+&lt;/strong&gt; has introduced MatterGen, a diffusion-based generative model that designs inorganic materials with specific targeted properties. The system, &lt;a href=&#34;https://www.nature.com/articles/s41586-025-08628-5&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;published in Nature on January 16&lt;/a&gt;
+, represents a shift from traditional computational screening toward direct generative design.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>24 articles</strong> published between <strong>January 2-31, 2025</strong>, surveying the latest developments in AI-driven materials discovery. <strong><a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer">Microsoft Research</a>
+</strong> has introduced MatterGen, a generative AI system that designs novel materials with specific properties. In a proof-of-concept demonstration, an AI-designed material was successfully synthesized in the lab, validating a new approach that could accelerate materials discovery for batteries, solar cells, and carbon capture.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Stability Improvement", "value": "2x", "context": "MatterGen vs. previous AI"},
+{"label": "Energy Minimization", "value": "10x", "context": "Closer to local minimum"},
+{"label": "Property Accuracy", "value": "20%", "context": "Deviation from target"},
+{"label": "Superconductor Precision", "value": "5x", "context": "Better than random"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-big-story">The Big Story</h2>
+<p><strong><a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer">Microsoft Research</a>
+</strong> has introduced MatterGen, a diffusion-based generative model that designs inorganic materials with specific targeted properties. The system, <a href="https://www.nature.com/articles/s41586-025-08628-5" target="_blank" rel="noopener noreferrer">published in Nature on January 16</a>
+, represents a shift from traditional computational screening toward direct generative design.</p>
+<p>MatterGen uses diffusion models—similar to those behind image generators like DALL-E—to create 3D crystal structures atom by atom. The model was trained on <strong>608,000 stable materials</strong> from the Materials Project and Alexandria databases. Unlike previous approaches that screen existing candidates, MatterGen generates novel materials from scratch based on design prompts specifying chemical, mechanical, electronic, or magnetic properties.</p>
+<p>The system demonstrates significant improvements over baselines: it is <strong>more than 2x more likely</strong> to generate stable, novel materials compared to previous AI approaches, and its structures are <strong>10x closer</strong> to the local energy minimum than baseline models. This energy minimization is critical because materials closer to their energy minimum are more likely to be synthesizable and stable.</p>
+<h3 id="proof-of-concept-lab-validation">Proof of Concept: Lab Validation</h3>
+<p>What distinguishes MatterGen from theoretical exercises is experimental validation. Researchers at the <a href="https://www.venturebeat.com/ai/microsoft-mattergen-ai-system-generates-materials-that-could-change-industries-forever/" target="_blank" rel="noopener noreferrer">Shenzhen Institutes of Advanced Technology</a>
+ successfully synthesized TaCr2O6, a material designed by the AI. The target specification was a bulk modulus of <strong>200 GPa</strong>. The synthesized material measured <strong>169 GPa</strong>, within <strong>20%</strong> of the target value—a strong validation that the model&rsquo;s predictions translate to real-world materials.</p>
+<p>MatterGen is part of Microsoft&rsquo;s broader <a href="https://www.microsoft.com/en-us/research/story/ai-meets-materials-discovery/" target="_blank" rel="noopener noreferrer">AI for Science initiative</a>
+, which also includes MatterSim, an AI emulator for materials simulation. Microsoft reports that MatterSim has been downloaded <strong>tens of thousands of times</strong> since its open-source release. The company projects that machine-learning methods could replace <strong>80-90% of quantum-mechanical calculations</strong> within one to two years.</p>
+<p>The system is <a href="https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/" target="_blank" rel="noopener noreferrer">open-sourced and available on GitHub</a>
+, enabling researchers to fine-tune the model for specific property constraints through adapter modules and classifier-free guidance.</p>
+<h2 id="ai-accelerates-discovery-across-the-board">AI Accelerates Discovery Across the Board</h2>
+<p>Microsoft&rsquo;s work is part of a broader pattern: AI methods are accelerating materials discovery across multiple research domains simultaneously.</p>
+<h3 id="superconductor-discovery">Superconductor Discovery</h3>
+<p>Researchers have developed <a href="https://www.nature.com/articles/s41524-024-01475-4" target="_blank" rel="noopener noreferrer">BETE-NET (Bootstrapped Ensemble of Tempered Equivariant graph neural NETworks)</a>
+, a deep learning model that predicts the electron-phonon spectral function—a key component for identifying superconducting materials. The model, trained on data from <strong>818 dynamically stable materials</strong>, achieves an average precision <strong>nearly 5x higher</strong> than random screening for discovering high-temperature superconductors.</p>
+<p>In a screening exercise, BETE-NET identified <strong>6 experimentally-known superconductors</strong> and suggested <strong>82 promising candidate materials</strong>. The model uses 100 neural networks in a bootstrapped ensemble to overcome the limited data problem in superconductor research, achieving a Mean Absolute Error of <strong>2.1 K</strong> for critical temperature prediction when domain knowledge is incorporated.</p>
+<h3 id="topological-materials">Topological Materials</h3>
+<p>A team using the <a href="https://www.nature.com/articles/s41535-025-00731-0" target="_blank" rel="noopener noreferrer">CTMT (Crystal Topological Materials Transformer) inverse design method</a>
+ has discovered <strong>20 new topological materials</strong> using deep generative models. The process generated <strong>10,000 candidate structures</strong> via diffusion models, which were filtered through multiple validation stages:</p>
+<ul>
+<li>4,715 candidates passed novelty and legitimacy checks</li>
+<li>104 candidates passed the Topogivity filter</li>
+<li>57 candidates remained after density functional theory stability verification</li>
+<li><strong>20 stable materials</strong> were ultimately identified: 4 topological insulators and 16 topological semimetals, including challenging chiral Kramers-Weyl fermion semimetals</li>
+</ul>
+<h3 id="property-prediction-frameworks">Property Prediction Frameworks</h3>
+<p>Multiple groups reported advances in property prediction frameworks:</p>
+<ul>
+<li>
+<p>A <a href="https://www.nature.com/articles/s41524-024-01472-7" target="_blank" rel="noopener noreferrer"><strong>hybrid Transformer-Graph framework</strong></a>
+ leverages four-body interactions and transfer learning to accelerate materials property prediction. The model outperforms state-of-the-art approaches on <strong>8 regression tasks</strong> for energy-related and mechanical properties, addressing data scarcity challenges where only <strong>4% of Materials Project entries</strong> have elastic tensors and <strong>12% have piezoelectric tensors</strong>.</p>
+</li>
+<li>
+<p>The <a href="https://www.nature.com/articles/s41467-024-55525-y" target="_blank" rel="noopener noreferrer"><strong>ECSG (Electron Configuration models with Stacked Generalization)</strong> ensemble</a>
+ predicts thermodynamic stability of inorganic compounds with an AUC score of <strong>0.988</strong>. It requires only <strong>one-seventh</strong> the data of existing models to achieve comparable performance, enabling efficient exploration of new 2D wide bandgap semiconductors and double perovskite oxides.</p>
+</li>
+<li>
+<p><strong><a href="https://indiaai.gov.in/article/ai-revolutionizing-material-discovery-indian-scientists-forecast-new-properties" target="_blank" rel="noopener noreferrer">Indian Institute of Science</a>
+</strong> researchers, in collaboration with University College London, developed a Multi-Property Pre-Training framework using Graph Neural Networks to predict material properties even with scarce data. The model successfully predicted band gaps for new materials, supporting semiconductor and energy storage applications.</p>
+</li>
+<li>
+<p>Researchers in China built a <a href="https://www.eenewseurope.com/en/machine-learning-for-thermoelectric-material-discovery/" target="_blank" rel="noopener noreferrer"><strong>machine learning framework for ionic thermoelectric materials</strong></a>
+. Trained on just <strong>51 samples</strong>, the model predicted a promising ionogel with a Seebeck coefficient of <strong>41.39 mV/K</strong>—significantly higher than the typical 10 mV/K for such materials. The prediction was experimentally validated with a coefficient of determination (R²) of <strong>0.98</strong>.</p>
+</li>
+<li>
+<p><strong><a href="https://news.mit.edu/2025/new-computational-chemistry-techniques-accelerate-prediction-molecules-materials-0114" target="_blank" rel="noopener noreferrer">MIT researchers</a>
+</strong> combined CCSD(T) coupled-cluster theory with a multi-task graph neural network called MEHnet. The approach accelerates molecular property prediction with CCSD(T)-level accuracy, enabling analysis of thousands of atoms. It achieved a Mean Absolute Error of <strong>0.086 eV per atom</strong> on the QM9 benchmark and <strong>1.21 kcal/mol</strong> for molecular energies, outperforming DFT-based methods.</p>
+</li>
+</ul>
+<p><strong><a href="https://www.anl.gov/partnerships/materials-multiscale-accelerated-research-for-innovative-energy-and-materials-through-ai-largescale-0" target="_blank" rel="noopener noreferrer">Argonne National Laboratory</a>
+</strong> researchers demonstrated a generative AI diffusion model for designing metal-organic frameworks (MOFs) for carbon capture. The system generated <strong>120,000 MOF candidates</strong> in <strong>33 minutes</strong>. After neural network screening and computational analysis, <strong>6 AI-generated MOFs</strong> were identified with CO2 capacity in the top 5% of the hMOF database—all within <strong>5 hours</strong> total. In separate work, <a href="https://www.technologynetworks.com/applied-sciences/articles/how-is-ai-accelerating-the-discovery-of-new-materials-394927" target="_blank" rel="noopener noreferrer">Stanford University</a>
+ applied machine learning to discover better battery electrolytes, achieving <strong>2.7x higher</strong> likelihood than random search to identify fast lithium ion conductors.</p>
+<h2 id="new-materials-with-remarkable-properties">New Materials with Remarkable Properties</h2>
+<p>Beyond the AI methodologies, researchers reported specific material discoveries with unusual properties.</p>
+<h3 id="optical-computing-advance">Optical Computing Advance</h3>
+<p>Scientists at <strong><a href="https://phys.org/news/2025-01-discovery-bistable-nanocrystals-faster-energy.html" target="_blank" rel="noopener noreferrer">Oregon State University</a>
+</strong>, in collaboration with Lawrence Berkeley National Laboratory, Columbia University, and the Autonomous University of Madrid, discovered luminescent nanocrystals with intrinsic optical bistability. The materials can switch abruptly between bright and dark states under the same laser conditions—behavior likened to a bicycle requiring a hard push to start but less effort to keep moving.</p>
+<p>The nanocrystals, typically ranging from <strong>1e-9 to 1e-11 meters</strong> in size, could enable photonic integrated circuits that outperform current electronic systems in speed and energy efficiency. Potential applications include AI processing acceleration, data centers, telecommunications, and medical imaging.</p>
+<h3 id="new-states-of-matter">New States of Matter</h3>
+<p><strong><a href="https://interestingengineering.com/innovation/caltech-poly-catenated-materials-discovery" target="_blank" rel="noopener noreferrer">Caltech</a>
+</strong> researchers, collaborating with Princeton University, discovered a new class of matter called polycatenated architected materials (PAMs) that transition between fluid-like and solid-like behavior depending on applied stress. The materials were designed via computer modeling and fabricated using advanced 3D printing. The 5-centimeter prototypes exhibit unique energy-absorption properties that could enable applications in protective gear, biomedical devices, and robotics.</p>
+<p>The discovery bridges the gap between granular and elastic materials, representing a new frontier in material classification. Professor Chiara Daraio&rsquo;s team used acrylic polymers in their prototypes, which were subjected to rheology tests to characterize the unusual behavior.</p>
+<h3 id="superstructures--induced-properties">Superstructures &amp; Induced Properties</h3>
+<p>Researchers using high-energy grazing-incidence x-ray diffraction discovered a <strong>giant superlattice structure</strong> in the infinite-layer nickelate PrNiO2+x upon thermal annealing. The structure exhibits a rare period-six symmetry in-plane and a period-four symmetry out-of-plane, likely due to ordering of diffusive oxygen.</p>
+<p>Key findings from the <a href="https://www.nature.com/articles/s43246-024-00729-4" target="_blank" rel="noopener noreferrer">nickelate research</a>
+:</p>
+<ul>
+<li>Superlattice measurements visible at <strong>386 K</strong></li>
+<li>Peaks suppressed above <strong>600 K</strong></li>
+<li>Peaks vanish at <strong>800 K</strong>, returning to perovskite structure</li>
+<li>Ordered state can be quenched from <strong>523 K</strong> to low temperatures</li>
+</ul>
+<p>This discovery provides a controlled pathway for novel nickelate chemistry and shifts focus toward oxygen vacancy ordering in materials relevant to unconventional superconductivity.</p>
+<p>At <strong><a href="https://www.psu.edu/news/earth-and-mineral-sciences/story/proximity-effect-method-allows-advanced-materials-gain-new" target="_blank" rel="noopener noreferrer">Penn State University</a>
+</strong>, researchers discovered that stacking a non-ferroelectric material with a ferroelectric material can induce ferroelectricity through proximity ferroelectricity. The method requires as little as <strong>3% volume percentage</strong> of ferroelectric layer in the stack to induce the effect. This enables creation of ferroelectric materials without chemical modifications, preserving desirable properties for applications in next-generation electronics, optoelectronics, and quantum computing.</p>
+<p>The research team, led by professors Jon-Paul Maria and Susan Trolier-McKinstry, used RF magnetron sputtering to fabricate magnesium-substituted zinc oxide thin films. The work was conducted in collaboration with the University of Kiel, Carnegie Mellon University, the University of Pennsylvania, and Oak Ridge National Laboratory.</p>
+<p>Beyond these fundamental discoveries, materials science is also driving environmental solutions through sustainable innovations.</p>
+<h2 id="sustainability-breakthroughs">Sustainability Breakthroughs</h2>
+<p>Materials science is enabling green technology through several breakthroughs focused on environmental impact.</p>
+<h3 id="carbon-nanotube-recycling">Carbon Nanotube Recycling</h3>
+<p><strong><a href="https://news.rice.edu/news/2025/rice-researchers-unveil-surprising-breakthrough-carbon-nanotube-recycling-paving-way" target="_blank" rel="noopener noreferrer">Rice University</a>
+</strong> researchers have discovered that carbon nanotube (CNT) fibers can be fully recycled with <strong>no loss of structure or properties</strong>, retaining <strong>100% of their original performance</strong>. This breakthrough offers a sustainable alternative to traditional materials like metals and carbon fibers, which are difficult or impossible to recycle effectively.</p>
+<p>The efficient recycling process allows fibers from different sources to be combined, potentially reducing waste and emissions in industries like aerospace and automotive. The research was led by Professor Matteo Pasquali, director of Carbon Hub, with support from the Department of Energy, Air Force Office of Scientific Research, Robert A. Welch Foundation, and National Science Foundation.</p>
+<p>The discovery positions carbon nanotube fibers as a fully recyclable, high-performance material, solving a major environmental challenge in materials manufacturing and enabling a circular economy.</p>
+<h3 id="waste-to-battery-innovation">Waste-to-Battery Innovation</h3>
+<p><strong><a href="https://news.northwestern.edu/stories/2025/01/trash-to-treasure-industrial-waste-battery" target="_blank" rel="noopener noreferrer">Northwestern University</a>
+</strong> researchers have transformed an industrial waste molecule—triphenylphosphine oxide (TPPO)—into an efficient agent for redox flow batteries. This is the first time a waste-derived molecule has been used to power such a battery.</p>
+<p>The prototype showed high stability, losing <strong>negligible capacity over 350 charge-discharge cycles</strong>. The redox flow battery market is projected to reach <strong>700 million euros</strong> by 2030, with <strong>15% expected growth</strong> between 2023 and 2030. The work offers a potential sustainable alternative to metal-based batteries for large-scale energy storage, reducing reliance on mined metals.</p>
+<p>Led by Professor Christian Malapit and Ph.D. candidate Emily Mahoney, the research demonstrates a sustainable pathway to create high-performance batteries from industrial waste through a one-pot reaction.</p>
+<h3 id="integrated-ai-and-exascale-computing">Integrated AI and Exascale Computing</h3>
+<p><strong><a href="https://www.anl.gov/partnerships/materials-multiscale-accelerated-research-for-innovative-energy-and-materials-through-ai-largescale-0" target="_blank" rel="noopener noreferrer">Argonne National Laboratory</a>
+</strong> is leading the MATERIALS project, which integrates generative AI, exascale computing, and experimental facilities to accelerate the discovery of new materials for energy storage and conversion. The project uses supercomputers like Aurora and Frontier for simulations and leverages the Materials Engineering Research Facility and Advanced Photon Source for real-world testing and characterization.</p>
+<p>This integrated approach aims to rapidly identify and scale viable energy materials to position the U.S. for global energy leadership, combining computational predictions with experimental validation.</p>
+<h2 id="ai-tools-accelerating-materials-discovery">AI Tools Accelerating Materials Discovery</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Developer</th>
+          <th>What It Does</th>
+          <th>Key Result</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>MatterGen</strong></td>
+          <td>Microsoft Research</td>
+          <td>Generates stable materials with specific properties via diffusion models</td>
+          <td>2x better than baselines; TaCr2O6 synthesized</td>
+      </tr>
+      <tr>
+          <td><strong>BETE-NET</strong></td>
+          <td>Researchers</td>
+          <td>Predicts electron-phonon spectral function for superconductors</td>
+          <td>5x better precision; 82 candidates identified</td>
+      </tr>
+      <tr>
+          <td><strong>CTMT</strong></td>
+          <td>Researchers</td>
+          <td>Discovers topological materials using generative models</td>
+          <td>4 insulators, 16 semimetals discovered</td>
+      </tr>
+      <tr>
+          <td><strong>Hybrid Transformer-Graph</strong></td>
+          <td>Researchers</td>
+          <td>Predicts materials properties via four-body interactions</td>
+          <td>Outperforms SOTA on 8 tasks</td>
+      </tr>
+      <tr>
+          <td><strong>ECSG</strong></td>
+          <td>Researchers</td>
+          <td>Predicts thermodynamic stability via ensemble ML</td>
+          <td>0.988 AUC; 1/7 data required vs. existing models</td>
+      </tr>
+      <tr>
+          <td><strong>MEHnet</strong></td>
+          <td>MIT</td>
+          <td>CCSD(T)-level accuracy for molecular properties</td>
+          <td>0.086 eV/atom MAE on QM9 benchmark</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-bigger-picture">The Bigger Picture</h2>
+<p>MatterGen represents a paradigm shift from trial-and-error materials science to generative design. The proof-of-concept synthesis of TaCr2O6 demonstrates these aren&rsquo;t just theoretical exercises—AI-designed materials are becoming reality in the laboratory.</p>
+<p>The convergence of multiple research groups on AI/ML methods indicates this is now the mainstream approach for materials discovery. From superconductors to topological materials to battery electrolytes, researchers are using similar toolkits: diffusion models, graph neural networks, and ensemble methods.</p>
+<p>The sustainability focus—recyclable carbon nanotubes and waste-derived batteries—shows the field aligning with climate priorities. However, scaling remains a challenge. Lab demonstrations must translate to industrial-scale processes, and computational predictions require experimental validation.</p>
+<p>The coming year will reveal whether these lab successes translate to practical applications. What&rsquo;s clear is that AI has fundamentally changed how materials are discovered: no longer screening candidates, but generating them on demand.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

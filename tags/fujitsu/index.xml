@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fujitsu on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/fujitsu/</link>
+    <description>Recent content in Fujitsu on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/fujitsu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantum Computing in August: Error Correction Breakthroughs, 10,000-Qubit Ambitions, and Growing Scientific Debate</title>
+      <link>https://cchen.me/newsletter/2025-08-31-quantum-computing/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-08-31-quantum-computing/</guid>
+      <description>&lt;p&gt;IBM unveiled a decoder that achieves &amp;ldquo;orders of magnitude&amp;rdquo; better error correction, Fujitsu launched a bold 10,000-qubit roadmap targeting 2030, and a corrected paper rekindled controversy over Microsoft&amp;rsquo;s $1 billion Majorana qubit program. Meanwhile, the industry accelerated toward practical quantum computing with new partnerships, product launches, and enterprise adoption.&lt;/p&gt;
+&lt;p&gt;This comprehensive review covers &lt;strong&gt;165 articles&lt;/strong&gt; published during &lt;strong&gt;August 2025&lt;/strong&gt;, surveying the latest developments across error correction breakthroughs, scaling roadmaps, scientific debate, research advances, product launches, and industry maturation.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>IBM unveiled a decoder that achieves &ldquo;orders of magnitude&rdquo; better error correction, Fujitsu launched a bold 10,000-qubit roadmap targeting 2030, and a corrected paper rekindled controversy over Microsoft&rsquo;s $1 billion Majorana qubit program. Meanwhile, the industry accelerated toward practical quantum computing with new partnerships, product launches, and enterprise adoption.</p>
+<p>This comprehensive review covers <strong>165 articles</strong> published during <strong>August 2025</strong>, surveying the latest developments across error correction breakthroughs, scaling roadmaps, scientific debate, research advances, product launches, and industry maturation.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "IBM Relay-BP Improvement", "value": "Orders of magnitude", "context": "Better logical error rates vs. prior decoders"},
+{"label": "Fujitsu's Target", "value": "10,000+ qubits", "context": "Superconducting system by FY2030"},
+{"label": "IBM Market Share", "value": "47%", "context": "Of disclosed quantum deal value (2020-2025)"},
+{"label": "Funding This Month", "value": "$36M+", "context": "Major grants and initiatives announced"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-error-correction-breakthrough">The Error Correction Breakthrough</h2>
+<p>The single most significant technical development of August came from <strong>IBM</strong>, which <a href="https://www.ibm.com/quantum/blog/relay-bp-error-correction-decoder" target="_blank" rel="noopener noreferrer">unveiled Relay-BP</a>
+, a new decoder for quantum Low-Density Parity Check (qLDPC) codes that achieves <a href="https://www.extremetech.com/science/ibms-new-decoder-could-kickstart-real-world-quantum-computing" target="_blank" rel="noopener noreferrer">logical error rates &ldquo;orders of magnitude&rdquo; better</a>
+ than previous state-of-the-art decoders. The algorithm delivers a <a href="https://www.iotworldtoday.com/quantum/ibm-cracks-key-puzzle-in-fault-tolerant-quantum-computing" target="_blank" rel="noopener noreferrer">10x improvement in accuracy</a>
+ compared to the BP+OSD decoder while being flexible and compact enough for <a href="https://www.ibm.com/quantum/blog/relay-bp-error-correction-decoder" target="_blank" rel="noopener noreferrer">real-time FPGA implementation</a>
+.</p>
+<p>Relay-BP addresses the core challenge that makes fault-tolerant quantum computing so difficult: qubits are fragile, and error correction requires decoding in real time as the quantum computer runs. Previous decoders either lacked accuracy or were too computationally expensive to implement in hardware. IBM&rsquo;s solution uses a message-passing algorithm that can be implemented on FPGAs, bringing practical decoding closer to reality.</p>
+<p>The breakthrough could <a href="https://www.iotworldtoday.com/quantum/ibm-cracks-key-puzzle-in-fault-tolerant-quantum-computing" target="_blank" rel="noopener noreferrer">accelerate the timeline for practical quantum computing by a decade</a>
+ by reducing the resources required for error correction by <a href="https://www.iotworldtoday.com/quantum/ibm-cracks-key-puzzle-in-fault-tolerant-quantum-computing" target="_blank" rel="noopener noreferrer">90%</a>
+. IBM researchers <a href="https://www.ibm.com/quantum/blog/relay-bp-error-correction-decoder" target="_blank" rel="noopener noreferrer">published a preprint detailing Relay-BP on arXiv in July</a>
+, and testing on hardware with the Kookaburra system could begin as early as 2026.</p>
+<p>August saw multiple complementary advances in error correction. <strong>Alice &amp; Bob</strong>, working with researchers at Inria, demonstrated an &ldquo;unfolded distillation&rdquo; protocol that dramatically reduces the resources needed to prepare magic states—essential components for fault-tolerant universal quantum computation. Their <a href="https://www.eenewseurope.com/en/study-boosts-quantum-computing-magic-state-efficiency/" target="_blank" rel="noopener noreferrer">new &ldquo;Heart Code&rdquo; requires 8.7x fewer qubits</a>
+ than leading approaches and achieves a <a href="https://phys.org/news/2025-08-protocol-enables-magic-states-fault.html" target="_blank" rel="noopener noreferrer">logical error rate of 10⁻⁷</a>
+ in simulation. The method completes in <a href="https://phys.org/news/2025-08-protocol-enables-magic-states-fault.html" target="_blank" rel="noopener noreferrer">5.5 rounds of error correction</a>
+—using an <a href="https://phys.org/news/2025-08-protocol-enables-magic-states-fault.html" target="_blank" rel="noopener noreferrer">order of magnitude fewer qubit cycles</a>
+ than state-of-the-art schemes.</p>
+<p>A <a href="https://www.science.org/doi/10.1126/sciadv.adv2590" target="_blank" rel="noopener noreferrer">study published in Science Advances on August 13</a>
+ proposed a measurement-free approach to scalable, fault-tolerant universal quantum computing. By eliminating the need for measurements during computation, this method could reduce the complexity and overhead of quantum error correction.</p>
+<p>These advances collectively address the biggest bottleneck in quantum computing: error correction remains the primary obstacle between today&rsquo;s noisy intermediate-scale quantum (NISQ) devices and the fault-tolerant systems needed for practical advantage. While significant engineering challenges remain, August provided multiple credible paths forward.</p>
+
+
+
+
+
+
+<div id="error-correction-comparison" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "Error Correction Advances in August 2025",
+"categories": ["Relay-BP (IBM)", "Unfolded Distillation (Alice & Bob)", "GKP Logic Gate (Sydney)", "Noisy Link Tolerance (UC Riverside)"],
+"series": [
+{"name": "Improvement Factor", "data": [10, 8.7, 1, 10]}
+],
+"yAxisLabel": "Improvement Multiplier"
+}
+;
+    const type = "bar";
+    const containerId = "error-correction-comparison";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-race-to-scale-fujitsus-10000-qubit-target">The Race to Scale: Fujitsu&rsquo;s 10,000-Qubit Target</h2>
+<p>On August 1, <strong>Fujitsu</strong> <a href="https://global.fujitsu/en-global/pr/news/2025/08/01-01-en" target="_blank" rel="noopener noreferrer">announced a five-year initiative</a>
+ to develop a superconducting quantum computer with <a href="https://global.fujitsu/en-global/pr/news/2025/08/01-01-en" target="_blank" rel="noopener noreferrer">10,000+ physical qubits by fiscal 2030</a>
+, targeting <a href="https://global.fujitsu/en-global/pr/news/2025/08/01-01-en" target="_blank" rel="noopener noreferrer">250 logical qubits</a>
+ using the company&rsquo;s STAR architecture. This represents one of the most ambitious scaling roadmaps in the industry, backed by Japan&rsquo;s NEDO and involving collaboration with Osaka University, AIST, and RIKEN.</p>
+<p>The STAR (Space-Time efficient Analog Rotation) architecture, <a href="https://www.techzine.eu/news/infrastructure/133866/fujitsu-is-developing-a-10000-qubit-quantum-computer-for-2030/" target="_blank" rel="noopener noreferrer">unveiled in August 2024</a>
+, is designed as an early fault-tolerant system. Fujitsu&rsquo;s roadmap extends beyond the 2030 target: the company aims for <a href="https://global.fujitsu/en-global/pr/news/2025/08/01-01-en" target="_blank" rel="noopener noreferrer">1,000 logical qubits by fiscal 2035</a>
+ and has an ultimate goal of a <a href="https://global.fujitsu/en-global/pr/news/2025/08/01-01-en" target="_blank" rel="noopener noreferrer">fully fault-tolerant system with 1 million qubits</a>
+. The company notes that <a href="https://global.fujitsu/en-global/pr/news/2025/08/01-01-en" target="_blank" rel="noopener noreferrer">60,000 qubits</a>
+ using STAR architecture would be sufficient to outperform conventional computers.</p>
+<p>Fujitsu has a track record of delivering on its qubit targets: a <a href="https://global.fujitsu/en-global/pr/news/2025/08/01-01-en" target="_blank" rel="noopener noreferrer">64-qubit system was unveiled in October 2023</a>
+, and a <a href="https://global.fujitsu/en-global/pr/news/2025/08/01-01-en" target="_blank" rel="noopener noreferrer">256-qubit &ldquo;world-leading&rdquo; system was introduced in April 2025</a>
+. The new roadmap represents a dramatic acceleration from those milestones.</p>
+<p>Beyond Fujitsu&rsquo;s announcement, modular architectures and chip-linking technologies emerged as a key scaling strategy across multiple research groups. Researchers at the <a href="https://thequantuminsider.com/2025/08/26/linking-multiple-quantum-chips-to-build-larger-more-reliable-quantum-computers/" target="_blank" rel="noopener noreferrer">University of California, Riverside simulated scalable quantum architectures</a>
+ and found that <a href="https://thequantuminsider.com/2025/08/26/linking-multiple-quantum-chips-to-build-larger-more-reliable-quantum-computers/" target="_blank" rel="noopener noreferrer">imperfect links between quantum chips can still produce fault-tolerant systems</a>
+. Their work shows that <a href="https://thequantuminsider.com/2025/08/26/linking-multiple-quantum-chips-to-build-larger-more-reliable-quantum-computers/" target="_blank" rel="noopener noreferrer">links up to 10 times noisier than the chips themselves</a>
+ allow error correction to work, enabling larger quantum computers without requiring perfect hardware.</p>
+<p>Researchers from the <a href="https://www.eurekalert.org/news-releases/1095267" target="_blank" rel="noopener noreferrer">University of Illinois Urbana-Champaign demonstrated a modular architecture</a>
+ for superconducting quantum processors, achieving <a href="https://www.eurekalert.org/news-releases/1095267" target="_blank" rel="noopener noreferrer">approximately 99% SWAP gate fidelity</a>
+. The method uses detachable modules connected by superconducting coaxial cables, allowing for reconfiguration and scalability—<a href="https://www.eurekalert.org/news-releases/1095267" target="_blank" rel="noopener noreferrer">published in Nature Electronics</a>
+.</p>
+<p>A <a href="https://quantumzeitgeist.com/quantum-computers-new-links-boost-fidelity/" target="_blank" rel="noopener noreferrer">simulation framework from Universitat Politècnica de Catalunya and Tsinghua University</a>
+ extended the NetSquid simulator with realistic noise models for cavity-based networks, revealing critical trade-offs between speed, accuracy, and reliability in quantum state transfer between chips.</p>
+<p>Scaling is no longer just about qubit counts—architectures and interconnects matter equally. The modularity approach allows quantum computers to scale beyond what&rsquo;s possible on a single chip while maintaining error correction capabilities.</p>
+
+
+
+
+
+
+<div id="qubit-scaling" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "The Qubit Scaling Race",
+"categories": ["Fujitsu (2025)", "Fujitsu Target (2030)", "Rigetti Cepheus-1-36Q", "IQM Radiance at ORNL"],
+"series": [
+{"name": "Physical Qubits", "data": [256, 10000, 36, 20]}
+],
+"yAxisLabel": "Physical Qubits"
+}
+;
+    const type = "bar";
+    const containerId = "qubit-scaling";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="scientific-debate-microsofts-majorana-controversy-deepens">Scientific Debate: Microsoft&rsquo;s Majorana Controversy Deepens</h2>
+<p>On August 14, <strong>Science</strong> <a href="https://www.science.org/content/article/corrected-study-rekindles-debate-over-microsoft-s-quantum-computing-research" target="_blank" rel="noopener noreferrer">published a correction</a>
+ to a controversial 2020 paper co-authored by Microsoft-sponsored researchers who claimed to have conjured up Majorana particles in nanowires—a key step toward topological qubits. The correction, which follows recommendations from a <a href="https://www.science.org/content/article/corrected-study-rekindles-debate-over-microsoft-s-quantum-computing-research" target="_blank" rel="noopener noreferrer">University of Copenhagen investigation that found no scientific misconduct</a>
+, has <a href="https://www.science.org/content/article/corrected-study-rekindles-debate-over-microsoft-s-quantum-computing-research" target="_blank" rel="noopener noreferrer">rekindled debate</a>
+ rather than resolving it.</p>
+<p>Critics including Sergey Frolov of the University of Pittsburgh and Vincent Mourik of the Jülich Research Center continue to call for retraction, arguing that the paper cherry-picked data. The correction clarifies several terms and protocols and expands a catalog of experimental data, but the fundamental dispute remains: do the devices actually exhibit Majorana particles, or are researchers observing noise that mimics the expected signature?</p>
+<p>The stakes are high. <strong>Microsoft has invested more than $1 billion</strong> in Majorana research, betting that topological qubits will be more stable than other approaches. In February 2025, the company <a href="https://www.science.org/content/article/corrected-study-rekindles-debate-over-microsoft-s-quantum-computing-research" target="_blank" rel="noopener noreferrer">announced the Majorana 1 chip</a>
+ with <a href="https://www.science.org/content/article/corrected-study-rekindles-debate-over-microsoft-s-quantum-computing-research" target="_blank" rel="noopener noreferrer">8 Majorana particles acting as two qubits</a>
+. A July 2025 preprint described experiments claiming one qubit functioned correctly for <a href="https://www.science.org/content/article/corrected-study-rekindles-debate-over-microsoft-s-quantum-computing-research" target="_blank" rel="noopener noreferrer">a few fractions of a second</a>
+.</p>
+<p>Independent experts remain skeptical. Henry Legg of the University of St. Andrews noted that &ldquo;there&rsquo;s no evidence for even the basic physics existing in these devices.&rdquo; Jay Sau of the University of Maryland observed that &ldquo;there is definitely a toxic cloud around the word &lsquo;Majorana&rsquo; because of all this.&rdquo;</p>
+<p>Microsoft researchers, including Technical Fellow Chetan Nayak, continue their work, stating they understand their devices well and can distinguish true Majorana signals from &ldquo;fake signatures&rdquo; that mimic them.</p>
+<p>This controversy illustrates the scientific process playing out in corporate quantum research. Validating exotic quantum states is extraordinarily difficult, and multiple high-profile Majorana claims have been retracted over the years. The intensified scrutiny reflects both the technical challenge and the massive investment riding on the approach.</p>
+<h2 id="research-roundup-materials-architectures-and-novel-approaches">Research Roundup: Materials, Architectures, and Novel Approaches</h2>
+<p>Beyond the major headlines, August saw remarkable breadth in quantum computing research across materials, architectures, algorithms, and applications.</p>
+<h3 id="materials--novel-qubit-approaches">Materials &amp; Novel Qubit Approaches</h3>
+<p>Researchers from <strong>Chalmers University of Technology, Aalto University, and the University of Helsinki</strong> <a href="https://www.sciencedaily.com/releases/2025/08/250816113508.htm" target="_blank" rel="noopener noreferrer">developed a new method using magnetism</a>
+ to create stable topological excitations in qubits. The approach leverages magnetic interactions rather than the rarer spin-orbit coupling, which could make quantum computers significantly more resilient to environmental disturbances.</p>
+<p>Scientists from <strong>USC and Medgar Evers College</strong> discovered a previously overlooked particle called <a href="https://www.sciencedaily.com/releases/2025/08/250823083645.htm" target="_blank" rel="noopener noreferrer">&ldquo;neglectons&rdquo; that, when combined with Ising anyons</a>
+, enables universal quantum computation through braiding alone. Published in Nature Communications, this work emerges from a new mathematical framework called non-semisimple topological quantum field theories, which retains components traditionally discarded in the field.</p>
+<p>Researchers at <strong>Penn State and Colorado State</strong> demonstrated that <a href="https://www.sciencedaily.com/releases/2025/08/250810093250.htm" target="_blank" rel="noopener noreferrer">gold nanoclusters, called &ldquo;super atoms&rdquo;</a>
+, can achieve <a href="https://www.sciencedaily.com/releases/2025/08/250810093250.htm" target="_blank" rel="noopener noreferrer">up to 40% spin polarization</a>
+ and can be synthesized in large quantities. This offers a scalable platform for quantum applications as an alternative to fragile trapped-ion systems.</p>
+<p>Scientists in <strong>Japan discovered that &ldquo;heavy electrons&rdquo;</strong> in a crystalline material called CeRhSn enter a &ldquo;non-Fermi liquid&rdquo; state and obey a universal speed limit known as Planckian scaling. The phenomenon occurs at <a href="https://thequantuminsider.com/2025/08/30/scientists-report-heavy-electrons-could-open-a-path-to-a-new-type-of-quantum-computer/" target="_blank" rel="noopener noreferrer">temperatures below 80 Kelvin</a>
+ and suggests heavy-electron compounds could provide a new platform for quantum computers that harness collective electron motion.</p>
+<p>Researchers from the <strong>University of Chicago</strong> demonstrated that <a href="https://thequantuminsider.com/2025/08/20/proteins-double-as-qubits-a-step-that-could-one-day-bridge-quantum-computing-and-biology/" target="_blank" rel="noopener noreferrer">enhanced yellow fluorescent protein (EYFP) can function as an optically addressable spin qubit</a>
+, working even inside living cells. The study, published in Nature, opens a path to genetically encodable quantum sensors for biological systems.</p>
+<p><strong>Peking University researchers</strong> discovered a new form of symmetry-protected non-Abelian (SPNA) statistics within one-dimensional, strongly correlated bosonic systems, which could enable more robust encoding and manipulation of quantum information. The team also <a href="https://quantumzeitgeist.com/bosonic-systems-unlock-exotic-statistics-for-quantum-computing/" target="_blank" rel="noopener noreferrer">proposed a practical tri-junction implementation</a>
+.</p>
+<p>Researchers published in <strong>Nature</strong> proposed a new framework for topological quantum computation using non-semisimple topological quantum field theories, which introduces a new anyon type that allows <a href="https://www.nature.com/articles/s41467-025-61342-8" target="_blank" rel="noopener noreferrer">universal quantum computation through braiding alone with Ising anyons</a>
+—overcoming previous limitations that required additional operations beyond braiding.</p>
+<h3 id="architecture--hardware-advances">Architecture &amp; Hardware Advances</h3>
+<p><strong>University of Basel researchers</strong> developed a method to make spin qubits faster and more robust by using spin-orbit coupling in a nanowire. They achieved a <a href="https://thequantuminsider.com/2025/08/19/scientists-take-steps-to-accelerate-quantum/" target="_blank" rel="noopener noreferrer">fourfold increase in coherence time</a>
+ and a <a href="https://thequantuminsider.com/2025/08/19/scientists-take-steps-to-accelerate-quantum/" target="_blank" rel="noopener noreferrer">threefold increase in drive speed</a>
+ while operating at a relatively warm <a href="https://thequantuminsider.com/2025/08/19/scientists-take-steps-to-accelerate-quantum/" target="_blank" rel="noopener noreferrer">1.5 kelvin</a>
+—significantly warmer than the typical <a href="https://thequantuminsider.com/2025/08/19/scientists-take-steps-to-accelerate-quantum/" target="_blank" rel="noopener noreferrer">less than 100 millikelvin</a>
+ required by most qubits.</p>
+<p><strong>Caltech researchers</strong> developed a <a href="https://quantumcomputingreport.com/caltech-researchers-develop-hybrid-quantum-memory-using-sound-to-store-quantum-information/" target="_blank" rel="noopener noreferrer">hybrid quantum memory system that uses sound waves</a>
+ to store quantum information from superconducting qubits. The method allows quantum states to be stored <a href="https://quantumcomputingreport.com/caltech-researchers-develop-hybrid-quantum-memory-using-sound-to-store-quantum-information/" target="_blank" rel="noopener noreferrer">up to 30 times longer</a>
+ than previous techniques by converting electrical signals into acoustic waves via a mechanical oscillator.</p>
+<p>Researchers from <strong>Columbia Engineering</strong> developed <strong>HyperQ</strong>, a virtualization system that allows a single quantum computer to run multiple programs simultaneously by dividing its hardware into isolated quantum virtual machines. <a href="https://www.livescience.com/technology/computing/like-a-master-tetris-player-scientists-invent-quantum-virtual-machines-theyll-slash-turnaround-times-from-days-to-hours" target="_blank" rel="noopener noreferrer">Tested on IBM&rsquo;s 127-qubit Brisbane computer</a>
+, the system <a href="https://www.livescience.com/technology/computing/like-a-master-tetris-player-scientists-invent-quantum-virtual-machines-theyll-slash-turnaround-times-from-days-to-hours" target="_blank" rel="noopener noreferrer">reduced average user wait times by up to 40 times</a>
+ and <a href="https://www.livescience.com/technology/computing/like-a-master-tetris-player-scientists-invent-quantum-virtual-machines-theyll-slash-turnaround-times-from-days-to-hours" target="_blank" rel="noopener noreferrer">increased program execution tenfold</a>
+.</p>
+<p>Engineers at the <strong>University of Pennsylvania</strong> successfully <a href="https://www.tomshardware.com/tech-industry/quantum-computing/quantum-internet-is-possible-using-standard-internet-protocol-university-engineers-send-quantum-signals-over-fiber-lines-without-losing-entanglement" target="_blank" rel="noopener noreferrer">transmitted quantum signals over a live commercial fiber-optic internet network</a>
+ (Verizon&rsquo;s) without losing their quantum state. They achieved this using a &ldquo;Q-Chip&rdquo; that bundles quantum and classical internet signals together, using the standard signal for routing and error correction.</p>
+<p>Researchers at the <strong>University of Innsbruck</strong> created a <a href="https://www.uibk.ac.at/en/newsroom/2025/powerful-nodes-for-quantum-networks/" target="_blank" rel="noopener noreferrer">quantum network node where individual qubits stored in trapped calcium ions are entangled with separate photons</a>
+. They demonstrated this for a <a href="https://www.uibk.ac.at/en/newsroom/2025/powerful-nodes-for-quantum-networks/" target="_blank" rel="noopener noreferrer">register of up to 10 qubits with 92% entanglement fidelity</a>
+, showing a scalable approach for linking quantum computers and sensors.</p>
+<p>Researchers demonstrated <a href="https://www.nature.com/articles/s41467-025-62130-0" target="_blank" rel="noopener noreferrer">temporal fusion of entangled resource states</a>
+ generated by a solid-state quantum dot spin-photon interface. By fusing consecutive spin-photon Bell states generated from the same quantum emitter at different times separated by <a href="https://www.nature.com/articles/s41467-025-62130-0" target="_blank" rel="noopener noreferrer">300 ns</a>
+, they create entanglement between the spin state at two different instances—drastically reducing the number of required physical quantum emitters.</p>
+<p>A <strong>Chinese research team</strong> demonstrated a robust quantum advantage using the <strong>Jiuzhang 4.0 photonic quantum processor</strong>, which performed Gaussian boson sampling with <a href="https://quantumzeitgeist.com/chinese-jiuzhang-4-0-demonstrates-quantum-advantage-with-1024-squeezed-states/" target="_blank" rel="noopener noreferrer">1024 squeezed states in 25.6 microseconds</a>
+—a task estimated to take a classical supercomputer over <a href="https://quantumzeitgeist.com/chinese-jiuzhang-4-0-demonstrates-quantum-advantage-with-1024-squeezed-states/" target="_blank" rel="noopener noreferrer">10⁴² years</a>
+. The system achieved <a href="https://quantumzeitgeist.com/chinese-jiuzhang-4-0-demonstrates-quantum-advantage-with-1024-squeezed-states/" target="_blank" rel="noopener noreferrer">92% efficiency</a>
+ in squeezed state generation.</p>
+<p><strong>Chinese researchers led by Pan Jianwei</strong> created the <a href="https://dig.watch/updates/chinese-researchers-advance-atom-based-quantum-computing-with-massive-atom-array" target="_blank" rel="noopener noreferrer">world&rsquo;s largest atom array with over 2,000 rubidium atoms</a>
+ for quantum computing. They used AI and optical tweezers to achieve high accuracy in qubit operations, completing the array in <a href="https://dig.watch/updates/chinese-researchers-advance-atom-based-quantum-computing-with-massive-atom-array" target="_blank" rel="noopener noreferrer">60 milliseconds</a>
+.</p>
+<h3 id="applications-algorithms--security">Applications, Algorithms &amp; Security</h3>
+<p><strong>IBM and Moderna researchers</strong> used a quantum simulation algorithm to <a href="https://www.livescience.com/technology/computing/ibm-and-moderna-have-simulated-the-longest-mrna-pattern-without-ai-they-used-a-quantum-computer-instead" target="_blank" rel="noopener noreferrer">predict the secondary protein structure of a 60-nucleotide-long mRNA sequence</a>
+—the longest such simulation ever performed on a quantum computer. The team demonstrated using up to <a href="https://www.livescience.com/technology/computing/ibm-and-moderna-have-simulated-the-longest-mrna-pattern-without-ai-they-used-a-quantum-computer-instead" target="_blank" rel="noopener noreferrer">156 qubits</a>
+ and suggested scaling to <a href="https://www.livescience.com/technology/computing/ibm-and-moderna-have-simulated-the-longest-mrna-pattern-without-ai-they-used-a-quantum-computer-instead" target="_blank" rel="noopener noreferrer">354 qubits</a>
+ in ideal conditions could improve accuracy.</p>
+<p>Researchers <a href="https://www.nature.com/articles/s41598-025-12109-0" target="_blank" rel="noopener noreferrer">published a hybrid quantum-classical method for solving robot inverse kinematics</a>
+, using qubits to represent points on a sphere for forward kinematics. They demonstrated that a <a href="https://www.nature.com/articles/s41598-025-12109-0" target="_blank" rel="noopener noreferrer">2-qubit rotation gate</a>
+ can represent end-effector position, accelerating convergence and validating the approach on an actual quantum computer.</p>
+<p>Researchers demonstrated <a href="https://www.nature.com/articles/s41598-025-14611-x" target="_blank" rel="noopener noreferrer">quantum annealing for feature selection on medical image datasets</a>
+, using D-Wave&rsquo;s quantum annealer with <a href="https://www.nature.com/articles/s41598-025-14611-x" target="_blank" rel="noopener noreferrer">5,627 qubits</a>
+ and <a href="https://www.nature.com/articles/s41598-025-14611-x" target="_blank" rel="noopener noreferrer">40,279 couplings</a>
+ in the Pegasus topology. The method showed effectiveness in image reconstruction problems, offering better interpretability than learned representations like autoencoders.</p>
+<p><strong>RIKEN researchers</strong> used two <a href="https://phys.org/news/2025-08-quantum-qubits-simulate-scrambling.html" target="_blank" rel="noopener noreferrer">20-qubit quantum computers</a>
+ to simulate quantum information scrambling—a process key to understanding quantum systems like black holes. Published in Physical Review Research, the study illustrates a potential application for future quantum computers in performing simulations that may become too complex for classical computers.</p>
+<p>Researchers at <strong>Northwestern University</strong> demonstrated a new security attack called <strong>QubitVise</strong> that exploits crosstalk in superconducting quantum computers to <a href="https://thequantuminsider.com/2025/08/18/new-study-warns-of-security-risks-in-cloud-quantum-computers/" target="_blank" rel="noopener noreferrer">deliberately corrupt the computations of other users</a>
+ on shared cloud platforms. The double-sided attack, validated on Rigetti&rsquo;s Ankaa-3 processor via Amazon Braket, successfully altered victim circuit outputs with an <a href="https://thequantuminsider.com/2025/08/18/new-study-warns-of-security-risks-in-cloud-quantum-computers/" target="_blank" rel="noopener noreferrer">average increase of 13% in total variation distance</a>
+—raising alarms about multi-tenant quantum infrastructure security.</p>
+<p>Researchers introduced a <strong>&ldquo;Quantum Tree Generator&rdquo; (QTG) algorithm</strong> to <a href="https://www.nature.com/articles/s41534-025-01097-8" target="_blank" rel="noopener noreferrer">solve 0-1 knapsack problems</a>
+ by generating all feasible solutions in superposition and using amplitude amplification to find optimal solutions. The work projects potential quantum advantage for instances with <a href="https://www.nature.com/articles/s41534-025-01097-8" target="_blank" rel="noopener noreferrer">100-600 variables</a>
+ under assumptions of fully connected logical qubits.</p>
+<p>Researchers developed two <a href="https://www.nature.com/articles/s41598-025-14724-3" target="_blank" rel="noopener noreferrer">quantum granular-ball generation methods</a>
+ that leverage quantum computing to accelerate the process, applied to a quantum k-nearest neighbors algorithm (QGBkNN). One method uses iterative splitting and the other a fixed number of splits, reducing time complexity for machine learning applications.</p>
+
+
+
+
+
+
+<div id="research-themes" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "August 2025 Research Themes",
+"categories": ["Research", "Product", "Industry", "Partnership", "Funding", "Other"],
+"series": [
+{"name": "Articles", "data": [79, 34, 28, 27, 9, 15]}
+]
+}
+;
+    const type = "donut";
+    const containerId = "research-themes";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="product--platform-news-new-systems-tools-and-cloud-access">Product &amp; Platform News: New Systems, Tools, and Cloud Access</h2>
+<h3 id="new-quantum-computers">New Quantum Computers</h3>
+<p><strong>Rigetti Computing</strong> made its <a href="https://www.datacenterdynamics.com/en/news/rigetti-makes-its-36-qubit-cepheus-1-36q-quantum-computer-available-in-the-cloud/" target="_blank" rel="noopener noreferrer">36-qubit Cepheus-1-36Q quantum computer available in the cloud</a>
+. The system uses a multi-chip design with <a href="https://www.datacenterdynamics.com/en/news/rigetti-makes-its-36-qubit-cepheus-1-36q-quantum-computer-available-in-the-cloud/" target="_blank" rel="noopener noreferrer">four chiplets</a>
+, reducing two-qubit gate error rates by <a href="https://quantumzeitgeist.com/rigetti-computing-launches-36-qubit-multi-chip-quantum-computer/" target="_blank" rel="noopener noreferrer">2x compared to Ankaa-3</a>
+ and achieving <a href="https://www.datacenterdynamics.com/en/news/rigetti-makes-its-36-qubit-cepheus-1-36q-quantum-computer-available-in-the-cloud/" target="_blank" rel="noopener noreferrer">99% to 99.5% median two-qubit gate fidelity</a>
+. The company plans to release a <a href="https://www.datacenterdynamics.com/en/news/rigetti-makes-its-36-qubit-cepheus-1-36q-quantum-computer-available-in-the-cloud/" target="_blank" rel="noopener noreferrer">100+ qubit system by the end of 2025</a>
+.</p>
+<p><strong>Japan launched a fully domestically produced superconducting quantum computer</strong> at The University of Osaka&rsquo;s Center for Quantum Information and Quantum Biology. The system, <a href="https://thequantuminsider.com/2025/08/08/japan-launches-quantum-computer-with-homegrown-components-and-software/" target="_blank" rel="noopener noreferrer">built entirely with domestic components</a>
+, marks a significant step in Japan&rsquo;s technological self-reliance. It <a href="https://quantumcomputingreport.com/japan-launches-fully-domestically-produced-quantum-computer-in-collaboration-with-riken-and-fujitsu/" target="_blank" rel="noopener noreferrer">went live on July 28, 2025</a>
+ and was showcased at <a href="https://interestingengineering.com/innovation/japan-homegrown-quantum-computer" target="_blank" rel="noopener noreferrer">Expo 2025 in Osaka</a>
+, where the public could interact with it via cloud access. The system uses the open-source OQTOPUS software toolchain and operates at <a href="https://interestingengineering.com/innovation/japan-homegrown-quantum-computer" target="_blank" rel="noopener noreferrer">10 millikelvin</a>
+ in a dilution refrigerator.</p>
+<h3 id="software-tools--platforms">Software Tools &amp; Platforms</h3>
+<p><strong>D-Wave Quantum Inc. released an open-source toolkit</strong> to <a href="https://siliconangle.com/2025/08/04/d-wave-releases-open-source-toolkit-integrate-quantum-computing-ai-training/" target="_blank" rel="noopener noreferrer">integrate quantum computing with AI training using the PyTorch framework</a>
+. The toolkit focuses on training restricted Boltzmann machines for generative AI tasks, which can reduce time and energy consumption compared to classical methods. The release includes a demo and is part of D-Wave&rsquo;s efforts to foster quantum-AI collaboration.</p>
+<p><strong>Amazon Braket launched &ldquo;program sets&rdquo;</strong>, a new feature that allows customers to <a href="https://quantumcomputingreport.com/amazon-braket-launches-program-sets-to-accelerate-quantum-algorithm-execution/" target="_blank" rel="noopener noreferrer">bundle up to 100 quantum circuits into a single quantum task</a>
+. This reduces processing overhead and execution time with <a href="https://quantumcomputingreport.com/amazon-braket-launches-program-sets-to-accelerate-quantum-algorithm-execution/" target="_blank" rel="noopener noreferrer">speedups of up to 24x</a>
+. The feature is particularly useful for algorithms like variational quantum eigensolvers and quantum machine learning models, and is currently available on superconducting QPUs from Rigetti and IQM.</p>
+<p><strong>Kothar launched FORGE</strong>, a <a href="https://thequantuminsider.com/2025/08/07/kothar-launches-browser-based-quantum-simulation-platform-forge/" target="_blank" rel="noopener noreferrer">browser-based quantum simulation platform</a>
+ that provides intuitive visualization and real-time feedback to help users build quantum circuits and design experiments without downloading software.</p>
+<p><strong>IBM updated its Quantum Credits program</strong> on a new platform, though details were limited in available sources.</p>
+<p><strong>NVIDIA released CUDA-QX 0.4</strong>, which <a href="https://developer.nvidia.com/blog/cuda-qx-0-4-released/" target="_blank" rel="noopener noreferrer">focuses on error correction and algorithm development</a>
+, providing tools for developers working on quantum computing applications.</p>
+<h3 id="applications--integration">Applications &amp; Integration</h3>
+<p><strong>MOTH launched Space Moths</strong>, a <a href="https://thequantuminsider.com/2025/08/15/moth-launches-space-moths-a-quantum-computing-powered-massively-multiplayer-game-experience/" target="_blank" rel="noopener noreferrer">quantum computing-powered massively multiplayer online game</a>
+ where levels are generated on-demand by a quantum computer. Developed in collaboration with Onward Studios, the game uses quantum hardware from <a href="https://thequantuminsider.com/2025/08/15/moth-launches-space-moths-a-quantum-computing-powered-massively-multiplayer-game-experience/" target="_blank" rel="noopener noreferrer">IBM Quantum, IQM Quantum Computers, and VTT</a>
+. It was unveiled at Gamescom 2025, demonstrating quantum computing&rsquo;s application in gaming and entertainment.</p>
+<p><strong>Mitsui &amp; Co. launched QIDO</strong>, a <a href="https://thequantuminsider.com/2025/08/19/mitsui-works-with-quantinuum-and-qsimulate-to-launch-quantum-integrated-chemistry-platform/" target="_blank" rel="noopener noreferrer">quantum-integrated chemistry platform</a>
+, in collaboration with Quantinuum and QSimulate. The platform blends quantum and classical computing to accelerate chemical research, with Mitsui&rsquo;s established chemical industry network helping identify practical use cases.</p>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "Aug 1", "title": "Fujitsu announces 10,000+ qubit target", "description": "Fujitsu launches five-year initiative for 10,000+ qubit superconducting quantum computer by FY2030, targeting 250 logical qubits."},
+{"date": "Aug 4", "title": "IBM unveils Relay-BP decoder", "description": "IBM announces Relay-BP, achieving 'orders of magnitude' better logical error rates for qLDPC error correction codes."},
+{"date": "Aug 8", "title": "Robot inverse kinematics research", "description": "Researchers publish hybrid quantum-classical method for solving robot inverse kinematics using 2-qubit rotation gates."},
+{"date": "Aug 13", "title": "Measurement-free FTQC proposed", "description": "Science Advances publishes study on measurement-free, scalable, and fault-tolerant universal quantum computing."},
+{"date": "Aug 14", "title": "Majorana correction published", "description": "Science publishes correction to 2020 Majorana paper, rekindling debate over Microsoft's quantum computing research."},
+{"date": "Aug 16", "title": "Magnetic trick for topological materials", "description": "Chalmers/Aalto/Helsinki demonstrate magnetic method to create stable topological excitations in qubits."},
+{"date": "Aug 18", "title": "QubitVise security attack revealed", "description": "Northwestern researchers demonstrate QubitVise attack exploiting crosstalk in cloud quantum computers."},
+{"date": "Aug 19", "title": "Modular architecture breakthrough", "description": "University of Illinois demonstrates modular architecture with ~99% SWAP gate fidelity, published in Nature Electronics."},
+{"date": "Aug 22", "title": "RIKEN simulates information scrambling", "description": "RIKEN uses two 20-qubit quantum computers to simulate quantum information scrambling, relevant to black hole physics."},
+{"date": "Aug 26", "title": "Noisy links enable fault tolerance", "description": "UC Riverside shows chip links 10x noisier than chips can still enable fault tolerance in modular architectures."}
+]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="industry-moves-partnerships-funding-and-market-dynamics">Industry Moves: Partnerships, Funding, and Market Dynamics</h2>
+<h3 id="strategic-partnerships">Strategic Partnerships</h3>
+<p><strong>IBM and AMD partnered</strong> to <a href="https://interestingengineering.com/innovation/ibm-amd-to-advance-quantum-computers" target="_blank" rel="noopener noreferrer">combine quantum computing with high-performance computing (HPC)</a>
+ to create quantum-centric supercomputing platforms. The collaboration will focus on developing hybrid quantum-classical workflows, with an <a href="https://interestingengineering.com/innovation/ibm-amd-to-advance-quantum-computers" target="_blank" rel="noopener noreferrer">initial demonstration planned for later this year</a>
+. The partnership leverages IBM&rsquo;s quantum systems and software with AMD&rsquo;s CPUs, GPUs, and AI accelerators.</p>
+<p><strong>QuEra Computing and Deloitte formed an alliance</strong> to <a href="https://www.prnewswire.com/news-releases/quera-computing-and-deloitte-form-alliance-to-accelerate-enterprise-adoption-of-neutral-atom-quantum-computing-302534011.html" target="_blank" rel="noopener noreferrer">accelerate enterprise adoption of neutral-atom quantum computing</a>
+. The partnership combines QuEra&rsquo;s hardware and software platforms with Deloitte&rsquo;s industry and implementation expertise. An early collaboration in life sciences demonstrated that <a href="https://www.prnewswire.com/news-releases/quera-computing-and-deloitte-form-alliance-to-accelerate-enterprise-adoption-of-neutral-atom-quantum-computing-302534011.html" target="_blank" rel="noopener noreferrer">quantum reservoir computing on QuEra&rsquo;s hardware can outperform classical models</a>
+ for molecular property prediction.</p>
+<p><strong>Oak Ridge National Laboratory selected IQM Radiance</strong>, a <a href="https://www.businesswire.com/news/home/20250819262096/en/IQM-to-Integrate-Quantum-Computer-Into-Oak-Ridge-National-Laboratorys-HPC-Systems" target="_blank" rel="noopener noreferrer">20-qubit superconducting quantum computer</a>
+, as its first on-premises quantum computer to be integrated into its HPC systems. The system will be <a href="https://www.businesswire.com/news/home/20250819262096/en/IQM-to-Integrate-Quantum-Computer-Into-Oak-Ridge-National-Laboratorys-HPC-Systems" target="_blank" rel="noopener noreferrer">delivered by Q3 2025</a>
+ and is upgradeable to higher qubit counts.</p>
+<p>The <strong>Technology Innovation Institute (TII) entered a strategic partnership</strong> with <strong>Quantinuum</strong>, granting TII researchers access to Quantinuum&rsquo;s systems, including the upcoming Helios generation. The collaboration aims to develop and benchmark quantum algorithms for applications in chemistry, materials science, and optimization.</p>
+<p><strong>Rigetti Computing deployed a 9-qubit Novera QPU</strong> at Montana State University&rsquo;s QCORE facility, making MSU the first academic institution with an on-premises Rigetti quantum computer. The <a href="https://quantumcomputingreport.com/montana-state-university-launches-qcore-facility-installs-rigetti-novera-quantum-computer/" target="_blank" rel="noopener noreferrer">12,600-square-foot facility</a>
+ is supported by approximately 60 organizations, including <a href="https://quantumcomputingreport.com/montana-state-university-launches-qcore-facility-installs-rigetti-novera-quantum-computer/" target="_blank" rel="noopener noreferrer">$44.7 million from the U.S. Air Force Research Laboratory</a>
+.</p>
+<p><strong>Cleveland Clinic launched a new round</strong> of its Quantum Innovation Catalyzer Program, a competitive 12-month initiative for start-ups to explore quantum computing applications in healthcare and life sciences. Up to four selected companies will receive <a href="https://newsroom.clevelandclinic.org/2025/08/28/cleveland-clinic-launches-new-round-of-quantum-innovation-catalyzer-program" target="_blank" rel="noopener noreferrer">investment up to $250,000</a>
+ and gain dedicated access to the IBM Quantum System One.</p>
+<p>More than <a href="https://www.iotworldtoday.com/quantum/major-tech-players-unite-to-chart-future-of-quantum-computing" target="_blank" rel="noopener noreferrer">30 researchers from leading tech companies and academic institutions collaborated</a>
+ on a landmark review paper on tensor networks for quantum computing, emphasizing them as a crucial bridge for hybrid quantum-classical approaches with <a href="https://www.iotworldtoday.com/quantum/major-tech-players-unite-to-chart-future-of-quantum-computing" target="_blank" rel="noopener noreferrer">20x speed advantage</a>
+ in practical quantum chemistry applications.</p>
+<h3 id="market-analysis--timeline">Market Analysis &amp; Timeline</h3>
+<p><strong>IBM leads with 47% of disclosed quantum deal value</strong> between 2020-2025, according to market analysis covered in August. The data reflects IBM&rsquo;s established position in enterprise quantum computing through its Quantum Network.</p>
+<p>The quantum computing industry is <a href="https://www.iotworldtoday.com/quantum/ibm-cracks-key-puzzle-in-fault-tolerant-quantum-computing" target="_blank" rel="noopener noreferrer">transitioning to industrial applications in 2025</a>
+, with companies moving from pure research to identifying practical use cases. This shift is evidenced by growing partnerships between quantum hardware companies and industry consultants like Deloitte.</p>
+<p><strong>IBM and Google are targeting operational quantum computers by 2029</strong>, representing an aggressive timeline for fault-tolerant systems. Fujitsu&rsquo;s 2030 target for 250 logical qubits aligns with this timeframe.</p>
+<p>The <strong>Microsoft-Atom Computing QuNorth project</strong> in Denmark aims to build &ldquo;Magne,&rdquo; a quantum computer with <a href="https://www.rudebaguette.com/en/2025/08/theyre-playing-god-microsoft-quantum-megaproject-in-denmark-unleashes-global-alarm-over-unchecked-power-and-dangerous-tech-control/" target="_blank" rel="noopener noreferrer">50 logical qubits supported by over 1,200 physical qubits</a>
+. Construction begins in late 2025 with an operational target of early 2027, backed by <a href="https://www.rudebaguette.com/en/2025/08/theyre-playing-god-microsoft-quantum-megaproject-in-denmark-unleashes-global-alarm-over-unchecked-power-and-dangerous-tech-control/" target="_blank" rel="noopener noreferrer">$46 million each from EIFO and Novo Nordisk Foundation</a>
+.</p>
+<h3 id="funding--ma">Funding &amp; M&amp;A</h3>
+<p><strong>Qunova Computing secured $10 million in Series A funding</strong> to advance its HI-VQE quantum algorithm for chemical simulations. The round brings total funding to $15.8 million.</p>
+<p><strong>Photonic Inc. received a $1 million CAD grant</strong> from Canada&rsquo;s Department of National Defence for quantum networking research, specifically for developing deployable quantum network prototypes for Canadian defence applications.</p>
+<p><strong>Roadrunner Venture Studios launched a $25 million initiative</strong> in New Mexico focused on accelerating quantum companies in the state, building on successful investments in quantum computing startups.</p>
+<p>The <strong>Australian Defence Department awarded $9 million AUD</strong> in contracts for quantum and information warfare technologies, including projects on quantum sensing, navigation, and secure communications.</p>
+<p><strong>Strangeworks acquired Quantagonia</strong>, a German quantum computing software company, expanding Strangeworks&rsquo; presence in Europe and adding its optimization and quantum-inspired computing technologies to the platform.</p>
+<p><strong>Amazon took a stake in IonQ</strong>, though financial details were not disclosed in available sources, signaling continued cloud provider investment in quantum hardware.</p>
+<p><strong>Kansas University set up a quantum research lab</strong> in partnership with Brilliancy Quantum Brands, though specific investment amounts were not detailed in available reports.</p>
+
+
+
+
+
+
+<div id="funding-table" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "Notable Funding & Initiatives in August 2025",
+"categories": ["Qunova Computing", "Roadrunner Venture Studios", "Australian Defence", "Photonic Inc."],
+"series": [
+{"name": "Amount (Millions USD)", "data": [10, 25, 6, 0.7]}
+],
+"yAxisLabel": "Amount (Millions USD)"
+}
+;
+    const type = "bar";
+    const containerId = "funding-table";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h3 id="quantum-readiness">Quantum Readiness</h3>
+<p><strong>Microsoft&rsquo;s Quantum Safe Program</strong> aims to make the company quantum-safe by 2033, reflecting growing awareness of post-quantum cryptography requirements as quantum computers advance.</p>
+<p>Both <strong>IBM and Google have stated goals for operational quantum computers by 2029</strong>, creating competitive pressure and clear timelines for the industry.</p>
+<h2 id="looking-ahead-what-august-2025-means-for-quantum-computing">Looking Ahead: What August 2025 Means for Quantum Computing</h2>
+<p>The error correction breakthroughs from IBM and Alice &amp; Bob address the single biggest technical challenge holding back practical quantum computing. IBM&rsquo;s Relay-BP decoder achieves the kind of improvement—orders of magnitude better logical error rates—that could reduce error correction overhead by 90% and accelerate practical quantum computing timelines by years.</p>
+<p>The scaling roadmaps show industry confidence. Fujitsu&rsquo;s 10,000-qubit target by 2030, Microsoft-Atom Computing&rsquo;s Magne with 50 logical qubits by 2027, and the IBM-Google target of operational quantum computers by 2029 all represent ambitious but specific commitments. These aren&rsquo;t vague aspirations—they&rsquo;re funded programs with technical milestones.</p>
+<p>The scientific debate around Microsoft&rsquo;s Majorana research illustrates the rigor required. Validating exotic quantum states is extraordinarily difficult, and the intensified scrutiny reflects both the technical challenge and the massive investment riding on the approach. The fact that critics continue to call for retraction while Microsoft proceeds with research shows this is genuine scientific inquiry, not settled fact.</p>
+<p>The breadth of research in August demonstrates innovation across multiple approaches: superconducting (IBM, Fujitsu, Rigetti), neutral-atom (QuEra), trapped-ion (Quantinuum), photonic (Jiuzhang 4.0), topological (Microsoft&rsquo;s Majorana effort), and even biological (proteins as qubits). This diversity is healthy—different approaches may win for different applications.</p>
+<p>The partnerships and product launches show the ecosystem maturing. IBM-AMD merging quantum with HPC/AI, QuEra-Deloitte bringing neutral-atom quantum to enterprise, IQM at ORNL integrating with HPC systems—these aren&rsquo;t just research collaborations, they&rsquo;re deployment partnerships. The gaming application (Space Moths) shows quantum computers delivering value today in consumer applications.</p>
+<p>What does this mean for the quantum timeline? If error correction progress continues at the pace demonstrated in August, and if scaling roadmaps stay on track, fault-tolerant quantum computers capable of solving practical problems could emerge in the late 2020s or early 2030s. The technical challenges remain significant—qubit stability, error correction at scale, and system architecture all need continued engineering progress.</p>
+<p>But August provided concrete progress on the hardest problems. The transition from research to industrial applications is underway, with measurable advances rather than marketing hype. Quantum computing in late 2025 is a field advancing through sustained engineering and scientific progress. The path forward is clearer, even if the distance remaining is substantial.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

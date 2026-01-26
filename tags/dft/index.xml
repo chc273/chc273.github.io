@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DFT on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/dft/</link>
+    <description>Recent content in DFT on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/dft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Accelerates Materials Discovery: From Decades to Months</title>
+      <link>https://cchen.me/newsletter/2025-06-30-materials-discovery/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-06-30-materials-discovery/</guid>
+      <description>&lt;p&gt;This month brought compelling evidence that artificial intelligence is fundamentally changing how scientists discover new materials. Researchers demonstrated methods that reduce discovery timelines from 20 years to under one year, while new AI-driven facilities opened in Glasgow and MIT launched a rapid-testing lab for fusion materials. This comprehensive review covers &lt;strong&gt;15 articles&lt;/strong&gt; published during &lt;strong&gt;June 2025&lt;/strong&gt;, surveying the latest developments at the intersection of AI and materials science.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Discovery Timeline Reduction&#34;, &#34;value&#34;: &#34;20x faster&#34;, &#34;context&#34;: &#34;20 years to 1 year (ChemDataExtractor)&#34;},
+{&#34;label&#34;: &#34;High-Pressure Phases Discovered&#34;, &#34;value&#34;: &#34;28 new phases&#34;, &#34;context&#34;: &#34;In 13 active learning iterations&#34;},
+{&#34;label&#34;: &#34;Structures Screened&#34;, &#34;value&#34;: &#34;375,000+&#34;, &#34;context&#34;: &#34;Tungsten boride modifications (GNN/DFT)&#34;},
+{&#34;label&#34;: &#34;Biofilm Reduction&#34;, &#34;value&#34;: &#34;15-fold&#34;, &#34;context&#34;: &#34;Microtopographical patterns&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;ai-methods-reach-escape-velocity&#34;&gt;AI Methods Reach Escape Velocity&lt;/h2&gt;
+&lt;p&gt;The most compelling evidence this month came in the form of concrete numbers: hybrid approaches combining graph neural networks with physics-based simulations are now delivering measurable acceleration in materials discovery.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This month brought compelling evidence that artificial intelligence is fundamentally changing how scientists discover new materials. Researchers demonstrated methods that reduce discovery timelines from 20 years to under one year, while new AI-driven facilities opened in Glasgow and MIT launched a rapid-testing lab for fusion materials. This comprehensive review covers <strong>15 articles</strong> published during <strong>June 2025</strong>, surveying the latest developments at the intersection of AI and materials science.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Discovery Timeline Reduction", "value": "20x faster", "context": "20 years to 1 year (ChemDataExtractor)"},
+{"label": "High-Pressure Phases Discovered", "value": "28 new phases", "context": "In 13 active learning iterations"},
+{"label": "Structures Screened", "value": "375,000+", "context": "Tungsten boride modifications (GNN/DFT)"},
+{"label": "Biofilm Reduction", "value": "15-fold", "context": "Microtopographical patterns"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="ai-methods-reach-escape-velocity">AI Methods Reach Escape Velocity</h2>
+<p>The most compelling evidence this month came in the form of concrete numbers: hybrid approaches combining graph neural networks with physics-based simulations are now delivering measurable acceleration in materials discovery.</p>
+<p>Researchers reported an <a href="https://www.nature.com/articles/s41524-025-01682-7" target="_blank" rel="noopener noreferrer">active learning framework</a>
+ that integrates graph neural networks with density functional theory (DFT) simulations to discover high-pressure phases. The method trained on <strong>2,258 materials</strong> and <strong>7,255 phases</strong> from the Materials Project, then explored <strong>7,677 pairs</strong> of phases for pressure-induced transitions up to <strong>500 GPa</strong>. In just <strong>13 active learning iterations</strong>, it identified <strong>28 new stable high-pressure phases</strong> while also rediscovering <strong>18 known phase transitions</strong>. The generation 2 GNN model achieved a mean absolute error of <strong>0.012 eV/atom</strong> on formation energies.</p>
+<p>A second <a href="https://www.nature.com/articles/s41524-025-01628-z" target="_blank" rel="noopener noreferrer">Nature study</a>
+ demonstrated how hybrid GNN/DFT approaches can guide experimental synthesis. Researchers screened <strong>375,961 inequivalent crystal structures</strong> in the search for chemically modified versions of higher tungsten boride (WB4.2). Using <strong>200 DFT-derived entries</strong> to fine-tune their GNNs, they identified tantalum as a promising substituent and experimentally synthesized Ta-doped samples with increased hardness. The method achieved errors of only a <strong>few meV/atom</strong> in predicted thermodynamic properties, with <strong>86.8%</strong> of generated structures at the lowest P1 symmetry.</p>
+<p>On the computational foundations side, <a href="https://www.microsoft.com/en-us/research/articles/timeline-the-continuing-evolution-of-density-functional-theory/" target="_blank" rel="noopener noreferrer">Microsoft Research</a>
+ announced the <strong>Skala XC Functional</strong>—a deep-learning-powered DFT model trained on over <strong>100,000 data points</strong>. The model escapes the traditional trade-off between accuracy and computational cost by learning relevant features rather than relying on pre-defined exchange-correlation ingredients. This represents a milestone in the century-long evolution of DFT, which began with Schrödinger&rsquo;s equation in 1926 and progressed through Thomas-Fermi (1927), Hartree-Fock (1930), and the Kohn-Sham equations (1965).</p>
+<h2 id="the-self-driving-lab-arrives">The Self-Driving Lab Arrives</h2>
+<p>AI is moving beyond computation to orchestrate physical research. Three advances this month show how automation is scaling materials discovery.</p>
+<h3 id="automated-perovskite-research">Automated Perovskite Research</h3>
+<p>Researchers have introduced a <a href="https://www.sciencedirect.com/science/article/abs/pii/S2590238525001407" target="_blank" rel="noopener noreferrer">self-driving research workflow</a>
+ for perovskite photovoltaics that automates experimentation and optimization. The system combines artificial intelligence with robotics to streamline the development of efficient solar cells, potentially reducing the time and cost required for advancing perovskite technology—a key path toward commercially viable renewable energy.</p>
+<h3 id="glasgows-12m-ai-chemistry-facility">Glasgow&rsquo;s $12M AI Chemistry Facility</h3>
+<p><strong>Chemify</strong>, a deeptech startup, opened <strong>Chemifarm</strong> in Glasgow—a <strong>21,500 ft²</strong> facility combining AI, robotics, and automation to digitize molecule creation. The <strong>£12 million project</strong> uses a &ldquo;Chemputation&rdquo; platform with a bespoke programming language, extensible robotics, and a library of validated reactions. It is backed by <strong>£1.1 million</strong> from Scottish Enterprise and will create <strong>60 new jobs</strong> while safeguarding <strong>over 50 existing roles</strong>. The University of Glasgow and Innovate UK also support the initiative through the Glasgow City Region Innovation Accelerator Programme.</p>
+<h3 id="rsc-prize-for-20x-acceleration">RSC Prize for 20x Acceleration</h3>
+<p>Scientists at <strong>Diamond Light Source</strong>, collaborating with the <strong>University of Cambridge</strong>, <strong>Argonne National Laboratory</strong>, and <strong>ISIS Neutron and Muon Source</strong>, won the <strong>Royal Society of Chemistry prize</strong> for developing <strong>ChemDataExtractor</strong>. This chemistry-aware AI software accelerates materials discovery from an average of <strong>20 years to less than one year</strong> by providing open-source databases and language models that mine scientific literature. The achievement highlights how text mining can dramatically compress discovery timelines.</p>
+<h2 id="real-world-materials-breakthroughs">Real-World Materials Breakthroughs</h2>
+<p>AI-driven discoveries are solving actual problems across energy, healthcare, electronics, and fusion energy.</p>
+<h3 id="energy-storage">Energy Storage</h3>
+<p><strong>Solid-state batteries</strong> saw two advances this month. Researchers from the <strong>Skolkovo Institute of Science and Technology</strong> and the <strong>AIRI Institute</strong> <a href="https://interestingengineering.com/energy/solid-state-ev-battery-promises-more-range" target="_blank" rel="noopener noreferrer">used graph neural networks</a>
+ to identify protective coating compounds for solid electrolytes—specifically <strong>Li10GeP2S12</strong>, <strong>Li3AlF6</strong>, and <strong>Li2ZnCl4</strong>—which could enable EVs to travel <strong>50% further</strong> on a single charge while improving safety and longevity.</p>
+<p>Separately, researchers at the <strong>University of Texas at Dallas</strong> and <strong>Texas Tech University</strong> <a href="https://dallasinnovates.com/utd-teams-discovery-could-boost-solid-state-battery-performance-in-evs-phones-military-drones/" target="_blank" rel="noopener noreferrer">discovered</a>
+ that mixing two solid electrolyte materials (lithium zirconium chloride and lithium yttrium chloride) creates a <strong>&ldquo;space charge layer&rdquo;</strong> that enhances ion movement. The finding emerged from the <strong>BEACONS initiative</strong>, funded by <strong>$30 million</strong> from the U.S. Department of Defense, and could enable solid-state batteries with <strong>2 times</strong> the power storage of liquid electrolyte batteries.</p>
+<h3 id="medical-devices">Medical Devices</h3>
+<p>Combinatorial screening and machine learning identified specific microtopographical patterns on polymer surfaces that <a href="https://www.nature.com/articles/s41467-025-60567-x" target="_blank" rel="noopener noreferrer">reduce bacterial biofilm formation</a>
+ by <strong>15-fold</strong>. Researchers screened <strong>2,176 combinatorially generated shapes</strong> using the TopoChip platform and machine learning models (Random Forest, MLREM, SVM, XGBoost). They discovered that anti-attachment topographies trigger a <strong>quorum sensing-mediated response</strong> in <em>Pseudomonas aeruginosa</em>, causing the bacteria to produce a <strong>rhamnolipid biosurfactant</strong> that prevents irreversible surface adhesion. The efficacy was validated in mouse infection models, suggesting potential for medical implants.</p>
+<p>Separately, scientists at the <strong>University of Nottingham</strong> and <strong>Eindhoven University of Technology</strong> <a href="https://www.genengnews.com/topics/infectious-diseases/patterns-on-medical-device-plastics-hinder-pathogenic-bacteria-attachment-and-biofilm-formation/" target="_blank" rel="noopener noreferrer">screened over 2,000 designs</a>
+ using a high-throughput microtopographical chip, confirming that specific surface patterns on polyurethane can drastically reduce bacterial attachment without relying on antibiotics.</p>
+<h3 id="quantum--electronics">Quantum &amp; Electronics</h3>
+<p>Researchers at <strong>National Taiwan University</strong> <a href="https://phys.org/news/2025-06-coupling-room-temperature-2d-ferromagnetic.html" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ atomic-scale synchronization between electric and magnetic quantum states in <strong>Fe5GeTe2</strong>, a room-temperature 2D ferromagnet. Using high-resolution scanning tunneling microscopy, they observed the simultaneous and spatially synchronized occurrence of <strong>charge density waves</strong>, the <strong>Kondo effect</strong>, and <strong>ferromagnetism</strong>—the first direct experimental evidence of this coupling. The discovery challenges conventional thinking in quantum materials and could enable multifunctional quantum devices.</p>
+<p>A <a href="https://www.frontiersin.org/journals/nanotechnology/articles/10.3389/fnano.2025.1627210/full" target="_blank" rel="noopener noreferrer">review in Frontiers</a>
+ described how AI is revolutionizing nanoelectronics across materials discovery, device design, and testing. The integration of generative AI, digital twins, and machine learning in electron microscopy accelerates innovation and optimizes the electronics supply chain.</p>
+<p>Separately, <a href="https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2025.1599182/full" target="_blank" rel="noopener noreferrer">machine learning models</a>
+ were developed to predict the dielectric constant of strontium-containing dielectrics using atomic composition features. The optimal <strong>Gradient Boosting Regression</strong> model achieved a <strong>Pearson correlation coefficient of 0.868</strong> on the test set, trained on <strong>102 samples</strong> from a dataset of <strong>110 dielectric materials</strong> sourced from the Materials Project.</p>
+<h3 id="fusion-energy">Fusion Energy</h3>
+<p><strong>MIT&rsquo;s Plasma Science and Fusion Center</strong> <a href="https://physics.mit.edu/news/new-facility-to-accelerate-materials-solutions-for-fusion-energy/" target="_blank" rel="noopener noreferrer">launched the Schmidt Laboratory for Materials in Nuclear Technologies (LMNT)</a>
+, a facility designed to rapidly test materials for fusion energy components. Using an off-the-shelf cyclotron to generate proton beams, LMNT will simulate fusion damage much faster and more cost-effectively than traditional methods. The lab is expected to start experimental operations in <strong>early 2026</strong>, housed in the repurposed space of the former <strong>Alcator C-Mod tokamak</strong> (which operated from 1992-2016). The facility moved from concept to reality in <strong>1.5 years</strong>. Materials must withstand plasma temperatures of <strong>150 million degrees</strong> in fusion environments, and <strong>$8 billion</strong> in private investment has flowed into commercial fusion companies.</p>
+<h2 id="ai-methods-in-action">AI Methods in Action</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Application</th>
+          <th>Key Result</th>
+          <th>Source</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>GNN + DFT (Active Learning)</strong></td>
+          <td>High-pressure phase discovery</td>
+          <td>28 new phases in 13 iterations</td>
+          <td><a href="https://www.nature.com/articles/s41524-025-01682-7" target="_blank" rel="noopener noreferrer">Nature</a>
+</td>
+      </tr>
+      <tr>
+          <td><strong>GNN + DFT (Hybrid)</strong></td>
+          <td>Tungsten boride modifications</td>
+          <td>375,961 structures screened</td>
+          <td><a href="https://www.nature.com/articles/s41524-025-01628-z" target="_blank" rel="noopener noreferrer">Nature</a>
+</td>
+      </tr>
+      <tr>
+          <td><strong>Deep Learning DFT</strong></td>
+          <td>Quantum chemistry foundation</td>
+          <td>Skala XC trained on 100,000+ data points</td>
+          <td><a href="https://www.microsoft.com/en-us/research/articles/timeline-the-continuing-evolution-of-density-functional-theory/" target="_blank" rel="noopener noreferrer">Microsoft</a>
+</td>
+      </tr>
+      <tr>
+          <td><strong>Self-Driving Lab</strong></td>
+          <td>Perovskite solar cell optimization</td>
+          <td>Automated experimentation workflow</td>
+          <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S2590238525001407" target="_blank" rel="noopener noreferrer">ScienceDirect</a>
+</td>
+      </tr>
+      <tr>
+          <td><strong>ChemDataExtractor</strong></td>
+          <td>Literature mining for materials</td>
+          <td>20 years to 1 year discovery timeline</td>
+          <td><a href="https://lightsources.org/2025/06/25/diamond-scientists-win-rsc-prize-for-chemistry-aware-ai-software/" target="_blank" rel="noopener noreferrer">RSC Prize</a>
+</td>
+      </tr>
+      <tr>
+          <td><strong>Combinatorial + ML</strong></td>
+          <td>Anti-biofilm surface patterns</td>
+          <td>15-fold biofilm reduction</td>
+          <td><a href="https://www.nature.com/articles/s41467-025-60567-x" target="_blank" rel="noopener noreferrer">Nature</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="new-materials-discovery-facilities">New Materials Discovery Facilities</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Facility</th>
+          <th>Location</th>
+          <th>Focus</th>
+          <th>Scale</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Chemifarm</strong></td>
+          <td>Glasgow</td>
+          <td>AI-driven molecular synthesis</td>
+          <td>£12M, 21,500 ft², 60 new jobs</td>
+      </tr>
+      <tr>
+          <td><strong>LMNT</strong></td>
+          <td>MIT</td>
+          <td>Fusion materials testing</td>
+          <td>Cyclotron-based rapid testing</td>
+      </tr>
+      <tr>
+          <td><strong>BEACONS</strong></td>
+          <td>UT Dallas / Texas Tech</td>
+          <td>Solid-state batteries</td>
+          <td>$30M DoD funding</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+<div id="june-2025-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "Jun 2", "title": "Tungsten Boride Discovery", "description": "Hybrid GNN/DFT approach screens 375,961 structures and guides experimental synthesis"},
+{"date": "Jun 4", "title": "Perovskite Self-Driving Lab", "description": "Automated workflow introduced for perovskite photovoltaics research"},
+{"date": "Jun 4", "title": "Space Charge Layer Discovery", "description": "UT Dallas team finds ion-movement enhancement in solid-state batteries"},
+{"date": "Jun 8", "title": "Solid-State Battery Coatings", "description": "Skoltech uses GNNs to identify protective coating materials for 50% range increase"},
+{"date": "Jun 8", "title": "MIT's LMNT Announced", "description": "New facility to accelerate fusion materials testing launches"},
+{"date": "Jun 16", "title": "Dielectric ML Models", "description": "Gradient Boosting Regression achieves 0.868 correlation for strontium dielectrics"},
+{"date": "Jun 18", "title": "Anti-Biofilm Patterns", "description": "Microtopographical designs reduce biofilms 15-fold via quorum sensing"},
+{"date": "Jun 18", "title": "Microsoft's Skala XC", "description": "Deep-learning DFT model trained on 100,000+ data points announced"},
+{"date": "Jun 20", "title": "High-Pressure Phases", "description": "Active learning discovers 28 new phases in 13 iterations"},
+{"date": "Jun 20", "title": "Chemifarm Opens", "description": "£12M AI-driven chemistry facility launches in Glasgow"},
+{"date": "Jun 24", "title": "AI in Nanoelectronics", "description": "Review describes AI revolution across materials discovery and device design"},
+{"date": "Jun 25", "title": "RSC Prize for ChemDataExtractor", "description": "Diamond scientists win award for software accelerating discovery 20x"},
+{"date": "Jun 26", "title": "2D Ferromagnet Coupling", "description": "NTU demonstrates charge-spin coupling in room-temperature Fe5GeTe2"}
+]
+}
+;
+    const containerId = "june-2025-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="what-this-month-means">What This Month Means</h2>
+<p>Three patterns emerge from June&rsquo;s developments:</p>
+<p><strong>Hybrid methods are outperforming pure approaches.</strong> The combination of GNNs with DFT simulations, active learning loops, and experimental validation achieved 28 new phase discoveries in 13 iterations and guided successful tungsten boride synthesis. AI plus physics-based simulation plus experiment is proving more powerful than any single approach.</p>
+<p><strong>The bottleneck is shifting from computation to experimentation.</strong> With AI accelerating discovery timelines, researchers are investing in automation—self-driving labs for perovskites, robotic synthesis at Chemifarm, rapid cyclotron testing at MIT&rsquo;s LMNT. The focus is on closing the loop between prediction and validation.</p>
+<p><strong>Timeline compression is real and measurable.</strong> ChemDataExtractor reduces discovery from 20 years to 1 year—a <strong>20x acceleration</strong>. Active learning discovered 28 phases in 13 iterations instead of years of manual exploration. The field is moving from &ldquo;AI can help&rdquo; to &ldquo;AI is essential for competitive discovery.&rdquo;</p>
+<p>These advances remain largely research-stage, but the trajectory is clear: AI is transforming materials discovery from a decades-long process into a months-long one.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>AI Accelerates Materials Discovery: From Lab to Industry</title>
+      <link>https://cchen.me/newsletter/2025-02-28-materials-discovery/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-02-28-materials-discovery/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;3 articles&lt;/strong&gt; published between &lt;strong&gt;February 1 and February 26, 2025&lt;/strong&gt;, surveying how artificial intelligence is transforming materials science. Research reviews demonstrate accelerated discovery in MXenes and perovskites, while industry data reveals &lt;strong&gt;74%&lt;/strong&gt; of chemical companies are now deploying AI in R&amp;amp;D.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Perovskite Efficiency Growth&#34;, &#34;value&#34;: &#34;3.8% to 26%&#34;, &#34;context&#34;: &#34;Since 2009, aided by ML automation&#34;},
+{&#34;label&#34;: &#34;Industry AI Adoption&#34;, &#34;value&#34;: &#34;74%&#34;, &#34;context&#34;: &#34;Chemical companies using AI in R&amp;D&#34;},
+{&#34;label&#34;: &#34;Formulation Speedup&#34;, &#34;value&#34;: &#34;4-6 months to seconds&#34;, &#34;context&#34;: &#34;Dow&#39;s AI-driven foam development&#34;},
+{&#34;label&#34;: &#34;Potential GenAI Value&#34;, &#34;value&#34;: &#34;$140 billion&#34;, &#34;context&#34;: &#34;In energy and materials sector&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;research-spotlight-computational-methods-accelerate-discovery&#34;&gt;Research Spotlight: Computational Methods Accelerate Discovery&lt;/h2&gt;
+&lt;p&gt;Two review articles published this month document how computational methods are accelerating materials discovery, demonstrating a consistent pattern: artificial intelligence and first-principles calculations work together to guide experimental work.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>3 articles</strong> published between <strong>February 1 and February 26, 2025</strong>, surveying how artificial intelligence is transforming materials science. Research reviews demonstrate accelerated discovery in MXenes and perovskites, while industry data reveals <strong>74%</strong> of chemical companies are now deploying AI in R&amp;D.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Perovskite Efficiency Growth", "value": "3.8% to 26%", "context": "Since 2009, aided by ML automation"},
+{"label": "Industry AI Adoption", "value": "74%", "context": "Chemical companies using AI in R&D"},
+{"label": "Formulation Speedup", "value": "4-6 months to seconds", "context": "Dow's AI-driven foam development"},
+{"label": "Potential GenAI Value", "value": "$140 billion", "context": "In energy and materials sector"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="research-spotlight-computational-methods-accelerate-discovery">Research Spotlight: Computational Methods Accelerate Discovery</h2>
+<p>Two review articles published this month document how computational methods are accelerating materials discovery, demonstrating a consistent pattern: artificial intelligence and first-principles calculations work together to guide experimental work.</p>
+<h3 id="mxenes-computational-prediction-guides-experiment">MXenes: Computational Prediction Guides Experiment</h3>
+<p><a href="https://www.nature.com/articles/s41699-025-00529-5" target="_blank" rel="noopener noreferrer">MXenes</a>
+, a family of 2D transition metal carbides and nitrides discovered in 2011, have seen interest grow at <strong>34% annually</strong> according to a <a href="https://www.nature.com/articles/s41699-025-00529-5" target="_blank" rel="noopener noreferrer">review in <em>npj Computational Materials</em></a>
+. This rapid growth creates a challenge: researchers must navigate an exponentially expanding design space to identify promising compositions for specific applications.</p>
+<p>The review highlights how density functional theory (DFT) and machine learning are being used together to predict MXene properties before synthesis. DFT calculations allow researchers to explore electronic structure, surface chemistry, and mechanical properties across the MXene family. Various functionals appear in the literature, including PBE, TPSS, M06, B3LYP, PBE0, HSE06, and others from Perdew&rsquo;s &ldquo;Jacob&rsquo;s ladder&rdquo; of density functional approximations.</p>
+<p>Machine learning complements these first-principles calculations by learning patterns from computed datasets, enabling faster prediction of properties for new MXene compositions. This computational guidance helps narrow the vast design space, directing experimental synthesis toward the most promising candidates. The review notes that despite progress, challenges remain in transitioning MXenes from laboratory demonstrations to practical applications.</p>
+<h3 id="perovskites-automation-drives-efficiency-gains">Perovskites: Automation Drives Efficiency Gains</h3>
+<p>Perovskite photovoltaics present a similar story of computational acceleration. Since their emergence in 2009, perovskite solar cells have seen power conversion efficiency rise from <strong>3.8%</strong> to <strong>over 26%</strong>, according to a <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/inf2.70005" target="_blank" rel="noopener noreferrer">review in <em>InfoMat</em></a>
+. This rapid improvement has been driven partly by machine learning and automation.</p>
+<p>The review, authored by researchers from <strong>Forschungszentrum Jülich</strong>, <strong>Helmholtz-Institute Erlangen-Nürnberg (HI ERN)</strong>, and the <strong>University of Electronic Science and Technology of China (UESTC)</strong>, describes how <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/inf2.70005" target="_blank" rel="noopener noreferrer">Autonomous Material and Device Acceleration Platforms</a>
+ (AMADAP) enable high-throughput experimentation. These automated systems can prepare samples, test devices, and feed results back into machine learning models that suggest the next experiment.</p>
+<p>Materials with the \(ABX_3\) perovskite structure present optimization challenges due to the vast parameter space of compositions, processing conditions, and device architectures. ML-driven automation addresses this by exploring more combinations faster than manual methods allow. The review notes various deposition techniques being automated, including spin-coating, doctor-blading, and spray-coating.</p>
+<p>Both MXenes and perovskites demonstrate the same underlying pattern: computational methods don&rsquo;t replace experimentation, but they make it more efficient by predicting what to try next.</p>
+<h2 id="industry-adoption-ai-moves-from-lab-to-production">Industry Adoption: AI Moves from Lab to Production</h2>
+<p>The computational methods documented in academic research are now being deployed at scale across the chemicals industry. According to <a href="https://www.elsevier.com/connect/how-ai-is-transforming-the-chemicals-and-materials-industry" target="_blank" rel="noopener noreferrer">an analysis by <strong>Elsevier</strong></a>
+, <strong>74%</strong> of chemical companies have begun implementing AI in their R&amp;D processes. This finding comes from an <strong>IBM</strong> survey of 400 chemicals executives, <strong>80%</strong> of whom said AI will be important to their business in the next three years.</p>
+<p>The article highlights a concrete example from <strong>Dow Polyurethane</strong>, where AI has transformed foam formulation development. Previously, developing new flexible foam formulations took experts <strong>4 to 6 months</strong> of iterative testing. With AI, this process now takes seconds. Rather than replacing the experts, the AI augments their capabilities, allowing them to explore more options and reach optimal formulations faster.</p>
+<p><strong>McKinsey &amp; Company</strong> estimates that generative AI could create <strong>$140 billion</strong> in value across the energy and materials sector by accelerating the identification of new molecules and formulations. This potential is driving rapid adoption, but the article emphasizes that success depends on a critical foundation: data.</p>
+<p><a href="https://www.elsevier.com/connect/how-ai-is-transforming-the-chemicals-and-materials-industry" target="_blank" rel="noopener noreferrer">**FAIR principles</a>
+ (Findable, Accessible, Interoperable, Reusable)] are essential for effective AI deployment. <strong>Elsevier</strong> works with companies like <strong>Johnson Matthey</strong> to build &ldquo;data scaffolding&rdquo; through enrichment, knowledge graphs, and semantic search. <strong>SciBite</strong>, an <strong>Elsevier</strong> company, provides semantic technology to structure chemical and biological data for AI applications.</p>
+<p>The article also mentions broader AI initiatives in the industry, including <strong>Microsoft</strong> and <strong>Surveily</strong> using AI for predictive maintenance and safety monitoring in chemical plants. These applications extend beyond R&amp;D into operations, showing AI&rsquo;s potential to improve safety and sustainability alongside accelerating innovation.</p>
+<h2 id="the-pattern-integration-not-replacement">The Pattern: Integration, Not Replacement</h2>
+<p>The three articles from February reveal a consistent theme: AI is integrating into materials science and chemical engineering as an augmentation tool, not a replacement for expertise. In academic research, DFT calculations guide MXene synthesis exploration, and ML-driven automation accelerates perovskite efficiency improvements. In industry, AI formulations tools reduce development time from months to seconds, but experts remain in the loop.</p>
+<p>The common thread across all these developments is the integration of computational methods with domain knowledge. DFT + ML for MXenes, automation + ML for perovskites, and AI + expert formulation guidance at Dow all follow the same pattern: the technology augments, accelerates, and extends what human researchers can achieve.</p>
+<p>Success depends on foundations that aren&rsquo;t glamorous but are essential: high-quality computational data for training ML models, FAIR-compliant data infrastructure in industry, and experimental validation of computational predictions. As the survey data shows, the chemicals industry has moved beyond asking whether AI is useful to asking how to deploy it effectively. The research literature suggests materials science is following the same trajectory.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

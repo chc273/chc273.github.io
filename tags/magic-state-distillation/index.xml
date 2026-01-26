@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Magic State Distillation on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/magic-state-distillation/</link>
+    <description>Recent content in Magic State Distillation on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 31 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/magic-state-distillation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Error Correction Breakthroughs Define Quantum Computing&#39;s Progress in July</title>
+      <link>https://cchen.me/newsletter/2025-07-31-quantum-computing/</link>
+      <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-07-31-quantum-computing/</guid>
+      <description>&lt;p&gt;Three major error correction milestones emerged this month: a record-low error rate, the first magic state distillation on logical qubits, and extended coherence times. These technical achievements, combined with significant funding announcements and new deployments, show the field advancing on multiple fronts.&lt;/p&gt;
+&lt;p&gt;This comprehensive review covers &lt;strong&gt;158 articles&lt;/strong&gt; published between &lt;strong&gt;July 1 and July 31, 2025&lt;/strong&gt;, surveying the latest developments in quantum computing. Error rates reached new lows, magic state distillation moved from theory to practice, and the first quantum computer began operating in space.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Three major error correction milestones emerged this month: a record-low error rate, the first magic state distillation on logical qubits, and extended coherence times. These technical achievements, combined with significant funding announcements and new deployments, show the field advancing on multiple fronts.</p>
+<p>This comprehensive review covers <strong>158 articles</strong> published between <strong>July 1 and July 31, 2025</strong>, surveying the latest developments in quantum computing. Error rates reached new lows, magic state distillation moved from theory to practice, and the first quantum computer began operating in space.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Record Error Rate", "value": "0.000015%", "context": "Single-qubit gates (Oxford)"},
+{"label": "Coherence Time", "value": "1 millisecond", "context": "Transmon qubit record (Aalto)"},
+{"label": "Magic State", "value": "First logical qubit demonstration", "context": "20-year milestone (QuEra)"},
+{"label": "Space Deployment", "value": "550 km altitude", "context": "First quantum computer in orbit"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="a-record-month-for-error-correction">A Record Month for Error Correction</h2>
+<p>Researchers at the <strong>University of Oxford</strong> <a href="https://www.livescience.com/technology/computing/scientists-hit-quantum-computer-error-rate-of-0-000015-percent-a-world-record-achievement-that-could-lead-to-smaller-and-faster-machines" target="_blank" rel="noopener noreferrer">achieved</a>
+ a single-qubit gate error rate of <strong>0.000015%</strong>—equivalent to one error per <strong>6.7 million operations</strong>. This improves on the previous record of one error per 1 million operations set by the same team in 2014, representing a nearly sevenfold improvement. The breakthrough uses trapped ions controlled by microwaves at room temperature, reducing the infrastructure needed for error correction.</p>
+<p>However, two-qubit gate error rates remain significantly higher at approximately <strong>1 in 2,000</strong>, highlighting the ongoing challenge of extending single-qubit performance to multi-qubit operations. The research, <a href="https://www.livescience.com/technology/computing/scientists-hit-quantum-computer-error-rate-of-0-000015-percent-a-world-record-achievement-that-could-lead-to-smaller-and-faster-machines" target="_blank" rel="noopener noreferrer">published</a>
+ in APS Physical Review Letters, demonstrates that the error correction overhead required for fault tolerance can be substantially reduced.</p>
+<p><strong>QuEra</strong>, in collaboration with researchers from <strong>Harvard University</strong> and <strong>MIT</strong>, <a href="https://www.livescience.com/technology/computing/scientists-make-magic-state-breakthrough-after-20-years-without-it-quantum-computers-can-never-be-truly-useful" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ the first experimental magic state distillation on logical qubits using their Gemini neutral-atom quantum computer. Magic state distillation, a concept proposed more than 20 years ago, is essential for enabling non-Clifford gates—operations required for universal quantum computing but that cannot be implemented directly with error-corrected Clifford gates alone.</p>
+<p>The team&rsquo;s protocol distills five imperfect magic states into one cleaner state with higher fidelity, all within the error-corrected logical layer using distance-3 and distance-5 logical qubit bundles. The work was <a href="https://www.livescience.com/technology/computing/scientists-make-magic-state-breakthrough-after-20-years-without-it-quantum-computers-can-never-be-truly-useful" target="_blank" rel="noopener noreferrer">published</a>
+ in Nature. As <strong>QuEra Chief Commercial Officer Yuval Boger</strong> <a href="https://www.popularmechanics.com/science/a65450326/magic-state-distillation/" target="_blank" rel="noopener noreferrer">noted</a>
+, this demonstration proves that fault-tolerant magic state distillation is possible within logical qubits—a critical step toward scalable quantum computing.</p>
+<p>Separately, physicists at <strong>Aalto University</strong> in Finland <a href="https://www.sciencedaily.com/releases/2025/07/250724040459.htm" target="_blank" rel="noopener noreferrer">set</a>
+ a new record for transmon qubit coherence time, achieving <strong>1 millisecond</strong> in maximum echo coherence time, with a median of 0.5 milliseconds. This surpasses the previous benchmark of 0.6 milliseconds. The longer coherence window extends the time available for error-free quantum operations, reducing the resources required for quantum error correction. The findings were <a href="https://www.sciencedaily.com/releases/2025/07/250724040459.htm" target="_blank" rel="noopener noreferrer">published</a>
+ in Nature Communications.</p>
+<p>These three advances—error rates, error correction processes, and coherence times—represent complementary progress on the fundamental challenge of building reliable quantum computers. Rather than a single breakthrough, July&rsquo;s results show incremental but meaningful improvements across multiple technical dimensions.</p>
+
+
+
+
+
+
+<div id="error-progression" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "Quantum Error Rate Progress",
+"categories": ["2014 Record", "2025 Record"],
+"series": [{"name": "Error Rate (%)", "data": [0.0001, 0.000015]}],
+"yAxisLabel": "Error Rate (%)"
+}
+;
+    const type = "bar";
+    const containerId = "error-progression";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="research-highlights">Research Highlights</h2>
+<h3 id="quantum-computing-goes-to-space">Quantum Computing Goes to Space</h3>
+<p>For the first time, a photonic quantum computer has been <a href="https://www.iflscience.com/for-the-first-time-a-quantum-computer-has-been-sent-into-space-80236" target="_blank" rel="noopener noreferrer">launched into space</a>
+. The device, developed by an international research team led by the <strong>University of Vienna</strong>, is now operational on a satellite at <strong>550 kilometers</strong> altitude in low Earth orbit. The compact 3-liter system consumes just 10 watts of power and is designed to withstand the rigors of launch and operate autonomously in the space environment.</p>
+<p><strong>Project lead Philip Walther</strong> <a href="https://www.sciencenews.org/article/quantum-computer-space-physics" target="_blank" rel="noopener noreferrer">explained</a>
+ that the mission will collect data on how quantum computing functions in space while also aiming to improve existing space technologies. The satellite launched on June 23, 2025, and represents a milestone in quantum technology deployment, potentially enabling more efficient satellite-based computing and new physics experiments.</p>
+<h3 id="bell-test-certification-and-teleportation">Bell Test Certification and Teleportation</h3>
+<p>A global team of physicists from <strong>Leiden University</strong>, <strong>Tsinghua University</strong>, and <strong>Zhejiang University</strong> successfully <a href="https://phys.org/news/2025-07-certify-genuine-quantum-behavior-qubits.html" target="_blank" rel="noopener noreferrer">used</a>
+ Bell&rsquo;s test to certify genuine quantum behavior in a superconducting quantum processor with <strong>73 qubits</strong>. They also confirmed genuine multipartite Bell correlations in systems of up to 24 qubits, with measurements deviating from classical limits by 48 standard deviations.</p>
+<p>In another communication breakthrough, researchers at <strong>Northwestern University</strong> <a href="https://www.sciencealert.com/quantum-teleportation-was-achieved-over-internet-for-the-first-time" target="_blank" rel="noopener noreferrer">achieved</a>
+ quantum teleportation through over <strong>30 kilometers</strong> of fiber optic cable carrying live internet traffic at 400 Gbps. This demonstrates that quantum communication can coexist with classical data streams on existing infrastructure, removing a major barrier to building a practical quantum internet.</p>
+<h3 id="photonic-advances">Photonic Advances</h3>
+<p><strong>Xanadu</strong> <a href="https://www.livescience.com/technology/computing/small-room-temperature-quantum-computers-that-use-light-on-the-horizon-after-breakthrough-scientists-say" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ a photonic qubit that can detect and correct its own errors at room temperature using a Gottesman-Kitaev-Preskill (GKP) state on a silicon chip. The breakthrough, published in Nature, could enable the production of error-correcting quantum states using conventional chip manufacturing tools.</p>
+<p>A European research initiative called <strong>QLASS</strong> is <a href="https://www.zmescience.com/science/physics/scientists-are-building-a-quantum-computer-with-chips-made-out-of-glass/" target="_blank" rel="noopener noreferrer">developing</a>
+ a photonic quantum computer using glass chips with 200 reconfigurable optical modes. The project aims to build an operational device by 2026, with initial applications focused on designing better lithium-ion batteries.</p>
+<p>Researchers at <strong>Harvard SEAS</strong> <a href="https://www.sciencedaily.com/releases/2025/07/250724232413.htm" target="_blank" rel="noopener noreferrer">developed</a>
+ ultra-thin metasurfaces that can generate entangled photon states and perform quantum operations, effectively miniaturizing entire optical setups into a single device. The work, published in Science, was funded by the <strong>Air Force Office of Scientific Research</strong> and aims to overcome scalability challenges in quantum photonics.</p>
+<p>Researchers from the <strong>Weizmann Institute</strong> and <strong>Quantum Source</strong> <a href="https://thequantuminsider.com/2025/07/07/deterministic-entanglement-for-photonic-quantum-computing-atom-as-interface/" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ deterministic entanglement generation using a single atom as an intermediary, achieving process fidelities of 99.6% for SWAP gates and 99.8% for CZ gates. This atom-mediated approach eliminates reliance on probabilistic photon generation, addressing a major bottleneck for scaling photonic quantum computers.</p>
+<h3 id="simulation-and-algorithms">Simulation and Algorithms</h3>
+<p>Researchers used a digital trapped-ion quantum computer to <a href="https://www.nature.com/articles/s41467-025-60177-7" target="_blank" rel="noopener noreferrer">study</a>
+ thermalization dynamics in a Z2 lattice gauge theory, employing randomized-measurement protocols to observe universal early-time signatures of quantum chaos. The system used 12 qubits across 15 trapped ions, demonstrating that current quantum computers can probe universal features of thermalization in complex many-body systems.</p>
+<p>An international team <a href="https://phys.org/news/2025-07-quantum-simulates-spontaneous-symmetry-temperature.html" target="_blank" rel="noopener noreferrer">simulated</a>
+ spontaneous symmetry breaking at zero temperature using a 7-qubit superconducting quantum processor, achieving over 80% fidelity. The system evolved from a classical antiferromagnetic state to a ferromagnetic quantum state, revealing quantum entanglement and correlations.</p>
+<p>A study <a href="https://www.nature.com/articles/s41567-025-02945-2" target="_blank" rel="noopener noreferrer">published</a>
+ in Nature Physics by researchers from <strong>The University of Hong Kong</strong>, <strong>Fudan University</strong>, and the <strong>University of Maryland</strong> demonstrated that quantum entanglement can accelerate quantum simulation algorithms. The team established a tighter error bound related to entanglement entropy and developed an adaptive algorithm, challenging the assumption that highly entangled systems are harder to simulate.</p>
+<p><strong>Quantinuum</strong> <a href="https://spectrum.ieee.org/quantinuum-fault-tolerant-quantum-computing" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ a full set of fault-tolerant quantum gates using its trapped-ion quantum computer, marking a significant step toward scalable quantum systems that can withstand errors.</p>
+<h2 id="industry-deployments-and-products">Industry Deployments and Products</h2>
+<p><strong>Amazon Braket</strong> <a href="https://aws.amazon.com/blogs/quantum-computing/amazon-braket-launches-new-54-qubit-superconducting-quantum-processor-from-iqm/" target="_blank" rel="noopener noreferrer">launched</a>
+ <strong>IQM&rsquo;s</strong> 54-qubit <strong>Emerald</strong> superconducting quantum processor. The device features a square lattice architecture with <strong>99.93%</strong> median single-qubit gate fidelity and <strong>99.5%</strong> median two-qubit gate fidelity. Available in the Europe (Stockholm) Region, the system provides 19 hours of daily availability and is designed for surface-code error correction research.</p>
+<p><strong>Rigetti Computing</strong> <a href="https://quantumcomputingreport.com/rigetti-demonstrates-multi-chip-quantum-computer-with-halved-two-qubit-gate-error-rate/" target="_blank" rel="noopener noreferrer">achieved</a>
+ 99.5% median two-qubit gate fidelity on its modular 36-qubit system, representing a 2x reduction in error rate compared to its previous 84-qubit Ankaa-3 system. The milestone uses four 9-qubit chiplets and is a step toward scaling to 100+ qubit systems by the end of 2025.</p>
+<p><strong>D-Wave</strong> <a href="https://www.nature.com/articles/d42473-025-00236-1" target="_blank" rel="noopener noreferrer">reported</a>
+ progress on its Advantage2 QPU, showing doubled coherence time and a 40% increase in energy scale. The company demonstrated quantum computational supremacy on a real-world magnetic materials simulation, solving it in minutes versus nearly one million years for classical methods—though this would require more electricity than the world&rsquo;s annual consumption.</p>
+<p><strong>Quantum Computing Inc.</strong> (QCi) <a href="https://www.prnewswire.com/news-releases/quantum-computing-inc-secures-purchase-order-from-top-5-us-bank-to-advance-quantum-cybersecurity-testbed-302505317.html" target="_blank" rel="noopener noreferrer">secured</a>
+ a <strong>$332,000</strong> purchase order from a Top 5 U.S. bank for its quantum communication system, marking the company&rsquo;s first U.S. commercial sale of quantum cybersecurity solutions. The system will form the core of a secure quantum security testbed to explore technologies like quantum key distribution and quantum authentication.</p>
+<h2 id="strategic-partnerships">Strategic Partnerships</h2>
+<h3 id="denmarks-magne-system">Denmark&rsquo;s Magne System</h3>
+<p><strong>EIFO</strong> and the <strong>Novo Nordisk Foundation</strong> are investing <strong>€80 million</strong> to establish <strong>QuNorth</strong>, a Nordic quantum initiative that will acquire and operate <strong>Magne</strong>—a <strong>50-logical-qubit</strong> quantum computer built by <strong>Microsoft</strong> and <strong>Atom Computing</strong>. The Level 2 system, scheduled for operation by the end of 2026, will use 1,225 physical neutral-atom qubits and integrate with Microsoft&rsquo;s Azure quantum software.</p>
+<p><a href="https://thenextweb.com/news/denmark-taps-microsoft-to-build-worlds-most-powerful-quantum-computer" target="_blank" rel="noopener noreferrer">Danish Minister of Industry, Business and Financial Affairs Morten Bødskov</a>
+ called the investment &ldquo;a decisive step in strengthening Denmark&rsquo;s position.&rdquo; The system aims to provide Nordic researchers and companies with early access to error-corrected quantum computing for applications in health, sustainability, and finance.</p>
+<h3 id="moderna-ibm-mrna-collaboration">Moderna-IBM mRNA Collaboration</h3>
+<p><strong>Moderna</strong> and <strong>IBM</strong> have <a href="https://quantumcomputingreport.com/moderna-and-ibm-demonstrate-quantum-classical-approach-for-mrna-secondary-structure-prediction/" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ a hybrid quantum-classical approach for predicting mRNA secondary structures, a key step in designing mRNA medicines. Their research used Conditional Value at Risk (CVaR) to improve Variational Quantum Algorithms and set a record in 2024 with a simulation involving up to <strong>80 qubits</strong> for sequences of <strong>60 nucleotides</strong>.</p>
+<p>The collaboration aims to build a quantum-enabled biotech pipeline to augment classical computing for specific bottlenecks in drug discovery, as <a href="https://www.ibm.com/quantum/blog/moderna-case-study" target="_blank" rel="noopener noreferrer">detailed</a>
+ in their published case study.</p>
+<h3 id="additional-partnerships">Additional Partnerships</h3>
+<p><strong>Riverlane</strong> has <a href="https://quantumcomputingreport.com/riverlane-and-oqc-advance-fault-tolerant-quantum-computing-with-deltaflow-2-qec-integration/" target="_blank" rel="noopener noreferrer">integrated</a>
+ its Deltaflow 2 quantum error correction technology with an <strong>OQC</strong> quantum computer at a commercial data center, marking the first dedicated QEC deployment in a UK commercial setting. The system is part of the UK&rsquo;s DECIDE project and aligns with national goals to achieve one million error-corrected operations by 2028.</p>
+<p><strong>Xanadu</strong> and <strong>HyperLight</strong> <a href="https://quantumcomputingreport.com/xanadu-and-hyperlight-advance-photonic-chips-for-quantum-computing-with-new-performance-metrics/" target="_blank" rel="noopener noreferrer">advanced</a>
+ thin-film lithium niobate (TFLN) photonic chips, demonstrating waveguide losses below 2 dB/m and an electro-optic switch loss of about 20 mdB. The work was conducted in a high-volume semiconductor production facility.</p>
+<p>India&rsquo;s Chief Minister <strong>Nara Chandrababu Naidu</strong> <a href="https://www.linkedin.com/posts/analytics-india-magazine_chief-minister-nara-chandrababu-naidu-declared-activity-7354478205925298176-5VyN" target="_blank" rel="noopener noreferrer">announced</a>
+ that India&rsquo;s first indigenously built 8-qubit quantum computer will be deployed in Amaravati in November 2025, supported by <strong>QpiAI</strong>. The announcement comes as QpiAI&rsquo;s 25-qubit <strong>INDUS</strong> computer is already commercially operational in Bengaluru.</p>
+<h2 id="funding-and-investments">Funding and Investments</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>Amount</th>
+          <th>Focus Area</th>
+          <th>Notable Investors</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>QuiX Quantum</strong></td>
+          <td>€15M</td>
+          <td>Photonic quantum computer</td>
+          <td>EIC Fund, Invest-NL</td>
+      </tr>
+      <tr>
+          <td><strong>QEDMA</strong></td>
+          <td>$26M</td>
+          <td>Error resilience</td>
+          <td>IBM participated</td>
+      </tr>
+      <tr>
+          <td><strong>QpiAI</strong></td>
+          <td>$32M</td>
+          <td>Quantum-enhanced AI</td>
+          <td>Avataar Ventures led</td>
+      </tr>
+      <tr>
+          <td><strong>Diraq</strong></td>
+          <td>$15M</td>
+          <td>Spin qubits</td>
+          <td>ICM Global, Morgan Creek</td>
+      </tr>
+      <tr>
+          <td><strong>Groove Quantum</strong></td>
+          <td>€10M</td>
+          <td>Germanium-based</td>
+          <td>EIC Accelerator</td>
+      </tr>
+      <tr>
+          <td><strong>Ohio Institute</strong></td>
+          <td>$7M</td>
+          <td>State research center</td>
+          <td>State funding</td>
+      </tr>
+      <tr>
+          <td><strong>QuNorth</strong></td>
+          <td>€80M</td>
+          <td>Nordic initiative</td>
+          <td>EIFO, Novo Nordisk</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>QuiX Quantum</strong>, a Dutch photonic quantum computing company, <a href="https://thequantuminsider.com/2025/07/10/quix-quantum-secures-e15-million-to-deliver-first-generation-universal-photonic-quantum-computer/" target="_blank" rel="noopener noreferrer">secured</a>
+ €15 million in Series A funding co-led by <strong>Invest-NL</strong> and the <strong>EIC Fund</strong> to deliver the world&rsquo;s first single-photon-based universal quantum computer by 2026.</p>
+<p><strong>QEDMA</strong>, a developer of quantum noise resilience solutions, <a href="https://thequantuminsider.com/2025/07/04/qedma-raises-26-million-with-participation-from-ibm-to-tackle-quantum-computing-errors/" target="_blank" rel="noopener noreferrer">raised</a>
+ $26 million in Series A funding with participation from <strong>IBM</strong>. The company&rsquo;s software aims to enable quantum computations up to 1,000 times larger by reducing, mitigating, and correcting errors.</p>
+<p><strong>QpiAI</strong>, an Indian quantum computing startup, <a href="https://siliconangle.com/2025/07/17/indian-startup-qpiai-gets-32m-supercharge-ai-development-with-quantum-computing/" target="_blank" rel="noopener noreferrer">raised</a>
+ $32 million in a Series A round led by <strong>Avataar Ventures</strong>, with participation from India&rsquo;s National Quantum Mission. The company has developed a 25-qubit superconducting quantum computer, QpiAI Indus, and plans to scale to 64 qubits by year-end and 1,000 qubits by 2028.</p>
+<p><strong>Diraq</strong>, a quantum computing chip startup, <a href="https://quantumcomputingreport.com/diraq-secures-15-million-in-funding-round-backed-by-international-investors/" target="_blank" rel="noopener noreferrer">raised</a>
+ $15 million from international investors including <strong>ICM Global Funds</strong> and <strong>Morgan Creek Digital</strong>. The company is developing silicon-based quantum chips, with a first product targeted for 2029 and a fault-tolerant system by 2033.</p>
+<p><strong>Groove Quantum</strong>, a Delft-based company, <a href="https://quantumcomputingreport.com/groove-quantum-secures-e10-million-eic-accelerator-funding-for-germanium-based-quantum-computing/" target="_blank" rel="noopener noreferrer">secured</a>
+ €10 million through the <strong>EIC Accelerator</strong> programme to advance its germanium-based quantum computing technology.</p>
+<p><strong>Ohio</strong> is investing <strong>$7 million</strong> to establish the <a href="https://www.ohiotechnews.com/ohio-invests-miami-university-quantum-institute/" target="_blank" rel="noopener noreferrer">Ohio Institute for Quantum Computing Research</a>
+ at <strong>Miami University</strong> in partnership with <strong>Cleveland Clinic</strong>, creating the state&rsquo;s first dedicated quantum computing center.</p>
+<h2 id="real-world-applications">Real-World Applications</h2>
+<h3 id="drug-discovery-and-medicine">Drug Discovery and Medicine</h3>
+<p><strong>Moderna</strong> and <strong>IBM&rsquo;s</strong> collaboration on mRNA secondary structure prediction represents one of the most advanced quantum computing applications in biotechnology to date. Their hybrid approach uses quantum algorithms to search for stable mRNA structures more efficiently than classical methods alone.</p>
+<p>A study <a href="https://www.nature.com/articles/s41598-025-97067-3" target="_blank" rel="noopener noreferrer">published</a>
+ in Nature introduced a hybrid classical and quantum computing model for classifying low-grade and high-grade gliomas using data from <strong>The Cancer Genome Atlas</strong>. The model combines ensemble feature selection with a variational quantum classifier, achieving a classification accuracy of 0.74 and identifying key molecular markers like IDH1 and PTEN.</p>
+<p>The <strong>Wellcome Sanger Institute</strong> launched the <a href="https://www.businessweekly.co.uk/posts/sanger-deploys-quantum-computing-to-tackle-genomic-challenges" target="_blank" rel="noopener noreferrer">Q4Bio Challenge</a>
+, deploying quantum computing to tackle genomic challenges in collaboration with quantum software companies.</p>
+<p>A study <a href="https://www.iotworldtoday.com/quantum/endometriosis-targeted-with-quantum-computing" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ how quantum computing could be applied to endometriosis research, while another <a href="https://news.cuanschutz.edu/pharmacy/inside-cu-pharmacys-drug-discovery-lab-quantum-technology-and-human-health" target="_blank" rel="noopener noreferrer">explored</a>
+ quantum technology&rsquo;s role in human health and drug discovery.</p>
+<p>Researchers <a href="https://www.newswise.com/articles/developed-the-world-s-first-quantum-metabolic-avatar-a-digital-twin-of-human-metabolism-powered-by-quantum-algorithms" target="_blank" rel="noopener noreferrer">developed</a>
+ what they call the world&rsquo;s first quantum metabolic avatar—a digital twin of human metabolism powered by quantum algorithms.</p>
+<h3 id="materials-and-chemistry">Materials and Chemistry</h3>
+<p>Scientists in Australia <a href="https://www.livescience.com/technology/computing/scientists-use-quantum-machine-learning-to-create-semiconductors-for-the-first-time-and-it-could-transform-how-chips-are-made" target="_blank" rel="noopener noreferrer">developed</a>
+ a quantum machine learning technique called <strong>Quantum Kernel-Aligned Regressor (QKAR)</strong> that models electrical resistance inside semiconductor chips. Their method outperformed traditional machine learning models by <strong>8.8% to 20.1%</strong> in optimizing chip design using a dataset of 159 gallium nitride high-electron-mobility transistors.</p>
+<p>A <strong>Cornell University</strong> study <a href="https://thequantuminsider.com/2025/07/28/quantum-computers-help-quantum-sensors-think-smarter-cornell-study-finds/" target="_blank" rel="noopener noreferrer">introduced</a>
+ quantum computational sensing (QCS), a method that integrates quantum computing with quantum sensing. The approach uses quantum computers to process sensor signals before measurement, achieving up to <strong>26 percentage points</strong> better accuracy in classifying magnetic fields and brainwave patterns.</p>
+<p>Researchers from <strong>Cleveland Clinic</strong> and <strong>IBM</strong> <a href="https://phys.org/news/2025-07-approach-combines-quantum-supercomputers-molecule.html" target="_blank" rel="noopener noreferrer">developed</a>
+ a hybrid computing approach that combines quantum computers with supercomputers to predict molecule stability. The method uses IBM Quantum System One for quantum calculations and high-performance computing for error correction, simulating a hydrogen ring with 18 atoms.</p>
+<p><strong>Oak Ridge National Laboratory</strong> researchers are <a href="https://www.oakridger.com/story/news/local/2025/07/24/ornl-scientist-talks-on-atomic-building-blocks-for-quantum-computers/83784222007/" target="_blank" rel="noopener noreferrer">developing</a>
+ a &ldquo;synthescope&rdquo;—a modified scanning transmission electron microscope—to write with atoms and tailor materials for future quantum technologies.</p>
+<h3 id="optimization-and-infrastructure">Optimization and Infrastructure</h3>
+<p><strong>SoftBank</strong> <a href="https://www.softbank.jp/en/corp/technology/research/topics/154/" target="_blank" rel="noopener noreferrer">conducted</a>
+ a trial in Tokyo using quantum computing to optimize 5G RAN performance. The test used an Ising machine to recalibrate base station carrier-aggregation settings, resulting in a <strong>10%</strong> increase in downlink speeds and up to <strong>50%</strong> growth in data transmission capacity. The operator plans to expand this quantum-based optimization into broader network architecture.</p>
+<p><strong>D-Wave&rsquo;s</strong> collaboration with <strong>NASA JPL</strong> <a href="https://www.iotworldtoday.com/quantum/d-wave-partners-with-nasa-jpl-to-scale-quantum-computing" target="_blank" rel="noopener noreferrer">aims</a>
+ to scale quantum computing for space applications.</p>
+<p><strong>Mitsui &amp; Co.</strong> <a href="https://www.mitsui.com/solution/en/contents/solutions/optimize/902" target="_blank" rel="noopener noreferrer">partnered</a>
+ with <strong>Quantinuum</strong> to explore quantum computing applications across business sectors.</p>
+<p>An <strong>AWS</strong> study <a href="https://aws.amazon.com/blogs/quantum-computing/simulating-fluid-mechanics-using-quantum-computing-on-amazon-braket-with-haiqu-and-quanscient/" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ simulating fluid mechanics using quantum computing on Amazon Braket with Haiqu and Quanscient.</p>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>The pattern in July&rsquo;s developments shows error correction advancing on multiple fronts—rates, processes, and coherence times—but these remain incremental steps toward fault tolerance, not sudden breakthroughs. The industry is building toward practical systems like Denmark&rsquo;s 50-logical-qubit Magne computer due in 2026, while simultaneously developing near-term applications in specific domains.</p>
+<p>The first quantum computer in space opens new environment testing possibilities and could enable future space-based quantum networks. Global funding continues to flow across modalities, particularly to European photonic and neutral-atom approaches.</p>
+<p>The field is maturing: more demonstrations of specific capabilities with measured technical details, fewer claims of general superiority. The distinction between demonstrated results and projected capabilities is increasingly clear in public communications. Error correction remains the primary technical focus, but commercial applications are emerging in drug discovery, semiconductor design, and telecommunications optimization.</p>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "July 1", "title": "Lattice gauge simulation", "description": "Researchers use trapped-ion quantum computer to study thermalization in Z2 lattice gauge theory"},
+{"date": "July 2", "title": "Symmetry breaking simulated", "description": "Superconducting quantum processor simulates spontaneous symmetry breaking at zero temperature"},
+{"date": "July 4", "title": "QEDMA raises $26M", "description": "Error resilience startup raises Series A with IBM participation"},
+{"date": "July 8", "title": "Coherence time record", "description": "Aalto University publishes 1 millisecond coherence time result"},
+{"date": "July 10", "title": "QuiX Quantum funding", "description": "Dutch company raises €15M Series A for photonic quantum computer"},
+{"date": "July 14", "title": "Magic state distillation", "description": "QuEra's logical qubit breakthrough published in Nature"},
+{"date": "July 14", "title": "Bell test certification", "description": "73-qubit system certified for genuine quantum behavior"},
+{"date": "July 15", "title": "China's Origin Wukong", "description": "Domestic rollout of China's quantum computer announced"},
+{"date": "July 17", "title": "QuNorth announced", "description": "Denmark's €80M quantum initiative to acquire 50-logical-qubit system"},
+{"date": "July 17", "title": "QpiAI raises $32M", "description": "Indian quantum startup Series A led by Avataar Ventures"},
+{"date": "July 18", "title": "Moderna-IBM case study", "description": "mRNA secondary structure prediction research published"},
+{"date": "July 21", "title": "IQM Emerald on Braket", "description": "54-qubit superconducting processor launches on Amazon Braket"},
+{"date": "July 23", "title": "Magic state coverage", "description": "Popular Mechanics reports on 20-year milestone achievement"},
+{"date": "July 24", "title": "Aalto coverage", "description": "ScienceDaily reports on transmon qubit coherence record"},
+{"date": "July 28", "title": "Oxford error rate", "description": "Live Science reports on 0.000015% error rate achievement"},
+{"date": "July 31", "title": "Space deployment", "description": "First quantum computer in orbit reported"}
+]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

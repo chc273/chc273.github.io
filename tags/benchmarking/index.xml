@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Benchmarking on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/benchmarking/</link>
+    <description>Recent content in Benchmarking on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/benchmarking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>April 2025: Error Correction Breakthroughs, New Benchmarks, and the Path to Quantum Utility</title>
+      <link>https://cchen.me/newsletter/2025-04-30-quantum-computing/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-04-30-quantum-computing/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;185 articles&lt;/strong&gt; published in &lt;strong&gt;April 2025&lt;/strong&gt;, surveying the latest developments in quantum computing. This month brought remarkable progress in quantum reliability: Alice &amp;amp; Bob demonstrated cat qubits with &lt;a href=&#34;https://www.livescience.com/technology/computing/schrodingers-cat-inspired-quantum-computing-now-160-times-more-reliable-thanks-to-new-discovery&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;160x fewer errors&lt;/a&gt;
+, while researchers unveiled the first comprehensive benchmark showing quantum systems surpassing classical simulation limits. Beyond the lab, governments committed hundreds of millions, and new quantum systems came online worldwide.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Error Reduction&#34;, &#34;value&#34;: &#34;160x&#34;, &#34;context&#34;: &#34;Bit-flip errors in squeezed cat qubits&#34;},
+{&#34;label&#34;: &#34;Qubit Lifetime&#34;, &#34;value&#34;: &#34;22 seconds&#34;, &#34;context&#34;: &#34;Cat qubit stability milestone&#34;},
+{&#34;label&#34;: &#34;QPUs Tested&#34;, &#34;value&#34;: &#34;19&#34;, &#34;context&#34;: &#34;Comprehensive benchmark study&#34;},
+{&#34;label&#34;: &#34;System Scale&#34;, &#34;value&#34;: &#34;256 qubits&#34;, &#34;context&#34;: &#34;Fujitsu-RIKEN superconducting system&#34;},
+{&#34;label&#34;: &#34;UK Investment&#34;, &#34;value&#34;: &#34;121M&#34;, &#34;context&#34;: &#34;Quantum for fraud detection &amp; security&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;reliability-breakthrough-cat-qubits-get-160x-better&#34;&gt;Reliability Breakthrough: Cat Qubits Get 160x Better&lt;/h2&gt;
+&lt;p&gt;The most significant technical advance this month came from &lt;strong&gt;Alice &amp;amp; Bob&lt;/strong&gt;, which achieved a &lt;a href=&#34;https://www.livescience.com/technology/computing/schrodingers-cat-inspired-quantum-computing-now-160-times-more-reliable-thanks-to-new-discovery&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;160x reduction in bit-flip errors&lt;/a&gt;
+ using &amp;ldquo;squeezed&amp;rdquo; cat qubits. The technique extends cat qubit lifetime from &lt;strong&gt;138 milliseconds&lt;/strong&gt; to &lt;strong&gt;22 seconds&lt;/strong&gt;—a dramatic improvement that makes error correction considerably less resource-intensive. Bit-flip errors, where a qubit spontaneously flips from \(|0\rangle\) to \(|1\rangle\), are one of the two fundamental error types in quantum computing. Suppressing them at the hardware level reduces the overhead required for software-based error correction.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>185 articles</strong> published in <strong>April 2025</strong>, surveying the latest developments in quantum computing. This month brought remarkable progress in quantum reliability: Alice &amp; Bob demonstrated cat qubits with <a href="https://www.livescience.com/technology/computing/schrodingers-cat-inspired-quantum-computing-now-160-times-more-reliable-thanks-to-new-discovery" target="_blank" rel="noopener noreferrer">160x fewer errors</a>
+, while researchers unveiled the first comprehensive benchmark showing quantum systems surpassing classical simulation limits. Beyond the lab, governments committed hundreds of millions, and new quantum systems came online worldwide.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Error Reduction", "value": "160x", "context": "Bit-flip errors in squeezed cat qubits"},
+{"label": "Qubit Lifetime", "value": "22 seconds", "context": "Cat qubit stability milestone"},
+{"label": "QPUs Tested", "value": "19", "context": "Comprehensive benchmark study"},
+{"label": "System Scale", "value": "256 qubits", "context": "Fujitsu-RIKEN superconducting system"},
+{"label": "UK Investment", "value": "121M", "context": "Quantum for fraud detection & security"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="reliability-breakthrough-cat-qubits-get-160x-better">Reliability Breakthrough: Cat Qubits Get 160x Better</h2>
+<p>The most significant technical advance this month came from <strong>Alice &amp; Bob</strong>, which achieved a <a href="https://www.livescience.com/technology/computing/schrodingers-cat-inspired-quantum-computing-now-160-times-more-reliable-thanks-to-new-discovery" target="_blank" rel="noopener noreferrer">160x reduction in bit-flip errors</a>
+ using &ldquo;squeezed&rdquo; cat qubits. The technique extends cat qubit lifetime from <strong>138 milliseconds</strong> to <strong>22 seconds</strong>—a dramatic improvement that makes error correction considerably less resource-intensive. Bit-flip errors, where a qubit spontaneously flips from \(|0\rangle\) to \(|1\rangle\), are one of the two fundamental error types in quantum computing. Suppressing them at the hardware level reduces the overhead required for software-based error correction.</p>
+<p>The squeezing technique works without modifying circuit design, making it potentially applicable to existing cat qubit architectures. Cat qubits are a type of bosonic code that encodes quantum information in the oscillations of a superconducting resonator, named after Schrodinger&rsquo;s famous thought experiment. By squeezing the quantum state, the researchers effectively narrowed the uncertainty in one quadrature while expanding it in the orthogonal direction—trading one type of error for another that&rsquo;s easier to correct.</p>
+<h3 id="complementary-error-correction-advances">Complementary Error Correction Advances</h3>
+<p>Alice &amp; Bob&rsquo;s breakthrough is part of a broader set of error correction advances this month:</p>
+<ul>
+<li>
+<p><strong>University of Twente</strong> researchers invented a <a href="https://phys.org/news/2025-04-error-method-photon-requirements-quantum.html" target="_blank" rel="noopener noreferrer">photonic error correction method</a>
+ that filters high-quality photons at the source rather than correcting errors after the fact. Previous approaches required hundreds of physical photons to create a single reliable logical qubit; the new technique dramatically reduces this overhead, making photonic quantum computers cheaper and more practical.</p>
+</li>
+<li>
+<p>Scientists at the <strong>University of Witwatersrand</strong> developed <a href="https://www.livescience.com/technology/computing/breakthrough-that-shields-quantum-information-from-noise-brings-a-quantum-internet-one-step-closer" target="_blank" rel="noopener noreferrer">optical skyrmions</a>
+—topological structures formed in entangled photon pairs that encode quantum information in their global properties rather than local states. Even when entanglement degrades, the topological protection helps preserve information, potentially enabling more robust quantum networks.</p>
+</li>
+<li>
+<p><strong>Lawrence Berkeley National Laboratory</strong> researchers <a href="https://www.rdworldonline.com/quantum-computing-hardware-advance-slashes-superinductor-capacitance-60-cutting-substrate-loss/" target="_blank" rel="noopener noreferrer">reduced superinductor capacitance by over 60%</a>
+ through a new chemical etching process that suspends superinductors above the wafer surface. This cuts substrate-related noise, a major source of error in superconducting qubits, and provides a practical fabrication method for scaling up.</p>
+</li>
+<li>
+<p><strong>UCL</strong> engineers broke a <a href="https://scitechdaily.com/major-quantum-computing-advance-scientists-break-25-year-barrier-in-chip-fabrication/" target="_blank" rel="noopener noreferrer">25-year barrier in chip fabrication</a>
+ by using arsenic atoms instead of phosphorus for single-atom placement. They achieved <strong>97% accuracy</strong> in positioning individual atoms—compared to the 70% success rate typical for phosphorus—demonstrating a path toward near-zero failure rates in quantum chip manufacturing.</p>
+</li>
+</ul>
+<p>These advances represent complementary approaches to the same fundamental challenge: making quantum computations reliable enough to be useful. While each targets different qubit modalities—superconducting, photonic, topological, silicon-based—together they indicate rapid progress across the field.</p>
+<h2 id="measuring-progress-when-do-quantum-computers-win">Measuring Progress: When Do Quantum Computers Win?</h2>
+<p>A critical development this month came from the <strong>Jülich Research Centre</strong>, which unveiled a <a href="https://www.livescience.com/technology/computing/new-qpu-benchmark-will-show-when-quantum-computers-surpass-existing-computing-capabilities-scientists-say" target="_blank" rel="noopener noreferrer">comprehensive benchmark comparing 19 quantum processing units</a>
+ from five suppliers (IBM, Quantinuum, IonQ, Rigetti, and IQM). Built around the MaxCut optimization problem, the benchmark provides a platform-agnostic way to measure quantum performance as systems scale.</p>
+<p>The results revealed important differences between platforms. <strong>Quantinuum&rsquo;s H2-1</strong> passed the benchmark at <strong>56 qubits</strong>—a scale that surpasses exact classical simulation. The test used 4,620 two-qubit gates in a Linear Ramp Quantum Approximate Optimization Algorithm (LR-QAOA) circuit, demonstrating that trapped-ion systems can maintain coherence at useful scales.</p>
+<p><strong>IBM&rsquo;s</strong> processors showed different strengths: the Fez chip handled <strong>100-qubit problems at depths up to 10,000 layers</strong>, though coherent information was retained only through approximately 300 layers. More importantly, the newer <strong>Marrakesh chip</strong> demonstrated <a href="https://www.livescience.com/technology/computing/new-qpu-benchmark-will-show-when-quantum-computers-surpass-existing-computing-capabilities-scientists-say" target="_blank" rel="noopener noreferrer">half the error rate per layered gate</a>
+ compared to Fez, showing rapid iterative improvement in IBM&rsquo;s superconducting hardware.</p>
+
+
+
+
+
+
+<div id="qpu-comparison" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "Quantum Processing Units Compared in New Benchmark",
+"categories": ["Quantinuum H2-1", "IBM Heron", "IBM Eagle", "IonQ Forte", "Rigetti Ankaa-2"],
+"series": [{"name": "Benchmark Pass (qubits)", "data": [56, 20, 0, 0, 0], "color": "#3b82f6"}],
+"yAxisLabel": "Qubits (MaxCut Benchmark)"
+}
+;
+    const type = "bar";
+    const containerId = "qpu-comparison";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h3 id="benchmarking-software-performance">Benchmarking Software Performance</h3>
+<p>Separately, researchers introduced <strong>Benchpress</strong>, an <a href="https://www.nature.com/articles/s43588-025-00792-y" target="_blank" rel="noopener noreferrer">open-source benchmarking suite</a>
+ for quantum software development kits. The suite includes <strong>1,066 tests</strong> covering circuit construction, manipulation, and compilation across SDKs including Qiskit, Cirq, Braket, Tket, and others. In initial tests, Qiskit completed circuit construction tests in 2.0 seconds while Tket required 14.2 seconds—but Tket produced circuits with fewer two-qubit gates for certain decompositions, highlighting different performance tradeoffs.</p>
+<h3 id="the-challenge-of-meaningful-benchmarks">The Challenge of Meaningful Benchmarks</h3>
+<p>The quest for meaningful benchmarks also revealed ongoing controversies. <strong>IEEE Spectrum</strong> published a <a href="https://spectrum.ieee.org/d-wave-quantum" target="_blank" rel="noopener noreferrer">critique of D-Wave&rsquo;s quantum supremacy claims</a>
+, noting that the company&rsquo;s annealing approach solves different problems than gate-based quantum computers and that direct comparisons are often misleading. <strong>New Scientist</strong> similarly <a href="https://www.newscientist.com/article/2475880-why-quantum-computers-may-continue-to-fail-a-key-test/" target="_blank" rel="noopener noreferrer">examined why quantum computers continue to fail</a>
+ certain key tests, emphasizing that cross-entropy benchmarking—while useful for measuring random circuit sampling—may not capture performance on practical applications.</p>
+<p>This tension between demonstrating raw quantum advantage and solving useful problems remains central to the field. The MaxCut benchmark represents progress because it&rsquo;s based on a real optimization problem with commercial applications, rather than an artificial benchmark designed solely to showcase quantum speedups.</p>
+<h2 id="building-the-quantum-internet-qnodeos-and-distributed-computing">Building the Quantum Internet: QNodeOS and Distributed Computing</h2>
+<h3 id="quantum-operating-system">Quantum Operating System</h3>
+<p>Researchers unveiled <strong>QNodeOS</strong>, billed as the <a href="https://www.livescience.com/technology/computing/worlds-first-operating-system-for-quantum-computers-unveiled-it-can-be-used-to-manage-a-future-quantum-internet" target="_blank" rel="noopener noreferrer">world&rsquo;s first operating system for quantum computers</a>
+. The system enables multiple quantum computers to be controlled centrally and connected for distributed quantum computing—a foundational capability for a future quantum internet. QNodeOS handles resource allocation, job scheduling, and network management across diverse quantum hardware, abstracting away the differences between systems from different vendors.</p>
+<h3 id="network-infrastructure">Network Infrastructure</h3>
+<p>The <strong>UK demonstrated a 410-kilometer quantum network</strong> <a href="https://quantumcomputingreport.com/uk-demonstrates-first-long-distance-quantum-network-integrating-entanglement-and-qkd-over-410-km-fibre/" target="_blank" rel="noopener noreferrer">integrating both quantum key distribution (QKD) and entanglement distribution</a>
+. The network connects multiple nodes and represents a step toward practical quantum communication infrastructure. Simultaneously, the UK launched its <strong>Integrated Quantum Networks Hub</strong> at Heriot-Watt University, bringing together academia and industry to <a href="https://www.hw.ac.uk/news/2025/new-uk-quantum-hub-launches-to-pioneer-secure-networks-and-advance-the-quantum-internet" target="_blank" rel="noopener noreferrer">pioneer secure quantum networks</a>
+.</p>
+<p>In the United States, <strong>IonQ</strong> and the <strong>Electric Power Board (EPB)</strong> launched a <a href="https://quantumcomputingreport.com/ionq-and-epb-launch-22m-quantum-innovation-center-in-chattanooga-establishing-first-u-s-hub-for-quantum-computing-and-networking/" target="_blank" rel="noopener noreferrer">$22 million Quantum Innovation Center</a>
+ in Chattanooga, Tennessee. The center will house IonQ quantum computing systems and establish the first U.S. hub dedicated to quantum computing and networking research.</p>
+<h3 id="new-deployments">New Deployments</h3>
+<p><strong>IQM</strong> announced it will <a href="https://quantumcomputingreport.com/iqm-to-install-polands-first-superconducting-quantum-computer-at-wroclaw-university-of-science-and-technology-wust/" target="_blank" rel="noopener noreferrer">install Poland&rsquo;s first superconducting quantum computer</a>
+ at Wroclaw University of Science and Technology. The system will support Polish research in quantum algorithms and materials science.</p>
+<h2 id="hardware-milestones-new-systems-come-online">Hardware Milestones: New Systems Come Online</h2>
+<h3 id="japan">Japan</h3>
+<p><strong>Fujitsu</strong> and <strong>RIKEN</strong> unveiled a <a href="https://thequantuminsider.com/2025/04/22/japans-fujitsu-and-riken-unveil-256-qubit-superconducting-quantum-computer-quadrupling-processing-power/" target="_blank" rel="noopener noreferrer">256-qubit superconducting quantum computer</a>
+, quadrupling the qubit count of their previous 64-qubit system. The new system builds on Fujitsu&rsquo;s ongoing collaboration with RIKEN and represents a significant step toward Japan&rsquo;s goal of developing a domestically produced quantum computing stack.</p>
+<p>Separately, <strong>ULVAC</strong> delivered a <a href="https://thequantuminsider.com/2025/04/25/ulvac-delivers-cryogenic-system-advancing-japans-first-fully-domestic-quantum-computer/" target="_blank" rel="noopener noreferrer">cryogenic system for Japan&rsquo;s first fully domestic quantum computer</a>
+, supporting the country&rsquo;s push for end-to-end sovereign quantum capabilities.</p>
+<h3 id="india">India</h3>
+<p><strong>QpiAI</strong> launched the <strong>QpiAI-Indus</strong>, <a href="https://egov.eletsonline.com/2025/04/qpiai-unveils-one-of-indias-most-powerful-quantum-computers-under-national-quantum-mission/" target="_blank" rel="noopener noreferrer">India&rsquo;s first full-stack 25-qubit quantum computer</a>
+ under the country&rsquo;s National Quantum Mission. The system features superconducting qubits and includes both cloud access and on-premises deployment options. India&rsquo;s quantum push has gained momentum following a government commitment of approximately $1 billion over five years.</p>
+<h3 id="europe">Europe</h3>
+<p>Beyond the IQM deployment in Poland, several European quantum initiatives advanced this month. The UK&rsquo;s quantum hubs continued their work on networking and applications, while Norway announced <a href="https://www.sintef.no/en/latest-news/2025/new-norwegian-investment-in-quantum-technology-research/" target="_blank" rel="noopener noreferrer">new investment in quantum technology research</a>
+.</p>
+<h3 id="mobile-systems">Mobile Systems</h3>
+<p><strong>SaxonQ</strong> demonstrated <a href="https://thequantuminsider.com/2025/04/09/saxonq-demonstrates-applications-on-a-mobile-quantum-computer-powered-by-quantum-machines-tech/" target="_blank" rel="noopener noreferrer">applications running on a mobile quantum computer</a>
+ powered by Quantum Machines&rsquo; control electronics. The demonstration showed that room-temperature quantum computing—using nitrogen-vacancy centers in diamond—can operate outside specialized data center environments, opening possibilities for field-deployed quantum sensors and computers.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Company/Organization</th>
+          <th>Qubits</th>
+          <th>Technology</th>
+          <th>Location</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Fujitsu-RIKEN</strong></td>
+          <td>256</td>
+          <td>Superconducting</td>
+          <td>Japan</td>
+          <td>Operational</td>
+      </tr>
+      <tr>
+          <td><strong>QpiAI</strong></td>
+          <td>25</td>
+          <td>Superconducting</td>
+          <td>India</td>
+          <td>Launched</td>
+      </tr>
+      <tr>
+          <td><strong>IQM</strong></td>
+          <td>Not specified</td>
+          <td>Superconducting</td>
+          <td>Poland (WUST)</td>
+          <td>Announced</td>
+      </tr>
+      <tr>
+          <td><strong>SaxonQ</strong></td>
+          <td>Not specified</td>
+          <td>NV Center (room temp)</td>
+          <td>Mobile</td>
+          <td>Demonstrated</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="research-highlights-from-quasiparticles-to-topology">Research Highlights: From Quasiparticles to Topology</h2>
+<h3 id="mathematical-applications">Mathematical Applications</h3>
+<p>Researchers used <strong>Quantinuum&rsquo;s H2-2 quantum computer</strong> to <a href="https://www.nature.com/articles/d41586-025-01094-z" target="_blank" rel="noopener noreferrer">explore knot theory</a>
+, demonstrating how quantum systems can solve complex mathematical problems. The work involved implementing quantum algorithms to compute knot invariants—mathematical quantities that distinguish different types of knots—with potential applications in topological quantum computing and quantum field theory.</p>
+<p>In a separate study, researchers demonstrated <a href="https://www.nature.com/articles/s41598-025-98776-5" target="_blank" rel="noopener noreferrer">quantum computing for contingency analysis in power systems</a>
+, showing how quantum algorithms could identify potentially dangerous configurations in electrical grids more efficiently than classical methods.</p>
+<h3 id="physics-discoveries">Physics Discoveries</h3>
+<p><strong>National Science Foundation-funded researchers</strong> discovered a <a href="https://www.nsf.gov/news/quantum-quasiparticle-could-make-future-quantum-computers" target="_blank" rel="noopener noreferrer">new quantum quasiparticle</a>
+: fractional excitons, which carry fractions of an electron&rsquo;s charge and could enable new approaches to quantum information storage and manipulation.</p>
+<p>Researchers observed a <a href="https://www.livescience.com/technology/computing/scientists-observe-new-quantum-phase-that-could-have-major-implications-for-quantum-computing" target="_blank" rel="noopener noreferrer">superradiant phase transition</a>
+ that had been predicted for 50 years but never seen until now. The phenomenon, observed in a trapped-ion quantum simulator, could advance our understanding of open quantum systems and quantum thermodynamics.</p>
+<p><strong>Quantinuum&rsquo;s H2</strong> system was used to <a href="https://phys.org/news/2025-04-simulating-quantum-magnetism-digital.html" target="_blank" rel="noopener noreferrer">simulate quantum magnetism</a>
+ using digital quantum simulation techniques, providing insights into magnetic materials that are difficult to study classically.</p>
+<h3 id="hardware-advances">Hardware Advances</h3>
+<p><strong>Trapped ion systems</strong> achieved a milestone in <a href="https://quantumzeitgeist.com/achieving-mid-circuit-measurement-and-reset-in-trapped-ion-systems-for-scalable-quantum-computing/" target="_blank" rel="noopener noreferrer">mid-circuit measurement and reset</a>
+, capabilities essential for error correction and algorithm efficiency. The ability to measure qubits mid-computation without disturbing neighboring qubits, then reset and reuse them, dramatically reduces the qubit overhead required for fault-tolerant quantum computing.</p>
+<h3 id="practical-applications">Practical Applications</h3>
+<p><strong>Google Quantum AI</strong> published research on <a href="https://blog.google/innovation-and-ai/technology/research/google-quantum-computer-real-world-applications/" target="_blank" rel="noopener noreferrer">practical applications of its quantum computers</a>
+, emphasizing work toward quantum advantage in materials simulation and optimization problems.</p>
+<p>Researchers demonstrated <a href="https://phys.org/news/2025-04-quantum-proton-affinity-superior-accuracy.html" target="_blank" rel="noopener noreferrer">quantum machine learning for predicting proton affinity</a>
+, achieving superior accuracy compared to classical methods. Proton affinity is a key property in chemistry and drug discovery, with applications ranging from catalyst design to understanding biochemical reactions.</p>
+<p>In China, researchers demonstrated <a href="https://quantumcomputingreport.com/china-demonstrates-quantum-assisted-fine-tuning-of-billion-parameter-ai-model/" target="_blank" rel="noopener noreferrer">quantum-assisted fine-tuning of billion-parameter AI models</a>
+, illustrating the convergence of quantum computing and artificial intelligence—a trend that accelerated throughout 2025.</p>
+<h2 id="government-bets-darpa-uk-and-global-investment">Government Bets: DARPA, UK, and Global Investment</h2>
+<h3 id="darpa-quantum-benchmarking-initiative">DARPA Quantum Benchmarking Initiative</h3>
+<p>The <strong>U.S. Defense Advanced Research Projects Agency (DARPA)</strong> made significant moves in quantum computing this month. The agency&rsquo;s <a href="https://www.networkworld.com/article/3956149/darpa-backs-multiple-quantum-paths-in-benchmarking-initiative.html" target="_blank" rel="noopener noreferrer">Quantum Benchmarking Initiative (QBI)</a>
+ selected <strong>18 companies</strong> for Stage A awards of approximately $1 million each. The winners include:</p>
+<ul>
+<li><strong>Atom Computing</strong> — <a href="https://www.prnewswire.com/news-releases/atom-computing-selected-by-darpa-to-explore-near-term-utility-scale-quantum-computing-with-neutral-atoms-302420078.html" target="_blank" rel="noopener noreferrer">Selected for neutral atom quantum computing exploration</a>
+</li>
+<li><strong>IonQ</strong> — <a href="https://www.ionq.com/news/ionq-selected-by-darpa-for-quantum-benchmarking-initiative-qbi-to-advance" target="_blank" rel="noopener noreferrer">Selected to advance utility-scale quantum computing</a>
+</li>
+</ul>
+<p>The program targets <a href="https://www.defenseone.com/technology/2025/04/what-will-quantum-computing-actually-look/404286/" target="_blank" rel="noopener noreferrer">utility-scale quantum systems by 2033</a>
+, with DARPA taking an agnostic approach to qubit modalities. Stage A requires companies to develop conceptual descriptions of how they would achieve a logical qubit error rate of \(10^{-6}\) or better—a threshold considered necessary for practical quantum advantage.</p>
+<h3 id="uk-quantum-investment">UK Quantum Investment</h3>
+<p>The <strong>UK government announced £121 million</strong> in funding for <a href="https://www.gov.uk/government/news/121-million-boost-for-quantum-technology-set-to-tackle-fraud-prevent-money-laundering-and-drive-growth" target="_blank" rel="noopener noreferrer">quantum applications in fraud detection, anti-money laundering, and cybersecurity</a>
+. The investment targets practical applications where quantum computing could provide near-term value, though some <a href="https://www.techradar.com/pro/security/can-quantum-computing-tech-kill-fraud-the-uk-government-thinks-so-but-with-gbp100-million-im-not-so-sure" target="_blank" rel="noopener noreferrer">analysts questioned whether the amount is sufficient</a>
+ given the scale of the challenge.</p>
+<h3 id="other-government-initiatives">Other Government Initiatives</h3>
+<ul>
+<li><strong>Norway</strong> announced <a href="https://www.sintef.no/en/latest-news/2025/new-norwegian-investment-in-quantum-technology-research/" target="_blank" rel="noopener noreferrer">new investment in quantum technology research</a>
+, strengthening its national quantum capabilities.</li>
+<li><strong>Colorado</strong> received a <a href="https://coloradosun.com/2025/04/15/colorado-quantum-technology-computing-federal-funding/" target="_blank" rel="noopener noreferrer">$40.5 million federal grant</a>
+ for quantum technology development, solidifying the state&rsquo;s position as a U.S. quantum hub.</li>
+<li><strong>Italy</strong> finalized its <a href="https://en.ilsole24ore.com/art/quantum-computers-ready-strategy-the-government-AHU4wwE" target="_blank" rel="noopener noreferrer">national quantum strategy</a>
+, positioning the country to compete in the European quantum ecosystem.</li>
+<li>The <strong>EU explored quantum computing applications</strong> in the energy sector, <a href="https://www.enlit.world/library/europe-energy-briefs-the-emerging-quantum-computing-world-and-energy" target="_blank" rel="noopener noreferrer">examining how quantum algorithms could optimize power grids</a>
+.</li>
+<li>National security concerns gained prominence, with analyses of <a href="https://www.orfonline.org/expert-speak/nuclear-security-at-risk-quantum-computing-s-silent-attack" target="_blank" rel="noopener noreferrer">quantum threats to nuclear command and control systems</a>
+ and the <a href="https://www.rusi.org/news-and-comment/explainers/quantum-technologies-uk" target="_blank" rel="noopener noreferrer">UK&rsquo;s quantum security posture</a>
+.</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Country/Region</th>
+          <th>Investment</th>
+          <th>Focus Areas</th>
+          <th>Timeline</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>USA (DARPA)</strong></td>
+          <td>~$18M (Stage A)</td>
+          <td>Utility-scale systems, benchmarking</td>
+          <td>Target: 2033</td>
+      </tr>
+      <tr>
+          <td><strong>UK</strong></td>
+          <td>£121M</td>
+          <td>Fraud detection, AML, cybersecurity</td>
+          <td>Immediate deployment</td>
+      </tr>
+      <tr>
+          <td><strong>Norway</strong></td>
+          <td>Not specified</td>
+          <td>Quantum research infrastructure</td>
+          <td>Ongoing</td>
+      </tr>
+      <tr>
+          <td><strong>Colorado (USA)</strong></td>
+          <td>$40.5M</td>
+          <td>Quantum tech development hub</td>
+          <td>Multi-year</td>
+      </tr>
+      <tr>
+          <td><strong>Italy</strong></td>
+          <td>Not specified</td>
+          <td>National quantum strategy</td>
+          <td>Strategic framework</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="industry-and-partnerships-quantum-goes-commercial">Industry and Partnerships: Quantum Goes Commercial</h2>
+<h3 id="healthcare--research-partnerships">Healthcare &amp; Research Partnerships</h3>
+<p><strong>CAS</strong> (a division of the American Chemical Society) and <strong>Cleveland Clinic</strong> formed a <a href="https://thequantuminsider.com/2025/04/08/cas-and-cleveland-clinic-partner-to-advance-brain-health-research-with-ai-and-quantum-computing/" target="_blank" rel="noopener noreferrer">strategic collaboration to advance brain health research</a>
+ using AI and quantum computing. The partnership aims to shorten the typical <a href="https://newsroom.clevelandclinic.org/2025/04/07/cas-and-cleveland-clinic-collaborate-to-accelerate-research-through-advanced-ai-and-quantum-computing" target="_blank" rel="noopener noreferrer">17-year timeline</a>
+ from lab discovery to approved therapy, with initial projects focusing on Alzheimer&rsquo;s drug discovery.</p>
+<p>The <strong>Milner Therapeutics Institute</strong> at Cambridge University <a href="https://quantumzeitgeist.com/milner-institute-signs-mou-with-yonsei-university-to-advance-quantum-computing-research/" target="_blank" rel="noopener noreferrer">signed an MOU with Yonsei University</a>
+ to foster joint quantum computing research. Yonsei will utilize Korea&rsquo;s first IBM Quantum Computer for collaborative projects, aiming to synergize quantum computing with AI-driven drug discovery.</p>
+<h3 id="investments--funding">Investments &amp; Funding</h3>
+<ul>
+<li>
+<p><strong>BTQ Technologies</strong> signed a term sheet to <a href="https://thequantuminsider.com/2025/04/09/btq-technologies-to-invest-over-2-million-in-qperfect-to-advance-neutral-atom-quantum-computing/" target="_blank" rel="noopener noreferrer">invest €2 million in QPerfect</a>
+, a neutral atom quantum computing company. The investment grants BTQ a 16.67% equity stake with an option for full ownership within 12 months. QPerfect&rsquo;s MIMIQ platform provides quantum design automation and simulation capabilities.</p>
+</li>
+<li>
+<p><strong>Rigetti Computing</strong> <a href="https://thequantuminsider.com/2025/04/30/rigetti-finalizes-35-million-investment-as-quanta-partnership-moves-forward/" target="_blank" rel="noopener noreferrer">closed a $35 million strategic investment</a>
+ from Quanta Computer, finalizing the investment portion of their collaboration agreement. The partnership aims to combine Quanta&rsquo;s manufacturing expertise with Rigetti&rsquo;s superconducting quantum technology.</p>
+</li>
+<li>
+<p><strong>IQM</strong>, the Finnish quantum startup, is <a href="https://thequantuminsider.com/2025/04/03/finnish-quantum-startup-iqm-eyes-e128-million-amid-industry-surge/" target="_blank" rel="noopener noreferrer">seeking approximately €128 million</a>
+ in a new funding round as the quantum computing industry sees increased investor interest.</p>
+</li>
+<li>
+<p><strong>IBM</strong> announced plans to spend <a href="https://quantumcomputingreport.com/ibms-planned-150b-quantum-spending-hype-or-reality/" target="_blank" rel="noopener noreferrer">approximately $150 billion on quantum computing</a>
+ over the coming decade, though analysts questioned whether the full amount represents direct quantum investment or broader computational infrastructure.</p>
+</li>
+</ul>
+<h3 id="technology-partnerships">Technology Partnerships</h3>
+<ul>
+<li>
+<p><strong>Quantum Machines</strong> partnered with <strong>NVIDIA&rsquo;s</strong> Accelerated Quantum Research Center to <a href="https://quantumzeitgeist.com/quantum-computing-collaboration-between-quantum-machines-and-nvidias-accelerated-research-center-aims-to-advance-breakthroughs/" target="_blank" rel="noopener noreferrer">integrate quantum processors with AI supercomputers</a>
+. The collaboration will use NVIDIA&rsquo;s GB200 Grace Blackwell Superchips and QM&rsquo;s OPX1000 control system to enhance quantum-classical communication.</p>
+</li>
+<li>
+<p><strong>Fujitsu</strong> expanded its <a href="https://www.fujitsu.com/global/about/resources/news/press-releases/2025/0422-01.html" target="_blank" rel="noopener noreferrer">quantum collaboration with RIKEN</a>
+ following the unveiling of their 256-qubit system, strengthening Japan&rsquo;s domestic quantum capabilities.</p>
+</li>
+<li>
+<p><strong>Terra Quantum</strong> announced a <a href="https://thequantuminsider.com/2025/04/29/terra-quantum-announces-strategic-partnership-with-siemens/" target="_blank" rel="noopener noreferrer">strategic partnership with Siemens</a>
+, targeting quantum applications in industrial optimization and sensing.</p>
+</li>
+<li>
+<p><strong>IonQ</strong> expanded its <a href="https://www.ionq.com/news/ionq-expands-quantum-collaboration-in-japan-signs-memorandum" target="_blank" rel="noopener noreferrer">quantum collaboration in Japan</a>
+ through a memorandum of understanding with AIST (National Institute of Advanced Industrial Science and Technology), strengthening the company&rsquo;s presence in the Asian market.</p>
+</li>
+</ul>
+<h3 id="government-contracts">Government Contracts</h3>
+<ul>
+<li>
+<p><strong>Quantum Computing Inc. (QCi)</strong> was <a href="https://www.prnewswire.com/news-releases/quantum-computing-inc-awarded-contract-to-support-nasas-space-based-lidar-data-analysis-302442310.html" target="_blank" rel="noopener noreferrer">awarded a contract to support NASA&rsquo;s space-based lidar data analysis</a>
+, applying quantum algorithms to Earth observation data.</p>
+</li>
+<li>
+<p>A UK consortium received a <a href="https://www.iotworldtoday.com/quantum/-4-7m-uk-award-targets-fault-tolerant-quantum-computing" target="_blank" rel="noopener noreferrer">£4.7 million award targeting fault-tolerant quantum computing</a>
+, accelerating research toward error-corrected quantum systems.</p>
+</li>
+</ul>
+<h2 id="industry-trends-market-growth-ai-convergence-and-realistic-expectations">Industry Trends: Market Growth, AI Convergence, and Realistic Expectations</h2>
+<h3 id="market-projections">Market Projections</h3>
+<p>The quantum computing market is <a href="https://www.iotworldtoday.com/quantum/quantum-computing-market-to-hit-2-2b-survey" target="_blank" rel="noopener noreferrer">projected to reach $2.2 billion by 2027</a>
+, according to industry surveys. This growth is driven by increasing enterprise adoption, government investment, and maturing hardware platforms.</p>
+<p>Survey data indicates that <strong>83% of quantum professionals</strong> expect quantum utility to arrive <a href="https://thenextweb.com/news/quantum-utility-is-10-years-away" target="_blank" rel="noopener noreferrer">within a decade</a>
+, reflecting growing confidence in the field&rsquo;s trajectory. However, expectations vary significantly by sector and application area.</p>
+<h3 id="quantum-ai-convergence">Quantum-AI Convergence</h3>
+<p>The convergence of quantum computing and artificial intelligence accelerated this month. Observers noted that <a href="https://quantumcomputingreport.com/quantum-sdks-are-dying-long-live-quantum-ai-sdks/" target="_blank" rel="noopener noreferrer">quantum SDKs are evolving into Quantum AI SDKs</a>
+, reflecting the growing integration of quantum computing with machine learning workflows. <strong>Google</strong> in particular is <a href="https://www.cnbc.com/2025/04/18/how-quantum-computing-could-supercharge-googles-ai-ambitions" target="_blank" rel="noopener noreferrer">exploring how quantum computing could supercharge its AI ambitions</a>
+, potentially using quantum systems for training optimization or inference acceleration.</p>
+<h3 id="geographic-competition">Geographic Competition</h3>
+<p>The race for quantum advantage has distinct geographic dimensions. <strong>Chicago</strong> is positioning itself as a <a href="https://www.inc.com/joseph-s-pete/chicagoland-vies-for-a-quantum-leap-in-computing/91163355" target="_blank" rel="noopener noreferrer">quantum hub with $500 million in state investment</a>
+, leveraging its concentration of quantum research institutions and companies. Meanwhile, the <strong>U.S.-China competition</strong> in quantum technology continues to shape national strategies and investment priorities.</p>
+<h3 id="sector-specific-applications">Sector-Specific Applications</h3>
+<p>Industry analyses explored quantum computing&rsquo;s potential across sectors:</p>
+<ul>
+<li>
+<p><strong>Finance</strong>: Quantum computing could deliver <a href="https://www.techtarget.com/searchcio/tip/Quantum-computing-in-finance-Key-use-cases" target="_blank" rel="noopener noreferrer">$450-850 billion in value by 2035</a>
+, according to market projections, with applications in portfolio optimization, risk analysis, and fraud detection.</p>
+</li>
+<li>
+<p><strong>Supply Chains</strong>: Quantum algorithms may <a href="https://www.techtarget.com/searchcio/tip/How-quantum-computing-can-improve-supply-chains" target="_blank" rel="noopener noreferrer">improve supply chain optimization</a>
+ by solving complex logistics problems more efficiently than classical methods.</p>
+</li>
+<li>
+<p><strong>Cryptography</strong>: The <a href="https://www.techtarget.com/searchdatacenter/feature/Explore-the-impact-of-quantum-computing-on-cryptography" target="_blank" rel="noopener noreferrer">impact of quantum computing on cryptography</a>
+ continues to drive urgency around post-quantum cryptography migration.</p>
+</li>
+</ul>
+<h3 id="realistic-expectations">Realistic Expectations</h3>
+<p><strong>Nature</strong> published a <a href="https://www.nature.com/articles/d41586-025-01142-8" target="_blank" rel="noopener noreferrer">cautionary perspective on quantum hype</a>
+, reminding readers that progress is incremental and that many announced &ldquo;breakthroughs&rdquo; represent engineering milestones rather than revolutionary leaps. The article emphasized the gap between qubit counts and useful quantum advantage, noting that error correction remains the fundamental challenge.</p>
+<p>Similarly, <strong>CNBC</strong> questioned whether <a href="https://www.cnbc.com/2025/04/06/google-ibm-bullish-quantum-computing-is-it-real.html" target="_blank" rel="noopener noreferrer">Google and IBM&rsquo;s bullish quantum optimism is justified</a>
+, given that practical quantum advantage remains unproven for most commercial applications. The article noted that while technical progress is real, timelines for commercial viability may be longer than company PR suggests.</p>
+<p><strong>World Quantum Day 2025</strong> (April 14) provided an occasion for industry reflection, with various stakeholders <a href="https://www.iotworldtoday.com/quantum/world-quantum-day-2025-industry-weighs-in" target="_blank" rel="noopener noreferrer">weighing in on the state of quantum computing</a>
+. The consensus view acknowledged significant technical progress while emphasizing that the field remains in early stages.</p>
+<h2 id="looking-ahead-what-april-2025-tells-us">Looking Ahead: What April 2025 Tells Us</h2>
+<p>The developments of April 2025 reveal a field making measurable, incremental progress on multiple fronts. Error correction advances—Alice &amp; Bob&rsquo;s cat qubits, photonic distillation, superinductor improvements, atomically precise fabrication—are systematically reducing the error rates that have long limited quantum computations. New benchmarks like MaxCut and Benchpress are giving us better ways to measure that progress and compare different approaches objectively.</p>
+<p>Hardware deployments are expanding both in scale and geography. Japan&rsquo;s 256-qubit system, India&rsquo;s first full-stack quantum computer, and Poland&rsquo;s inaugural superconducting system demonstrate that quantum computing is becoming a global endeavor. Governments are placing serious bets: DARPA&rsquo;s 2033 target for utility-scale systems, the UK&rsquo;s application-focused £121 million investment, and various national strategies all signal institutional commitment to quantum advantage.</p>
+<p>The convergence with AI is accelerating, though it remains unclear whether quantum systems will provide meaningful advantages for machine learning in the near term. The finance sector continues to lead in commercial experimentation, while healthcare partnerships like CAS-Cleveland Clinic suggest quantum computing may find early applications in drug discovery and molecular simulation.</p>
+<p>Yet challenges remain. <strong>Nature&rsquo;s</strong> critique of quantum hype serves as a useful reminder that technical milestones don&rsquo;t automatically translate to commercial advantage. The gap between laboratory demonstrations and reliable, scalable quantum systems is still substantial. Error correction, while improving, remains resource-intensive. And meaningful benchmarks that measure practical advantage—rather than contrived problems—are only beginning to emerge.</p>
+<p>The pattern is clear: progress is happening, but it&rsquo;s engineering-focused and cumulative rather than sudden and revolutionary. DARPA&rsquo;s 2033 target for utility-scale quantum computing seems increasingly plausible given the rate of improvement in error rates and system scale. But the question remains which approach—superconducting, trapped ion, neutral atom, photonic—will reach practical utility first.</p>
+<p>April 2025 didn&rsquo;t deliver a single &ldquo;breakthrough&rdquo; that changed everything. Instead, it delivered something more valuable: evidence that multiple quantum computing approaches are making steady progress on the fundamental challenges that have limited the field for years. That may be less exciting than headlines promise, but it&rsquo;s the reality of quantum computing in 2025—and it&rsquo;s enough to keep the field moving forward.</p>
+
+
+
+
+<div id="april-2025-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "Apr 1", "title": "D-Wave Expands Platform", "description": "D-Wave expands quantum optimization platform capabilities"},
+{"date": "Apr 2", "title": "QM-NVIDIA Partnership", "description": "Quantum Machines partners with NVIDIA's Accelerated Quantum Research Center"},
+{"date": "Apr 3", "title": "Photonic Error Correction", "description": "University of Twente announces photon-filtering error correction method"},
+{"date": "Apr 3", "title": "Atom Computing DARPA Selection", "description": "Atom Computing selected for DARPA Quantum Benchmarking Initiative"},
+{"date": "Apr 7", "title": "CAS-Cleveland Clinic Partnership", "description": "Strategic collaboration announced for brain health research"},
+{"date": "Apr 9", "title": "Optical Skyrmions", "description": "Topological protection method for quantum information published"},
+{"date": "Apr 9", "title": "India's Quantum Computer", "description": "QpiAI launches QpiAI-Indus, India's first full-stack quantum computer"},
+{"date": "Apr 9", "title": "SaxonQ Mobile Demo", "description": "Room-temperature mobile quantum computer demonstrated"},
+{"date": "Apr 10", "title": "UK 410-km Network", "description": "UK demonstrates long-distance quantum network with entanglement and QKD"},
+{"date": "Apr 14", "title": "World Quantum Day", "description": "Global celebration of quantum science and technology"},
+{"date": "Apr 15", "title": "UK £121M Investment", "description": "UK government announces funding for quantum fraud detection and security"},
+{"date": "Apr 18", "title": "Benchpress Published", "description": "Nature publishes comprehensive quantum software benchmarking suite"},
+{"date": "Apr 21", "title": "Alice & Bob Breakthrough", "description": "Squeezed cat qubits achieve 160x error reduction, 22-second lifetime"},
+{"date": "Apr 22", "title": "Fujitsu-RIKEN 256-Qubit System", "description": "Japan unveils superconducting quantum computer quadrupling previous scale"},
+{"date": "Apr 22", "title": "MaxCut Benchmark Published", "description": "Jülich study comparing 19 QPUs published in Nature"},
+{"date": "Apr 23", "title": "QNodeOS Unveiled", "description": "World's first quantum operating system for distributed computing"},
+{"date": "Apr 25", "title": "ULVAC Cryogenic System", "description": "Cryogenic system delivered for Japan's first fully domestic quantum computer"},
+{"date": "Apr 27", "title": "IonQ-EPB Center", "description": "$22 million Quantum Innovation Center announced in Chattanooga"},
+{"date": "Apr 29", "title": "Terra Quantum-Siemens Partnership", "description": "Strategic partnership for industrial quantum applications"},
+{"date": "Apr 30", "title": "Rigetti-Quanta Investment", "description": "Rigetti closes $35 million strategic investment from Quanta Computer"}
+]
+}
+;
+    const containerId = "april-2025-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

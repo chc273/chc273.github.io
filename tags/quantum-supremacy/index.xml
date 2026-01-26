@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Quantum Supremacy on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/quantum-supremacy/</link>
+    <description>Recent content in Quantum Supremacy on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/quantum-supremacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantum Computing in March: Supremacy Claims, Skepticism, and the Race to Scale</title>
+      <link>https://cchen.me/newsletter/2025-03-31-quantum-computing/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-03-31-quantum-computing/</guid>
+      <description>&lt;p&gt;March brought conflicting narratives in quantum computing: &lt;strong&gt;D-Wave&lt;/strong&gt; &lt;a href=&#34;https://www.science.org/content/article/quantum-computing-passes-practical-milestone-problem-solving-minutes-not-years&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;claimed&lt;/a&gt;
+ the first practical quantum supremacy demonstration, &lt;a href=&#34;https://www.iflscience.com/chinese-quantum-computer-prototype-is-million-billion-times-faster-than-best-supercomputer-78306&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;China&lt;/a&gt;
+ unveiled a processor reportedly &lt;strong&gt;quadrillions of times faster&lt;/strong&gt; than supercomputers, and &lt;strong&gt;Microsoft&lt;/strong&gt; &lt;a href=&#34;https://www.nature.com/articles/d41586-025-00829-2&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;faced&lt;/a&gt;
+ fierce criticism over its topological qubit breakthrough. Meanwhile, the industry poured billions into scaling hardware, with &lt;strong&gt;PsiQuantum&lt;/strong&gt; raising &lt;strong&gt;$750 million&lt;/strong&gt; and &lt;strong&gt;NVIDIA&lt;/strong&gt; opening a dedicated quantum research center.&lt;/p&gt;
+&lt;p&gt;This comprehensive review covers &lt;strong&gt;45 articles&lt;/strong&gt; published in &lt;strong&gt;March 2025&lt;/strong&gt;, surveying the latest developments in quantum computing.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>March brought conflicting narratives in quantum computing: <strong>D-Wave</strong> <a href="https://www.science.org/content/article/quantum-computing-passes-practical-milestone-problem-solving-minutes-not-years" target="_blank" rel="noopener noreferrer">claimed</a>
+ the first practical quantum supremacy demonstration, <a href="https://www.iflscience.com/chinese-quantum-computer-prototype-is-million-billion-times-faster-than-best-supercomputer-78306" target="_blank" rel="noopener noreferrer">China</a>
+ unveiled a processor reportedly <strong>quadrillions of times faster</strong> than supercomputers, and <strong>Microsoft</strong> <a href="https://www.nature.com/articles/d41586-025-00829-2" target="_blank" rel="noopener noreferrer">faced</a>
+ fierce criticism over its topological qubit breakthrough. Meanwhile, the industry poured billions into scaling hardware, with <strong>PsiQuantum</strong> raising <strong>$750 million</strong> and <strong>NVIDIA</strong> opening a dedicated quantum research center.</p>
+<p>This comprehensive review covers <strong>45 articles</strong> published in <strong>March 2025</strong>, surveying the latest developments in quantum computing.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+  "metrics": [
+    {"label": "D-Wave Speedup", "value": "1 million years to minutes", "context": "Materials simulation vs. Frontier supercomputer"},
+    {"label": "Zuchongzhi-3 Advantage", "value": "2×10¹⁵× faster", "context": "Random circuit sampling vs. Frontier"},
+    {"label": "Diamond Chip Error Rate", "value": "0.1%", "context": "Quantum gate error rate milestone"},
+    {"label": "2024 VC Funding", "value": "$1.9B", "context": "Up 138% from 2023, new record"}
+  ]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-skeptical-breakthrough">The Skeptical Breakthrough</h2>
+<p>In February, <strong>Microsoft</strong> <a href="https://scitechdaily.com/a-million-qubits-within-reach-as-microsoft-redefines-quantum-computing/" target="_blank" rel="noopener noreferrer">unveiled</a>
+ <strong>Majorana 1</strong>, a quantum chip with a <strong>Topological Core architecture</strong> that theoretically enables stable and scalable qubits using <strong>topoconductors</strong>—materials that host exotic <strong>Majorana particles</strong> first theorized in <strong>1937</strong>. The chip contains <strong>8 topological qubits</strong>, and Microsoft says this architecture paves the way for <strong>million-qubit machines</strong> capable of solving complex problems within years.</p>
+<p>But physicists aren&rsquo;t buying it. A <a href="https://www.nature.com/articles/d41586-025-00829-2" target="_blank" rel="noopener noreferrer">Nature report</a>
+ published March 18 <a href="https://www.nature.com/articles/d41586-025-00683-2" target="_blank" rel="noopener noreferrer">documents</a>
+ widespread skepticism, with researchers saying the evidence is insufficient to support the claims. <strong>Henry Legg</strong>, a physicist at the University of St. Andrews, <a href="https://www.nature.com/articles/d41586-025-00683-2" target="_blank" rel="noopener noreferrer">challenged</a>
+ the validity of a key test underlying Microsoft&rsquo;s claims. <strong>Sergey Frolov</strong>, a professor at the University of Pittsburgh, called the project <strong>&ldquo;unreliable&rdquo;</strong> and cited a lack of established physics in Microsoft&rsquo;s work.</p>
+<p>Critics note this isn&rsquo;t the first time Microsoft&rsquo;s Majorana research has faced scrutiny—the company <a href="https://www.theregister.com/2025/03/12/microsoft_majorana_quantum_claims_overshadowed/" target="_blank" rel="noopener noreferrer">retracted</a>
+ a 2018 paper claiming detection of Majorana particles. The controversy echoes the field&rsquo;s broader <strong>reproducibility crisis</strong>: extraordinary claims require extraordinary evidence, and Microsoft&rsquo;s latest work has not convinced many experts.</p>
+<p>At the American Physical Society&rsquo;s Global Physics Summit on March 19, <strong>Chetan Nayak</strong>, a Microsoft researcher, <a href="https://www.sciencenews.org/article/microsoft-topological-quantum-majorana" target="_blank" rel="noopener noreferrer">presented</a>
+ new data defending the work. But hundreds of physicists attending the talk <a href="https://www.sciencenews.org/article/microsoft-topological-quantum-majorana" target="_blank" rel="noopener noreferrer">remained</a>
+ unconvinced, with some arguing the data looks like noise and the methods are flawed. <strong>Microsoft stands by its research</strong> and continues development, but the episode underscores the high standards required for breakthrough claims in quantum computing.</p>
+<h2 id="three-supremacy-claims-different-approaches">Three Supremacy Claims, Different Approaches</h2>
+<p>While Microsoft&rsquo;s claims faced skepticism, three other groups announced quantum performance claims—each using different technologies, different benchmarks, and different levels of peer review.</p>
+<h3 id="d-wave-first-practical-supremacy">D-Wave: First Practical Supremacy?</h3>
+<p><strong>D-Wave</strong> <a href="https://www.science.org/content/article/quantum-computing-passes-practical-milestone-problem-solving-minutes-not-years" target="_blank" rel="noopener noreferrer">published</a>
+ peer-reviewed results in <strong>Science</strong> showing its <strong>Advantage2</strong> annealing quantum computer solved a <strong>materials simulation problem</strong> (a spin glass system) in <strong>minutes</strong> that would take the <strong>Frontier supercomputer</strong> approximately <strong>1 million years</strong> to complete. This wasn&rsquo;t a random benchmark—it was a practical scientific problem that researchers actually care about.</p>
+<p>The study, led by researchers including <strong>Andrew King</strong> from D-Wave and <strong>Daniel Lidar</strong> from the University of Southern California, represents the first peer-reviewed demonstration of what the authors call <strong>&ldquo;practical quantum supremacy&rdquo;</strong>—solving a problem of practical significance faster than any classical computer could. The work built on D-Wave&rsquo;s previous research using a <strong>reverse annealing protocol</strong> that allows the system to refine solutions iteratively.</p>
+<p><strong>Jared Rovny</strong>, a physicist at D-Wave, noted that the performance gap is so large that classical computers would need to improve by <strong>many orders of magnitude</strong> to compete. Annealing quantum computers like D-Wave&rsquo;s are fundamentally different from gate-based systems—they excel at optimization problems rather than general-purpose computation, which explains why this result came on a practical materials science problem rather than an abstract benchmark.</p>
+<h3 id="chinas-zuchongzhi-3-speedup-on-random-circuits">China&rsquo;s Zuchongzhi-3: Speedup on Random Circuits</h3>
+<p>Chinese researchers from the <strong>University of Science and Technology of China (USTC)</strong> <a href="https://english.www.gov.cn/news/202503/04/content_WS67c6c67ac6d0868f4e8f04b1.html" target="_blank" rel="noopener noreferrer">unveiled</a>
+ <strong>Zuchongzhi 3.0</strong>, a <strong>105-qubit superconducting processor</strong> that reportedly performs <strong>random circuit sampling (RCS)</strong>—a standard quantum benchmark—<strong>2 million billion times faster</strong> than the Frontier supercomputer. The results were <a href="https://www.iflscience.com/chinese-quantum-computer-prototype-is-million-billion-times-faster-than-best-supercomputer-78306" target="_blank" rel="noopener noreferrer">published</a>
+ as a cover article in <strong>Physical Review Letters</strong>.</p>
+<p>The processor achieved:</p>
+<ul>
+<li><strong>99.90%</strong> parallel single-qubit gate fidelity</li>
+<li><strong>99.62%</strong> parallel two-qubit gate fidelity</li>
+<li><strong>72 microsecond</strong> coherence times</li>
+<li><strong>182 couplers</strong> connecting the qubits in a 2D grid architecture</li>
+</ul>
+<p>On the RCS benchmark with <strong>83 qubits</strong> and <strong>32 circuit layers</strong>, Zuchongzhi 3.0 completed the task in a few hundred seconds. The researchers estimate it would take Frontier approximately <strong>6.4 billion years</strong> to simulate the same computation—a speedup factor of roughly \(2 \times 10^{15}\), or <strong>15 orders of magnitude</strong>.</p>
+<p>However, experts note this benchmark favors quantum methods by design. RCS doesn&rsquo;t solve a practical problem—it&rsquo;s designed to be hard for classical computers. Additionally, classical algorithms have improved dramatically since Google&rsquo;s 2019 supremacy claim, with GPU-based simulations completing Google&rsquo;s original task in <strong>14 seconds</strong>. The Zuchongzhi results push the frontier further, but the practical applications remain limited.</p>
+<p><strong>Pan Jianwei</strong>, <strong>Zhu Xiaobo</strong>, and <strong>Chengzhi Peng</strong> led the USTC team, which has previously demonstrated quantum supremacy with both the <strong>Jiuzhang</strong> photonic systems and earlier <strong>Zuchongzhi</strong> superconducting processors.</p>
+<h3 id="certified-randomness-a-provably-quantum-task">Certified Randomness: A Provably Quantum Task</h3>
+<p>A collaboration between <strong>Quantinuum</strong>, the <strong>University of Texas at Austin</strong>, <strong>JPMorganChase</strong>, <strong>Oak Ridge National Laboratory</strong>, and <strong>Argonne National Laboratory</strong> <a href="https://cns.utexas.edu/news/research/researchers-achieve-quantum-computing-milestone-realizing-certified-randomness" target="_blank" rel="noopener noreferrer">achieved</a>
+ something truly new: <strong>certified randomness</strong> that is provably impossible for classical computers to generate.</p>
+<p>Using a <strong>56-qubit Quantinuum H2</strong> trapped-ion quantum computer, the team applied a protocol first proposed by <strong>Scott Aaronson</strong> in 2018 to generate random numbers that were then mathematically verified by <strong>classical supercomputers</strong> with a combined <strong>1.1 exaflops</strong> of sustained performance. The team certified <strong>71,313 bits</strong> of entropy—randomness that can be mathematically proven to be genuinely unpredictable.</p>
+<p>The research, <a href="https://www.nature.com/articles/s41586-025-08737-1" target="_blank" rel="noopener noreferrer">published</a>
+ in <strong>Nature</strong> on March 26, represents a practical quantum application with real-world utility. Certified randomness is crucial for:</p>
+<ul>
+<li><strong>Cryptography</strong>: Generating unguessable encryption keys</li>
+<li><strong>Fairness</strong>: Ensuring truly random selections in lotteries and elections</li>
+<li><strong>Privacy</strong>: Creating random numbers that cannot be predicted or manipulated</li>
+</ul>
+<p>Unlike the other supremacy claims, certified randomness isn&rsquo;t about speed—it&rsquo;s about capability. Classical computers provably cannot generate this type of mathematically verifiable randomness, making it a fundamental demonstration of quantum advantage.</p>
+<p><strong>Rajeeb Hazra</strong>, CEO of Quantinuum, <a href="https://www.jpmorgan.com/technology/news/certified-randomness" target="_blank" rel="noopener noreferrer">called</a>
+ the milestone &ldquo;a practical application of quantum computing that is beyond the reach of classical systems.&rdquo;</p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>Technology</th>
+          <th>Benchmark</th>
+          <th>Speedup</th>
+          <th>Peer Review</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>D-Wave</strong></td>
+          <td>Annealing (Advantage2)</td>
+          <td>Spin glass simulation</td>
+          <td>Minutes vs. 1M years</td>
+          <td>Yes (Science)</td>
+      </tr>
+      <tr>
+          <td><strong>China (USTC)</strong></td>
+          <td>Superconducting (105 qubits)</td>
+          <td>Random circuit sampling</td>
+          <td>\(2 \times 10^{15}\)x faster</td>
+          <td>Pending (PRL)</td>
+      </tr>
+      <tr>
+          <td><strong>Quantinuum + partners</strong></td>
+          <td>Trapped-ion (56 qubits)</td>
+          <td>Certified randomness</td>
+          <td>Classically impossible</td>
+          <td>Yes (Nature)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="hardware-advances-scaling-and-error-correction">Hardware Advances: Scaling and Error Correction</h2>
+<p>Beyond the headline-grabbing supremacy claims, March brought significant advances in quantum hardware—particularly in error correction, the bottleneck that determines whether large-scale quantum computing becomes practical.</p>
+<h3 id="error-correction-breakthroughs">Error Correction Breakthroughs</h3>
+<p><strong>Fujitsu</strong>, <strong>QuTech</strong>, and <strong>TU Delft</strong> <a href="https://interestingengineering.com/innovation/diamond-quantum-chip-low-error-rates" target="_blank" rel="noopener noreferrer">set</a>
+ a new world record by achieving quantum gate error rates <strong>below 0.1%</strong> using a two-qubit system built on <strong>diamond spin qubits</strong>. Some gates achieved error rates as low as <strong>0.001%</strong>. The researchers used <strong>ultrapure synthetic diamonds</strong> from Element Six and designed quantum gates to decouple qubits from environmental noise.</p>
+<p>This milestone is significant because error correction requires physical qubits with error rates low enough that logical qubits can be constructed with reasonable overhead. The diamond spin qubits operate at <strong>10 Kelvin</strong>, warmer than the millikelvin temperatures required by superconducting qubits, and the team plans to scale up by adding more nuclear spins and developing <strong>optical interconnects</strong> for networking.</p>
+<p>In late February, <strong>Amazon Web Services (AWS)</strong> <a href="https://www.allaboutcircuits.com/news/amazon-unveils-first-quantum-computing-chip-error-correction/" target="_blank" rel="noopener noreferrer">unveiled</a>
+ <strong>Ocelot</strong>, its first prototype quantum computing chip focused on error correction. Ocelot uses novel <strong>&ldquo;bosonic cat qubits&rdquo;</strong>—a type of qubit encoded in harmonic oscillator states that are naturally resistant to bit-flip errors. The chip uses a <strong>one-dimensional repetition code</strong> that AWS claims reduces error correction overhead by <strong>up to 90%</strong> compared to traditional surface codes.</p>
+<p>The numbers are striking:</p>
+<ul>
+<li><strong>Traditional approach</strong>: ~49 physical qubits needed for one logical qubit</li>
+<li><strong>Ocelot approach</strong>: 9 physical qubits needed (5 data qubits, 4 ancilla qubits)</li>
+</ul>
+<p>Ocelot&rsquo;s cat qubits maintain <strong>bit-flip stability for 1 second</strong>—orders of magnitude longer than the <strong>50-100 microsecond</strong> coherence times of traditional transmon qubits. The phase-flip time is <strong>20 microseconds</strong>, which the system corrects through its repetition code architecture. This hardware-efficient approach could dramatically accelerate progress toward fault-tolerant quantum systems.</p>
+<h3 id="architecture-innovations">Architecture Innovations</h3>
+<p><strong>MIT researchers</strong> <a href="https://www.techexplorist.com/breakthrough-quantum-interconnect-scalable-computing/98047/" target="_blank" rel="noopener noreferrer">developed</a>
+ a novel <strong>quantum interconnect</strong> that enables <strong>all-to-all communication</strong> between superconducting quantum processors. The team demonstrated remote entanglement between two processors using a superconducting waveguide, achieving over <strong>60% photon absorption efficiency</strong>. This interconnect paves the way for scalable quantum networks and distributed quantum computing by allowing modules to communicate directly without complex routing architectures.</p>
+<p><strong>NTT Corporation</strong> and collaborators <a href="https://group.ntt/en/newsrelease/202503/04/250304a.html" target="_blank" rel="noopener noreferrer">proposed</a>
+ a new <strong>load-store architecture</strong> for fault-tolerant quantum computing that separates memory and processor, similar to classical computer architecture. This approach achieves:</p>
+<ul>
+<li><strong>Up to 100%</strong> asymptotic memory efficiency</li>
+<li><strong>~90%</strong> practical memory efficiency</li>
+<li>Only a <strong>~3%</strong> increase in computation time compared to ideal systems</li>
+</ul>
+<p>This represents a significant improvement over conventional quantum computers, which achieve only <strong>44-67%</strong> memory efficiency. The architecture enables more efficient use of quantum hardware and improves program portability across different quantum systems.</p>
+<p>Researchers are also exploring alternatives to traditional qubits. <strong>Nature</strong> <a href="https://www.nature.com/articles/d41586-025-00939-x" target="_blank" rel="noopener noreferrer">highlighted</a>
+ the emerging field of <strong>&ldquo;qudits&rdquo;</strong>—quantum information units that can exist in <strong>three or more simultaneous states</strong> (compared to qubits&rsquo; two states). Qudits offer increased information density and could reduce the number of quantum elements needed for certain computations.</p>
+<h3 id="room-temperature-and-modular-systems">Room-Temperature and Modular Systems</h3>
+<p><strong>Xanadu</strong> <a href="https://www.livescience.com/technology/computing/worlds-1st-modular-quantum-computing-data-center-that-can-operate-at-room-temperature-goes-online" target="_blank" rel="noopener noreferrer">launched</a>
+ <strong>Aurora</strong>, the world&rsquo;s first <strong>modular, room-temperature photonic quantum computer</strong>. The system uses:</p>
+<ul>
+<li><strong>35 interconnected photonic chips</strong></li>
+<li><strong>8 miles (13 kilometers)</strong> of fiber optic cables</li>
+<li><strong>Room-temperature operation</strong>—no cryogenic cooling required</li>
+</ul>
+<p>Photonic quantum computing uses particles of light rather than matter-based qubits, enabling room-temperature operation and fiber-optic networking. Xanadu&rsquo;s modular approach tackles scalability and error correction by allowing the system to be expanded through additional modules. The Nature-published architecture could enable practical quantum data centers and new applications in molecular simulation and cryptography.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>Innovation</th>
+          <th>Key Metric</th>
+          <th>Significance</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Fujitsu/QuTech/TU Delft</strong></td>
+          <td>Diamond spin qubits</td>
+          <td>0.1% error rate</td>
+          <td>Error correction milestone</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon (AWS)</strong></td>
+          <td>Ocelot chip with cat qubits</td>
+          <td>90% overhead reduction</td>
+          <td>Fewer physical qubits needed</td>
+      </tr>
+      <tr>
+          <td><strong>Xanadu</strong></td>
+          <td>Aurora modular system</td>
+          <td>Room-temperature operation</td>
+          <td>No cryogenic cooling</td>
+      </tr>
+      <tr>
+          <td><strong>MIT</strong></td>
+          <td>Quantum interconnect</td>
+          <td>All-to-all communication</td>
+          <td>Scalable architecture</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="ecosystem-development-os-networking-and-ai-integration">Ecosystem Development: OS, Networking, and AI Integration</h2>
+<p>As hardware advances, the quantum ecosystem is maturing with new operating systems, networking capabilities, and integration with classical AI computing.</p>
+<h3 id="quantum-operating-systems">Quantum Operating Systems</h3>
+<p><strong>OQTOPUS</strong> (Open Quantum Toolchain for Operators and Users), an <strong>open-source quantum computer operating system</strong>, <a href="https://phys.org/news/2025-03-oqtopus-source-quantum.html" target="_blank" rel="noopener noreferrer">launched</a>
+ on GitHub from a consortium led by <strong>Osaka University</strong>, <strong>Fujitsu</strong>, <strong>SEC</strong>, and <strong>TIS</strong>. The OS covers the full stack from quantum computer setup to operation, lowering the barrier to deploying quantum computers via the cloud. <strong>Fujitsu</strong> plans to make OQTOPUS available to research partners in the second half of 2025.</p>
+<p>Separately, researchers <a href="https://www.nature.com/articles/s41586-025-08704-w" target="_blank" rel="noopener noreferrer">published</a>
+ <strong>QNodeOS</strong> in <strong>Nature</strong>—a quantum network operating system that enables platform-independent execution of quantum network applications in high-level software. The system was demonstrated on quantum network nodes based on:</p>
+<ul>
+<li><strong>Nitrogen-vacancy centers in diamond</strong> (2 nodes)</li>
+<li><strong>Trapped-ion systems</strong> (1 node with a single 40Ca+ atom)</li>
+</ul>
+<p>QNodeOS allows multitasking and efficient hardware use, abstracting underlying physical complexities so users can execute applications without detailed knowledge of the specific quantum systems. This work, described as a &ldquo;huge practical step forward&rdquo; in a <a href="https://www.nature.com/articles/d41586-025-00547-9" target="_blank" rel="noopener noreferrer">Nature commentary</a>
+, provides a critical abstraction layer for the emerging quantum internet.</p>
+<h3 id="ai--quantum">AI + Quantum</h3>
+<p><strong>NVIDIA</strong> <a href="https://thequantuminsider.com/2025/03/18/the-nvidia-accelerated-quantum-research-center-will-bring-together-industry-partners-and-ai-supercomputers-to-advance-qpus/" target="_blank" rel="noopener noreferrer">announced</a>
+ the <strong>NVIDIA Accelerated Quantum Research Center (NVAQC)</strong> in Boston to integrate AI supercomputing with quantum computing. The center will deploy <strong>576 Blackwell GPUs</strong> and use <strong>Quantum-2 InfiniBand networking</strong> to tackle challenges like qubit noise and error correction. Partners include <strong>Quantinuum</strong>, <strong>Quantum Machines</strong>, <strong>QuEra Computing</strong>, <strong>Harvard University</strong>, and <strong>MIT</strong>.</p>
+<p>Interestingly, NVIDIA CEO <strong>Jensen Huang</strong> recently <a href="https://www.theregister.com/2025/03/19/nvidia_boston_quantum_research/" target="_blank" rel="noopener noreferrer">estimated</a>
+ that practical quantum computers are likely <strong>20 years away</strong>, noting a gap of <strong>5-6 orders of magnitude</strong> in qubit count needed for useful systems. Yet NVIDIA is investing now to develop the hybrid quantum-classical systems that will bridge that gap.</p>
+<p>On the theoretical side, <strong>Google Quantum AI researchers</strong> <a href="https://thequantuminsider.com/2025/03/31/google-researchers-say-quantum-theory-suggests-a-shortcut-for-learning-certain-neural-networks/" target="_blank" rel="noopener noreferrer">published</a>
+ work showing quantum algorithms could learn <strong>&ldquo;periodic neuron&rdquo;</strong> neural networks <strong>exponentially faster</strong> than classical methods. The proposed approach uses a modified <strong>quantum Fourier transform</strong> within a Quantum Statistical Query learning model to find hidden patterns in data. This work is purely theoretical—it doesn&rsquo;t demonstrate a practical speedup on current hardware—but identifies a specific problem class where quantum computers might offer provable advantages.</p>
+<h3 id="industry-academia-partnerships">Industry-Academia Partnerships</h3>
+<p>In Germany, <strong>Fraunhofer IAO</strong>, <strong>Fraunhofer IPA</strong>, and the <strong>University of Stuttgart</strong> established <strong>&ldquo;flaQship&rdquo;</strong>, a cross-institute lab to pool research expertise in applied quantum computing. The lab focuses on <strong>quantum machine learning</strong>, <strong>material simulation</strong>, and <strong>error correction</strong>, aiming to create value for companies and society. The collaboration will organize the <strong>ML4QT symposium</strong> in July 2025 to advance quantum technology through machine learning.</p>
+<h2 id="money-and-momentum-the-investment-surge">Money and Momentum: The Investment Surge</h2>
+<p>March revealed the massive capital flowing into quantum computing, with venture funding setting records and governments making strategic bets.</p>
+<h3 id="mega-rounds">Mega-Rounds</h3>
+<p><strong>PsiQuantum</strong> is <a href="https://thequantuminsider.com/2025/03/25/sources-psiquantum-raising-750-million-to-push-photonic-quantum-computers-toward-commercial-reality/" target="_blank" rel="noopener noreferrer">raising</a>
+ at least <strong>$750 million</strong> at a <strong>$6 billion valuation</strong> to fund its development of <strong>million-qubit, fault-tolerant photonic quantum computers</strong>. The company is leveraging traditional chip manufacturing at <strong>GlobalFoundries</strong> and has secured major public partnerships:</p>
+<ul>
+<li><strong>$500 million</strong> from the State of Illinois, Cook County, and Chicago for a U.S. quantum computer project</li>
+<li><strong>$617 million (AUD $940 million)</strong> from Australian governments for a Brisbane computer</li>
+</ul>
+<p>PsiQuantum targets <strong>2029</strong> to deliver its first commercial system, positioning it as a competitor to tech giants pursuing different qubit technologies.</p>
+<p><strong>China</strong> <a href="https://thequantuminsider.com/2025/03/07/china-launches-138-billion-government-backed-venture-fund-includes-quantum-startups/" target="_blank" rel="noopener noreferrer">launched</a>
+ a massive <strong>$138 billion government-backed venture fund</strong> to invest in emerging technologies including quantum computing, AI, and semiconductors. The fund aims to commercialize research and enhance technological self-reliance, dwarfing Western initiatives:</p>
+<ul>
+<li><strong>U.S. National Quantum Initiative</strong>: $1.2 billion over five years (2018), with $2.7 billion proposed for reauthorization</li>
+<li><strong>Europe&rsquo;s Quantum Flagship</strong>: ~$1.1 billion over 10 years</li>
+</ul>
+<p><strong>IonQ</strong> <a href="https://www.datacenterdynamics.com/en/news/quantum-computing-firm-ionq-raises-372m-from-share-sale/" target="_blank" rel="noopener noreferrer">raised</a>
+ <strong>$372.6 million</strong> through a share sale, bringing its total cash balance to <strong>over $700 million</strong>. The funding follows strategic moves including acquiring a majority stake in quantum networking provider <strong>ID Quantique</strong> and forming a partnership with <strong>SK Telecom</strong>. IonQ also <a href="https://www.ionq.com/news/ionq-commissions-ground-breaking-quantum-system-at-the-u-s-air-force" target="_blank" rel="noopener noreferrer">commissioned</a>
+ a quantum networking system at the <strong>U.S. Air Force Research Laboratory</strong> as part of over <strong>$94.4 million</strong> in contracts.</p>
+<h3 id="growth-funding">Growth Funding</h3>
+<p>Smaller but strategically important rounds included:</p>
+<ul>
+<li><strong>QuamCore</strong> (Israel): <strong>$9 million</strong> seed funding for architecture enabling <strong>1 million superconducting qubits</strong> in a single cryostat by reducing cabling by a factor of <strong>1,000</strong></li>
+<li><strong>QuantWare</strong> (Netherlands): <strong>20 million</strong> Series A for <strong>VIO technology</strong> to scale quantum processors to <strong>1 million+ qubits</strong>; also launched pre-orders for <strong>&ldquo;Contralto-A&rdquo;</strong> QPU, nearly twice as large as competing solutions</li>
+<li><strong>Singapore</strong>: <strong>$18.3 million SGD</strong> for <strong>HQCC 1.0</strong>, a national initiative to integrate quantum and high-performance computing</li>
+<li><strong>Australia</strong>: <strong>$15 million</strong> government investment in <strong>QuintessenceLabs</strong> for quantum cybersecurity</li>
+<li><strong>Iceberg Quantum</strong>: <strong>$2 million</strong> pre-seed and partnership with PsiQuantum to apply quantum LDPC codes for error correction overhead reduction</li>
+</ul>
+<p>The broader trend is clear: <strong>2024 set a new venture funding record</strong> for quantum computing startups at <strong>$1.9 billion</strong>, up <strong>138%</strong> from 2023&rsquo;s $789 million, according to <a href="https://news.crunchbase.com/ai/quantum-startup-venture-highmark-february-2025-quera-softbank/" target="_blank" rel="noopener noreferrer">Crunchbase data</a>
+. Momentum continues into 2025 with massive individual rounds including <strong>QuEra Computing&rsquo;s $230 million</strong> and <strong>Quantum Machines&rsquo; $170 million</strong>.</p>
+
+
+
+
+
+
+<div id="funding_trend" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "Quantum Computing VC Funding Trend",
+"categories": ["2023", "2024"],
+"series": [{"name": "Funding ($B)", "data": [0.79, 1.9]}],
+"yAxisLabel": "Funding (Billions USD)"
+}
+;
+    const type = "bar";
+    const containerId = "funding_trend";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<p>Not everyone is keeping pace. A <a href="https://www.thetimes.com/business/entrepreneurs/article/uk-risks-lagging-in-global-quantum-computing-race-enterprise-network-x2lcfz0fd" target="_blank" rel="noopener noreferrer">report in The Times</a>
+ warns the <strong>UK risks falling behind</strong> due to government spending delays, despite strong research from institutions like <strong>Oxford University</strong> and startups like <strong>Oxford Ionics</strong> (which has raised <strong>37 million</strong> and employs <strong>80 engineers</strong>). Competitors including the <strong>U.S.</strong> and <strong>Germany</strong> are moving faster with larger contracts.</p>
+<h2 id="what-march-really-means">What March Really Means</h2>
+<p>Stepping back from individual news items, three patterns emerge from March&rsquo;s developments:</p>
+<p><strong>First</strong>, quantum supremacy claims are diversifying. D-Wave demonstrated advantage on a practical materials simulation problem using annealing. China&rsquo;s Zuchongzhi-3 showed massive speedup on random circuit sampling. Quantinuum and partners proved certified randomness is classically impossible. These aren&rsquo;t competing claims on a single benchmark—they&rsquo;re demonstrations of different quantum approaches excelling at different tasks. The field isn&rsquo;t a single race anymore; it&rsquo;s branching into multiple technological paths.</p>
+<p><strong>Second</strong>, skepticism is healthy. The controversy around Microsoft&rsquo;s Majorana 1 chip shows the field is maturing and demanding rigorous evidence. After past retractions and exaggerated claims, physicists are rightfully insisting on extraordinary evidence for extraordinary breakthroughs. This skepticism doesn&rsquo;t slow progress—it strengthens it by ensuring resources flow to reproducible, verifiable advances.</p>
+<p><strong>Third</strong>, the real story is money. $1.9 billion in 2024 VC funding (up 138%), massive government investments like China&rsquo;s $138 billion fund, and huge bets on specific approaches like PsiQuantum&rsquo;s $750 million for photonics and D-Wave&rsquo;s annealing systems. The debate has shifted from &ldquo;will quantum work?&rdquo; to &ldquo;which approach will scale?&rdquo;</p>
+<p>March didn&rsquo;t resolve the fundamental questions in quantum computing. Error correction remains challenging, practical applications are still emerging, and timelines for fault-tolerant systems span years to decades. But the month clarified the stakes: companies and countries are placing substantial bets on different technological approaches, hardware is making measurable progress on error correction and scaling, and the ecosystem is developing the software and infrastructure needed to make quantum computers usable.</p>
+<p>The race isn&rsquo;t about a single breakthrough anymore—it&rsquo;s about which combination of qubit technology, error correction approach, and ecosystem development reaches practical scale first. March brought progress on all three fronts.</p>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+  {"date": "Mar 4", "title": "China reports Zuchongzhi-3 quantum supremacy results", "description": "USTC unveils a 105-qubit superconducting processor claiming 10^15x speedup on random circuit sampling."},
+  {"date": "Mar 7", "title": "Xanadu launches Aurora room-temperature quantum computer", "description": "Xanadu announces Aurora, a modular photonic system operating at room temperature with 35 chips and 8 miles of fiber."},
+  {"date": "Mar 12", "title": "D-Wave publishes quantum supremacy paper in Science", "description": "D-Wave publishes peer-reviewed results showing its annealing computer solved a materials problem in minutes vs. 1 million years classically."},
+  {"date": "Mar 12", "title": "QNodeOS quantum network operating system published in Nature", "description": "Researchers publish QNodeOS, an operating system for networked quantum computers demonstrated on NV-center and trapped-ion nodes."},
+  {"date": "Mar 18", "title": "NVIDIA announces Boston quantum research center", "description": "NVIDIA launches NVAQC to integrate AI supercomputing with quantum computing, partnering with Quantinuum, Harvard, and MIT."},
+  {"date": "Mar 18", "title": "Nature reports skepticism over Microsoft's claims", "description": "Nature publishes article documenting physicist skepticism over Microsoft's Majorana claims, citing insufficient evidence."},
+  {"date": "Mar 24", "title": "OQTOPUS open-source quantum OS launched", "description": "Consortium led by Osaka University and Fujitsu launches OQTOPUS, an open-source quantum computer OS on GitHub."},
+  {"date": "Mar 25", "title": "Diamond quantum chip achieves 0.1% error rates", "description": "Fujitsu, QuTech, and TU Delft achieve 0.1% error rates using diamond spin qubits, setting a new world record."},
+  {"date": "Mar 25", "title": "PsiQuantum reportedly raising $750M", "description": "Reports emerge that PsiQuantum is raising $750M at $6B valuation for its photonic quantum computing approach."},
+  {"date": "Mar 26", "title": "Certified randomness milestone achieved", "description": "Quantinuum, UT Austin, JPMorganChase, and national labs publish Nature paper on certified randomness using a 56-qubit trapped-ion system."}
+]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

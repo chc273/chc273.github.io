@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NeurIPS 2025 on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/neurips-2025/</link>
+    <description>Recent content in NeurIPS 2025 on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/neurips-2025/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NeurIPS 2025: MatPROV Dataset Structures Materials Synthesis Knowledge for AI</title>
+      <link>https://cchen.me/newsletter/2025-11-30-materials-discovery/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-11-30-materials-discovery/</guid>
+      <description>&lt;p&gt;As &lt;strong&gt;NeurIPS 2025&lt;/strong&gt; approaches, researchers from &lt;strong&gt;SAKURA internet&lt;/strong&gt; and &lt;strong&gt;Kyoto University&lt;/strong&gt; will present &lt;strong&gt;MatPROV&lt;/strong&gt;—a dataset that extracts material synthesis procedures from literature as structured directed graphs using large language models.&lt;/p&gt;
+&lt;p&gt;This comprehensive review covers &lt;strong&gt;1 article&lt;/strong&gt; published in &lt;strong&gt;November 2025&lt;/strong&gt;, examining how natural language processing can unlock procedural knowledge trapped in scientific literature.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Coverage Period&#34;, &#34;value&#34;: &#34;November 2025&#34;, &#34;context&#34;: &#34;Single research development&#34;},
+{&#34;label&#34;: &#34;Venue&#34;, &#34;value&#34;: &#34;NeurIPS 2025&#34;, &#34;context&#34;: &#34;AI4Mat Workshop&#34;},
+{&#34;label&#34;: &#34;Presentation Date&#34;, &#34;value&#34;: &#34;December 6, 2025&#34;, &#34;context&#34;: &#34;New Orleans, Louisiana&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;the-research-structuring-synthesis-knowledge&#34;&gt;The Research: Structuring Synthesis Knowledge&lt;/h2&gt;
+&lt;p&gt;A &lt;a href=&#34;https://www.sakura.ad.jp/corporate/en/information/2025/11/10/1968221863/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;paper&lt;/a&gt;
+ from &lt;strong&gt;SAKURA internet&lt;/strong&gt; Research Center has been accepted for the &lt;strong&gt;AI4Mat Workshop&lt;/strong&gt; at &lt;strong&gt;NeurIPS 2025&lt;/strong&gt;, introducing &lt;strong&gt;MatPROV&lt;/strong&gt;—a dataset that applies large language models to the challenge of extracting material synthesis procedures from scientific literature.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>As <strong>NeurIPS 2025</strong> approaches, researchers from <strong>SAKURA internet</strong> and <strong>Kyoto University</strong> will present <strong>MatPROV</strong>—a dataset that extracts material synthesis procedures from literature as structured directed graphs using large language models.</p>
+<p>This comprehensive review covers <strong>1 article</strong> published in <strong>November 2025</strong>, examining how natural language processing can unlock procedural knowledge trapped in scientific literature.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Coverage Period", "value": "November 2025", "context": "Single research development"},
+{"label": "Venue", "value": "NeurIPS 2025", "context": "AI4Mat Workshop"},
+{"label": "Presentation Date", "value": "December 6, 2025", "context": "New Orleans, Louisiana"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-research-structuring-synthesis-knowledge">The Research: Structuring Synthesis Knowledge</h2>
+<p>A <a href="https://www.sakura.ad.jp/corporate/en/information/2025/11/10/1968221863/" target="_blank" rel="noopener noreferrer">paper</a>
+ from <strong>SAKURA internet</strong> Research Center has been accepted for the <strong>AI4Mat Workshop</strong> at <strong>NeurIPS 2025</strong>, introducing <strong>MatPROV</strong>—a dataset that applies large language models to the challenge of extracting material synthesis procedures from scientific literature.</p>
+<p>The research team, led by <strong>Hirofumi Tsuruta</strong> and <strong>Masaya Kumagai</strong> from SAKURA internet (with Kumagai also affiliated with <strong>Kyoto University</strong>), will present their work on December 6, 2025, at the AI4Mat Workshop in New Orleans.</p>
+<h3 id="what-matprov-does">What MatPROV Does</h3>
+<p><strong>MatPROV</strong> addresses a fundamental problem in materials science: synthesis procedures exist as unstructured text in scientific papers—paragraphs describing multi-step workflows in inconsistent formats across thousands of publications. This makes it difficult for AI systems to learn from historical data or plan new syntheses.</p>
+<p>The MatPROV approach uses <strong>large language models (LLMs)</strong> to parse natural language descriptions of material synthesis and convert them into structured representations. Specifically, the output is a <strong>directed graph</strong> where nodes represent materials and operations, and edges capture dependencies between steps.</p>
+<h3 id="the-prov-dm-standard">The PROV-DM Standard</h3>
+<p>What distinguishes MatPROV from other extraction efforts is its use of the <strong>PROV-DM</strong> (Provenance Data Model) standard. PROV-DM is a <a href="https://www.w3.org/TR/prov-dm/" target="_blank" rel="noopener noreferrer">W3C recommendation</a>
+ for representing provenance information—the lineage of entities, activities, and agents involved in producing a piece of data.</p>
+<p>In the context of materials synthesis, PROV-DM provides a formal way to represent:</p>
+<ul>
+<li><strong>Entities</strong>: The materials, reagents, and equipment involved</li>
+<li><strong>Activities</strong>: The processing steps, reactions, and transformations</li>
+<li><strong>Agents</strong>: The researchers, instruments, or automated systems performing actions</li>
+<li><strong>Derivations</strong>: How output materials derive from input materials</li>
+</ul>
+<p>This standardized representation enables computational analysis, similarity search between procedures, and integration with laboratory automation systems.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Input</strong></td>
+          <td>Unstructured synthesis procedures from scientific literature</td>
+      </tr>
+      <tr>
+          <td><strong>Extraction Method</strong></td>
+          <td>Large language models (LLMs) parse natural language text</td>
+      </tr>
+      <tr>
+          <td><strong>Data Standard</strong></td>
+          <td>PROV-DM (W3C Provenance Data Model)</td>
+      </tr>
+      <tr>
+          <td><strong>Output Format</strong></td>
+          <td>Structured directed graphs (nodes: materials/operations, edges: dependencies)</td>
+      </tr>
+      <tr>
+          <td><strong>Application</strong></td>
+          <td>Electronic laboratory notebooks, AI-driven synthesis planning</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="research-team-and-affiliations">Research Team and Affiliations</h3>
+<p>The paper comes from <strong>SAKURA internet Inc.</strong>, a Japanese internet infrastructure company that has established a research center working at the intersection of cloud computing and materials informatics. The dual affiliation of <strong>Masaya Kumagai</strong>—SAKURA internet and <strong>Kyoto University</strong>—reflects the collaboration between industry and academia that characterizes much of the materials informatics field.</p>
+<h2 id="why-this-matters-the-synthesis-bottleneck">Why This Matters: The Synthesis Bottleneck</h2>
+<p>Materials discovery has advanced rapidly on the computational side—property prediction from composition and structure is now routine for many material classes. But <strong>synthesis planning remains largely manual</strong>, dependent on expert knowledge buried in literature.</p>
+<h3 id="the-unstructured-knowledge-problem">The Unstructured Knowledge Problem</h3>
+<p>Consider a typical synthesis paper: a paragraph might describe heating precursors to a specific temperature, holding for a duration, cooling at a controlled rate, then performing a characterization step. The procedure spans multiple sentences, uses domain-specific terminology, and embeds critical parameters within narrative text.</p>
+<p>For an AI system to learn from this, it needs to:</p>
+<ol>
+<li>Identify that this is a synthesis procedure (not background or results)</li>
+<li>Extract each discrete operation</li>
+<li>Understand which materials are inputs and outputs for each step</li>
+<li>Capture parameter values (temperatures, times, concentrations)</li>
+<li>Represent the sequence and dependencies correctly</li>
+</ol>
+<p><strong>MatPROV</strong> tackles this by leveraging LLMs&rsquo; natural language understanding capabilities, combined with the formal structure of PROV-DM, to create a standardized representation.</p>
+<h3 id="from-text-to-graph-the-matprov-pipeline">From Text to Graph: The MatPROV Pipeline</h3>
+<pre><code>Scientific Paper Text
+         |
+         v
+LLM Parsing (identify procedures, extract entities)
+         |
+         v
+PROV-DM Mapping (assign roles: entity, activity, agent)
+         |
+         v
+Directed Graph (nodes and edges)
+</code></pre>
+<p>This graph representation enables several applications:</p>
+<ul>
+<li><strong>Computational analysis</strong>: Compare procedures across papers, identify common patterns</li>
+<li><strong>Similarity search</strong>: Find synthesis methods that use similar approaches</li>
+<li><strong>Integration with ELNs</strong>: Electronic laboratory notebooks can automatically capture provenance</li>
+<li><strong>Automation potential</strong>: Structured graphs can be converted to executable scripts for robotic labs</li>
+</ul>
+<h2 id="neurips-and-ai4mat-a-prestigious-venue">NeurIPS and AI4Mat: A Prestigious Venue</h2>
+<p>The acceptance of this work to the AI4Mat Workshop at <strong>NeurIPS 2025</strong> signals that the research meets technical standards for contribution in the machine learning community.</p>
+<p><strong>NeurIPS</strong> (Neural Information Processing Systems), established in 1987, is the premier machine learning conference. Acceptance to the main conference or its workshops requires peer review and technical rigor. The AI4Mat Workshop, started in 2022, specifically focuses on applying machine learning to materials science problems.</p>
+<p>This venue matters because it brings materials informatics to the mainstream ML community. The workshop audience includes both materials scientists seeking ML tools and ML researchers looking for applications—exactly the interdisciplinary audience for provenance-aware materials data.</p>
+<p>The workshop format allows for focused discussion on challenges specific to materials ML: small datasets, complex physics, and the need for interpretable models that scientists can trust.</p>
+<h2 id="looking-ahead-from-papers-to-pipelines">Looking Ahead: From Papers to Pipelines</h2>
+<p>What are the potential impacts if the MatPROV approach scales across the materials literature?</p>
+<h3 id="potential-applications">Potential Applications</h3>
+<ol>
+<li>
+<p><strong>Large-scale synthesis analysis</strong>: With thousands of procedures extracted as structured graphs, researchers could analyze patterns across material classes, identifying which synthesis routes are most common or which parameters correlate with successful outcomes.</p>
+</li>
+<li>
+<p><strong>Robotic laboratory integration</strong>: Structured procedure graphs can be converted to executable automation scripts. A robot could read a synthesis graph, map operations to available equipment, and execute the procedure automatically.</p>
+</li>
+<li>
+<p><strong>Improved electronic laboratory notebooks</strong>: ELNs that automatically capture provenance would make experiments more reproducible. Instead of free-form notes, the notebook would maintain a formal graph of what was done, with what, by whom, and when.</p>
+</li>
+<li>
+<p><strong>ML models on structured data</strong>: Models trained on structured procedure representations could learn to predict synthesis conditions for new materials, rather than just predicting properties from composition.</p>
+</li>
+</ol>
+<h3 id="challenges-to-address">Challenges to Address</h3>
+<p>The research faces several challenges:</p>
+<ul>
+<li><strong>Extraction accuracy</strong>: LLMs can miss domain-specific nuances or misinterpret procedural language</li>
+<li><strong>Terminology diversity</strong>: Different communities use different terms for similar operations</li>
+<li><strong>Scaling to diverse materials</strong>: Ceramics, polymers, and metals each have specialized synthesis techniques</li>
+<li><strong>Validation</strong>: How to verify that extracted graphs accurately represent the intended procedure</li>
+</ul>
+<h3 id="a-quiet-month-a-steady-advance">A Quiet Month, A Steady Advance</h3>
+<p>November was notably quiet for major materials discovery announcements. This single accepted paper highlights an important truth: fundamental research infrastructure—datasets, standards, extraction methods—often advances steadily between headline-grabbing discoveries. The work that enables the next generation of AI-driven materials labs happens incrementally, paper by paper, workshop by workshop.</p>
+<p><strong>MatPROV</strong> is one step toward making materials synthesis knowledge computable. Whether this particular approach scales remains to be seen, but the direction—using LLMs to extract structured, standards-compliant representations from literature—will likely influence how materials informatics bridges the gap between published knowledge and automated discovery.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

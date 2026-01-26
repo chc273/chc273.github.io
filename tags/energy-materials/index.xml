@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Energy Materials on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/energy-materials/</link>
+    <description>Recent content in Energy Materials on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/energy-materials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Acceleration: May 2025 in Materials Discovery</title>
+      <link>https://cchen.me/newsletter/2025-05-31-materials-discovery/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-05-31-materials-discovery/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;17 articles&lt;/strong&gt; published during &lt;strong&gt;May 2025&lt;/strong&gt;, surveying how AI is transforming materials science from a trial-and-error discipline into a predictive science. Researchers demonstrated autonomous XRD analysis at synchrotron speeds, established a scaling law for simulation-to-real transfer learning, and screened &lt;strong&gt;121 million molecules&lt;/strong&gt; for battery applications using GPU acceleration. Perhaps most significant is the validation of a new scaling law showing how computational databases can overcome experimental scarcity - providing a quantitative roadmap for the field.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>17 articles</strong> published during <strong>May 2025</strong>, surveying how AI is transforming materials science from a trial-and-error discipline into a predictive science. Researchers demonstrated autonomous XRD analysis at synchrotron speeds, established a scaling law for simulation-to-real transfer learning, and screened <strong>121 million molecules</strong> for battery applications using GPU acceleration. Perhaps most significant is the validation of a new scaling law showing how computational databases can overcome experimental scarcity - providing a quantitative roadmap for the field.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Materials Screened", "value": "121 million", "context": "SES AI electrolyte search with NVIDIA GPUs"},
+{"label": "Papers Analyzed", "value": "88,000", "context": "LLM extraction for cement materials"},
+{"label": "New Altermagnets", "value": "50", "context": "Discovered by MatAltMag AI"},
+{"label": "Emissions Cut Potential", "value": "3%", "context": "Global GHG from cement substitutes"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="methods-ai-tools-that-scale">Methods: AI Tools That Scale</h2>
+<p>The most significant methodological advance this month came from <strong>CrystalShift</strong>, a new <a href="https://www.nature.com/articles/s41524-025-01627-0" target="_blank" rel="noopener noreferrer">probabilistic algorithm</a>
+ for autonomous X-ray diffraction phase labeling and lattice refinement. Published in <em>npj Computational Materials</em> on May 24, the method combines symmetry-constrained optimization, best-first tree search, and Bayesian model comparison to estimate probabilities for phase combinations - all without requiring training data. This addresses a key bottleneck in high-throughput experimentation: determining crystal structures from XRD data at synchrotron speeds. By enabling AI-powered autonomous materials discovery, CrystalShift provides the rapid, automated analysis needed for closed-loop experimentation systems.</p>
+<p>Also on May 24, <em>Nature</em> published work establishing a <a href="https://www.nature.com/articles/s41524-025-01606-5" target="_blank" rel="noopener noreferrer">power-law scaling relationship</a>
+ for simulation-to-real (Sim2Real) transfer learning in materials science. The study demonstrated that prediction error on real systems decreases as computational data increases - following a predictable scaling law. Researchers validated this behavior across <strong>70,000</strong> amorphous polymers from the RadonPy dataset and <strong>130,000</strong> small organic molecules from the QM9 database. The practical significance is clear: the scaling behavior helps determine necessary sample sizes and equivalent experimental data, guiding computational database development for real-world applications. This tells us quantitatively how much computational data we need to trust predictions about physical materials.</p>
+<p><strong>Cornell University</strong> researchers added efficiency to this scaling equation. In work <a href="https://news.cornell.edu/stories/2025/05/smarter-faster-ai-models-explored-molecular-materials-discovery" target="_blank" rel="noopener noreferrer">published May 19</a>
+, the team demonstrated knowledge distillation techniques that create faster, smaller AI models for molecular property prediction, alongside a physics-informed generative AI framework for designing realistic crystalline materials. Perhaps most forward-looking is their exploration of &ldquo;generalist materials intelligence&rdquo; - systems that function as autonomous research assistants rather than single-purpose tools. Together, these three advances show a maturing field: we&rsquo;re building tools that are both autonomous and efficient.</p>
+<h2 id="discoveries-new-materials-from-ai-search">Discoveries: New Materials from AI Search</h2>
+<p>AI search engines are finding genuinely new material classes, not just optimizing known ones. At the Chinese Academy of Sciences, researchers used an <a href="https://phys.org/news/2025-05-machine-approach-discovery-high-infrared.html" target="_blank" rel="noopener noreferrer">interpretable machine learning framework</a>
+ to discover a new family of infrared functional materials called selenoborate halides with the chemical formula ABa₃(BSe₃)₂X. Published May 9, the work overcomes traditional trial-and-error methods by identifying materials that exhibit a balanced set of properties including wide bandgaps and strong second harmonic generation - demonstrating a complete pathway for AI-driven design of functional crystal materials.</p>
+<h3 id="magnetic-materials">Magnetic Materials</h3>
+<p><strong>Renmin University of China</strong> developed an AI-based search engine called <a href="https://www.eurekalert.org/news-releases/1084125" target="_blank" rel="noopener noreferrer">MatAltMag</a>
+ that <a href="https://www.eurekalert.org/news-releases/1084125" target="_blank" rel="noopener noreferrer">identified 50 new altermagnetic materials</a>
+ - including the <strong>first four i-wave types</strong> ever discovered. The research, published in <em>National Science Review</em> on May 16, uses pre-training and fine-tuning with graph neural networks to predict magnetic properties from symmetry analysis. Perhaps most striking is the scope of the problem: only <strong>2%</strong> of magnetic materials have experimentally confirmed magnetic structures, leaving vast territory for AI exploration. The same platform also predicted the high-temperature superconductor Li₂AuH₆ with a transition temperature of <strong>140 K</strong> under ambient pressure.</p>
+<h3 id="quantum-materials">Quantum Materials</h3>
+<p><strong>Rutgers University</strong> researchers discovered <a href="https://www.rutgers.edu/news/scientists-discover-class-crystals-properties-may-prove-revolutionary" target="_blank" rel="noopener noreferrer">intercrystals</a>
+ - a <a href="https://www.rutgers.edu/news/scientists-discover-class-crystals-properties-may-prove-revolutionary" target="_blank" rel="noopener noreferrer">fundamentally new class of materials</a>
+ where electronic properties are controlled by moiré patterns from twisted graphene layers. Published May 21, the discovery enables geometric control over electron behavior that could advance quantum computing, atomic sensors, and low-loss electronics. Led by Board of Governors Professor Eva Andrei, the work extends twistronics beyond two-dimensional materials into a broader materials design paradigm.</p>
+<h3 id="structural-materials">Structural Materials</h3>
+<p><strong>Virginia Tech</strong> and <strong>Johns Hopkins University</strong> researchers <a href="https://news.vt.edu/articles/2025/05/eng-che-researchers-develop-new-metallic-materials-using-data-driven-frameworks-and-AI.html" target="_blank" rel="noopener noreferrer">developed a new multiple principal element alloy</a>
+ with enhanced strength using explainable AI and data-driven frameworks. The approach uses evolutionary algorithms and SHAP analysis to provide interpretable insights into material properties. Published May 15 and funded by the NSF, the work demonstrates how AI can transform traditional trial-and-error methods in metallurgy into a predictive science.</p>
+<h2 id="energy-applications-catalysts-batteries-thermal-management">Energy Applications: Catalysts, Batteries, Thermal Management</h2>
+<h3 id="hydrogen-production">Hydrogen Production</h3>
+<p>A research team at <strong>Tohoku University</strong>&rsquo;s Advanced Institute for Materials Research <a href="https://www.eurekalert.org/news-releases/1085656" target="_blank" rel="noopener noreferrer">developed a closed-loop framework</a>
+ called DigCat for accelerating catalyst discovery. The platform <a href="https://www.eurekalert.org/news-releases/1085656" target="_blank" rel="noopener noreferrer">identified RbSbWO₆</a>
+ as a promising bifunctional catalyst for acidic water splitting - remaining stable in acidic conditions where many catalysts degrade. Published May 29, the approach combines digital tools with experiments to efficiently find materials for clean hydrogen production, potentially reducing reliance on expensive noble metals.</p>
+<h3 id="battery-materials">Battery Materials</h3>
+<p>Three advances this month addressed different aspects of battery technology. <strong>The University of Texas at Dallas</strong> researchers <a href="https://news.utdallas.edu/science-technology/su-solid-state-battery-performance-2025/" target="_blank" rel="noopener noreferrer">discovered that mixing two solid electrolytes</a>
+ creates a &ldquo;space charge layer&rdquo; at their interface that unexpectedly enhances ion movement. Published May 30, the finding provides a new design strategy for improving solid-state batteries, which promise to be safer and store more than twice the power of conventional lithium-ion batteries. The work is part of the BEACONS initiative, a <strong>$30 million</strong> effort funded by the Department of Defense.</p>
+<p><strong>SES AI</strong> and <strong>NVIDIA</strong> <a href="https://developer.nvidia.com/blog/spotlight-accelerating-the-discovery-of-new-battery-materials-with-ses-ais-molecular-universe/" target="_blank" rel="noopener noreferrer">announced a partnership</a>
+ on May 8 to map the &ldquo;Molecular Universe&rdquo; of potential battery electrolyte materials. Using NVIDIA&rsquo;s ALCHEMI, cuML, H100/A100 GPUs, and NeMo Framework, they screened <strong>121 million molecules</strong> and achieved an <strong>80x acceleration</strong> of machine learning and DFT calculations. The partnership estimates <strong>100 billion to 1 trillion</strong> possible electrolyte materials exist - a search space that would require thousands of years without AI acceleration.</p>
+<p>Researchers from the <strong>University of Chicago</strong>, <strong>University of California San Diego</strong>, and <strong>Ningbo Institute of Materials Technology &amp; Engineering</strong> <a href="https://www.thisismoney.co.uk/money/electriccars/article-14712131/EV-batteries-revived-miracle-new-material.html" target="_blank" rel="noopener noreferrer">discovered a material</a>
+ that can restore used EV batteries to like-new performance through voltage activation. Published May 20, the breakthrough uses negative thermal expansion and oxygen-redox electrochemistry to create metastable states - potentially revolutionizing the second-hand electric car market where <strong>75%</strong> of UK drivers express serious concerns about battery degradation.</p>
+<h3 id="heat-management">Heat Management</h3>
+<p><strong>CU Boulder</strong> researchers <a href="https://www.colorado.edu/mechanical/new-discovery-shows-molecules-mute-heat-music" target="_blank" rel="noopener noreferrer">observed destructive phonon interference</a>
+ at room temperature for the first time - a phenomenon where thermal vibrations interfere like sound waves to cancel heat flow. Published May 6 in <em>Nature Materials</em>, the team developed an ultra-sensitive thermal probe to demonstrate this &ldquo;muting&rdquo; effect at the molecular scale. This discovery unlocks precise control of heat dissipation in future electronics, enabling thermal management at the molecular level.</p>
+<h2 id="sustainability-low-carbon-materials">Sustainability: Low-Carbon Materials</h2>
+<p>Researchers <a href="https://www.nature.com/articles/s43246-025-00820-4" target="_blank" rel="noopener noreferrer">published a data-driven screening method</a>
+ in <em>Nature Communications Materials</em> on May 17 that identifies alternative cementitious materials to reduce concrete&rsquo;s carbon footprint. Cement production accounts for more than <strong>6%</strong> of global greenhouse gas emissions, and traditional clinker substitutes have decreased in availability by <strong>37%</strong> over two decades. The team used large language models to extract data from <strong>88,000 academic papers</strong>, identifying <strong>14,000 materials</strong> and training a neural network on <strong>318 samples</strong> to predict reactivity. Their analysis found that waste materials and natural rocks could replace <strong>50%</strong> of global cement production - cutting associated emissions by <strong>3%</strong>, equivalent to removing <strong>260 million vehicles</strong> from U.S. roads.</p>
+<h2 id="fundamental-physics-light-into-solids">Fundamental Physics: Light into Solids</h2>
+<p>For the first time, scientists at Italy&rsquo;s National Research Council <a href="https://www.ecoticias.com/en/confirmed-light-transformed-into-supersolid/12047/" target="_blank" rel="noopener noreferrer">successfully transformed light into a supersolid</a>
+ - a state of matter exhibiting both the rigid structure of a solid and the frictionless flow of a superfluid. Published May 12, the achievement uses precisely controlled laser light and polaritons to validate theoretical predictions dating back to the 1970s. This provides a real-world platform for studying exotic quantum states, with potential applications in quantum computing and ultra-precise sensing technologies.</p>
+<h2 id="business-funding-and-partnerships">Business: Funding and Partnerships</h2>
+<p>These technical advances are attracting significant commercial investment and partnership activity.</p>
+<p><strong>Materials Nexus</strong>, a London-based startup, is <a href="https://www.axios.com/pro/climate-deals/2025/05/01/materials-nexus-discovery-data-centers" target="_blank" rel="noopener noreferrer">preparing to raise up to $30 million</a>
+ in Series A funding to expand its materials discovery service into the U.S. market, with a particular focus on data centers. The round is expected to launch later in 2025.</p>
+<p>The <strong>SES AI-NVIDIA partnership</strong> demonstrates commercial scaling of GPU-accelerated materials discovery. Beyond the technical achievement of screening 121 million molecules, the collaboration signals how cloud computing infrastructure is becoming integral to materials research.</p>
+<p><strong>Texas A&amp;M</strong> assistant professor Dr. Daniel Tabor <a href="https://stories.tamu.edu/news/2025/05/20/does-ai-mean-the-end-of-test-tubes-and-beakers/" target="_blank" rel="noopener noreferrer">received the 2025 JPC C Lectureship Award</a>
+ from the American Chemical Society for his work using AI to predict and design new materials for batteries, solar cells, and electronics. His perspective, published May 20, addresses whether AI means the end of test tubes and beakers - concluding that computational methods accelerate discovery but experimental validation remains essential.</p>
+<p><strong>Nanyang Technological University</strong> professor Eliodoro Chiavazzo <a href="https://www.ntu.edu.sg/ias/news-events/news/detail/ai-tools-for-material-enhancement-and-discovery-in-energy-applications-by-prof-eliodoro-chiavazzo" target="_blank" rel="noopener noreferrer">presented on AI tools</a>
+ for energy materials on May 28, introducing the Energy GNoME platform for bias-corrected generative AI. His work focuses on metal-organic frameworks for thermal energy storage - addressing a challenge where <strong>40%</strong> of global energy consumption and <strong>36%</strong> of CO₂ emissions come from heating and cooling buildings.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Platform</th>
+          <th>Developer</th>
+          <th>Application</th>
+          <th>Scale</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>CrystalShift</strong></td>
+          <td>Researchers</td>
+          <td>Autonomous XRD analysis</td>
+          <td>Synchrotron speeds</td>
+      </tr>
+      <tr>
+          <td><strong>MatAltMag</strong></td>
+          <td>Renmin University</td>
+          <td>Altermagnetic materials</td>
+          <td>50 new materials found</td>
+      </tr>
+      <tr>
+          <td><strong>DigCat</strong></td>
+          <td>Tohoku University</td>
+          <td>Catalyst discovery</td>
+          <td>Closed-loop framework</td>
+      </tr>
+      <tr>
+          <td><strong>Molecular Universe</strong></td>
+          <td>SES AI/NVIDIA</td>
+          <td>Battery electrolytes</td>
+          <td>121M molecules screened</td>
+      </tr>
+      <tr>
+          <td><strong>Energy GNoME</strong></td>
+          <td>NTU</td>
+          <td>Energy materials</td>
+          <td>Bias-corrected generative AI</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>The Sim2Real scaling law published this month provides a theoretical foundation for why these AI methods work - and tells us quantitatively how much computational data we need to trust predictions about physical systems. This transforms computational databases from reference libraries into training data for predictive models.</p>
+<p>We&rsquo;re seeing a transition from individual AI tools to integrated platforms: DigCat for catalysts, MatAltMag for magnetic materials, Molecular Universe for electrolytes, Energy GNoME for energy materials. The business activity suggests commercial scaling is underway, with startups raising capital and big tech partnerships bringing GPU infrastructure to materials discovery.</p>
+<p>The question facing the field is how the role of human scientists evolves. Cornell&rsquo;s &ldquo;generalist materials intelligence&rdquo; concept hints at AI as research assistant rather than replacement - handling the routine tasks of data analysis and screening while humans provide the scientific judgment about what problems are worth solving and what discoveries matter. The most successful systems this month combined both: autonomous AI doing the heavy lifting of screening and prediction, guided by human scientific understanding of what to look for and why it matters.</p>
+
+
+
+
+<div id="may-2025-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "May 1", "title": "Materials Nexus preparing $30M Series A", "description": "London-based startup planning U.S. expansion targeting data centers"},
+{"date": "May 6", "title": "Phonon interference observed", "description": "CU Boulder team observes destructive phonon interference at room temperature"},
+{"date": "May 8", "title": "SES AI-NVIDIA partnership", "description": "GPU-accelerated screening of 121 million electrolyte molecules"},
+{"date": "May 9", "title": "Infrared materials discovered", "description": "Chinese Academy of Sciences discovers selenoborate halides via interpretable ML"},
+{"date": "May 12", "title": "Light transformed into supersolid", "description": "Italian researchers achieve first-ever light-to-supersolid conversion"},
+{"date": "May 15", "title": "Alloys developed with explainable AI", "description": "Virginia Tech creates stronger MPEAs using interpretable AI methods"},
+{"date": "May 16", "title": "50 altermagnets discovered", "description": "MatAltMag identifies 50 new altermagnetic materials including first i-wave types"},
+{"date": "May 17", "title": "Cement screening published", "description": "Data-driven study finds waste materials that could cut emissions 3%"},
+{"date": "May 19", "title": "Cornell advances efficient AI", "description": "Knowledge distillation and physics-informed generative frameworks for materials"},
+{"date": "May 20", "title": "EV battery restoration", "description": "Material discovered to restore used EV batteries to like-new performance"},
+{"date": "May 21", "title": "Intercrystals discovered", "description": "Rutgers discovers new material class with moiré-controlled properties"},
+{"date": "May 24", "title": "CrystalShift and Sim2Real published", "description": "Nature publishes autonomous XRD algorithm and scaling law for transfer learning"},
+{"date": "May 28", "title": "Energy GNoME platform presented", "description": "NTU presentation on bias-corrected generative AI for energy materials"},
+{"date": "May 29", "title": "Acidic water splitting catalyst", "description": "DigCat platform identifies RbSbWO₆ for hydrogen production"},
+{"date": "May 30", "title": "Solid-state battery interface effect", "description": "UT Dallas discovers space charge layer enhances ion movement"}
+]
+}
+;
+    const containerId = "may-2025-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

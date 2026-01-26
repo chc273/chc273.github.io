@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Automation on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/automation/</link>
+    <description>Recent content in Automation on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Accelerates Materials Discovery: From Lab to Industry</title>
+      <link>https://cchen.me/newsletter/2025-02-28-materials-discovery/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-02-28-materials-discovery/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;3 articles&lt;/strong&gt; published between &lt;strong&gt;February 1 and February 26, 2025&lt;/strong&gt;, surveying how artificial intelligence is transforming materials science. Research reviews demonstrate accelerated discovery in MXenes and perovskites, while industry data reveals &lt;strong&gt;74%&lt;/strong&gt; of chemical companies are now deploying AI in R&amp;amp;D.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Perovskite Efficiency Growth&#34;, &#34;value&#34;: &#34;3.8% to 26%&#34;, &#34;context&#34;: &#34;Since 2009, aided by ML automation&#34;},
+{&#34;label&#34;: &#34;Industry AI Adoption&#34;, &#34;value&#34;: &#34;74%&#34;, &#34;context&#34;: &#34;Chemical companies using AI in R&amp;D&#34;},
+{&#34;label&#34;: &#34;Formulation Speedup&#34;, &#34;value&#34;: &#34;4-6 months to seconds&#34;, &#34;context&#34;: &#34;Dow&#39;s AI-driven foam development&#34;},
+{&#34;label&#34;: &#34;Potential GenAI Value&#34;, &#34;value&#34;: &#34;$140 billion&#34;, &#34;context&#34;: &#34;In energy and materials sector&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;research-spotlight-computational-methods-accelerate-discovery&#34;&gt;Research Spotlight: Computational Methods Accelerate Discovery&lt;/h2&gt;
+&lt;p&gt;Two review articles published this month document how computational methods are accelerating materials discovery, demonstrating a consistent pattern: artificial intelligence and first-principles calculations work together to guide experimental work.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>3 articles</strong> published between <strong>February 1 and February 26, 2025</strong>, surveying how artificial intelligence is transforming materials science. Research reviews demonstrate accelerated discovery in MXenes and perovskites, while industry data reveals <strong>74%</strong> of chemical companies are now deploying AI in R&amp;D.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Perovskite Efficiency Growth", "value": "3.8% to 26%", "context": "Since 2009, aided by ML automation"},
+{"label": "Industry AI Adoption", "value": "74%", "context": "Chemical companies using AI in R&D"},
+{"label": "Formulation Speedup", "value": "4-6 months to seconds", "context": "Dow's AI-driven foam development"},
+{"label": "Potential GenAI Value", "value": "$140 billion", "context": "In energy and materials sector"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="research-spotlight-computational-methods-accelerate-discovery">Research Spotlight: Computational Methods Accelerate Discovery</h2>
+<p>Two review articles published this month document how computational methods are accelerating materials discovery, demonstrating a consistent pattern: artificial intelligence and first-principles calculations work together to guide experimental work.</p>
+<h3 id="mxenes-computational-prediction-guides-experiment">MXenes: Computational Prediction Guides Experiment</h3>
+<p><a href="https://www.nature.com/articles/s41699-025-00529-5" target="_blank" rel="noopener noreferrer">MXenes</a>
+, a family of 2D transition metal carbides and nitrides discovered in 2011, have seen interest grow at <strong>34% annually</strong> according to a <a href="https://www.nature.com/articles/s41699-025-00529-5" target="_blank" rel="noopener noreferrer">review in <em>npj Computational Materials</em></a>
+. This rapid growth creates a challenge: researchers must navigate an exponentially expanding design space to identify promising compositions for specific applications.</p>
+<p>The review highlights how density functional theory (DFT) and machine learning are being used together to predict MXene properties before synthesis. DFT calculations allow researchers to explore electronic structure, surface chemistry, and mechanical properties across the MXene family. Various functionals appear in the literature, including PBE, TPSS, M06, B3LYP, PBE0, HSE06, and others from Perdew&rsquo;s &ldquo;Jacob&rsquo;s ladder&rdquo; of density functional approximations.</p>
+<p>Machine learning complements these first-principles calculations by learning patterns from computed datasets, enabling faster prediction of properties for new MXene compositions. This computational guidance helps narrow the vast design space, directing experimental synthesis toward the most promising candidates. The review notes that despite progress, challenges remain in transitioning MXenes from laboratory demonstrations to practical applications.</p>
+<h3 id="perovskites-automation-drives-efficiency-gains">Perovskites: Automation Drives Efficiency Gains</h3>
+<p>Perovskite photovoltaics present a similar story of computational acceleration. Since their emergence in 2009, perovskite solar cells have seen power conversion efficiency rise from <strong>3.8%</strong> to <strong>over 26%</strong>, according to a <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/inf2.70005" target="_blank" rel="noopener noreferrer">review in <em>InfoMat</em></a>
+. This rapid improvement has been driven partly by machine learning and automation.</p>
+<p>The review, authored by researchers from <strong>Forschungszentrum Jülich</strong>, <strong>Helmholtz-Institute Erlangen-Nürnberg (HI ERN)</strong>, and the <strong>University of Electronic Science and Technology of China (UESTC)</strong>, describes how <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/inf2.70005" target="_blank" rel="noopener noreferrer">Autonomous Material and Device Acceleration Platforms</a>
+ (AMADAP) enable high-throughput experimentation. These automated systems can prepare samples, test devices, and feed results back into machine learning models that suggest the next experiment.</p>
+<p>Materials with the \(ABX_3\) perovskite structure present optimization challenges due to the vast parameter space of compositions, processing conditions, and device architectures. ML-driven automation addresses this by exploring more combinations faster than manual methods allow. The review notes various deposition techniques being automated, including spin-coating, doctor-blading, and spray-coating.</p>
+<p>Both MXenes and perovskites demonstrate the same underlying pattern: computational methods don&rsquo;t replace experimentation, but they make it more efficient by predicting what to try next.</p>
+<h2 id="industry-adoption-ai-moves-from-lab-to-production">Industry Adoption: AI Moves from Lab to Production</h2>
+<p>The computational methods documented in academic research are now being deployed at scale across the chemicals industry. According to <a href="https://www.elsevier.com/connect/how-ai-is-transforming-the-chemicals-and-materials-industry" target="_blank" rel="noopener noreferrer">an analysis by <strong>Elsevier</strong></a>
+, <strong>74%</strong> of chemical companies have begun implementing AI in their R&amp;D processes. This finding comes from an <strong>IBM</strong> survey of 400 chemicals executives, <strong>80%</strong> of whom said AI will be important to their business in the next three years.</p>
+<p>The article highlights a concrete example from <strong>Dow Polyurethane</strong>, where AI has transformed foam formulation development. Previously, developing new flexible foam formulations took experts <strong>4 to 6 months</strong> of iterative testing. With AI, this process now takes seconds. Rather than replacing the experts, the AI augments their capabilities, allowing them to explore more options and reach optimal formulations faster.</p>
+<p><strong>McKinsey &amp; Company</strong> estimates that generative AI could create <strong>$140 billion</strong> in value across the energy and materials sector by accelerating the identification of new molecules and formulations. This potential is driving rapid adoption, but the article emphasizes that success depends on a critical foundation: data.</p>
+<p><a href="https://www.elsevier.com/connect/how-ai-is-transforming-the-chemicals-and-materials-industry" target="_blank" rel="noopener noreferrer">**FAIR principles</a>
+ (Findable, Accessible, Interoperable, Reusable)] are essential for effective AI deployment. <strong>Elsevier</strong> works with companies like <strong>Johnson Matthey</strong> to build &ldquo;data scaffolding&rdquo; through enrichment, knowledge graphs, and semantic search. <strong>SciBite</strong>, an <strong>Elsevier</strong> company, provides semantic technology to structure chemical and biological data for AI applications.</p>
+<p>The article also mentions broader AI initiatives in the industry, including <strong>Microsoft</strong> and <strong>Surveily</strong> using AI for predictive maintenance and safety monitoring in chemical plants. These applications extend beyond R&amp;D into operations, showing AI&rsquo;s potential to improve safety and sustainability alongside accelerating innovation.</p>
+<h2 id="the-pattern-integration-not-replacement">The Pattern: Integration, Not Replacement</h2>
+<p>The three articles from February reveal a consistent theme: AI is integrating into materials science and chemical engineering as an augmentation tool, not a replacement for expertise. In academic research, DFT calculations guide MXene synthesis exploration, and ML-driven automation accelerates perovskite efficiency improvements. In industry, AI formulations tools reduce development time from months to seconds, but experts remain in the loop.</p>
+<p>The common thread across all these developments is the integration of computational methods with domain knowledge. DFT + ML for MXenes, automation + ML for perovskites, and AI + expert formulation guidance at Dow all follow the same pattern: the technology augments, accelerates, and extends what human researchers can achieve.</p>
+<p>Success depends on foundations that aren&rsquo;t glamorous but are essential: high-quality computational data for training ML models, FAIR-compliant data infrastructure in industry, and experimental validation of computational predictions. As the survey data shows, the chemicals industry has moved beyond asking whether AI is useful to asking how to deploy it effectively. The research literature suggests materials science is following the same trajectory.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Crystallographic Disorder on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/crystallographic-disorder/</link>
+    <description>Recent content in Crystallographic Disorder on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/crystallographic-disorder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Materials Discovery Moves Beyond Simulation</title>
+      <link>https://cchen.me/newsletter/2025-12-31-materials-discovery/</link>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-12-31-materials-discovery/</guid>
+      <description>&lt;p&gt;After years of predicting materials in silico, AI materials discovery is entering the physical world. &lt;strong&gt;Google DeepMind&lt;/strong&gt; is building an automated lab in the UK, startups are deploying self-driving facilities, and researchers are developing new interfaces for human-AI collaboration. But a critical question remains: Can AI overcome real-world complexities that simulations miss?&lt;/p&gt;
+&lt;p&gt;This comprehensive review covers &lt;strong&gt;22 articles&lt;/strong&gt; published in &lt;strong&gt;December 2025&lt;/strong&gt;, surveying the latest developments in AI-driven materials discovery. The field is maturing beyond computational prediction to automated experimentation, facing real-world validation challenges, and developing new approaches to bridge the gap between algorithm and laboratory.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>After years of predicting materials in silico, AI materials discovery is entering the physical world. <strong>Google DeepMind</strong> is building an automated lab in the UK, startups are deploying self-driving facilities, and researchers are developing new interfaces for human-AI collaboration. But a critical question remains: Can AI overcome real-world complexities that simulations miss?</p>
+<p>This comprehensive review covers <strong>22 articles</strong> published in <strong>December 2025</strong>, surveying the latest developments in AI-driven materials discovery. The field is maturing beyond computational prediction to automated experimentation, facing real-world validation challenges, and developing new approaches to bridge the gap between algorithm and laboratory.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Lab Capacity", "value": "Hundreds/day", "context": "Google DeepMind automated lab, operational 2026"},
+{"label": "Performance Gain", "value": "150%", "context": "AI advisor improvement in conducting polymers"},
+{"label": "Speed Increase", "value": "30x", "context": "High-throughput magnetic sensor evaluation"},
+{"label": "Prediction Error Risk", "value": "80%+", "context": "AI-predicted materials affected by crystallographic disorder"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-big-story-ai-goes-physical">The Big Story: AI Goes Physical</h2>
+<p>The most significant infrastructure investment in AI materials discovery to date comes from <strong>Google DeepMind</strong>, which is <a href="https://www.newsbytesapp.com/news/science/google-is-building-gemini-ai-powered-lab-to-discover-new-materials/story" target="_blank" rel="noopener noreferrer">building its first automated research laboratory</a>
+ for material discovery in the United Kingdom. Scheduled to be <a href="https://forklog.com/en/deepmind-to-establish-ai-lab-for-material-discovery/" target="_blank" rel="noopener noreferrer">operational by 2026</a>
+, the facility will combine <strong>Gemini AI</strong> with advanced robotics to synthesize and analyze <a href="https://www.moneycontrol.com/technology/google-deepmind-to-build-first-gemini-powered-materials-discovery-lab-article-13723595.html" target="_blank" rel="noopener noreferrer">hundreds of material samples daily</a>
+ targeting applications like superconductors, high-performance batteries, solar cells, chips, and medical imaging.</p>
+<p>The lab is part of a broader <a href="https://www.newsbytesapp.com/news/science/google-is-building-gemini-ai-powered-lab-to-discover-new-materials/story" target="_blank" rel="noopener noreferrer">partnership with the UK government</a>
+ that includes sharing AI models with the <strong>UK AI Security Institute</strong> and providing British researchers priority access to AI systems. <strong>Demis Hassabis</strong>, CEO of Google DeepMind, <a href="https://forklog.com/en/deepmind-to-establish-ai-lab-for-material-discovery/" target="_blank" rel="noopener noreferrer">announced the initiative</a>
+ in December 2025, alongside UK Technology Secretary <strong>Liz Kendall</strong>. Google has separately committed <strong><a href="https://www.moneycontrol.com/technology/google-deepmind-to-build-first-gemini-powered-materials-discovery-lab-article-13723595.html" target="_blank" rel="noopener noreferrer">£5 billion</a>
+</strong> ($6.3 billion) to data-center and operational investments in the UK over the next two years.</p>
+<p>This UK facility is one component of a larger strategy. Google DeepMind is also <a href="https://deepmind.google/blog/google-deepmind-supports-us-department-of-energy-on-genesis/" target="_blank" rel="noopener noreferrer">partnering with the U.S. Department of Energy</a>
+ as part of the White House&rsquo;s <strong>Genesis Mission</strong> a national effort to use AI to accelerate scientific research. Through this partnership, Google will provide all <strong>17 DOE National Laboratories</strong> with access to its frontier AI models and tools, starting with the <strong>AI co-scientist</strong> built on Gemini. The collaboration aims to accelerate breakthroughs in energy, materials discovery, and national security, with an accelerated access program expanding to National Laboratories in <a href="https://deepmind.google/blog/google-deepmind-supports-us-department-of-energy-on-genesis/" target="_blank" rel="noopener noreferrer">early 2026</a>
+.</p>
+<p>Despite these major infrastructure investments, the field has yet to produce a major commercial breakthrough. As <strong>MIT Technology Review</strong> <a href="https://www.technologyreview.com/2025/12/15/1129210/ai-materials-science-discovery-startups-investment/" target="_blank" rel="noopener noreferrer">notes in its analysis</a>
+, AI-driven materials discovery is moving from computational simulation to real-world experimentation, but the critical bottleneck remains physically making and testing predicted compounds. The typical timeline to develop and manufacture a new material still spans <strong><a href="https://www.technologyreview.com/2025/12/15/1129210/ai-materials-science-discovery-startups-investment/" target="_blank" rel="noopener noreferrer">20 years</a>
+</strong> and no AI-discovered material has yet achieved commercial scale.</p>
+<h2 id="bridging-the-prediction-reality-gap">Bridging the Prediction-Reality Gap</h2>
+<p>The fundamental challenge in AI materials discovery is no longer prediction, it is physical synthesis and testing. The field is developing multiple approaches to bridge this gap.</p>
+<h3 id="startup-approaches">Startup Approaches</h3>
+<p>Venture-backed startups are building autonomous labs where AI agents design and run experiments to synthesize and optimize new materials. <strong>Lila Sciences</strong>, co-founded by <strong>Rafael Gómez-Bombarelli</strong> (MIT professor of materials science) with chief autonomous science officer <strong>John Gregoire</strong>, has raised <strong><a href="https://www.technologyreview.com/2025/12/15/1129210/ai-materials-science-discovery-startups-investment/" target="_blank" rel="noopener noreferrer">hundreds of millions of dollars</a>
+</strong> to pursue this approach. <strong>Periodic Labs</strong>, co-founded by physicist <strong>Ekin Dogus Cubuk</strong> and <strong>Liam Fedus</strong> (co-creator of ChatGPT), is building similar facilities focused on automated experimentation.</p>
+<p>These startups aim to drastically shorten the decades-long development timeline for new materials needed for batteries, carbon capture, and next-generation computing. Their autonomous labs use techniques like <strong>sputtering</strong> for materials deposition, with AI agents conducting experiments at scales impractical for human researchers.</p>
+<h3 id="human-in-the-loop-systems">Human-in-the-Loop Systems</h3>
+<p>Rather than full automation, some researchers are finding success with collaborative human-AI frameworks. Scientists from <strong>Argonne National Laboratory</strong> and the <strong>University of Chicago Pritzker School of Molecular Engineering</strong> developed an <strong>AI advisor model</strong> that enables shared control in self-driving labs. Applied to electronic materials, specifically <strong>mixed ion-electron conducting polymers</strong> (MIECPs), the system achieved a <strong><a href="https://phys.org/news/2025-12-ai-advisor-labs-creation-generation.html" target="_blank" rel="noopener noreferrer">150% performance improvement</a>
+</strong> over previous cutting-edge techniques.</p>
+<p>The research, published in <em>Nature Chemical Engineering</em>, introduces an <strong>adaptive AI decision interface</strong> for autonomous experimentation that enables real-time human-AI collaboration. The platform successfully optimized conducting polymers in <a href="https://www.nature.com/articles/s44286-025-00318-3" target="_blank" rel="noopener noreferrer">just 64 autonomous trials</a>
+, achieving a mixed-conducting figure of merit (\(\mu C^*\)) ranging from <strong><a href="https://www.nature.com/articles/s44286-025-00318-3" target="_blank" rel="noopener noreferrer">166 to 1,275 F cm\(^{-1}\) V\(^{-1}\) s\(^{-1}\)</a>
+</strong>. The work also uncovered a <strong><a href="https://bioengineer.org/adaptive-ai-revolutionizes-autonomous-material-discovery/" target="_blank" rel="noopener noreferrer">previously unknown polymer polymorph</a>
+</strong>, demonstrating the platform&rsquo;s potential for accelerated materials discovery through adaptive experimentation that combines AI data analysis with human decision-making.</p>
+<h2 id="concrete-discoveries">Concrete Discoveries</h2>
+<p>While much of the focus is on methodology, AI is also producing tangible materials discoveries.</p>
+<h3 id="magnetic-sensors">Magnetic Sensors</h3>
+<p>Researchers at the <strong>National Institute for Materials Science (NIMS)</strong> developed a high-throughput experimental method that measures anomalous Hall resistivity <strong><a href="https://phys.org/news/2025-12-magnetic-sensor-material-high-throughput.html" target="_blank" rel="noopener noreferrer">30 times faster</a>
+</strong> than conventional techniques. Combining this method with machine learning, they discovered a new ternary magnetic sensor material <strong>(Fe-Ir-Pt)</strong> with a <strong><a href="https://phys.org/news/2025-12-magnetic-sensor-material-high-throughput.html" target="_blank" rel="noopener noreferrer">record-high anomalous Hall resistivity of 6.5 \(\mu\Omega \cdot cm\)</a>
+</strong> significantly exceeding the previous maximum of 5.25 \(\mu\Omega \cdot cm\) in Fe-X binary systems.</p>
+<p>The new method reduces evaluation time per composition to <strong><a href="https://phys.org/news/2025-12-magnetic-sensor-material-high-throughput.html" target="_blank" rel="noopener noreferrer">0.2 hours (12 minutes)</a>
+</strong>, enabling rapid screening of compositional gradient thin films. This data-driven pipeline accelerates the search for sensitive magnetic sensor materials crucial for next-generation hard disk drives, published in <em>npj Computational Materials</em>.</p>
+<h3 id="superconductors">Superconductors</h3>
+<p><strong>Tohoku University</strong> and <strong>Fujitsu Limited</strong> used the <strong>Fujitsu Kozuchi</strong> AI platform to analyze the superconductivity mechanism of a kagome superconducting material, <strong>cesium vanadium antimonide (CsV\(_3\)Sb\(_5\))</strong>. Their new discovery intelligence technique compressed causal graphs derived from complex experimental data to <strong><a href="https://phys.org/news/2025-12-superconducting-material-ai.html" target="_blank" rel="noopener noreferrer">1/20th of their original size</a>
+</strong>, enabling efficient identification of the material&rsquo;s electron interactions.</p>
+<p>The research leverages data from the <strong>NanoTerasu Synchrotron Light Source</strong> (operational since April 2024) and angle-resolved photoemission spectroscopy (ARPES). Fujitsu plans to begin offering a <strong><a href="https://phys.org/news/2025-12-superconducting-material-ai.html" target="_blank" rel="noopener noreferrer">trial environment for the discovery intelligence technology in March 2026</a>
+</strong>, following the 2022 establishment of the Fujitsu x Tohoku University Discovery Intelligence Laboratory.</p>
+<h3 id="llm-powered-discovery">LLM-Powered Discovery</h3>
+<p>Researchers at the <strong>University of Tokyo</strong> developed <strong>MatAgent</strong>, an AI framework using large language models for autonomous and explainable materials discovery. The system <a href="https://phys.org/news/2025-12-llms-unleash-ai-potential-autonomous.html" target="_blank" rel="noopener noreferrer">reasons step-by-step in natural language</a>
+, explains its decisions, and incorporates user constraints to efficiently search for new inorganic materials. Published in <em>Cell Reports Physical Science</em>, the approach aims to accelerate discovery of materials for catalysis, energy storage, and semiconductors by making AI-driven discovery more transparent and explainable.</p>
+<h3 id="other-discoveries">Other Discoveries</h3>
+<ul>
+<li>
+<p><strong>Topological materials</strong>: Researchers from the <strong>University of Alabama at Birmingham</strong> and <strong>Shenzhen University</strong> developed a quantum-inspired chemical rule using a hybrid quantum-classical artificial neural network to predict topological materials from chemical composition, achieving <strong><a href="https://quantumzeitgeist.com/quantum-faster-inspired-rule-achieves-discovery-topological-materials/" target="_blank" rel="noopener noreferrer">84.7% prediction accuracy</a>
+</strong> and successfully identifying new topological compounds.</p>
+</li>
+<li>
+<p><strong>Ultralow thermal conductivity</strong>: A study in <em>Nature Communications</em> introduced a universal descriptor for thermal conductivity based on atomic number and sound velocity, enabling fast screening of materials. Using high-throughput workflows and machine learning, researchers identified candidates from over <a href="https://www.nature.com/articles/s41467-025-05776-4" target="_blank" rel="noopener noreferrer"><strong>25,000 materials</strong></a>
+ and experimentally validated record-low thermal conductivity in <strong>CsAg\(_2\)I\(_3\)</strong>.</p>
+</li>
+</ul>
+<h2 id="the-reality-check">The Reality Check</h2>
+<p>As the field scales up, researchers are identifying specific technical limitations that AI-based materials prediction must overcome.</p>
+<h3 id="the-crystallographic-disorder-problem">The Crystallographic Disorder Problem</h3>
+<p>An international study led by the <strong>University of Bayreuth</strong>, <strong>Fritz Haber Institute</strong>, and <strong>Imperial College London</strong> reveals that AI and computer simulations often make significant errors in predicting material properties because they ignore <strong>crystallographic disorder</strong> a common feature in real-world crystals. The researchers developed a machine-learning tool to detect disordered materials and found that in one database, <strong><a href="https://phys.org/news/2025-12-limitations-ai-based-material-crystallographic.html" target="_blank" rel="noopener noreferrer">over 80% of AI-predicted promising materials</a>
+</strong> were likely affected by disorder that simulations missed.</p>
+<p>The tool, published in <em>Advanced Materials</em>, addresses substitutional disorder a phenomenon where multiple elements randomly occupy crystallographic sites. <strong>Prof. Dr. Johannes T. Margraf</strong> (University of Bayreuth) and first author <strong>Konstantin Jakob</strong> (Fritz Haber Institute) present the detection tool as a way to improve reliability and efficiency of computer-assisted material discovery, preventing costly experimental failures based on flawed predictions.</p>
+<h3 id="acknowledging-limitations">Acknowledging Limitations</h3>
+<p><strong>MIT Technology Review</strong> <a href="https://www.technologyreview.com/2025/12/18/1130102/ai-materials-discovery/" target="_blank" rel="noopener noreferrer">examines the gap between promise and reality</a>
+, noting that while Google&rsquo;s DeepMind has predicted millions of new materials, only <strong><a href="https://www.technologyreview.com/2025/12/18/1130102/ai-materials-discovery/" target="_blank" rel="noopener noreferrer">hundreds have actually been made in the lab</a>
+</strong>. The publication characterizes the field as still in early stages and prone to hype, with significant challenges in translating AI predictions into novel, useful, and physically viable materials.</p>
+<p>Similarly, <strong>Semiconductor Engineering</strong> <a href="https://semiengineering.com/benefits-and-limits-of-using-ml-for-materials-discovery/" target="_blank" rel="noopener noreferrer">reviews the benefits and limits</a>
+ of machine learning for materials discovery. While ML tools enable a <strong><a href="https://semiengineering.com/benefits-and-limits-of-using-ml-for-materials-discovery/" target="_blank" rel="noopener noreferrer">100-fold reduction in candidates</a>
+</strong> for synthesis, the analysis emphasizes that these tools rely heavily on human expertise for data preparation, validation, and interpretation to overcome limitations like selection bias and model explainability. Case studies from <strong>IBM</strong>, <strong>Microsoft Research</strong>, and <strong>Samsung</strong> demonstrate that ML integration with human judgment is essential for reliable outcomes.</p>
+<h2 id="methodological-advances">Methodological Advances</h2>
+<p>Beyond applications, researchers are developing new computational and experimental frameworks for AI-accelerated materials science.</p>
+<h3 id="computational-methods">Computational Methods</h3>
+<p>A review in <em>Nature Computational Materials</em> discusses how <strong>machine learning and quantum computing</strong> can accelerate discovery of <strong>high-entropy materials</strong> for energy applications like batteries and supercapacitors. The work focuses on overcoming data and modeling obstacles to predict material properties before physical synthesis, highlighting the potential of high-entropy MXenes to overcome limitations of conventional battery materials.</p>
+<p>Researchers from the <strong>University of Manchester</strong> are using AI to accelerate quantum materials discovery, with an AI system that <strong>&ldquo;learns to think like a physicist&rdquo;</strong> to predict promising materials and guide their fabrication. Led by <strong>Dr. Qian Yang</strong> (Royal Society University Research Fellow at the National Graphene Institute), the work aims to underpin breakthroughs in lossless superconductors and clean energy catalysts.</p>
+<h3 id="experimental-integration">Experimental Integration</h3>
+<p>A study in <em>Nature Computational Materials</em> presents an <strong>Active Learning loop</strong> implementation in <strong>pyiron</strong> for experimental materials characterization, combining experimental and simulated data. The approach uses prior knowledge from density functional theory simulations and text mining to accelerate characterization, drawing inspiration from high-throughput simulation workflows to bridge computation and experiment.</p>
+<p>Researchers propose a <strong>framework for networking autonomous material exploration systems</strong> using transfer learning to share knowledge and improve discovery efficiency. Demonstrated with three distinct systems targeting different material properties, the approach uses ensemble neural networks and Bayesian optimization to enable large-scale autonomous networks that could accelerate material development through knowledge exchange.</p>
+<h3 id="quantum-applications">Quantum Applications</h3>
+<p>A research team including scientists from <strong>General Motors</strong> demonstrates that quantum algorithms can accurately simulate transition metal oxides used in automotive catalysts. Their resource estimation shows simulating a key catalyst fragment to chemical accuracy could require <strong><a href="https://quantumzeitgeist.com/quantum-computing-analysis-transition-metal-oxide-catalysis-enabled-resource/" target="_blank" rel="noopener noreferrer">300 to 10 million physical qubits</a>
+</strong>, a scale projected for future hardware. Led by <strong>Yuntao Gu</strong>, <strong>Louis Hector, Jr</strong>, and <strong>Paolo Giusto</strong> from GM, the work validates applying quantum computing to real-world materials science and provides a roadmap for near-term simulations of catalytic materials.</p>
+<h2 id="funding-and-ecosystem">Funding and Ecosystem</h2>
+<p>Startup activity continues in the materials discovery space. <strong>Novyte Materials</strong> raised <strong><a href="https://www.ciol.com/funding-acquistion-merger/theia-ventures-backs-novyte-materials-in-inr-415-cr-pre-seed-round-10920406" target="_blank" rel="noopener noreferrer">INR 4.15 crore</a>
+</strong> (approximately $50,000) in a pre-seed round led by <strong>Theia Ventures</strong>. The startup uses generative AI and physics-based simulations to compress R&amp;D timelines by <strong><a href="https://www.ciol.com/funding-acquistion-merger/theia-ventures-backs-novyte-materials-in-inr-415-cr-pre-seed-round-10920406" target="_blank" rel="noopener noreferrer">10 times</a>
+</strong> and reduce early-stage physical testing costs by <strong><a href="https://www.ciol.com/funding-acquistion-merger/theia-ventures-backs-novyte-materials-in-inr-415-cr-pre-seed-round-10920406" target="_blank" rel="noopener noreferrer">90%</a>
+</strong>. The funding represents <strong>Theia Ventures&rsquo; fourth investment</strong> from its new fund, which announced its first close in October 2025.</p>
+<p>While modest compared to the hundreds of millions raised by <strong>Lila Sciences</strong>, the investment shows continued startup activity in AI-driven materials discovery despite the field&rsquo;s lack of commercial breakthroughs.</p>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>The developments of December 2025 reveal a field in transition. <strong>Google DeepMind&rsquo;s automated lab represents a major bet</strong> that physical experimentation at scale is the path forward. The <strong>human-AI collaboration work</strong> suggests pure automation isn&rsquo;t the only answer hybrid approaches that combine AI&rsquo;s analytical capabilities with human judgment may prove more effective. The <strong>crystallographic disorder study</strong> reveals specific, addressable technical challenges that must be overcome for AI predictions to translate reliably to real materials.</p>
+<p>The lack of commercial breakthroughs, as noted by MIT Technology Review, suggests the field is still in early days despite the hype and investment. AI may accelerate discovery from decades to years, not months. The realistic timeline for AI-discovered materials to reach commercial application remains measured in years, not months.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Approach</th>
+          <th>Key Example</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Fully Automated Labs</strong></td>
+          <td>Google DeepMind UK facility</td>
+          <td>Opening 2026</td>
+      </tr>
+      <tr>
+          <td><strong>Human-AI Collaboration</strong></td>
+          <td>AI advisor at Argonne</td>
+          <td>150% performance gain demonstrated</td>
+      </tr>
+      <tr>
+          <td><strong>Startup Labs</strong></td>
+          <td>Lila Sciences, Periodic Labs</td>
+          <td>Early stage, no major breakthroughs</td>
+      </tr>
+  </tbody>
+</table>
+<p>As 2026 approaches, the key question for the field is: Will physical validation match the computational promise? The Google DeepMind lab, scheduled to open next year, will be a critical test case. Success would validate the large-scale investment in automated experimentation. Continued challenges would reinforce the value of hybrid human-AI approaches and highlight the need for continued fundamental research into the complexities of real-world materials.</p>
+<p>The field is growing up identifying specific problems like crystallographic disorder, developing concrete solutions like disorder-detection ML tools, and building infrastructure like the UK automated lab. This maturation from hype to measured progress may be the most important development of all.</p>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "December 2025", "title": "Google DeepMind announces UK automated lab, opening 2026", "description": "Lab will synthesize hundreds of material samples daily using Gemini AI and robotics"},
+{"date": "December 2025", "title": "AI advisor achieves 150% performance boost in polymer discovery", "description": "Human-AI collaboration framework outperforms pure automation"},
+{"date": "December 2025", "title": "Study reveals 80%+ of AI-predicted materials affected by disorder", "description": "Machine learning tool developed to detect crystallographic disorder"},
+{"date": "December 2025", "title": "NIMS discovers record magnetic sensor material via ML + high-throughput", "description": "Fe-Ir-Pt achieves 6.5 \(\mu\Omega \cdot cm\) anomalous Hall resistivity"}
+]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

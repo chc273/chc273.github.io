@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>2025 on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/2025/</link>
+    <description>Recent content in 2025 on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/2025/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>June 2025: The Month Quantum Computing Grew Up</title>
+      <link>https://cchen.me/newsletter/2025-06-30-quantum-computing/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-06-30-quantum-computing/</guid>
+      <description>&lt;p&gt;IBM announced a roadmap to build the world&amp;rsquo;s first fault-tolerant quantum computer by 2029, declaring that &amp;ldquo;the science is solved.&amp;rdquo; Meanwhile, researchers demonstrated breakthroughs in error correction that could reduce overhead by 20x, and IonQ went on a $1.4 billion acquisition spree. The quantum computing industry isn&amp;rsquo;t just promising the future anymore—it&amp;rsquo;s building it.&lt;/p&gt;
+&lt;p&gt;This comprehensive review covers &lt;strong&gt;145 articles&lt;/strong&gt; published between &lt;strong&gt;June 1-30, 2025&lt;/strong&gt;, surveying a landscape of roadmaps, breakthroughs, and strategic consolidations that suggest quantum computing is entering an engineering phase.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>IBM announced a roadmap to build the world&rsquo;s first fault-tolerant quantum computer by 2029, declaring that &ldquo;the science is solved.&rdquo; Meanwhile, researchers demonstrated breakthroughs in error correction that could reduce overhead by 20x, and IonQ went on a $1.4 billion acquisition spree. The quantum computing industry isn&rsquo;t just promising the future anymore—it&rsquo;s building it.</p>
+<p>This comprehensive review covers <strong>145 articles</strong> published between <strong>June 1-30, 2025</strong>, surveying a landscape of roadmaps, breakthroughs, and strategic consolidations that suggest quantum computing is entering an engineering phase.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Target Year", "value": "2029", "context": "IBM's fault-tolerant quantum computer deadline"},
+{"label": "System Size", "value": "10,000", "context": "Physical qubits in IBM Starling system"},
+{"label": "Error Reduction", "value": "1,000x", "context": "Microsoft's 4D geometric codes improvement"},
+{"label": "Efficiency Gain", "value": "20x", "context": "Magic state preparation overhead reduction"},
+{"label": "Acquisition Total", "value": "$1.4B", "context": "IonQ's June 2025 spending"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-big-story-ibms-2029-roadmap-to-fault-tolerance">The Big Story: IBM&rsquo;s 2029 Roadmap to Fault Tolerance</h2>
+<p><strong>IBM</strong> declared on June 10 that <a href="https://www.livescience.com/technology/computing/ibm-will-build-monster-10-000-qubit-quantum-computer-by-2029-after-solving-science-behind-fault-tolerance" target="_blank" rel="noopener noreferrer">the fundamental science behind fault-tolerant quantum computing is solved</a>
+, unveiling a concrete roadmap to build a practical quantum supercomputer by 2029. The announcement marks a shift in how the industry talks about quantum computing—from scientific challenge to engineering problem.</p>
+<p>The centerpiece of IBM&rsquo;s roadmap is <strong>Starling</strong>, a system that will use approximately <strong>10,000 physical qubits</strong> to create <strong>200 logical qubits</strong>—error-corrected qubits that can perform reliable computations. IBM says Starling will be capable of <strong>100 million quantum operations</strong> and will be <strong>20,000 times more powerful</strong> than current quantum computers.</p>
+<p>The breakthrough enabling this roadmap is a new approach to error correction called <strong>quantum low-density parity-check (qLDPC) codes</strong>. These codes allow for <strong>9x more efficient hardware scaling</strong> than traditional surface codes, dramatically reducing the number of physical qubits needed for each logical qubit.</p>
+<h3 id="beyond-starling-blue-jay-and-the-path-forward">Beyond Starling: Blue Jay and the Path Forward</h3>
+<p>IBM&rsquo;s roadmap extends beyond 2029. The company plans <strong>Blue Jay</strong>, a system with <strong>2,000 logical qubits</strong> capable of <strong>1 billion quantum operations</strong>, targeted for 2033. This kind of scaling would enable quantum computers to tackle problems in chemistry, materials science, and optimization that are intractable for classical supercomputers.</p>
+<p>The roadmap includes intermediate milestones:</p>
+<ul>
+<li><strong>2025</strong>: The <strong>Flamingo</strong> processor with 156 logical qubits</li>
+<li><strong>2026</strong>: The <strong>Kookaburra</strong> modular processor with error-corrected capabilities</li>
+<li><strong>2029</strong>: <strong>Starling</strong> with 200 logical qubits (~10,000 physical qubits)</li>
+<li><strong>2033</strong>: <strong>Blue Jay</strong> with 2,000 logical qubits</li>
+</ul>
+<p>IBM&rsquo;s <strong>Jay Gambetta</strong>, vice president of quantum operations, stated that the company has moved from &ldquo;proving the science&rdquo; to &ldquo;scaling the technology.&rdquo; The roadmap is built on IBM&rsquo;s <strong>Heron</strong> architecture (156 qubits released in 2024) and the new <strong>Loon</strong> QPU architecture featuring qLDPC-based couplers.</p>
+<h3 id="skepticism-and-validation">Skepticism and Validation</h3>
+<p>Not everyone is convinced. Some researchers point out that IBM hasn&rsquo;t yet demonstrated a 200-logical-qubit system, and the jump from today&rsquo;s 50-logical-qubit record (held by Quantinuum) to 200 is substantial. The company&rsquo;s track record includes missing previous timelines, though IBM has consistently delivered new processors on its roadmap.</p>
+<p>However, the technical details in IBM&rsquo;s <a href="https://www.livescience.com/technology/computing/ibm-will-build-monster-10-000-qubit-quantum-computer-by-2029-after-solving-science-behind-fault-tolerance" target="_blank" rel="noopener noreferrer">peer-reviewed preprint</a>
+ uploaded to arXiv on June 2-3 provide substance to the claims. The qLDPC codes enable a <strong>physical-to-logical qubit ratio</strong> of roughly 50:1, compared to 1,000:1 or worse for surface codes.</p>
+
+
+
+
+
+
+<div id="ibm-roadmap" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "IBM's Path to Fault Tolerance (2025-2033)",
+"categories": ["Flamingo", "Kookaburra", "Starling", "Blue Jay"],
+"series": [{"name": "Logical Qubits", "data": [156, "error-corrected", 200, 2000], "type": "bar"}]
+}
+;
+    const type = "timeline";
+    const containerId = "ibm-roadmap";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="error-correction-breakthroughs">Error Correction Breakthroughs</h2>
+<p>While IBM was announcing its roadmap, researchers around the world were demonstrating breakthroughs in error correction—the technical challenge that makes fault tolerance possible. Three advances in June suggest the resource overhead problem is solvable.</p>
+<h3 id="magic-state-distillation-revolution">Magic State Distillation Revolution</h3>
+<p><strong>Osaka University</strong> researchers developed a new approach to preparing &ldquo;magic states&rdquo;—special quantum states required for fault-tolerant quantum computing. Their <a href="https://phys.org/news/2025-06-magically-errors-quantum-technique-decrease.html" target="_blank" rel="noopener noreferrer">&ldquo;level-zero&rdquo; method</a>
+ reduces the spatial and temporal overhead of magic state distillation by <strong>roughly 20x</strong> (some coverage says &ldquo;several dozen times&rdquo;).</p>
+<p>Magic states are essential for implementing the full set of quantum gates required for universal quantum computing. Traditional magic state distillation is expensive, consuming thousands of physical qubits and many rounds of computation. The new approach requires far fewer qubits and rounds, addressing what the researchers call &ldquo;the core challenge of noise.&rdquo;</p>
+<p>The team, led by <strong>Tomohiro Itogawa</strong> and <strong>Keisuke Fujii</strong>, published their work in PRX Quantum. Their simulations show that the level-zero technique could dramatically accelerate the timeline for practical quantum computers by reducing one of the largest resource overheads in fault-tolerant architectures.</p>
+<p>Separately, researchers at <strong>Quantinuum</strong> demonstrated magic state generation on the company&rsquo;s ion-trap quantum computers, producing high-quality states using just <strong>8 qubits</strong> in one study—far fewer than previously thought necessary.</p>
+<h3 id="microsofts-4d-geometric-codes">Microsoft&rsquo;s 4D Geometric Codes</h3>
+<p><strong>Microsoft</strong> revealed a family of <a href="https://www.livescience.com/technology/computing/reliable-quantum-computing-is-here-new-approach-error-correction-reduce-errors-up-to-1000-times-microsoft-scientists-say" target="_blank" rel="noopener noreferrer">four-dimensional geometric codes</a>
+ that can reduce error rates by up to <strong>1,000x</strong> while requiring <strong>5-6x fewer physical qubits</strong> per logical qubit than surface codes.</p>
+<p>The codes use a &ldquo;twisted torus&rdquo; architecture that enables single-shot error checking—detecting and correcting errors in one operation rather than multiple rounds. This approach is particularly well-suited for qubit modalities with all-to-all connectivity, such as neutral atoms and ion traps.</p>
+<p>Microsoft demonstrated the codes in collaboration with <strong>Atom Computing</strong>, using their neutral-atom qubits to create and entangle <strong>28 logical qubits</strong> with error detection and correction capabilities. The partnership aims to scale to <strong>50 logical qubits</strong> in the near term.</p>
+<p>The specific implementation uses a <strong>[[96,6,8]] code</strong>—96 physical qubits encoding 6 logical qubits with a code distance of 8. This achieves a logical error rate of \(10^{-6}\) with a physical error rate of \(10^{-3}\), representing a significant improvement over surface codes.</p>
+<h3 id="hardware-integrated-error-correction">Hardware-Integrated Error Correction</h3>
+<p><strong>Nord Quantique</strong>, a Canadian startup, demonstrated a <a href="https://www.livescience.com/technology/computing/a-first-in-applied-physics-breakthrough-quantum-computer-could-consume-2-000-times-less-power-than-a-supercomputer-and-solve-problems-200-times-faster" target="_blank" rel="noopener noreferrer">&ldquo;bosonic qubit&rdquo;</a>
+ with error correction built directly into the hardware. The approach uses multimode encoding in a superconducting aluminum cavity to achieve a <strong>1:1 physical-to-logical qubit ratio</strong>—dramatically more efficient than the 50:1 or 1,000:1 ratios required by other approaches.</p>
+<p>The company claims a future 1,000-logical-qubit machine could break an <strong>830-bit RSA encryption key</strong> in one hour using only <strong>120 kilowatt-hours</strong> of energy. By comparison, a supercomputer would require nine days and <strong>280,000 kilowatt-hours</strong>.</p>
+<p>Nord Quantique plans to release a <strong>100-logical-qubit machine by 2029</strong> and a <strong>1,000-logical-qubit machine by 2031</strong>, with a footprint of just <strong>215 square feet</strong>. The company demonstrated <strong>32 rounds</strong> of error correction without measurable decay in qubit state.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Approach</th>
+          <th>Organization</th>
+          <th>Key Innovation</th>
+          <th>Improvement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Level-zero magic states</td>
+          <td>Osaka University</td>
+          <td>Simplified preparation method</td>
+          <td>20x overhead reduction</td>
+      </tr>
+      <tr>
+          <td>4D geometric codes</td>
+          <td>Microsoft</td>
+          <td>Twisted torus architecture</td>
+          <td>1,000x error reduction</td>
+      </tr>
+      <tr>
+          <td>Bosonic qubits</td>
+          <td>Nord Quantique</td>
+          <td>Logical qubit in single hardware</td>
+          <td>2,000x lower power</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="scaling-the-hardware-cryogenics-and-control">Scaling the Hardware: Cryogenics and Control</h2>
+<p>Building large-scale quantum computers requires solving the &ldquo;wiring problem&rdquo;—how to control thousands of qubits at milli-kelvin temperatures without generating excess heat. Two breakthroughs in June addressed this challenge.</p>
+<h3 id="cryogenic-control-chips">Cryogenic Control Chips</h3>
+<p>Researchers at the <strong>University of Sydney</strong>, in collaboration with <strong>Diraq</strong> and <strong>Emergence Quantum</strong>, <a href="https://www.iflscience.com/breakthrough-qubit-control-near-absolute-zero-is-scalability-game-changer-for-quantum-computing-79766" target="_blank" rel="noopener noreferrer">demonstrated a CMOS-based control chip</a>
+ that operates at cryogenic temperatures within <strong>less than 1mm</strong> of qubits with negligible fidelity loss.</p>
+<p>The team reported <strong>no reduction in coherence time</strong> for single- and two-qubit operations, validating the integration of complex electronics with fragile spin qubits at near absolute zero. The cryogenic control system operates within a <strong>10-microwatt power envelope</strong>—critical for not disrupting the milli-kelvin environment required for quantum computation.</p>
+<p>This breakthrough, published in <em>Nature</em>, provides a pathway for building quantum processors with <strong>millions of qubits</strong> by enabling control electronics to be placed directly on the quantum chip rather than connected via room-temperature electronics through bulky coaxial cables.</p>
+<p>The work represents more than a decade of research led by <strong>Professor David Reilly</strong>, with the chip designed by <strong>Dr. Kushal Das</strong> and experiments led by <strong>Dr. Sam Bartee</strong>. The collaboration included industry partners Emergence Quantum and Diraq, aiming to use existing CMOS manufacturing technology for scalable quantum processors.</p>
+<h3 id="efficient-readout-amplifiers">Efficient Readout Amplifiers</h3>
+<p><strong>Chalmers University of Technology</strong> researchers developed a <a href="https://www.sciencedaily.com/releases/2025/06/250625011632.htm" target="_blank" rel="noopener noreferrer">pulse-operated quantum amplifier</a>
+ that activates only during qubit readout, reducing power consumption to just <strong>one-tenth</strong> of the best current amplifiers.</p>
+<p>The amplifier responds to incoming qubit pulses within <strong>35 nanoseconds</strong>, cutting average power consumption by <strong>86-90%</strong>. By activating only when needed, the amplifier reduces heat-induced decoherence and enables more qubits per system.</p>
+<p>The team, led by doctoral student <strong>Yin Zeng</strong> and professor <strong>Jan Grahn</strong>, used genetic programming to optimize the amplifier&rsquo;s performance. The work was conducted in collaboration with <strong>Low Noise Factory AB</strong> and supported by the <strong>Wallenberg Centre for Quantum Technology</strong>.</p>
+<p>This advance addresses a critical bottleneck: readout amplifiers operating continuously at cryogenic temperatures generate heat that limits how many qubits can be integrated into a single system. By reducing power consumption by 90%, the amplifier enables significantly larger quantum computers.</p>
+<h2 id="demonstrating-quantum-advantage">Demonstrating Quantum Advantage</h2>
+<p>June brought multiple demonstrations of quantum computers outperforming classical systems—not on contrived benchmark problems, but on tasks with practical relevance.</p>
+<h3 id="theoretical-breakthrough-unconditional-quantum-speedup">Theoretical Breakthrough: Unconditional Quantum Speedup</h3>
+<p>Researchers from the <strong>University of Southern California</strong> and <strong>Johns Hopkins University</strong> <a href="https://www.sciencedaily.com/releases/2025/06/250629033459.htm" target="_blank" rel="noopener noreferrer">demonstrated the first unconditional exponential quantum speedup</a>
+, using two 127-qubit <strong>IBM Quantum Eagle</strong> processors to solve a variation of <strong>Simon&rsquo;s problem</strong>.</p>
+<p>What makes this result significant is the word &ldquo;unconditional.&rdquo; Previous quantum advantage demonstrations, including Google&rsquo;s 2019 quantum supremacy claim, relied on specific sampling problems where classical verification was difficult. This demonstration on a well-understood theoretical problem provides a clean proof that quantum computers can exponentially outperform classical ones for certain tasks.</p>
+<p>The team used advanced error mitigation techniques, including dynamical decoupling and measurement error mitigation, to achieve the result on current noisy hardware. <strong>Daniel Lidar</strong>, Viterbi Professor of Engineering at USC and cofounder of Quantum Elements Inc., emphasized that while this is a key proof-of-principle, it doesn&rsquo;t yet solve a practical real-world problem.</p>
+<p>Simon&rsquo;s problem is a foundational problem in quantum algorithms related to the Abelian Hidden Subgroup Problem. The exponential speedup demonstrates that quantum computers can solve certain problems with exponentially fewer operations than any known classical algorithm.</p>
+<h3 id="practical-applications">Practical Applications</h3>
+<p><strong>University of Vienna</strong> researchers demonstrated that <a href="https://www.livescience.com/technology/computing/quantum-ai-algorithms-already-outpace-the-fastest-supercomputers-study-says" target="_blank" rel="noopener noreferrer">photonic quantum computers can enhance machine learning algorithms</a>
+, using just two photons to outperform classical algorithms for kernel-based machine learning tasks. The team, led by <strong>Philip Walther</strong>, showed potential energy efficiency benefits alongside computational advantages.</p>
+<p>The research, published in <em>Nature Photonics</em>, used a novel photon injection process with six distinct configurations. The approach could enhance performance in fields like natural language processing and help identify tasks where quantum computers excel in hybrid systems.</p>
+<p><strong>IonQ</strong>, in collaboration with <strong>AstraZeneca</strong>, <strong>AWS</strong>, and <strong>NVIDIA</strong>, <a href="https://www.ionq.com/news/ionq-speeds-quantum-accelerated-drug-development-application-with" target="_blank" rel="noopener noreferrer">announced a quantum-accelerated drug discovery workflow</a>
+ that achieved a <strong>more than 20x speedup</strong> in time-to-solution for simulating a Suzuki-Miyaura reaction. The hybrid quantum-classical workflow integrates IonQ&rsquo;s Forte QPU with NVIDIA GPUs via AWS services, reducing a key drug development step from months to days.</p>
+<p><strong>NVIDIA</strong> partnered with <strong>Ansys</strong> and <strong>DCAI</strong> to advance quantum algorithms for fluid dynamics on the CUDA-Q platform using the Gefion supercomputer. The collaboration enables GPU-accelerated simulations of Quantum Lattice Boltzmann Methods, allowing researchers to study quantum applications in computational fluid dynamics.</p>
+<h3 id="teleportation-and-networking">Teleportation and Networking</h3>
+<p><strong>Oxford University</strong> physicists <a href="https://www.earth.com/news/scientists-achieve-teleportation-between-quantum-computers-for-the-first-time-ever/" target="_blank" rel="noopener noreferrer">achieved teleportation between quantum computers for the first time</a>
+, using quantum teleportation to create a working logic gate between two separate chips <strong>six feet apart</strong>.</p>
+<p>The demonstration, led by physicist <strong>Dougal Main</strong>, achieved <strong>86% fidelity</strong> in recreating spin states via teleportation. The team successfully ran Grover&rsquo;s search algorithm on the distributed gate with a <strong>71% success rate</strong>, pointing to a strategy of distributing quantum workloads across multiple small processors linked by teleportation.</p>
+<p>This approach could overcome stability issues that limit single quantum computers and enable scalable, robust quantum computing systems. The work builds on earlier demonstrations of qubit teleportation over fiber networks (27 miles in a 2020 experiment) but is the first to implement a logic gate via teleportation between separate quantum processors.</p>
+<h2 id="industry-consolidation-ionqs-buying-spree">Industry Consolidation: IonQ&rsquo;s Buying Spree</h2>
+<p><strong>IonQ</strong> spent over <strong>$1.4 billion</strong> in June 2025 on two acquisitions that signal a maturing quantum computing market and a shift toward full-stack quantum platforms.</p>
+<h3 id="the-oxford-ionics-acquisition">The Oxford Ionics Acquisition</h3>
+<p>On June 9, IonQ <a href="https://www.reuters.com/world/uk/quantum-computing-firm-ionq-acquire-uk-based-oxford-ionics-108-billion-2025-06-09/" target="_blank" rel="noopener noreferrer">announced it would acquire UK-based Oxford Ionics</a>
+ for <strong>$1.075 billion</strong>—$1.065 billion in IonQ common stock and $10 million in cash.</p>
+<p>Oxford Ionics, founded by <strong>Dr. Chris Ballance</strong> and <strong>Dr. Tom Harty</strong>, brings &ldquo;ion-trap-on-a-chip&rdquo; technology that combines trapped-ion performance with semiconductor manufacturing scalability. The acquisition adds <strong>80 experts</strong> to IonQ&rsquo;s team.</p>
+<p>The combined company released ambitious projections:</p>
+<ul>
+<li><strong>2026</strong>: Systems with <strong>256 physical qubits</strong> at <strong>99.99%</strong> accuracy</li>
+<li><strong>2027</strong>: Systems with <strong>over 10,000 physical qubits</strong> at <strong>99.99999%</strong> logical accuracy</li>
+<li><strong>2030</strong>: Systems with <strong>2 million physical qubits</strong> and <strong>80,000 logical qubits</strong> at <strong>99.9999999999%</strong> accuracy</li>
+</ul>
+<p>The transaction reinforces IonQ&rsquo;s commitment to its Bothell, Washington manufacturing facility, where the company plans a <strong>$1 billion investment</strong> in the Pacific Northwest over the next decade.</p>
+<h3 id="the-lightsynq-acquisition">The Lightsynq Acquisition</h3>
+<p>Earlier in the month, on June 3, IonQ <a href="https://www.businesswire.com/news/home/20250603171883/en/IonQ-Completes-Acquisition-of-Lightsynq-Accelerating-Quantum-Computing-and-Networking-Roadmap" target="_blank" rel="noopener noreferrer">completed the acquisition of Lightsynq Technologies</a>
+, a startup specializing in photonic interconnects and quantum memory. The deal brought key talent and <strong>over 20 patents</strong> to IonQ&rsquo;s portfolio.</p>
+<p>Founded by <strong>Dr. Mihir Bhaskar</strong>, <strong>Dr. Bart Machielse</strong>, and <strong>Dr. David Levonian</strong>, Lightsynq&rsquo;s technology accelerates IonQ&rsquo;s roadmap toward modular quantum architectures and the development of a quantum internet. The acquisition adds capabilities in:</p>
+<ul>
+<li>Photonic interconnects for linking quantum processors</li>
+<li>Quantum memory for storing quantum information</li>
+<li>Quantum repeater technology for long-distance quantum networking</li>
+</ul>
+<p>Together, the acquisitions position IonQ as a full-stack trapped-ion quantum computing company, combining hardware expertise with networking capabilities. This follows similar consolidation trends in classical computing, where companies vertically integrated to control the entire technology stack.</p>
+<h3 id="additional-capital-raises">Additional Capital Raises</h3>
+<p><strong>Rigetti Computing</strong> raised <strong>$350 million</strong> through an at-the-market (ATM) stock offering, bringing its total cash reserves to approximately <strong>$575 million</strong> with no outstanding debt. The funds will expand Rigetti&rsquo;s superconducting quantum hardware and invest in manufacturing.</p>
+<p>The capital raises suggest quantum computing companies are positioning for commercial markets, not just research. Investors are supporting scale-up efforts as the industry transitions from scientific prototypes to engineered systems.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Acquirer</th>
+          <th>Target</th>
+          <th>Value</th>
+          <th>Technology</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IonQ</td>
+          <td>Oxford Ionics</td>
+          <td>$1.08B</td>
+          <td>Trapped-ion systems</td>
+      </tr>
+      <tr>
+          <td>IonQ</td>
+          <td>Lightsynq</td>
+          <td>Undisclosed</td>
+          <td>Photonic interconnects, quantum memory</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="global-competition-chinas-photonic-push">Global Competition: China&rsquo;s Photonic Push</h2>
+<p><strong>China</strong> launched its <a href="https://thequantuminsights.com/2025/06/13/china-ramps-up-photonic-chip-production-with-eye-on-ai-and-quantum-computing/" target="_blank" rel="noopener noreferrer">first production line for next-generation photonic chips</a>
+, using thin-film lithium niobate (TFLN) to create 6-inch wafers with performance exceeding global benchmarks.</p>
+<p>The pilot line, built by <strong>Shanghai Jiao Tong University&rsquo;s CHIPX</strong>, achieves <strong>110 GHz modulation bandwidth</strong>—breaking a key technical barrier. The facility has an annual capacity of <strong>12,000 wafers</strong>, enabling rapid iteration and potential commercial supply.</p>
+<p>The production line aims to achieve technological self-reliance and accelerate development in AI, quantum computing, and 6G networks. The facility uses <strong>110 advanced fabrication tools</strong> and represents <strong>15 years of research</strong> led by professor <strong>Jin Xianmin</strong>.</p>
+<p>China also unveiled the <strong>ez-Q Engine 2.0</strong>, a quantum control system designed to support quantum computers with <strong>over 1,000 qubits</strong>—marking it as the world&rsquo;s third-largest quantum platform behind IBM and Atom Computing. The system, delivered to key research institutions, features:</p>
+<ul>
+<li>Support for <strong>5,000 qubits</strong> in control services</li>
+<li><strong>504-qubit</strong> superconducting quantum computer for testing</li>
+<li>Domestic components reducing reliance on foreign technology</li>
+</ul>
+<p><strong>Origin Quantum</strong>, a Chinese startup, used its superconducting quantum processor to enhance breast cancer screening accuracy, demonstrating practical medical applications. The country is rapidly building a quantum computing industrial ecosystem, with the market projected to grow over <strong>30% annually</strong>, reaching <strong>11.56 billion yuan</strong> by 2025.</p>
+<p>The geopolitical dimension is clear: China is pursuing a different technological approach (photonics vs. superconducting/trapped-ion) while investing heavily in domestic capabilities. This parallels similar competition in AI semiconductors and classical computing.</p>
+<h2 id="research-roundup-other-notable-advances">Research Roundup: Other Notable Advances</h2>
+<h3 id="protein-folding-and-drug-discovery">Protein Folding and Drug Discovery</h3>
+<p>Researchers used a <strong>36-qubit trapped-ion quantum computer</strong> from IonQ to solve protein folding problems for peptides up to <strong>12 amino acids</strong>—the largest such demonstration on trapped-ion hardware to date. The team used a novel algorithm called BF-DCQO and also successfully applied it to MAX 4-SAT and spin-glass problems.</p>
+<p>A study in <em>Nature Scientific Reports</em> described a <a href="https://www.nature.com/articles/s41598-025-05673-y" target="_blank" rel="noopener noreferrer">quantum-enhanced intelligent system</a>
+ for personalized adaptive radiotherapy dose estimation, integrating quantum algorithms with deep learning to achieve <strong>8-15x computational speedups</strong> and <strong>50-70% reduction in mean absolute error</strong>.</p>
+<h3 id="power-grid-optimization">Power Grid Optimization</h3>
+<p><strong>IonQ</strong> and <strong>Oak Ridge National Laboratory</strong> researchers developed a hybrid quantum-classical algorithm to solve the power grid &ldquo;unit commitment&rdquo; problem, demonstrating solutions within <strong>0.55% to 2.7% of optimal cost</strong> for grids with up to <strong>26 generators</strong>. The approach combines a quantum variational algorithm to search generator states with classical optimization.</p>
+<h3 id="trapped-ion-advances">Trapped-Ion Advances</h3>
+<p>Researchers at the <strong>Quantum Systems Accelerator</strong> advanced trapped-ion quantum computing with a new chip holding up to <strong>200 ions</strong>, demonstrated parallel gate operations and multi-qubit entanglement techniques, and implemented mid-circuit measurements for verifiable quantum advantage. The &ldquo;enchilada trap chip&rdquo; operates with RF voltages from <strong>150V to 300V</strong>.</p>
+<p><strong>PsiQuantum</strong> researchers <a href="https://www.quantumcomputingreport.com/psiquantum-study-maps-path-to-loss-tolerant-photonic-quantum-computing/" target="_blank" rel="noopener noreferrer">published a study</a>
+ outlining a path to loss-tolerant photonic quantum computing using fusion-based quantum computing (FBQC), with some designs achieving up to <strong>18.8% loss tolerance</strong>.</p>
+<h3 id="uk-government-investment">UK Government Investment</h3>
+<p>The <strong>UK government</strong> committed <strong>£670 million</strong> to quantum computing research and development, reinforcing the country&rsquo;s position as a leader in trapped-ion technology and supporting companies like Oxford Ionics (prior to its acquisition by IonQ).</p>
+<h3 id="healthcare-applications">Healthcare Applications</h3>
+<p>A study on quantum computing in healthcare noted that most applications remain theoretical, with practical implementation facing challenges in qubit quality, error correction, and algorithm development. However, the field is showing promise in drug discovery, medical imaging, and treatment optimization.</p>
+<h3 id="cosmic-ray-errors">Cosmic Ray Errors</h3>
+<p>Research confirmed that cosmic rays cause errors in superconducting qubits, presenting a challenge for large-scale quantum computing that will require shielding or error-correction strategies to overcome.</p>
+<h2 id="looking-ahead-from-promise-to-platform">Looking Ahead: From Promise to Platform</h2>
+<p>June 2025 may be remembered as the month quantum computing transitioned from scientific curiosity to engineering discipline. The roadmap announcements, error correction advances, and industry consolidation suggest a field maturing from research prototypes toward engineered systems.</p>
+<p>The timeline for fault-tolerant quantum computing shifted from &ldquo;someday&rdquo; to &ldquo;2029&rdquo;—IBM&rsquo;s explicit deadline. The breakthroughs in magic states (20x overhead reduction), 4D geometric codes (1,000x error reduction), and hardware-integrated error correction (1:1 physical-to-logical ratio) suggest the resource overhead problem is solvable through multiple technical approaches.</p>
+<p>The acquisitions suggest companies are positioning for commercial markets, not just research. IonQ&rsquo;s $1.4 billion spending spree builds a full-stack trapped-ion platform with networking capabilities. Rigetti&rsquo;s $350 million capital raise funds superconducting hardware development.</p>
+<p>But challenges remain. IBM hasn&rsquo;t demonstrated 200 logical qubits yet, and skepticism about timelines persists. The gap between roadmap projections and current capabilities is substantial—from 50 logical qubits today to 200 by 2029, and from 1,000 physical qubits to 10,000.</p>
+<p>The geopolitical competition with China&rsquo;s photonic investments adds urgency. Different technological approaches (superconducting, trapped-ion, photonic) are racing toward fault tolerance, with national security implications and economic stakes measured in the hundreds of billions of dollars.</p>
+<p>What&rsquo;s clear is that quantum computing is no longer just about qubit counts or quantum supremacy benchmarks. It&rsquo;s about building reliable systems that can solve practical problems in chemistry, materials science, optimization, and machine learning. The focus has shifted from proving quantum computers work to making them useful.</p>
+
+
+
+
+<div id="june-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "June 3", "title": "IonQ Completes Lightsynq Acquisition", "description": "Photonic interconnect and quantum memory capabilities added"},
+{"date": "June 9", "title": "IonQ Announces Oxford Ionics Acquisition", "description": "$1.08B deal for trapped-ion technology"},
+{"date": "June 10", "title": "IBM Reveals Starling Roadmap", "description": "2029 target for fault-tolerant quantum computer"},
+{"date": "June 19", "title": "Microsoft Announces 4D Error Codes", "description": "1,000x error reduction with geometric codes"},
+{"date": "June 21", "title": "Osaka Team Publishes Magic State Breakthrough", "description": "20x overhead reduction for fault tolerance"},
+{"date": "June 25", "title": "Sydney Team Demonstrates Cryogenic CMOS", "description": "Control chips at milli-kelvin temperatures"},
+{"date": "June 30", "title": "USC Team Demonstrates Quantum Speedup", "description": "First unconditional exponential advantage"}
+]
+}
+;
+    const containerId = "june-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>June Development</th>
+          <th>Why It Matters</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IBM</td>
+          <td>Starling roadmap announced</td>
+          <td>Clearest timeline to fault tolerance</td>
+      </tr>
+      <tr>
+          <td>IonQ</td>
+          <td>Two major acquisitions</td>
+          <td>Building full trapped-ion stack</td>
+      </tr>
+      <tr>
+          <td>Microsoft</td>
+          <td>4D error codes revealed</td>
+          <td>Alternative path to fault tolerance</td>
+      </tr>
+      <tr>
+          <td>Nord Quantique</td>
+          <td>Bosonic qubit demo</td>
+          <td>Hardware-integrated error correction</td>
+      </tr>
+      <tr>
+          <td>Rigetti</td>
+          <td>$350M capital raise</td>
+          <td>Funding superconducting roadmap</td>
+      </tr>
+  </tbody>
+</table>
+<p>The question for the rest of 2025 and beyond: Can the industry execute on these ambitious roadmaps? The science may be solved, as IBM claims, but the engineering work has only just begun.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

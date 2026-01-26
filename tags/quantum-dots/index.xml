@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Quantum Dots on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/quantum-dots/</link>
+    <description>Recent content in Quantum Dots on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/quantum-dots/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Accelerates Materials Discovery as Breakthrough Materials Emerge</title>
+      <link>https://cchen.me/newsletter/2025-03-31-materials-discovery/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-03-31-materials-discovery/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;10 articles&lt;/strong&gt; published during &lt;strong&gt;March 2025&lt;/strong&gt;, surveying the latest developments in materials discovery. AI-driven autonomous labs are exploring vast chemical spaces at unprecedented scale, while researchers reported breakthrough materials from quantum dots to ultra-bright fluorescents. The trend is attracting top AI talent, with an OpenAI vice president departing to launch an AI-powered materials science startup.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Combinations Explored&#34;, &#34;value&#34;: &#34;~1 million&#34;, &#34;context&#34;: &#34;Polybot autonomous lab&#34;},
+{&#34;label&#34;: &#34;Quantum Dot Efficiency&#34;, &#34;value&#34;: &#34;24.7%&#34;, &#34;context&#34;: &#34;Blue QLED breakthrough&#34;},
+{&#34;label&#34;: &#34;Fluorescence Brightness&#34;, &#34;value&#34;: &#34;30,000 units&#34;, &#34;context&#34;: &#34;SMILES materials&#34;},
+{&#34;label&#34;: &#34;Materials Synthesized&#34;, &#34;value&#34;: &#34;35&#34;, &#34;context&#34;: &#34;Samsung ASTRAL validation&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;the-acceleration-engine-ai-and-automation-in-materials-discovery&#34;&gt;The Acceleration Engine: AI and Automation in Materials Discovery&lt;/h2&gt;
+&lt;p&gt;The most significant trend this month is the maturation of AI-driven autonomous laboratories that can systematically explore combinatorial spaces far beyond human capacity.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>10 articles</strong> published during <strong>March 2025</strong>, surveying the latest developments in materials discovery. AI-driven autonomous labs are exploring vast chemical spaces at unprecedented scale, while researchers reported breakthrough materials from quantum dots to ultra-bright fluorescents. The trend is attracting top AI talent, with an OpenAI vice president departing to launch an AI-powered materials science startup.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Combinations Explored", "value": "~1 million", "context": "Polybot autonomous lab"},
+{"label": "Quantum Dot Efficiency", "value": "24.7%", "context": "Blue QLED breakthrough"},
+{"label": "Fluorescence Brightness", "value": "30,000 units", "context": "SMILES materials"},
+{"label": "Materials Synthesized", "value": "35", "context": "Samsung ASTRAL validation"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-acceleration-engine-ai-and-automation-in-materials-discovery">The Acceleration Engine: AI and Automation in Materials Discovery</h2>
+<p>The most significant trend this month is the maturation of AI-driven autonomous laboratories that can systematically explore combinatorial spaces far beyond human capacity.</p>
+<p><strong>Argonne National Laboratory</strong> and the <strong>University of Chicago</strong> reported on <a href="https://news.uchicago.edu/story/ai-driven-autonomous-lab-argonne-transforms-materials-discovery" target="_blank" rel="noopener noreferrer">Polybot</a>
+, an AI-driven autonomous laboratory that <a href="https://news.uchicago.edu/story/ai-driven-autonomous-lab-argonne-transforms-materials-discovery" target="_blank" rel="noopener noreferrer">explored nearly a million possible processing combinations</a>
+ for electronic polymer thin films. The system uses robotics and AI to autonomously run experiments, optimizing material properties like conductivity and coating defects. The research team has produced <a href="https://news.uchicago.edu/story/ai-driven-autonomous-lab-argonne-transforms-materials-discovery" target="_blank" rel="noopener noreferrer">recipes for large-scale production</a>
+ and will share the collected data openly with the scientific community.</p>
+<p>In parallel validation work, researchers from the <strong>University of Michigan</strong> and <strong>Samsung Advanced Institute of Technology</strong> demonstrated a new precursor selection method for inorganic materials synthesis. Using the <a href="https://www.energy.gov/science/bes/articles/new-approach-materials-synthesis-quick-validation-robotic-lab" target="_blank" rel="noopener noreferrer">Samsung ASTRAL robotic lab</a>
+, they <a href="https://www.energy.gov/science/bes/articles/new-approach-materials-synthesis-quick-validation-robotic-lab" target="_blank" rel="noopener noreferrer">synthesized 35 target materials across 224 reactions</a>
+, working with 27 elements and 28 unique precursors. The new approach achieved <a href="https://www.energy.gov/science/bes/articles/new-approach-materials-synthesis-quick-validation-robotic-lab" target="_blank" rel="noopener noreferrer">higher purity for 32 of the 35 materials</a>
+. As the <strong>Department of Energy</strong> noted, this combination of improved precursor selection and robotic synthesis can <a href="https://www.energy.gov/science/bes/articles/new-approach-materials-synthesis-quick-validation-robotic-lab" target="_blank" rel="noopener noreferrer">&ldquo;greatly accelerate materials discovery&rdquo;</a>
+ and <a href="https://www.energy.gov/science/bes/articles/new-approach-materials-synthesis-quick-validation-robotic-lab" target="_blank" rel="noopener noreferrer">&ldquo;reduce bottlenecks in manufacturing&rdquo;</a>
+ known and predicted materials.</p>
+<p>These demonstrations establish a clear pattern: AI-guided autonomous systems can now systematically explore chemical and materials spaces that would be impractical for manual experimentation, accelerating the path from prediction to validated material.</p>
+<h2 id="performance-breakthroughs-new-materials-with-quantified-gains">Performance Breakthroughs: New Materials with Quantified Gains</h2>
+<p>The acceleration in discovery tools is translating into materials with quantified performance improvements across applications.</p>
+<h3 id="next-generation-displays">Next-Generation Displays</h3>
+<p><strong>Curtin University</strong> researchers, in collaboration with <strong>Shanghai University</strong>, <strong>Jilin University</strong>, the <strong>Chinese Academy of Sciences</strong>, <strong>Fudan University</strong>, and <strong>TCL Research</strong>, have developed <a href="https://www.curtin.edu.au/news/media-release/quantum-dot-discovery-for-leds-brings-brighter-more-eco-friendly-displays/" target="_blank" rel="noopener noreferrer">non-toxic blue quantum dot LEDs</a>
+ that achieve <a href="https://www.curtin.edu.au/news/media-release/quantum-dot-discovery-for-leds-brings-brighter-more-eco-friendly-displays/" target="_blank" rel="noopener noreferrer">24.7% efficiency</a>
+ with a <a href="https://www.curtin.edu.au/news/media-release/quantum-dot-discovery-for-leds-brings-brighter-more-eco-friendly-displays/" target="_blank" rel="noopener noreferrer">30,000-hour operational lifetime</a>
+. The ZnSeTeS quantum dots avoid heavy metals like cadmium, addressing a key environmental concern for display technology. This efficiency-lifetime combination for blue QLEDs could enable brighter, eco-friendly displays for TVs, smartphones, and VR headsets. The work was published in Nature.</p>
+<h3 id="medical-imaging">Medical Imaging</h3>
+<p><strong>Indiana University</strong> chemists reported <a href="https://news.iu.edu/live/news/44882-bright-ideas-chemists-fluorescent-innovation-has" target="_blank" rel="noopener noreferrer">ultra-bright fluorescent materials called SMILES</a>
+ that reach <a href="https://news.iu.edu/live/news/44882-bright-ideas-chemists-fluorescent-innovation-has" target="_blank" rel="noopener noreferrer">30,000 brightness units</a>
+ - <a href="https://news.iu.edu/live/news/44882-bright-ideas-chemists-fluorescent-innovation-has" target="_blank" rel="noopener noreferrer">five times brighter</a>
+ than the team&rsquo;s 2020 report. The materials achieve brightness through &ldquo;supra-dancing&rdquo; molecular behavior, where strategically placed atoms enable intense light emission. Potential applications include tumor labeling for cancer surgery and biological imaging. The work appears in Nature Chemistry.</p>
+<h3 id="neural-interfaces">Neural Interfaces</h3>
+<p><strong>Rice University</strong> researchers, collaborating with <strong>Stanford University</strong> and the <strong>University of Cambridge</strong>, discovered that <a href="https://news.rice.edu/news/2025/chance-discovery-improves-stability-bioelectronic-material-used-medical-implants" target="_blank" rel="noopener noreferrer">thermal processing of PEDOT:PSS</a>
+ beyond typical thresholds <a href="https://news.rice.edu/news/2025/chance-discovery-improves-stability-bioelectronic-material-used-medical-implants" target="_blank" rel="noopener noreferrer">triples electrical conductivity</a>
+ while <a href="https://news.rice.edu/news/2025/chance-discovery-improves-stability-bioelectronic-material-used-medical-implants" target="_blank" rel="noopener noreferrer">eliminating the need for chemical crosslinkers</a>
+. The crosslinker removal addresses a potential source of toxicity, and the processed material maintains stability in water for <a href="https://news.rice.edu/news/2025/chance-discovery-improves-stability-bioelectronic-material-used-medical-implants" target="_blank" rel="noopener noreferrer">20 days</a>
+ with consistent performance. This could accelerate development of neural implants, biosensors, and neuromorphic computing devices.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Material</th>
+          <th>Breakthrough Metric</th>
+          <th>Application</th>
+          <th>Source</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>ZnSeTeS Quantum Dots</strong></td>
+          <td><a href="https://www.curtin.edu.au/news/media-release/quantum-dot-discovery-for-leds-brings-brighter-more-eco-friendly-displays/" target="_blank" rel="noopener noreferrer">24.7% efficiency</a>
+, <a href="https://www.curtin.edu.au/news/media-release/quantum-dot-discovery-for-leds-brings-brighter-more-eco-friendly-displays/" target="_blank" rel="noopener noreferrer">30,000-hour lifetime</a>
+</td>
+          <td>Eco-friendly displays</td>
+          <td>Curtin University</td>
+      </tr>
+      <tr>
+          <td><strong>SMILES Fluorescents</strong></td>
+          <td><a href="https://news.iu.edu/live/news/44882-bright-ideas-chemists-fluorescent-innovation-has" target="_blank" rel="noopener noreferrer">30,000 brightness units</a>
+</td>
+          <td>Medical diagnostics</td>
+          <td>Indiana University</td>
+      </tr>
+      <tr>
+          <td><strong>PEDOT:PSS (thermally processed)</strong></td>
+          <td><a href="https://news.rice.edu/news/2025/chance-discovery-improves-stability-bioelectronic-material-used-medical-implants" target="_blank" rel="noopener noreferrer">3x conductivity</a>
+, <a href="https://news.rice.edu/news/2025/chance-discovery-improves-stability-bioelectronic-material-used-medical-implants" target="_blank" rel="noopener noreferrer">no crosslinker</a>
+</td>
+          <td>Neural implants</td>
+          <td>Rice University</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-role-of-serendipity-accidental-findings-that-advance-science">The Role of Serendipity: Accidental Findings That Advance Science</h2>
+<p>Alongside systematic AI-driven approaches, serendipitous discoveries continue to advance materials science.</p>
+<h3 id="heavy-element-chemistry">Heavy Element Chemistry</h3>
+<p>A research team at <strong>Lawrence Berkeley National Laboratory</strong> has discovered <a href="https://newscenter.lbl.gov/2025/03/11/scientists-discover-new-heavy-metal-molecule-berkelocene/" target="_blank" rel="noopener noreferrer">&ldquo;berkelocene&rdquo;</a>
+, the <a href="https://newscenter.lbl.gov/2025/03/11/scientists-discover-new-heavy-metal-molecule-berkelocene/" target="_blank" rel="noopener noreferrer">first organometallic molecule containing berkelium</a>
+. Working with just <a href="https://newscenter.lbl.gov/2025/03/11/scientists-discover-new-heavy-metal-molecule-berkelocene/" target="_blank" rel="noopener noreferrer">0.3 milligrams of berkelium-249</a>
+ - the element was first discovered at Berkeley Lab in 1949 - the team found that berkelium exhibits an unexpected <a href="https://newscenter.lbl.gov/2025/03/11/scientists-discover-new-heavy-metal-molecule-berkelocene/" target="_blank" rel="noopener noreferrer">+4 oxidation state</a>
+ in its organometallic form. This provides new insights into later actinide behavior, which is crucial for models related to nuclear waste storage and remediation. The work was published in Science.</p>
+<h3 id="pattern-formation">Pattern Formation</h3>
+<p><strong>UCLA</strong> researchers discovered that <a href="https://newsroom.ucla.edu/releases/how-chemistry-and-force-etch-mysterious-spiral-patterns-on-solid-surfaces" target="_blank" rel="noopener noreferrer">spiral patterns spontaneously form on germanium surfaces</a>
+ when chemical reactions couple with mechanical stress. The spirals emerge from a reaction-diffusion-convection process that creates instabilities at the reaction front. The researchers developed a theoretical framework explaining the pattern formation, offering a model for understanding similar processes in biological systems. The work appears in Proceedings of the National Academy of Sciences.</p>
+<p>These discoveries underscore that while AI acceleration expands the scope of exploration, human observation and the ability to recognize unexpected phenomena remain essential to scientific discovery.</p>
+<h2 id="quantum-sensing-for-materials-characterization">Quantum Sensing for Materials Characterization</h2>
+<p>A new characterization technique from <strong>Oak Ridge National Laboratory</strong> uses a <a href="https://phys.org/news/2025-03-qubit-quantum-materials-discovery.html" target="_blank" rel="noopener noreferrer">nitrogen-vacancy center in diamond</a>
+ as both a quantum bit and a sensor to measure high-speed magnetic fluctuations in materials. The <a href="https://phys.org/news/2025-03-qubit-quantum-materials-discovery.html" target="_blank" rel="noopener noreferrer">scanning NV center microscope</a>
+ detects spin fluctuations near phase transitions in magnetic thin films at <a href="https://phys.org/news/2025-03-qubit-quantum-materials-discovery.html" target="_blank" rel="noopener noreferrer">room temperature</a>
+. Led by <a href="https://phys.org/news/2025-03-qubit-quantum-materials-discovery.html" target="_blank" rel="noopener noreferrer">Ben Lawrie</a>
+ and <a href="https://phys.org/news/2025-03-qubit-quantum-materials-discovery.html" target="_blank" rel="noopener noreferrer">Yueh-Chun Wu</a>
+, the work provides a nanoscale method for probing quantum materials, with potential applications in data storage, sensing, and quantum computing. The research was published in Nano Letters.</p>
+<h2 id="industry-signal-ai-talent-migrates-to-materials-science">Industry Signal: AI Talent Migrates to Materials Science</h2>
+<p>The field is attracting serious talent and investment. <strong>Liam Fedus</strong>, <a href="https://slguardian.org/openais-vice-president-liam-fedus-departs-to-launch-ai-powered-materials-science-startup/" target="_blank" rel="noopener noreferrer">vice president of research for post-training at OpenAI</a>
+, has departed to launch an <a href="https://slguardian.org/openais-vice-president-liam-fedus-departs-to-launch-ai-powered-materials-science-startup/" target="_blank" rel="noopener noreferrer">AI-powered materials science startup</a>
+. OpenAI has confirmed it will <a href="https://slguardian.org/openais-vice-president-liam-fedus-departs-to-launch-ai-powered-materials-science-startup/" target="_blank" rel="noopener noreferrer">invest in and collaborate</a>
+ with the new venture. Fedus joined OpenAI in 2022 and was promoted to vice president in 2024.</p>
+<p>His departure reflects a broader trend: top AI researchers are moving to apply machine learning to scientific discovery. <strong>Google DeepMind</strong> introduced the <a href="https://slguardian.org/openais-vice-president-liam-fedus-departs-to-launch-ai-powered-materials-science-startup/" target="_blank" rel="noopener noreferrer">GNoME materials discovery system</a>
+ in 2023, while <strong>Microsoft</strong> rolled out <a href="https://slguardian.org/openais-vice-president-liam-fedus-departs-to-launch-ai-powered-materials-science-startup/" target="_blank" rel="noopener noreferrer">MatterGen and MatterSim</a>
+ for materials generation and simulation. The migration of senior AI talent to materials science signals market validation for AI-accelerated discovery approaches.</p>
+<h2 id="additional-developments">Additional Developments</h2>
+<p>The <strong>University of Liverpool&rsquo;s Materials Innovation Factory</strong> is leveraging <a href="https://www.iom3.org/resource/royce-unearth-discovery-in-dinosaur-fossil-study.html" target="_blank" rel="noopener noreferrer">digital tools to shorten materials innovation timelines</a>
+. A recent project led by <a href="https://www.iom3.org/resource/royce-unearth-discovery-in-dinosaur-fossil-study.html" target="_blank" rel="noopener noreferrer">Matt Reed</a>
+ applied materials characterization techniques to dinosaur fossil study, demonstrating how analytical tools cross disciplines. This interdisciplinary approach shows how materials science methods contribute to fields beyond traditional materials applications.</p>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "March 2025: Materials Discovery Timeline",
+"events": [
+{"date": "Mar 4", "title": "Quantum Sensing Technique", "description": "Oak Ridge demonstrates NV center microscope for magnetic materials at room temperature"},
+{"date": "Mar 5", "title": "Polybot Autonomous Lab", "description": "Argonne and UChicago report AI-driven lab exploring 1 million processing combinations"},
+{"date": "Mar 6", "title": "Blue Quantum Dot Breakthrough", "description": "Curtin University achieves 24.7% efficiency, 30,000-hour lifetime for non-toxic QLEDs"},
+{"date": "Mar 11", "title": "Berkelocene Discovered", "description": "Berkeley Lab reports first organometallic berkelium molecule, published in Science"},
+{"date": "Mar 19", "title": "OpenAI VP Departs", "description": "Liam Fedus leaves OpenAI to launch AI-powered materials science startup"},
+{"date": "Mar 27", "title": "Samsung ASTRAL Validation", "description": "Robotic lab validates 35 materials across 224 reactions with improved precursor selection"},
+{"date": "Mar 31", "title": "PEDOT:PSS Breakthrough", "description": "Rice University reports thermal processing triples conductivity, eliminates toxic crosslinker"}
+]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

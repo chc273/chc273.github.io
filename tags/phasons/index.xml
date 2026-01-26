@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Phasons on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/phasons/</link>
+    <description>Recent content in Phasons on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/phasons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Seeing the Unseeable: Phasons Imaged for First Time, AI Designs Stable Quantum Materials</title>
+      <link>https://cchen.me/newsletter/2025-09-30-materials-discovery/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-09-30-materials-discovery/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;4 articles&lt;/strong&gt; published between &lt;strong&gt;September 11-24, 2025&lt;/strong&gt;, surveying significant advances in materials discovery. Scientists achieved record-breaking atomic resolution to directly observe phasons&amp;ndash;a theoretical vibration predicted decades ago&amp;ndash;while &lt;strong&gt;MIT&lt;/strong&gt; and &lt;strong&gt;Google DeepMind&lt;/strong&gt; unveiled an AI tool that generates &lt;strong&gt;80% more stable&lt;/strong&gt; quantum materials. These breakthroughs in observation and design mark September as a month of substantial progress in materials discovery.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+  &#34;metrics&#34;: [
+    {&#34;label&#34;: &#34;Imaging Resolution&#34;, &#34;value&#34;: &#34;15 picometers&#34;, &#34;context&#34;: &#34;Sub-atomic phason imaging&#34;},
+    {&#34;label&#34;: &#34;Stability Improvement&#34;, &#34;value&#34;: &#34;80%&#34;, &#34;context&#34;: &#34;SCIGEN vs unconstrained AI&#34;},
+    {&#34;label&#34;: &#34;Phason Discovery&#34;, &#34;value&#34;: &#34;First Direct Image&#34;, &#34;context&#34;: &#34;Previously theoretical vibration&#34;}
+  ]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;the-big-story-imaging-the-unseeable&#34;&gt;The Big Story: Imaging the Unseeable&lt;/h2&gt;
+&lt;p&gt;For the first time, scientists have directly imaged &lt;a href=&#34;https://www.thebrighterside.news/post/breakthrough-phason-discovery-in-twisted-2d-materials-transforms-quantum-computing/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;phasons&lt;/a&gt;
+&amp;ndash;a type of atomic vibration predicted by theorists decades ago but never observed directly until now.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>4 articles</strong> published between <strong>September 11-24, 2025</strong>, surveying significant advances in materials discovery. Scientists achieved record-breaking atomic resolution to directly observe phasons&ndash;a theoretical vibration predicted decades ago&ndash;while <strong>MIT</strong> and <strong>Google DeepMind</strong> unveiled an AI tool that generates <strong>80% more stable</strong> quantum materials. These breakthroughs in observation and design mark September as a month of substantial progress in materials discovery.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+  "metrics": [
+    {"label": "Imaging Resolution", "value": "15 picometers", "context": "Sub-atomic phason imaging"},
+    {"label": "Stability Improvement", "value": "80%", "context": "SCIGEN vs unconstrained AI"},
+    {"label": "Phason Discovery", "value": "First Direct Image", "context": "Previously theoretical vibration"}
+  ]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-big-story-imaging-the-unseeable">The Big Story: Imaging the Unseeable</h2>
+<p>For the first time, scientists have directly imaged <a href="https://www.thebrighterside.news/post/breakthrough-phason-discovery-in-twisted-2d-materials-transforms-quantum-computing/" target="_blank" rel="noopener noreferrer">phasons</a>
+&ndash;a type of atomic vibration predicted by theorists decades ago but never observed directly until now.</p>
+<p>Researchers at the <strong>University of Illinois at Urbana-Champaign</strong> achieved this using <a href="https://www.thebrighterside.news/post/breakthrough-phason-discovery-in-twisted-2d-materials-transforms-quantum-computing/" target="_blank" rel="noopener noreferrer">electron ptychography</a>
+, an advanced imaging technique that reached a resolution of <strong>15 picometers</strong> (0.2 angstroms). This sub-atomic resolution is necessary because phasons involve extremely subtle atomic motion&ndash;the heat-induced jiggling amounts to only about <strong>0.05 angstroms</strong>.</p>
+<p>The team, led by Professor <a href="https://www.thebrighterside.news/post/breakthrough-phason-discovery-in-twisted-2d-materials-transforms-quantum-computing/" target="_blank" rel="noopener noreferrer">Pinshane Huang</a>
+ and postdoctoral researcher <a href="https://www.thebrighterside.news/post/breakthrough-phason-discovery-in-twisted-2d-materials-transforms-quantum-computing/" target="_blank" rel="noopener noreferrer">Yichao Zhang</a>
+, studied twisted bilayers of <a href="https://www.thebrighterside.news/post/breakthrough-phason-discovery-in-twisted-2d-materials-transforms-quantum-computing/" target="_blank" rel="noopener noreferrer">tungsten diselenide (WSe₂)</a>
+. In these moiré superlattices, they could observe how phasons vary with atomic arrangement and how they contribute to heat transfer at the atomic level.</p>
+<p>The research, <a href="https://www.thebrighterside.news/post/breakthrough-phason-discovery-in-twisted-2d-materials-transforms-quantum-computing/" target="_blank" rel="noopener noreferrer">published in <em>Science</em></a>
+, reconciles theoretical predictions with direct observation. It opens new paths to control heat transfer in 2D materials, which could enable more efficient electronics and better thermal management in quantum computing hardware.</p>
+<h2 id="new-tools-ai-designs-stable-materials">New Tools: AI Designs Stable Materials</h2>
+<p>While scientists push the boundaries of observation, others are revolutionizing how materials are designed. A collaboration between <strong>MIT</strong> and <strong>Google DeepMind</strong> has produced <a href="https://www.webpronews.com/mits-scigen-tool-boosts-ai-for-stable-quantum-materials-design/" target="_blank" rel="noopener noreferrer">SCIGEN</a>
+, an AI tool that generates materials that actually exist in the physical world.</p>
+<p>The problem with generative AI for materials design is that unconstrained models frequently output structures that are physically impossible or unstable. SCIGEN addresses this by incorporating <a href="https://www.webpronews.com/mits-scigen-tool-boosts-ai-for-stable-quantum-materials-design/" target="_blank" rel="noopener noreferrer">geometric and physical constraints</a>
+ directly into the generation process.</p>
+<p>In trials, the approach produced <strong>80% more stable</strong> structures than unconstrained models. The tool targets applications in <a href="https://www.webpronews.com/mits-scigen-tool-boosts-ai-for-stable-quantum-materials-design/" target="_blank" rel="noopener noreferrer">quantum computing, energy storage, and electronics</a>
+. Researchers <a href="https://www.webpronews.com/mits-scigen-tool-boosts-ai-for-stable-quantum-materials-design/" target="_blank" rel="noopener noreferrer">Tianyu Zhu</a>
+ of MIT and <a href="https://www.webpronews.com/mits-scigen-tool-boosts-ai-for-stable-quantum-materials-design/" target="_blank" rel="noopener noreferrer">Ekin Dogus Cubuk</a>
+ of Google DeepMind led the development.</p>
+<p>SCIGEN joins other efforts like Microsoft&rsquo;s <a href="https://www.webpronews.com/mits-scigen-tool-boosts-ai-for-stable-quantum-materials-design/" target="_blank" rel="noopener noreferrer">MatterGen</a>
+ in bridging AI creativity with physical reality. However, challenges around scaling and experimental validation remain before these AI-designed materials can move from simulation to laboratory.</p>
+<h2 id="quantum-materials-advance">Quantum Materials Advance</h2>
+<p>In industry news, <strong>IonQ</strong> <a href="https://www.scientific-computing.com/article/ionq-breakthrough-synthetic-diamond-materials-accelerates-quantum-networking-scale" target="_blank" rel="noopener noreferrer">announced a breakthrough</a>
+ in synthetic diamond materials that accelerates the scale and production of quantum networking. Synthetic diamonds are crucial for quantum communication infrastructure, where they serve as hosts for nitrogen-vacancy centers that can store and transmit quantum information. The advancement addresses material limitations that have constrained quantum network deployment and could enable larger, more efficient quantum networks.</p>
+<h2 id="perspective-serendipity-and-scale">Perspective: Serendipity and Scale</h2>
+<p>The gap between discovery and mass production is a theme that runs through materials science. Few understand this better than <a href="https://www.nec.com/en/global/rd/special/202007/index.html" target="_blank" rel="noopener noreferrer">Sumio Iijima</a>
+, the researcher who <a href="https://www.nec.com/en/global/rd/special/202007/index.html" target="_blank" rel="noopener noreferrer">discovered carbon nanotubes in 1991</a>
+.</p>
+<p>In a recent interview, Iijima&ndash;now a Senior Research Fellow at <strong>NEC Corporation</strong> with positions at Meijo University, the National Institute of Advanced Industrial Science and Technology, and Nagoya University&ndash;reflected on two problems he&rsquo;s tackling. One is solving a crystal structure for solid-state lithium-ion batteries. The other is the <a href="https://www.nec.com/en/global/rd/special/202007/index.html" target="_blank" rel="noopener noreferrer">mass production challenge for carbon nanotubes</a>
+.</p>
+<p>Iijima has spent <a href="https://www.nec.com/en/global/rd/special/202007/index.html" target="_blank" rel="noopener noreferrer">two years working on the alignment problem</a>
+. Solving it would allow carbon nanotubes to replace silicon in semiconductors and transistors, potentially transforming electronics. He emphasizes the close link between pure and applied research, noting that serendipity plays a crucial role in scientific discovery&ndash;the oxide he studied 40 to 50 years ago is now used as an electrode material in solid-state batteries.</p>
+<p>The scale of equipment needed for this work underscores the challenge. An electron microscope costs approximately <a href="https://www.nec.com/en/global/rd/special/202007/index.html" target="_blank" rel="noopener noreferrer">500 million yen</a>
+, while a neutron diffraction facility runs about <a href="https://www.nec.com/en/global/rd/special/202007/index.html" target="_blank" rel="noopener noreferrer">10 billion yen</a>
+. Despite these obstacles, Iijima remains optimistic about the field&rsquo;s future.</p>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>These four stories trace the materials discovery pipeline from observation to design to manufacturing. Better observation tools&ndash;like the <strong>15 picometer</strong> resolution achieved through electron ptychography&ndash;reveal phenomena that were previously theoretical. Better design tools&ndash;like constrained generative AI&ndash;create viable materials faster than trial-and-error experimentation. Better manufacturing methods&ndash;like synthetic diamond production and carbon nanotube scaling&ndash;bring discoveries from the lab to the real world.</p>
+<p>The trend is clear: tools are becoming more precise and more predictive. The bottleneck is shifting from discovery itself to validation and scale. As Iijima&rsquo;s reflection reminds us, the time between discovering a material and mass-producing it can span decades. The advances of September 2025 suggest that timeline may be shortening.</p>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+  "events": [
+    {"date": "Sep 11", "title": "IonQ Synthetic Diamond Breakthrough", "description": "Quantum computing company advances synthetic diamond production for quantum networking infrastructure."},
+    {"date": "Sep 20", "title": "Phasons Directly Imaged", "description": "UIUC scientists achieve sub-15 picometer resolution to observe theoretical atomic vibrations for the first time."},
+    {"date": "Sep 22", "title": "MIT Unveils SCIGEN", "description": "New AI tool with physical constraints generates 80% more stable quantum materials than unconstrained models."},
+    {"date": "Sep 24", "title": "Sumio Iijima on Carbon Nanotubes", "description": "Carbon nanotube discoverer reflects on serendipity and the mass production challenge for nanomaterials."}
+  ]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
