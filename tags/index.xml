@@ -198,46 +198,6 @@
     </item>
     
     <item>
-      <title>Artificial Intelligence</title>
-      <link>https://cchen.me/tags/artificial-intelligence/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/artificial-intelligence/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Cryptocurrency Security</title>
-      <link>https://cchen.me/tags/cryptocurrency-security/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/cryptocurrency-security/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>D-Wave</title>
-      <link>https://cchen.me/tags/d-wave/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/d-wave/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Data Infrastructure</title>
-      <link>https://cchen.me/tags/data-infrastructure/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/data-infrastructure/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
       <title>Drug Discovery</title>
       <link>https://cchen.me/tags/drug-discovery/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
@@ -248,41 +208,11 @@
     </item>
     
     <item>
-      <title>Funding</title>
-      <link>https://cchen.me/tags/funding/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/funding/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>IBM</title>
-      <link>https://cchen.me/tags/ibm/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/ibm/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
       <title>Large Language Models</title>
       <link>https://cchen.me/tags/large-language-models/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/large-language-models/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Magnets</title>
-      <link>https://cchen.me/tags/magnets/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/magnets/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -303,16 +233,6 @@
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/microsoft-qdk/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>MOFs</title>
-      <link>https://cchen.me/tags/mofs/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/mofs/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -368,26 +288,6 @@
     </item>
     
     <item>
-      <title>Quantum Circuits</title>
-      <link>https://cchen.me/tags/quantum-circuits/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/quantum-circuits/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Quantum Hardware</title>
-      <link>https://cchen.me/tags/quantum-hardware/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/quantum-hardware/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
       <title>Quantum Machine Learning</title>
       <link>https://cchen.me/tags/quantum-machine-learning/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
@@ -403,6 +303,136 @@
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/quantum-materials/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Agentic AI</title>
+      <link>https://cchen.me/tags/agentic-ai/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/agentic-ai/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>AI Agents</title>
+      <link>https://cchen.me/tags/ai-agents/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/ai-agents/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Amazon</title>
+      <link>https://cchen.me/tags/amazon/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/amazon/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Anthropic</title>
+      <link>https://cchen.me/tags/anthropic/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/anthropic/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Enterprise AI</title>
+      <link>https://cchen.me/tags/enterprise-ai/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/enterprise-ai/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://cchen.me/tags/google/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/google/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Linux Foundation</title>
+      <link>https://cchen.me/tags/linux-foundation/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/linux-foundation/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Manus</title>
+      <link>https://cchen.me/tags/manus/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/manus/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Meta</title>
+      <link>https://cchen.me/tags/meta/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/meta/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>https://cchen.me/tags/microsoft/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/microsoft/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>OpenAI</title>
+      <link>https://cchen.me/tags/openai/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/openai/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://cchen.me/tags/research/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/research/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://cchen.me/tags/security/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/security/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -428,21 +458,21 @@
     </item>
     
     <item>
-      <title>Google DeepMind</title>
-      <link>https://cchen.me/tags/google-deepmind/</link>
+      <title>Funding</title>
+      <link>https://cchen.me/tags/funding/</link>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://cchen.me/tags/google-deepmind/</guid>
+      <guid>https://cchen.me/tags/funding/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
-      <title>Research</title>
-      <link>https://cchen.me/tags/research/</link>
+      <title>Google DeepMind</title>
+      <link>https://cchen.me/tags/google-deepmind/</link>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://cchen.me/tags/research/</guid>
+      <guid>https://cchen.me/tags/google-deepmind/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -478,11 +508,31 @@
     </item>
     
     <item>
+      <title>Agent Security</title>
+      <link>https://cchen.me/tags/agent-security/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/agent-security/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>AI4Mat</title>
       <link>https://cchen.me/tags/ai4mat/</link>
       <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/ai4mat/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>IBM</title>
+      <link>https://cchen.me/tags/ibm/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/ibm/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -503,6 +553,16 @@
       <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/matprov/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Microsoft Agent 365</title>
+      <link>https://cchen.me/tags/microsoft-agent-365/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/microsoft-agent-365/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -568,16 +628,6 @@
     </item>
     
     <item>
-      <title>Google</title>
-      <link>https://cchen.me/tags/google/</link>
-      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/google/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
       <title>Neutral Atoms</title>
       <link>https://cchen.me/tags/neutral-atoms/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
@@ -608,6 +658,16 @@
     </item>
     
     <item>
+      <title>Oracle</title>
+      <link>https://cchen.me/tags/oracle/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/oracle/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Periodic Labs</title>
       <link>https://cchen.me/tags/periodic-labs/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
@@ -623,6 +683,26 @@
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/quantum-advantage/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>ROI</title>
+      <link>https://cchen.me/tags/roi/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/roi/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Salesforce</title>
+      <link>https://cchen.me/tags/salesforce/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/salesforce/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -648,6 +728,16 @@
     </item>
     
     <item>
+      <title>Agentic Commerce</title>
+      <link>https://cchen.me/tags/agentic-commerce/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/agentic-commerce/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>AI Materials Design</title>
       <link>https://cchen.me/tags/ai-materials-design/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
@@ -668,11 +758,31 @@
     </item>
     
     <item>
+      <title>Cognition</title>
+      <link>https://cchen.me/tags/cognition/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/cognition/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Commercial</title>
       <link>https://cchen.me/tags/commercial/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/commercial/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Google Payments Protocol</title>
+      <link>https://cchen.me/tags/google-payments-protocol/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/google-payments-protocol/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -693,6 +803,16 @@
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/ionq/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>MCP Vulnerabilities</title>
+      <link>https://cchen.me/tags/mcp-vulnerabilities/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/mcp-vulnerabilities/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -748,11 +868,41 @@
     </item>
     
     <item>
+      <title>Sierra</title>
+      <link>https://cchen.me/tags/sierra/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/sierra/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Trapped Ion</title>
       <link>https://cchen.me/tags/trapped-ion/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/trapped-ion/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Workday</title>
+      <link>https://cchen.me/tags/workday/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/workday/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Amazon Bedrock</title>
+      <link>https://cchen.me/tags/amazon-bedrock/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/amazon-bedrock/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -778,11 +928,31 @@
     </item>
     
     <item>
+      <title>AWS</title>
+      <link>https://cchen.me/tags/aws/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/aws/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Catalysts</title>
       <link>https://cchen.me/tags/catalysts/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/catalysts/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Cohere</title>
+      <link>https://cchen.me/tags/cohere/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/cohere/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -808,6 +978,16 @@
     </item>
     
     <item>
+      <title>Google Cloud</title>
+      <link>https://cchen.me/tags/google-cloud/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/google-cloud/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>High-Throughput</title>
       <link>https://cchen.me/tags/high-throughput/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
@@ -828,16 +1008,6 @@
     </item>
     
     <item>
-      <title>Microsoft</title>
-      <link>https://cchen.me/tags/microsoft/</link>
-      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://cchen.me/tags/microsoft/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
       <title>Partnerships</title>
       <link>https://cchen.me/tags/partnerships/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
@@ -853,6 +1023,16 @@
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/products/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Quantum Hardware</title>
+      <link>https://cchen.me/tags/quantum-hardware/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/quantum-hardware/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -918,6 +1098,16 @@
     </item>
     
     <item>
+      <title>AI Security</title>
+      <link>https://cchen.me/tags/ai-security/</link>
+      <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/ai-security/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Cement Alternatives</title>
       <link>https://cchen.me/tags/cement-alternatives/</link>
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
@@ -958,6 +1148,26 @@
     </item>
     
     <item>
+      <title>Multi-Agent Systems</title>
+      <link>https://cchen.me/tags/multi-agent-systems/</link>
+      <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/multi-agent-systems/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Nature</title>
+      <link>https://cchen.me/tags/nature/</link>
+      <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/nature/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>NSF</title>
       <link>https://cchen.me/tags/nsf/</link>
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
@@ -988,6 +1198,16 @@
     </item>
     
     <item>
+      <title>Agentforce 3</title>
+      <link>https://cchen.me/tags/agentforce-3/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/agentforce-3/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>AI in Science</title>
       <link>https://cchen.me/tags/ai-in-science/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
@@ -1008,11 +1228,41 @@
     </item>
     
     <item>
+      <title>Carnegie Mellon</title>
+      <link>https://cchen.me/tags/carnegie-mellon/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/carnegie-mellon/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>DFT</title>
       <link>https://cchen.me/tags/dft/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/dft/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Gartner</title>
+      <link>https://cchen.me/tags/gartner/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/gartner/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Google Gemini CLI</title>
+      <link>https://cchen.me/tags/google-gemini-cli/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/google-gemini-cli/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -1028,11 +1278,41 @@
     </item>
     
     <item>
+      <title>Interoperability</title>
+      <link>https://cchen.me/tags/interoperability/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/interoperability/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Microsoft Copilot</title>
+      <link>https://cchen.me/tags/microsoft-copilot/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/microsoft-copilot/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Solid-State Batteries</title>
       <link>https://cchen.me/tags/solid-state-batteries/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/solid-state-batteries/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Agent Protocols</title>
+      <link>https://cchen.me/tags/agent-protocols/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/agent-protocols/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -1058,11 +1338,51 @@
     </item>
     
     <item>
+      <title>D-Wave</title>
+      <link>https://cchen.me/tags/d-wave/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/d-wave/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Energy Materials</title>
       <link>https://cchen.me/tags/energy-materials/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/energy-materials/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Google AlphaEvolve</title>
+      <link>https://cchen.me/tags/google-alphaevolve/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/google-alphaevolve/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Microsoft Build</title>
+      <link>https://cchen.me/tags/microsoft-build/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/microsoft-build/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>OpenAI Codex</title>
+      <link>https://cchen.me/tags/openai-codex/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/openai-codex/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -1098,11 +1418,31 @@
     </item>
     
     <item>
+      <title>Cybersecurity</title>
+      <link>https://cchen.me/tags/cybersecurity/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/cybersecurity/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>DARPA</title>
       <link>https://cchen.me/tags/darpa/</link>
       <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/darpa/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Google A2A</title>
+      <link>https://cchen.me/tags/google-a2a/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/google-a2a/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -1158,21 +1498,41 @@
     </item>
     
     <item>
-      <title>AI Acceleration</title>
-      <link>https://cchen.me/tags/ai-acceleration/</link>
-      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <title>Autonomous Agents</title>
+      <link>https://cchen.me/tags/autonomous-agents/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://cchen.me/tags/ai-acceleration/</guid>
+      <guid>https://cchen.me/tags/autonomous-agents/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
-      <title>OpenAI</title>
-      <link>https://cchen.me/tags/openai/</link>
+      <title>Manus AI</title>
+      <link>https://cchen.me/tags/manus-ai/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/manus-ai/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>ServiceNow</title>
+      <link>https://cchen.me/tags/servicenow/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/servicenow/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>AI Acceleration</title>
+      <link>https://cchen.me/tags/ai-acceleration/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://cchen.me/tags/openai/</guid>
+      <guid>https://cchen.me/tags/ai-acceleration/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -1288,6 +1648,16 @@
     </item>
     
     <item>
+      <title>Operator</title>
+      <link>https://cchen.me/tags/operator/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/operator/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Perovskites</title>
       <link>https://cchen.me/tags/perovskites/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
@@ -1313,6 +1683,16 @@
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
       
       <guid>https://cchen.me/tags/topological-qubits/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Hippocratic AI</title>
+      <link>https://cchen.me/tags/hippocratic-ai/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/tags/hippocratic-ai/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>

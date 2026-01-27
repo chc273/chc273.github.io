@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Autonomous Agents on Chi&#39;s blog</title>
+    <link>https://cchen.me/tags/autonomous-agents/</link>
+    <description>Recent content in Autonomous Agents on Chi&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/autonomous-agents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI Agent Wars: $20,000 Agents, Autonomous Systems, and Enterprise Platforms Battle for Supremacy</title>
+      <link>https://cchen.me/newsletter/2025-04-01-ai-agent/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-04-01-ai-agent/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;285 articles&lt;/strong&gt; published between &lt;strong&gt;March 1, 2025 and April 1, 2025&lt;/strong&gt;, surveying a pivotal month for AI agents. &lt;strong&gt;OpenAI&lt;/strong&gt; plans to charge &lt;strong&gt;$20,000 monthly&lt;/strong&gt; for &amp;ldquo;PhD-level&amp;rdquo; AI agents while China&amp;rsquo;s &lt;strong&gt;Manus&lt;/strong&gt; demonstrates fully autonomous capabilities. Every major tech company launched agent platforms, enterprises deployed agents at scale, and startups raised &lt;strong&gt;$93.8 million&lt;/strong&gt; to solve critical infrastructure gaps.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;OpenAI&#39;s Top Tier&#34;, &#34;value&#34;: &#34;$20,000/month&#34;, &#34;context&#34;: &#34;Rumored price for PhD-level agent&#34;},
+{&#34;label&#34;: &#34;Enterprise Deployments&#34;, &#34;value&#34;: &#34;400,000+&#34;, &#34;context&#34;: &#34;Microsoft agents built by customers&#34;},
+{&#34;label&#34;: &#34;Startup Funding&#34;, &#34;value&#34;: &#34;$93.8M&#34;, &#34;context&#34;: &#34;Raised by agent infrastructure startups&#34;},
+{&#34;label&#34;: &#34;Corporate Commitment&#34;, &#34;value&#34;: &#34;$3B&#34;, &#34;context&#34;: &#34;SoftBank&#39;s OpenAI agent spending&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;the-20000-question&#34;&gt;The $20,000 Question&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;OpenAI&lt;/strong&gt; is reportedly planning to charge up to &lt;strong&gt;$20,000 per month&lt;/strong&gt; for specialized AI agents designed to perform &amp;ldquo;PhD-level&amp;rdquo; research work, according to a report in &lt;a href=&#34;https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;The Information&lt;/a&gt;
+. The reported pricing strategy includes three tiers: &lt;strong&gt;$2,000 monthly&lt;/strong&gt; for &amp;ldquo;high-income knowledge workers,&amp;rdquo; &lt;strong&gt;$10,000 for software development agents&lt;/strong&gt;, and the &lt;strong&gt;$20,000 tier&lt;/strong&gt; for research-intensive tasks requiring doctoral-level expertise.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>285 articles</strong> published between <strong>March 1, 2025 and April 1, 2025</strong>, surveying a pivotal month for AI agents. <strong>OpenAI</strong> plans to charge <strong>$20,000 monthly</strong> for &ldquo;PhD-level&rdquo; AI agents while China&rsquo;s <strong>Manus</strong> demonstrates fully autonomous capabilities. Every major tech company launched agent platforms, enterprises deployed agents at scale, and startups raised <strong>$93.8 million</strong> to solve critical infrastructure gaps.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "OpenAI's Top Tier", "value": "$20,000/month", "context": "Rumored price for PhD-level agent"},
+{"label": "Enterprise Deployments", "value": "400,000+", "context": "Microsoft agents built by customers"},
+{"label": "Startup Funding", "value": "$93.8M", "context": "Raised by agent infrastructure startups"},
+{"label": "Corporate Commitment", "value": "$3B", "context": "SoftBank's OpenAI agent spending"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-20000-question">The $20,000 Question</h2>
+<p><strong>OpenAI</strong> is reportedly planning to charge up to <strong>$20,000 per month</strong> for specialized AI agents designed to perform &ldquo;PhD-level&rdquo; research work, according to a report in <a href="https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/" target="_blank" rel="noopener noreferrer">The Information</a>
+. The reported pricing strategy includes three tiers: <strong>$2,000 monthly</strong> for &ldquo;high-income knowledge workers,&rdquo; <strong>$10,000 for software development agents</strong>, and the <strong>$20,000 tier</strong> for research-intensive tasks requiring doctoral-level expertise.</p>
+<p>The pricing is based on performance metrics from OpenAI&rsquo;s <strong>o3 and o3-mini models</strong>, which use what the company calls &ldquo;private chain of thought&rdquo; reasoning. According to <a href="https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/" target="_blank" rel="noopener noreferrer">Ars Technica</a>
+, o3 scored <strong>87.5%</strong> on the ARC-AGI visual reasoning benchmark (comparable to the 85% human threshold), <strong>96.7%</strong> on the 2024 American Invitational Mathematics Exam (missing just one question), and <strong>87.7%</strong> on GPQA Diamond, which contains graduate-level biology, physics, and chemistry questions. On the Frontier Math benchmark by EpochAI, o3 solved <strong>25.2%</strong> of problems while no other model has exceeded <strong>2%</strong>.</p>
+<p>The reported pricing represents a dramatic departure from current consumer AI costs. <a href="https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/" target="_blank" rel="noopener noreferrer">ChatGPT Plus</a>
+ remains <strong>$20 per month</strong>, Claude Pro costs <strong>$30 monthly</strong>, and even ChatGPT Pro&rsquo;s <strong>$200/month</strong> subscription is tiny compared to the proposed enterprise fees. As <a href="https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/" target="_blank" rel="noopener noreferrer">xAI developer Hieu Pham</a>
+ noted in a widely-shared tweet: &ldquo;most PhD students, including the brightest stars who can do way better work than any current LLMs—are not paid $20K / month.&rdquo;</p>
+<p>Behind the pricing strategy is significant financial pressure. <a href="https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/" target="_blank" rel="noopener noreferrer">OpenAI reportedly lost approximately $5 billion</a>
+ last year covering operational costs. At the same time, investor commitment remains strong: <strong>SoftBank</strong> has reportedly <a href="https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/" target="_blank" rel="noopener noreferrer">committed $3 billion</a>
+ to spend on OpenAI&rsquo;s agent products this year alone.</p>
+<p>Alongside the pricing news, OpenAI <a href="https://arstechnica.com/ai/2025/03/openai-pushes-ai-agent-capabilities-with-new-developer-api/" target="_blank" rel="noopener noreferrer">unveiled new tools</a>
+ for building AI agents, including a &ldquo;reasoning&rdquo; API that enables developers to build agents that can &ldquo;think before they speak&rdquo; using the company&rsquo;s o3 models. The <a href="https://www.eweek.com/news/openai-api-ai-agent/" target="_blank" rel="noopener noreferrer">eWeek reported</a>
+ that these tools represent a &ldquo;powerful suite&rdquo; to simplify AI agent development.</p>
+<p>However, skepticism about the &ldquo;PhD-level&rdquo; framing has emerged. As the <a href="https://indianexpress.com/article/technology/artificial-intelligence/what-are-phd-level-ai-agents-facing-scepticism-9879136/" target="_blank" rel="noopener noreferrer">Indian Express noted</a>
+, &ldquo;The hype around PhD-level AI comes with growing scepticism.&rdquo; The models still struggle with <strong>confabulations</strong>—instances where they generate plausible-sounding but factually incorrect information—which remains a critical concern for research applications where accuracy matters.</p>
+<h2 id="the-autonomous-agent-arrival">The Autonomous Agent Arrival</h2>
+<p>While OpenAI focuses on premium pricing, a Chinese startup called <strong>Butterfly Effect</strong> has captured global attention with <strong>Manus</strong>, an AI agent described as the country&rsquo;s first &ldquo;fully autonomous&rdquo; agent. According to <a href="https://www.livescience.com/technology/artificial-intelligence/chinas-manus-ai-agent-could-be-our-1st-glimpse-at-artificial-general-intelligence" target="_blank" rel="noopener noreferrer">Live Science</a>
+, representatives claim Manus is &ldquo;the world&rsquo;s first general AI agent&rdquo; designed to think, plan, and execute real-world tasks independently.</p>
+<p>Unlike conventional AI tools that primarily assist users by providing recommendations or answering queries, <a href="https://www.ndtv.com/world-news/how-manus-china-new-autonomous-ai-agent-may-revolutionise-real-world-tasks-7869690" target="_blank" rel="noopener noreferrer">Manus functions without human intervention</a>
+. As <a href="https://m.economictimes.com/news/international/global-trends/manus-ai-chinas-new-ai-agent-another-deepseek-moment-can-plan-your-japan-trip-and-offer-analysis-of-stocks-10-point-explainer/articleshow/118838772.cms" target="_blank" rel="noopener noreferrer">The Economic Times explained</a>
+, Manus &ldquo;can come up with an itinerary for a trip to Japan, analyze stocks, and handle other complex tasks on its own.&rdquo;</p>
+<p>The emergence of Manus has drawn immediate comparisons to <strong>DeepSeek</strong>, another Chinese AI model that went viral earlier this year. As <a href="https://www.axios.com/2025/03/10/manus-chinese-ai-agent-deepseek" target="_blank" rel="noopener noreferrer">Axios reported</a>
+, the new agent is &ldquo;winning expert acclaim while stoking concern over another AI advance rooted in Chinese research and development.&rdquo; <a href="https://www.yicaiglobal.com/news/new-chinese-ai-agent-manus-is-said-to-beat-openais-deep-research" target="_blank" rel="noopener noreferrer">Yicai Global claimed</a>
+ that Manus &ldquo;is said to beat OpenAI&rsquo;s Deep Research&rdquo; in performance comparisons.</p>
+<p><a href="https://www.technologyreview.com/2025/03/12/1113172/the-download-testing-new-ai-agent-manus-and-waabis-virtual-robotruck-ambitions/" target="_blank" rel="noopener noreferrer">MIT Technology Review</a>
+ noted that researchers are actively testing Manus&rsquo;s capabilities. The <a href="https://www.scmp.com/tech/tech-trends/article/3301864/chinese-ai-agent-manus-transcends-chatbots-founder-start-butterfly-effect-says" target="_blank" rel="noopener noreferrer">South China Morning Post reported</a>
+ that the startup&rsquo;s founder believes Manus &ldquo;transcends chatbots&rdquo; in its ability to take independent action.</p>
+<p>Manus added a <a href="https://www.pymnts.com/news/artificial-intelligence/2025/ai-agent-developer-manus-adds-mobile-app-and-subscription-plans/" target="_blank" rel="noopener noreferrer">mobile app and subscription plans</a>
+ in March, expanding access beyond web interfaces. <a href="https://www.geeky-gadgets.com/manus-ai-autonomous-agent-overview/" target="_blank" rel="noopener noreferrer">Geeky Gadgets described</a>
+ how the agent is &ldquo;redefining task automation and workflow management&rdquo; through advanced automation, research, and coding capabilities.</p>
+<p>The autonomous capabilities have also sparked discussion about how close we might be to artificial general intelligence (AGI). As <a href="https://qz.com/manus-ai-agent-autonomous-china-openai-1851768776" target="_blank" rel="noopener noreferrer">Quartz noted</a>
+, China now has a &ldquo;completely autonomous&rdquo; AI agent that operates differently from Western models. <a href="https://siliconangle.com/2025/03/09/chinas-new-ai-agent-manus-gets-global-attention-autonomous-smarts/" target="_blank" rel="noopener noreferrer">SiliconANGLE reported</a>
+ that the agent is &ldquo;getting global attention for its autonomous smarts.&rdquo;</p>
+<h2 id="platform-wars-big-techs-agent-offensive">Platform Wars: Big Tech&rsquo;s Agent Offensive</h2>
+<p>March marked a coordinated offensive from every major technology company, each launching agent platforms aimed at enterprise dominance.</p>
+<h3 id="microsoft-400000-agents-deployed">Microsoft: 400,000 Agents Deployed</h3>
+<p><strong>Microsoft</strong> emerged as the early leader in the agent platform race. According to <a href="https://cloudwars.com/ai/agent-wars-microsoft-grabs-lead-as-160000-customers-build-400000-ai-agents/" target="_blank" rel="noopener noreferrer">Cloud Wars</a>
+, <strong>160,000 customers</strong> have built <strong>400,000 AI agents</strong> using the company&rsquo;s Copilot platform. The scale demonstrates how quickly enterprises are moving beyond experimentation to deployment.</p>
+<p>The company announced a range of specialized agents across different domains:</p>
+<ul>
+<li><strong>Security agents</strong>: Six new AI agents for security tasks, including <a href="https://www.theverge.com/news/634598/microsoft-security-copilot-ai-agents" target="_blank" rel="noopener noreferrer">phishing triage</a>
+ that can &ldquo;handle routine phishing alerts and cyberattacks&rdquo; and <a href="https://www.helpnetsecurity.com/2025/03/25/microsoft-security-copilot-agents/" target="_blank" rel="noopener noreferrer">alert fatigue reduction</a>
+ that frees up human defenders</li>
+<li><strong>Factory automation</strong>: New agents for <a href="https://aibusiness.com/generative-ai/microsoft-launches-new-ai-agents-for-factory-automation-hannover-messe-2025" target="_blank" rel="noopener noreferrer">manufacturing environments</a>
+ announced at Hannover Messe 2025</li>
+<li><strong>Sales agents</strong>: <a href="https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/03/05/accelerate-your-journey-to-ai-first-selling-with-microsoft-ai-accelerator-for-sales-and-new-sales-agents/" target="_blank" rel="noopener noreferrer">AI Accelerator for Sales</a>
+ and new sales agents to accelerate AI-first selling</li>
+<li><strong>Research and data analysis</strong>: <a href="https://www.techradar.com/pro/microsoft-reveals-openai-powered-copilot-ai-agents-to-bosot-your-work-research-and-data-analysis" target="_blank" rel="noopener noreferrer">OpenAI-powered Copilot agents</a>
+ for workflow acceleration</li>
+</ul>
+<p>Microsoft also expanded partnerships: <a href="https://news.adobe.com/news/2025/03/adobe-and-microsoft-empower-marketers-with-ai-agents-in-microsoft-365-copilot" target="_blank" rel="noopener noreferrer">Adobe</a>
+ joined to empower marketers with AI agents in Microsoft 365 Copilot, while <a href="https://www.corporatecomplianceinsights.com/onetrust-launches-ai-agent-built-with-microsoft-security-copilot/" target="_blank" rel="noopener noreferrer">OneTrust launched an AI agent</a>
+ built with Microsoft Security Copilot.</p>
+<p><a href="https://www.zdnet.com/article/microsoft-365-copilot-gets-two-deep-reasoning-ai-agents/" target="_blank" rel="noopener noreferrer">ZDNET reported</a>
+ on two new &ldquo;deep reasoning&rdquo; AI agents that can speed up workflows. The company is <a href="https://www.crn.com/news/ai/2025/microsoft-pitches-new-ai-agentsas-ways-to-leave-salesforce-crms" target="_blank" rel="noopener noreferrer">positioning its agents as alternatives</a>
+ to Salesforce CRM systems.</p>
+<h3 id="amazon-browser-control-in-nova-act">Amazon: Browser Control in Nova Act</h3>
+<p><strong>Amazon</strong> entered the agent platform wars with <strong>Nova Act</strong>, an AI agent that can <a href="https://siliconangle.com/2025/03/31/amazon-introduces-nova-act-ai-agent-can-use-web-browser/" target="_blank" rel="noopener noreferrer">directly control web browsers</a>
+ to navigate websites and make purchases. According to <a href="https://www.theverge.com/news/639688/amazon-nova-act-ai-agent-web-browser" target="_blank" rel="noopener noreferrer">The Verge</a>
+, Amazon&rsquo;s new agent &ldquo;is designed to do your shopping.&rdquo;</p>
+<p>The browser-controlling capability represents a significant technical milestone. <a href="https://retailwire.com/amazon-ai-agent-nova-act/" target="_blank" rel="noopener noreferrer">RetailWire reported</a>
+ that Nova Act &ldquo;can take over a web browser and make purchases&rdquo; on behalf of users. As <a href="https://www.pymnts.com/artificial-intelligence-2/2025/amazon-unveils-ai-agent-that-can-shop-and-place-orders/" target="_blank" rel="noopener noreferrer">PYMNTS noted</a>
+, the agent can &ldquo;shop and place orders&rdquo; autonomously.</p>
+<p>Beyond consumer applications, <a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-announces-general-availability-of-multi-agent-collaboration/" target="_blank" rel="noopener noreferrer">Amazon Web Services announced</a>
+ general availability of multi-agent collaboration on Bedrock, enabling multiple agents to work together on complex tasks. <a href="https://www.cnbc.com/2025/03/31/amazons-nova-ai-agent-takes-on-rivals-openai-anthropic.html" target="_blank" rel="noopener noreferrer">CNBC reported</a>
+ that the Nova launch &ldquo;puts it up against rivals OpenAI, Anthropic.&rdquo;</p>
+<h3 id="salesforce-agent-marketplace">Salesforce: Agent Marketplace</h3>
+<p><strong>Salesforce</strong> pursued an app store-style strategy with <strong>AgentExchange</strong>, a marketplace for AI agent skills launched with <a href="https://siliconangle.com/2025/03/04/salesforce-launches-ai-agent-skills-marketplace-200-initial-partners/" target="_blank" rel="noopener noreferrer">200+ initial partners</a>
+. As <a href="https://www.techzine.eu/news/applications/129294/salesforce-introduces-agentexchange-marketplace-for-ai-agents/" target="_blank" rel="noopener noreferrer">Techzine Global reported</a>
+, the marketplace is &ldquo;specifically focused on skill-sharing&rdquo; between agents.</p>
+<p>The company also launched <strong>Agentforce 2dx</strong>, which enables AI agents to <a href="https://siliconangle.com/2025/03/05/salesforce-lets-ai-agents-run-background-agentforce-2dx-launch/" target="_blank" rel="noopener noreferrer">run in the background</a>
+ rather than requiring explicit user prompts. According to <a href="https://www.techzine.eu/blogs/applications/129333/salesforce-sets-new-standard-with-agentforce-2dx-ai-agents-become-proactive/" target="_blank" rel="noopener noreferrer">Techzine Global</a>
+, the update sets &ldquo;a new standard&rdquo; as &ldquo;AI agents become proactive.&rdquo;</p>
+<p><a href="https://www.infoworld.com/article/3838999/salesforces-agentforce-2dx-update-aims-to-simplify-ai-agent-development-deployment.html" target="_blank" rel="noopener noreferrer">InfoWorld noted</a>
+ that the update aims to simplify AI agent development and deployment. <a href="https://salesforcedevops.net/index.php/2025/03/04/salesforce-launches-agentexchange-marketplace/" target="_blank" rel="noopener noreferrer">Salesforce DevOps reported</a>
+ that AgentExchange is designed to &ldquo;drive adoption of role-based AI agents.&rdquo;</p>
+<p>In healthcare, <a href="https://www.fiercehealthcare.com/ai-and-machine-learning/salesforce-releases-pre-built-ai-agents-tackle-time-consuming-healthcare" target="_blank" rel="noopener noreferrer">Salesforce released pre-built AI agents</a>
+ to tackle &ldquo;time-consuming healthcare tasks.&rdquo;</p>
+<h3 id="oracle-no-code-agent-studio">Oracle: No-Code Agent Studio</h3>
+<p><strong>Oracle</strong> introduced <strong>AI Agent Studio</strong>, a no-code tool for creating AI agents across its Fusion application suite. According to <a href="https://www.oracle.com/news/announcement/oracle-introduces-ai-agent-studio-2025-03-20/" target="_blank" rel="noopener noreferrer">Oracle&rsquo;s announcement</a>
+, the studio is &ldquo;available at no additional cost&rdquo; and delivers &ldquo;easy-to-use tools, including advanced testing, robust validation, and built-in security.&rdquo;</p>
+<p><a href="https://www.zdnet.com/article/oracle-expands-ai-capabilities-with-powerful-new-agent-studio-tool/" target="_blank" rel="noopener noreferrer">ZDNET reported</a>
+ that the new tool is an &ldquo;impressive next step for Oracle&rsquo;s AI strategy.&rdquo; <a href="https://capacityglobal.com/news/oracle-unveils-ai-agent-studio-for-businesses-to-build-custom-ai-agents/" target="_blank" rel="noopener noreferrer">Capacity Global noted</a>
+ that the studio enables businesses to &ldquo;build custom AI agents.&rdquo;</p>
+<p><a href="https://www.oracle.com/uk/news/announcement/oracle-brings-ai-agents-to-the-fight-against-financial-crime-2025-03-13/" target="_blank" rel="noopener noreferrer">Oracle announced</a>
+ AI agents for financial crime detection, adding a &ldquo;broad class of AI agents and agentic workflows&rdquo; to its Investigation Hub Cloud Service. <a href="https://siliconangle.com/2025/03/20/oracle-lets-customers-create-modify-ai-agents-across-fusion-application-suite/" target="_blank" rel="noopener noreferrer">SiliconANGLE reported</a>
+ that customers can &ldquo;create and modify AI agents across&rdquo; the Fusion suite.</p>
+<p>The company also <a href="https://blogs.oracle.com/ai-and-datascience/ga-of-oci-gen-ai-agent-platform" target="_blank" rel="noopener noreferrer">announced general availability</a>
+ of its OCI Generative AI Agents Platform. As <a href="https://www.techzine.eu/news/applications/129777/oracle-introduces-ai-agent-studio-for-fusion-cloud-applications/" target="_blank" rel="noopener noreferrer">Techzine Global noted</a>
+, Oracle is positioning Agent Studio for Fusion Cloud Applications.</p>
+<h3 id="servicenow-pre-built-agent-library">ServiceNow: Pre-Built Agent Library</h3>
+<p><strong>ServiceNow</strong> took a vertical-specific approach with its <strong>Yokohama</strong> platform release, which adds to &ldquo;thousands of AI agents across CRM, HR, IT, and more,&rdquo; according to the <a href="https://www.businesswire.com/news/home/20250312170054/en/ServiceNows-Latest-Platform-Release-Adds-to-Thousands-of-AI-Agents-Across-CRM-HR-IT-and-More-for-Faster-Smarter-Workflows-and-Maximum-Business-Impact" target="_blank" rel="noopener noreferrer">Business Wire announcement</a>
+.</p>
+<p>The company introduced <a href="https://www.businesswire.com/news/home/20250302892815/en/ServiceNow-Introduces-AI-Agents-Built-for-the-Telecom-Industry-to-Drive-Productivity-Across-the-Entire-Service-Lifecycle" target="_blank" rel="noopener noreferrer">AI agents built for the telecom industry</a>
+. These agents, built with NVIDIA AI Enterprise software and DGX Cloud, are designed to &ldquo;drive productivity across the entire service lifecycle.&rdquo;</p>
+<p><a href="https://diginomica.com/servicenow-announces-yokohama-platform-release-unleashing-pre-configured-ai-agents-everywhere" target="_blank" rel="noopener noreferrer">Diginomica reported</a>
+ that Yokohama is &ldquo;unleashing pre-configured AI agents, everywhere.&rdquo; <a href="https://www.cxtoday.com/crm/servicenow-goes-big-on-industry-specific-innovation-with-new-ai-agents-quality-360-acquisition/" target="_blank" rel="noopener noreferrer">CX Today noted</a>
+ that ServiceNow is &ldquo;going big on industry-specific innovation&rdquo; with new AI agents and the Quality 360 acquisition.</p>
+<p><a href="https://www.constellationr.com/blog-news/insights/servicenow-yokohama-release-ups-ai-agent-game" target="_blank" rel="noopener noreferrer">Constellation Research reported</a>
+ that the Yokohama release &ldquo;ups AI agent game&rdquo; with ServiceNow Studio, an AI-powered workspace for no-code, low-code, and pro-code agent development. <a href="https://www.techzine.eu/news/applications/129229/servicenow-introduces-new-ai-agents-for-telecoms/" target="_blank" rel="noopener noreferrer">Techzine Global noted</a>
+ that ServiceNow is introducing &ldquo;new AI agents for telecoms.&rdquo;</p>
+<h3 id="other-platform-players">Other Platform Players</h3>
+<p>Several other companies announced agent platforms:</p>
+<ul>
+<li><strong>PwC</strong> launched an <a href="https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-launches-ai-agent-operating-system-enterprises.html" target="_blank" rel="noopener noreferrer">AI agent operating system</a>
+ to &ldquo;revolutionize AI workflows for enterprises&rdquo;</li>
+<li><strong>Workato</strong> launched its <a href="https://diginomica.com/workato-launches-enterprise-ai-agent-platform-acquires-deepconverse" target="_blank" rel="noopener noreferrer">enterprise AI agent platform</a>
+ and acquired AI customer support vendor DeepConverse</li>
+<li><strong>EY</strong> announced the <a href="https://www.ey.com/en_gl/newsroom/2025/03/ey-launching-ey-ai-agentic-platform-created-with-nvidia-ai-to-drive-multi-sector-transformation-starting-with-tax-risk-and-finance-domains" target="_blank" rel="noopener noreferrer">EY.ai Agentic Platform</a>
+, created with NVIDIA AI, for tax, risk, and finance domains</li>
+<li><strong>NVIDIA</strong> launched a <a href="https://nvidianews.nvidia.com/news/nvidia-launches-family-of-open-reasoning-ai-models-for-developers-and-enterprises-to-build-agentic-ai-platforms" target="_blank" rel="noopener noreferrer">family of open reasoning AI models</a>
+ for building agentic AI platforms</li>
+<li><strong>Kore.ai</strong> announced an <a href="https://www.businesswire.com/news/home/20250317618963/en/Kore.ai-Announces-Agent-Platform-for-Building-Deploying-and-Orchestrating-Agentic-Applications" target="_blank" rel="noopener noreferrer">agent platform</a>
+ for &ldquo;building, deploying, and orchestrating agentic applications&rdquo;</li>
+<li><strong>WSO2</strong> expanded <a href="https://siliconangle.com/2025/03/18/wso2-expands-ai-agent-capabilities-new-platform-wide-ai-native-updates/" target="_blank" rel="noopener noreferrer">AI agent capabilities</a>
+ with platform-wide AI-native updates</li>
+<li><strong>Accenture</strong> debuted an <a href="https://siliconangle.com/2025/03/18/accenture-debuts-ai-agent-builder-within-ai-refinery-platform/" target="_blank" rel="noopener noreferrer">AI agent builder</a>
+ within its AI Refinery platform</li>
+<li><strong>Deloitte</strong> unveiled <a href="https://www.deloitte.com/us/en/about/press-room/deloitte-unveils-zora-ai-agentic-ai-for-tomorrows-workforce.html" target="_blank" rel="noopener noreferrer">Zora AI</a>
+, described as &ldquo;agentic AI for tomorrow&rsquo;s workforce&rdquo;</li>
+<li><strong>Adobe</strong> launched the <a href="https://news.adobe.com/news/2025/03/adobe-launches-adobe-experience-platform-agent-orchestrator-for-businesses" target="_blank" rel="noopener noreferrer">Adobe Experience Platform Agent Orchestrator</a>
+ for businesses to activate AI agents</li>
+</ul>
+<h2 id="the-browser-pattern-agents-that-navigate-the-web">The Browser Pattern: Agents That Navigate the Web</h2>
+<p>A clear pattern emerged in March: browser-controlling agents as a primary interface for AI automation.</p>
+<p><strong>Browser Use</strong> raised <strong>$17 million</strong> <a href="https://techcrunch.com/2025/03/23/browser-use-the-tool-making-it-easier-for-ai-agents-to-navigate-websites-raises-17m/" target="_blank" rel="noopener noreferrer">in a funding round</a>
+ to help AI agents navigate websites. As <a href="https://techcrunch.com/2025/03/23/browser-use-the-tool-making-it-easier-for-ai-agents-to-navigate-websites-raises-17m/" target="_blank" rel="noopener noreferrer">TechCrunch explained</a>
+, the startup is &ldquo;making it easier for AI &lsquo;agents&rsquo; to navigate websites.&rdquo; <a href="https://siliconangle.com/2025/03/23/browser-use-raises-17m-help-steer-ai-agents-internet/" target="_blank" rel="noopener noreferrer">SiliconANGLE reported</a>
+ that the funding will help &ldquo;steer AI agents through the internet.&rdquo;</p>
+<p><strong>Opera</strong> introduced &ldquo;Browser Operator,&rdquo; a native AI agent <a href="https://www.artificialintelligence-news.com/news/opera-introduces-browser-integrated-ai-agent/" target="_blank" rel="noopener noreferrer">integrated directly into the browser</a>
+ to perform tasks for users. The screenshot from the announcement shows the agent designed to handle web-based workflows without leaving the browser.</p>
+<p>Amazon&rsquo;s <strong>Nova Act</strong> represents the most ambitious browser-controlling agent to date, with the ability to <a href="https://siliconangle.com/2025/03/31/amazon-introduces-nova-act-ai-agent-can-use-web-browser/" target="_blank" rel="noopener noreferrer">navigate websites and make purchases</a>
+ directly. The capability matters because it allows agents to interact with existing web infrastructure without requiring API integrations.</p>
+<p>However, browser control also creates security concerns. <strong>Arcade.dev</strong> raised <strong>$12 million</strong> <a href="https://www.businesswire.com/news/home/20250318815130/en/Arcade.dev-Scores-%2412M-to-Solve-the-Biggest-Security-Problem-with-AI-Agents" target="_blank" rel="noopener noreferrer">in seed funding</a>
+ specifically &ldquo;to solve the biggest security problem with AI Agents.&rdquo; As the company noted, it is &ldquo;the first company to help AI agents securely take real-world actions on behalf of a user.&rdquo;</p>
+<h2 id="security-double-edged-agents-as-defender-and-threat">Security Double-Edged: Agents as Defender and Threat</h2>
+<h3 id="agents-as-defenders">Agents as Defenders</h3>
+<p>Microsoft led the charge on using AI agents for security, announcing six specialized security agents for <a href="https://www.theverge.com/news/634598/microsoft-security-copilot-ai-agents" target="_blank" rel="noopener noreferrer">Security Copilot</a>
+. According to <a href="https://www.theverge.com/news/634598/microsoft-security-copilot-ai-agents" target="_blank" rel="noopener noreferrer">The Verge</a>
+, the agents will &ldquo;help overwhelmed humans&rdquo; by handling routine security tasks.</p>
+<p><a href="https://www.helpnetsecurity.com/2025/03/25/microsoft-security-copilot-agents/" target="_blank" rel="noopener noreferrer">Help Net Security reported</a>
+ that the new AI agents &ldquo;take on phishing, patching, alert fatigue.&rdquo; The phishing triage agent specifically can &ldquo;handle routine phishing alerts and cyberattacks, freeing up human defenders.&rdquo;</p>
+<p><strong>SailPoint</strong> unveiled <strong>Harbor Pilot</strong>, a set of <a href="https://www.businesswire.com/news/home/20250325302320/en/SailPoint-Unveils-Harbor-Pilot-AI-Powered-Agents-Transforming-Identity-Security" target="_blank" rel="noopener noreferrer">AI-powered agents for identity security</a>
+. The agents are designed to &ldquo;help identity teams work smarter, respond faster and secure their organizations more efficiently.&rdquo;</p>
+<p><strong>Alpha Vision</strong> announced it will showcase <a href="https://www.prnewswire.com/news-releases/alpha-vision-to-showcase-ai-agent-powered-security-solutions-at-isc-west-2025-302415887.html" target="_blank" rel="noopener noreferrer">AI agent-powered security solutions</a>
+ at ISC West 2025, demonstrating how agents can enhance physical security.</p>
+<p><strong>Oracle</strong> brought <a href="https://www.oracle.com/uk/news/announcement/oracle-brings-ai-agents-to-the-fight-against-financial-crime-2025-03-13/" target="_blank" rel="noopener noreferrer">AI agents to financial crime detection</a>
+, adding agents and agentic workflows to its Investigation Hub Cloud Service.</p>
+<h3 id="agents-as-attackers">Agents as Attackers</h3>
+<p>But security researchers also demonstrated how AI agents can be used maliciously. <a href="https://www.scworld.com/news/openais-operator-ai-agent-can-be-used-in-phishing-attacks-say-researchers" target="_blank" rel="noopener noreferrer">SC Media reported</a>
+ that OpenAI&rsquo;s Operator AI agent &ldquo;can be used in phishing attacks.&rdquo; Researchers showed that the same browser-controlling capabilities that make agents useful for legitimate tasks also enable them to conduct <a href="https://www.scworld.com/news/openais-operator-ai-agent-can-be-used-in-phishing-attacks-say-researchers" target="_blank" rel="noopener noreferrer">autonomous phishing attacks</a>
+.</p>
+<p>The dual-use nature of agent capabilities creates a security dilemma. As <a href="https://www.businesswire.com/news/home/20250318815130/en/Arcade.dev-Scores-%2412M-to-Solve-the-Biggest-Security-Problem-with-AI-Agents" target="_blank" rel="noopener noreferrer">Arcade.dev noted</a>
+ in its funding announcement, securely enabling AI agents to &ldquo;take real-world actions on behalf of a user&rdquo; is one of the most critical challenges facing the industry.</p>
+<h2 id="vertical-agents-healthcare-finance-and-beyond">Vertical Agents: Healthcare, Finance, and Beyond</h2>
+<h3 id="healthcare">Healthcare</h3>
+<p><strong>Salesforce</strong> released <a href="https://www.fiercehealthcare.com/ai-and-machine-learning/salesforce-releases-pre-built-ai-agents-tackle-time-consuming-healthcare" target="_blank" rel="noopener noreferrer">pre-built AI agents</a>
+ specifically designed to &ldquo;tackle time-consuming healthcare tasks.&rdquo; The agents target administrative workflows that consume provider time.</p>
+<p><strong>Wipro</strong> announced <a href="https://www.wipro.com/newsroom/press-releases/2025/wipro-announces-ai-agent-solutions-across-the-healthcare-industry-powered-by-agentforce/" target="_blank" rel="noopener noreferrer">AI agent solutions for healthcare transformation</a>
+, powered by Salesforce&rsquo;s Agentforce platform.</p>
+<p><a href="https://www.nature.com/articles/s41551-025-01363-2" target="_blank" rel="noopener noreferrer">Nature published a paper</a>
+ on &ldquo;coordinated AI agents for advancing healthcare,&rdquo; exploring how multi-agent systems can improve medical workflows.</p>
+<h3 id="financial-services">Financial Services</h3>
+<p><strong>Auquan</strong> launched an <a href="https://www.businesswire.com/news/home/20250320870005/en/Auquan-Launches-Industry-First-AI-Agent-Purpose-Built-for-Risk-Monitoring-and-Detection-for-Financial-Services" target="_blank" rel="noopener noreferrer">industry-first AI agent purpose-built for risk monitoring</a>
+ in financial services. As <a href="https://www.corporatecomplianceinsights.com/auquan-launches-agentic-ai-risk-agent-for-finserv" target="_blank" rel="noopener noreferrer">Corporate Compliance Insights noted</a>
+, Auquan launched an &ldquo;agentic AI risk agent for FinServ.&rdquo;</p>
+<p><strong>Oscilar</strong> announced how it is <a href="https://www.prnewswire.com/news-releases/the-ai-agent-revolution-how-oscilar-is-transforming-risk-decisioning-302412099.html" target="_blank" rel="noopener noreferrer">transforming risk decisioning</a>
+ with AI agents, targeting financial risk assessment workflows.</p>
+<p><strong>Oracle</strong> expanded its <a href="https://www.oracle.com/uk/news/announcement/oracle-brings-ai-agents-to-the-fight-against-financial-crime-2025-03-13/" target="_blank" rel="noopener noreferrer">financial crime detection agents</a>
+, adding a broad class of AI agents to its Investigation Hub Cloud Service.</p>
+<h3 id="other-industries">Other Industries</h3>
+<p><strong>Telecommunications</strong>: ServiceNow introduced <a href="https://www.businesswire.com/news/home/20250302892815/en/ServiceNow-Introduces-AI-Agents-Built-for-the-Telecom-Industry-to-Drive-Productivity-Across-the-Entire-Service-Lifecycle" target="_blank" rel="noopener noreferrer">AI agents built for the telecom industry</a>
+, designed to drive productivity across the entire service lifecycle.</p>
+<p><strong>Manufacturing</strong>: Microsoft launched <a href="https://aibusiness.com/generative-ai/microsoft-launches-new-ai-agents-for-factory-automation-hannover-messe-2025" target="_blank" rel="noopener noreferrer">new AI agents for factory automation</a>
+ at Hannover Messe 2025. <a href="https://aws.amazon.com/blogs/industries/distributed-inference-with-collaborative-ai-agents-for-telco-powered-smart-x/" target="_blank" rel="noopener noreferrer">Ford is using agents with NVIDIA</a>
+ for distributed inference with collaborative AI agents.</p>
+<p><strong>Real Estate</strong>: An AI agent claiming to be the &ldquo;world&rsquo;s first AI real estate agent&rdquo; has <a href="https://www.housingwire.com/articles/worlds-first-ai-real-estate-agent-has-already-made-100m-in-sales/" target="_blank" rel="noopener noreferrer">generated $100M in sales</a>
+. As <a href="https://tribune.com.pk/story/2534000/revolutionising-real-estate-ai-agent-generates-100m-in-sales-for-portugal" target="_blank" rel="noopener noreferrer">The Express Tribune reported</a>
+, the agent generated $100M in sales for Portugal real estate.</p>
+<p><strong>Retail</strong>: A <a href="https://smallbiztrends.com/salesforce-ai-agents-retail-future-2025/" target="_blank" rel="noopener noreferrer">Salesforce report found</a>
+ that <strong>75% of retailers</strong> say AI agents will be &ldquo;essential by 2026.&rdquo; Amazon&rsquo;s Nova Act directly targets retail shopping workflows.</p>
+<h2 id="infrastructure-funding-building-the-agent-stack">Infrastructure Funding: Building the Agent Stack</h2>
+<p>Startup funding in March reveals where the agent ecosystem needs work. Infrastructure startups raised <strong>$93.8 million</strong> across several categories:</p>
+<h3 id="browser-control--security">Browser Control &amp; Security</h3>
+<ul>
+<li><strong>Browser Use</strong>: <a href="https://techcrunch.com/2025/03/23/browser-use-the-tool-making-it-easier-for-ai-agents-to-navigate-websites-raises-17m/" target="_blank" rel="noopener noreferrer">Raised $17M</a>
+ for web navigation infrastructure</li>
+<li><strong>Arcade.dev</strong>: <a href="https://www.businesswire.com/news/home/20250318815130/en/Arcade.dev-Scores-%2412M-to-Solve-the-Biggest-Security-Problem-with-AI-Agents" target="_blank" rel="noopener noreferrer">Raised $12M</a>
+ to solve agent security problems</li>
+</ul>
+<h3 id="compliance--payments">Compliance &amp; Payments</h3>
+<ul>
+<li><strong>Norm Ai</strong>: <a href="https://siliconangle.com/2025/03/11/ai-agent-powered-compliance-automation-startup-norm-ai-raises-48m/" target="_blank" rel="noopener noreferrer">Raised $48M</a>
+ for compliance automation agents</li>
+<li><strong>Paid</strong>: <a href="https://www.pymnts.com/news/artificial-intelligence/2025/paid-raises-10-million-dollars-scale-financial-infrastructure-ai-agents/" target="_blank" rel="noopener noreferrer">Raised $10.8M</a>
+ to &ldquo;scale financial infrastructure for AI agents&rdquo;</li>
+</ul>
+<h3 id="specialized-infrastructure">Specialized Infrastructure</h3>
+<ul>
+<li><strong>Tiga.ai</strong>: <a href="https://www.demandgenreport.com/industry-news/news-brief/tiga-ai-raises-2m-to-launch-ai-agent-for-custom-buying-signals/48949/" target="_blank" rel="noopener noreferrer">Raised $2M</a>
+ to launch an AI agent for custom buying signals</li>
+<li><strong>Nunu.ai</strong>: <a href="https://www.pocketgamer.biz/nunuai-secures-6m-to-scale-ai-agents-for-game-qa/" target="_blank" rel="noopener noreferrer">Secured $6M</a>
+ to scale AI agents for game QA testing</li>
+</ul>
+<h3 id="agent-monetization">Agent Monetization</h3>
+<ul>
+<li><strong>Manny Medina</strong> (former Outreach CEO) <a href="https://www.geekwire.com/2025/former-outreach-ceo-manny-medina-launches-new-startup-tackling-ai-agent-monetization/" target="_blank" rel="noopener noreferrer">launched a new startup</a>
+ tackling AI agent monetization. As <a href="https://techcrunch.com/2025/03/25/outreach-founder-manny-medina-has-a-new-startup-that-helps-ai-agents-get-paid/" target="_blank" rel="noopener noreferrer">TechCrunch noted</a>
+, the startup &ldquo;helps AI agents get paid.&rdquo;</li>
+</ul>
+
+
+
+
+
+
+<div id="funding-breakdown" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "AI Agent Startup Funding (March 2025)",
+"categories": ["Norm Ai", "Browser Use", "Paid", "Arcade.dev", "Nunu.ai", "Tiga.ai"],
+"series": [{"name": "Funding ($M)", "data": [48, 17, 10.8, 12, 6, 2]}],
+"yAxisLabel": "Funding ($ Millions)"
+}
+;
+    const type = "bar";
+    const containerId = "funding-breakdown";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h3 id="platform-plays">Platform Plays</h3>
+<p>Several consulting firms and platforms launched agent offerings:</p>
+<ul>
+<li><strong>Powered_by</strong> launched the &ldquo;world&rsquo;s first AI agency for SMBs&rdquo; to help small businesses deploy agents</li>
+<li><strong>Tarka</strong> raised funding to arm go-to-market teams with AI agents</li>
+<li><strong>Oracle</strong> announced general availability of its OCI Generative AI Agents Platform</li>
+<li><strong>Adobe</strong> launched Adobe Experience Platform Agent Orchestrator</li>
+</ul>
+<h2 id="reality-check-why-agents-struggle">Reality Check: Why Agents Struggle</h2>
+<p>Despite the platform launches and funding, critical voices reminded the industry that significant challenges remain.</p>
+<p>A widely-cited article titled <a href="https://thenewstack.io/why-ai-agents-suck-so-bad/" target="_blank" rel="noopener noreferrer">&ldquo;Why AI Agents Suck So Bad&rdquo;</a>
+ detailed frustrating experiences with support agents, highlighting &ldquo;limitations of current RAG-based AI systems in handling complex customer&rdquo; issues.</p>
+<p>More than half of companies have already deployed autonomous AI agents, according to <a href="https://qz.com/ai-agents-autonomous-pagerduty-study-1851773638" target="_blank" rel="noopener noreferrer">a study by PagerDuty</a>
+ covered by Quartz. But adoption doesn&rsquo;t equal satisfaction—implementation challenges abound.</p>
+<p><a href="https://www.cio.com/article/3836084/it-leaders-brace-for-the-ai-agent-management-challenge.html" target="_blank" rel="noopener noreferrer">CIO reported</a>
+ that IT leaders are &ldquo;bracing for the AI agent management challenge.&rdquo; As organizations deploy more agents, managing them becomes increasingly complex.</p>
+<p>Skepticism about &ldquo;PhD-level&rdquo; marketing claims continues. As the <a href="https://indianexpress.com/article/technology/artificial-intelligence/what-are-phd-level-ai-agents-facing-scepticism-9879136/" target="_blank" rel="noopener noreferrer">Indian Express noted</a>
+, &ldquo;The hype around PhD-level AI comes with growing scepticism.&rdquo;</p>
+<p>Hidden risks in agent adoption are emerging, including concerns about data silos impacting agent performance. Enterprises face real management complexity as agent deployments scale.</p>
+<h2 id="what-this-month-means">What This Month Means</h2>
+<p>March 2025 was when AI agents graduated from research project to product. The evidence is across several dimensions:</p>
+<p><strong>Pricing as value signal</strong>: OpenAI&rsquo;s reported $20,000 monthly pricing suggests the company believes these systems can deliver substantial enterprise value—even if the &ldquo;PhD-level&rdquo; framing remains marketing rhetoric.</p>
+<p><strong>Autonomous capabilities are here</strong>: China&rsquo;s Manus demonstrated what fully autonomous agents can do, planning complex tasks without human intervention and drawing comparisons to DeepSeek&rsquo;s viral impact.</p>
+<p><strong>Platform ubiquity</strong>: Every major tech company—Microsoft, Amazon, Salesforce, Oracle, ServiceNow—now offers an agent platform. The land grab for enterprise mindshare is underway.</p>
+<p><strong>Infrastructure being built</strong>: Startup funding of $93.8 million in a single month shows where the ecosystem needs work: browser control, security, payments, compliance, and monitoring.</p>
+<p><strong>Enterprise adoption accelerating</strong>: Microsoft&rsquo;s 400,000 agents built by 160,000 customers, the PagerDuty study finding more than half of companies using autonomous agents, and industry-specific deployments all point to real adoption.</p>
+<p>But we&rsquo;re still early. Reliability issues persist, management complexity is real, and the gap between marketing claims and actual capabilities—especially around &ldquo;PhD-level&rdquo; performance—remains significant.</p>
+<p>The next 6-12 months will be about deployment at scale. Which platforms actually deliver value? Which use cases prove durable? The agent wars have begun, but the winner is far from determined.</p>
+<h2 id="major-agent-platform-launches">Major Agent Platform Launches</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>Platform/Product</th>
+          <th>Key Differentiator</th>
+          <th>Target User</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Microsoft</strong></td>
+          <td>Copilot Agents</td>
+          <td>400,000 agents deployed by 160,000 customers</td>
+          <td>Enterprise</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon</strong></td>
+          <td>Nova Act</td>
+          <td>Browser-controlling agent that can shop</td>
+          <td>Consumers &amp; Enterprise</td>
+      </tr>
+      <tr>
+          <td><strong>Salesforce</strong></td>
+          <td>AgentExchange</td>
+          <td>Marketplace with 200+ partners</td>
+          <td>Enterprise</td>
+      </tr>
+      <tr>
+          <td><strong>Oracle</strong></td>
+          <td>AI Agent Studio</td>
+          <td>No-code creation across Fusion suite</td>
+          <td>Business Users</td>
+      </tr>
+      <tr>
+          <td><strong>ServiceNow</strong></td>
+          <td>Yokohama Release</td>
+          <td>Thousands of pre-configured vertical agents</td>
+          <td>Enterprise</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="agent-deployments-by-industry">Agent Deployments by Industry</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Industry</th>
+          <th>Key Players</th>
+          <th>Use Cases</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Healthcare</strong></td>
+          <td>Salesforce, Wipro</td>
+          <td>Administrative task automation</td>
+          <td>Deployed</td>
+      </tr>
+      <tr>
+          <td><strong>Financial Services</strong></td>
+          <td>Auquan, Oscilar, Oracle</td>
+          <td>Risk monitoring, compliance, fraud detection</td>
+          <td>Deployed</td>
+      </tr>
+      <tr>
+          <td><strong>Telecom</strong></td>
+          <td>ServiceNow</td>
+          <td>Service lifecycle automation</td>
+          <td>Deployed</td>
+      </tr>
+      <tr>
+          <td><strong>Manufacturing</strong></td>
+          <td>Microsoft, Ford</td>
+          <td>Factory automation</td>
+          <td>Deployed</td>
+      </tr>
+      <tr>
+          <td><strong>Real Estate</strong></td>
+          <td>Various AI agents</td>
+          <td>Property sales and transactions</td>
+          <td>Deployed</td>
+      </tr>
+      <tr>
+          <td><strong>Retail</strong></td>
+          <td>Amazon, Salesforce</td>
+          <td>Shopping automation, customer service</td>
+          <td>Deployed</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+<div id="month-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "Mar 3", "title": "ServiceNow Telecom Agents", "description": "ServiceNow introduces AI agents for the telecom industry"},
+{"date": "Mar 4", "title": "Salesforce AgentExchange", "description": "Salesforce launches agent skills marketplace with 200+ partners"},
+{"date": "Mar 5", "title": "OpenAI Pricing Leak", "description": "Report of $20,000/month PhD-level agent pricing emerges"},
+{"date": "Mar 9", "title": "Manus Goes Viral", "description": "China's autonomous AI agent captures global attention"},
+{"date": "Mar 11", "title": "Norm Ai $48M Raise", "description": "Compliance automation startup raises major funding"},
+{"date": "Mar 12", "title": "ServiceNow Yokohama", "description": "Platform release adds thousands of AI agents"},
+{"date": "Mar 18", "title": "NVIDIA Open Models", "description": "NVIDIA launches open reasoning models for agent platforms"},
+{"date": "Mar 20", "title": "Oracle Agent Studio", "description": "Oracle introduces no-code agent creation tool"},
+{"date": "Mar 23", "title": "Browser Use $17M", "description": "Startup raises funding for web navigation infrastructure"},
+{"date": "Mar 24", "title": "Microsoft Security Agents", "description": "Six new AI agents for security tasks announced"},
+{"date": "Mar 25", "title": "Paid $10.8M Raise", "description": "Agent payment infrastructure startup raises funding"},
+{"date": "Mar 31", "title": "Amazon Nova Act", "description": "Amazon launches browser-controlling shopping agent"}
+]
+}
+;
+    const containerId = "month-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/" target="_blank" rel="noopener noreferrer">What does &ldquo;PhD-level&rdquo; AI mean? OpenAI&rsquo;s rumored $20,000 agent plan explained</a>
+ — Ars Technica</li>
+<li><a href="https://www.livescience.com/technology/artificial-intelligence/chinas-manus-ai-agent-could-be-our-1st-glimpse-at-artificial-general-intelligence" target="_blank" rel="noopener noreferrer">China&rsquo;s Manus AI &lsquo;agent&rsquo; could be our 1st glimpse at artificial general intelligence</a>
+ — Live Science</li>
+<li><a href="https://siliconangle.com/2025/03/31/amazon-introduces-nova-act-ai-agent-can-use-web-browser/" target="_blank" rel="noopener noreferrer">Amazon introduces Nova Act, an AI agent that can use a web browser</a>
+ — SiliconANGLE</li>
+<li><a href="https://siliconangle.com/2025/03/04/salesforce-launches-ai-agent-skills-marketplace-200-initial-partners/" target="_blank" rel="noopener noreferrer">Salesforce launches AI agent skills marketplace with 200+ initial partners</a>
+ — SiliconANGLE</li>
+<li><a href="https://www.zdnet.com/article/oracle-expands-ai-capabilities-with-powerful-new-agent-studio-tool/" target="_blank" rel="noopener noreferrer">Oracle expands AI capabilities with powerful new Agent Studio tool</a>
+ — ZDNET</li>
+<li><a href="https://www.fiercehealthcare.com/ai-and-machine-learning/salesforce-releases-pre-built-ai-agents-tackle-time-consuming-healthcare" target="_blank" rel="noopener noreferrer">Salesforce releases pre-built AI agents to tackle time-consuming healthcare tasks</a>
+ — Fierce Healthcare</li>
+<li><a href="https://cloudwars.com/ai/agent-wars-microsoft-grabs-lead-as-160000-customers-build-400000-ai-agents/" target="_blank" rel="noopener noreferrer">AGENT WARS: Microsoft Grabs Lead as 160,000 Customers Build 400,000 AI Agents</a>
+ — Cloud Wars</li>
+<li><a href="https://www.cio.com/article/3836084/it-leaders-brace-for-the-ai-agent-management-challenge.html" target="_blank" rel="noopener noreferrer">IT leaders brace for the AI agent management challenge</a>
+ — CIO</li>
+<li><a href="https://thenewstack.io/why-ai-agents-suck-so-bad/" target="_blank" rel="noopener noreferrer">Why AI Agents Suck So Bad</a>
+ — The New Stack</li>
+<li><a href="https://qz.com/ai-agents-autonomous-pagerduty-study-1851773638" target="_blank" rel="noopener noreferrer">More than half of companies already deploy autonomous AI agents, study finds</a>
+ — Quartz</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,434 @@
     <description>Recent content in Google on Chi&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://cchen.me/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agents in December: The $2B Bet That Changed Everything</title>
+      <link>https://cchen.me/newsletter/2026-01-01-ai-agent/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2026-01-01-ai-agent/</guid>
+      <description>&lt;p&gt;Meta&amp;rsquo;s acquisition of Manus for $2 billion signals a new phase in the AI agent race. As major tech companies rush to standardize how agents work, enterprises grapple with security risks while researchers demonstrate capabilities that rival human experts.&lt;/p&gt;
+&lt;p&gt;This comprehensive review covers &lt;strong&gt;267 articles&lt;/strong&gt; published between &lt;strong&gt;December 2025 and January 2026&lt;/strong&gt;, surveying the latest developments in AI agents.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Meta Manus Acquisition&#34;, &#34;value&#34;: &#34;$2 Billion&#34;, &#34;context&#34;: &#34;Largest agentic AI acquisition to date&#34;},
+{&#34;label&#34;: &#34;ARR Before Acquisition&#34;, &#34;value&#34;: &#34;$100 Million&#34;, &#34;context&#34;: &#34;Manus annual recurring revenue&#34;},
+{&#34;label&#34;: &#34;ARTEMIS Performance&#34;, &#34;value&#34;: &#34;2nd of 10&#34;, &#34;context&#34;: &#34;Placed against human hackers&#34;},
+{&#34;label&#34;: &#34;Cost per Hour&#34;, &#34;value&#34;: &#34;$18 vs $60&#34;, &#34;context&#34;: &#34;AI agent vs human penetration tester&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;the-big-story-metas-2-billion-bet&#34;&gt;The Big Story: Meta&amp;rsquo;s $2 Billion Bet&lt;/h2&gt;
+&lt;p&gt;Meta &lt;a href=&#34;https://www.theverge.com/news/851113/meta-acquires-general-purpose-ai-agent-startup-manus&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;acquired&lt;/a&gt;
+ &lt;strong&gt;Manus&lt;/strong&gt;, a Singapore-based AI agent startup, for approximately &lt;strong&gt;$2 billion&lt;/strong&gt; in the largest agentic AI acquisition to date. The deal marks a significant validation of the agent market and accelerates competitive pressure across the industry.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Meta&rsquo;s acquisition of Manus for $2 billion signals a new phase in the AI agent race. As major tech companies rush to standardize how agents work, enterprises grapple with security risks while researchers demonstrate capabilities that rival human experts.</p>
+<p>This comprehensive review covers <strong>267 articles</strong> published between <strong>December 2025 and January 2026</strong>, surveying the latest developments in AI agents.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Meta Manus Acquisition", "value": "$2 Billion", "context": "Largest agentic AI acquisition to date"},
+{"label": "ARR Before Acquisition", "value": "$100 Million", "context": "Manus annual recurring revenue"},
+{"label": "ARTEMIS Performance", "value": "2nd of 10", "context": "Placed against human hackers"},
+{"label": "Cost per Hour", "value": "$18 vs $60", "context": "AI agent vs human penetration tester"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-big-story-metas-2-billion-bet">The Big Story: Meta&rsquo;s $2 Billion Bet</h2>
+<p>Meta <a href="https://www.theverge.com/news/851113/meta-acquires-general-purpose-ai-agent-startup-manus" target="_blank" rel="noopener noreferrer">acquired</a>
+ <strong>Manus</strong>, a Singapore-based AI agent startup, for approximately <strong>$2 billion</strong> in the largest agentic AI acquisition to date. The deal marks a significant validation of the agent market and accelerates competitive pressure across the industry.</p>
+<p>Manus, a China-founded company that relocated to Singapore, had reached <strong>$100 million in annual recurring revenue</strong> just eight months after launching its general-purpose AI agent <a href="https://www.trendingtopics.eu/meta-acquires-ai-agent-startup-manus-which-recently-reached-100-million-arr/" target="_blank" rel="noopener noreferrer">according</a>
+ to industry reports. The company built autonomous agents capable of executing complex tasks across enterprise workflows, positioning itself as a platform for &ldquo;digital coworkers&rdquo; rather than single-purpose tools.</p>
+<p>The acquisition carries geopolitical complexity. Meta <a href="https://gizmodo.com/meta-buys-ai-agent-startup-for-2-billion-says-it-will-cut-all-ties-with-china-2000704284" target="_blank" rel="noopener noreferrer">committed</a>
+ to severing all of Manus&rsquo;s remaining ties with China post-acquisition, addressing potential regulatory concerns. CEO Xiao Hong founded Manus in China before moving operations to Singapore, a shift that became a selling point amid U.S. scrutiny of Chinese AI technology.</p>
+<p>Manus&rsquo;s technology enables agents to work autonomously for extended periods, planning and executing multi-step workflows with minimal human intervention. Meta <a href="https://theaiinsider.tech/2025/12/30/meta-acquires-ai-agent-startup-manus-in-2b-deal-to-accelerate-agentic-agentic-ai-strategy/" target="_blank" rel="noopener noreferrer">plans</a>
+ to integrate Manus&rsquo;s capabilities across its family of apps, potentially bringing agent functionality to WhatsApp, Instagram, and Facebook&rsquo;s billions of users.</p>
+<p>The announcement <a href="https://ts2.tech/en/meta-stock-closes-up-on-manus-ai-agent-deal-what-investors-are-watching-next/" target="_blank" rel="noopener noreferrer">moved</a>
+ Meta&rsquo;s stock higher, as investors interpreted the deal as acceleration rather than desperation. At just eight months old when acquired, Manus&rsquo;s $100 million ARR represents one of the fastest revenue ramps in AI startup history, though <a href="https://www.theneurondaily.com/p/meta-paid-2b-for-an-8-month-old-startup" target="_blank" rel="noopener noreferrer">analysis</a>
+ noted the premium valuation reflects FOMO as much as fundamentals.</p>
+<p>More broadly, the Manus acquisition signals the start of consolidation in agentic AI. After two years of frenetic startup activity, platforms are buying capabilities rather than building them. For Meta specifically, it addresses a gap in its AI portfolio—while the company invested heavily in models (Llama) and consumer apps, it lacked a strong agent platform to compete with OpenAI, Anthropic, and Google.</p>
+<h2 id="industry-moves-to-standardize-the-agent-era">Industry Moves to Standardize the Agent Era</h2>
+<p>In a remarkable display of cooperation among fierce competitors, <strong>OpenAI</strong>, <strong>Anthropic</strong>, and <strong>Block</strong> <a href="https://techcrunch.com/2025/12/09/openai-anthropic-and-block-join-new-linux-foundation-effort-to-standardize-the-ai-agent-era/" target="_blank" rel="noopener noreferrer">formed</a>
+ the <strong>Agentic AI Foundation</strong> under the Linux Foundation. The initiative aims to establish open standards for how AI agents interact with each other and with external systems.</p>
+<p>OpenAI <a href="https://openai.com/index/agentic-ai-foundation/" target="_blank" rel="noopener noreferrer">donated</a>
+ its <strong>AGENTS.md</strong> specification, while Anthropic <a href="https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation" target="_blank" rel="noopener noreferrer">contributed</a>
+ the <strong>Model Context Protocol (MCP)</strong>, an open standard for connecting AI applications to external data and tools. Both become vendor-neutral projects under the foundation&rsquo;s governance, with support from Google, Microsoft, AWS, Bloomberg, and Cloudflare.</p>
+<p>The standardization push addresses a growing bottleneck: agent interoperability. As enterprises deploy agents from multiple vendors, the lack of common protocols creates integration complexity. MCP currently powers <strong>75 connectors</strong> for Claude alone, and that number will grow as the protocol becomes a community standard rather than a proprietary technology.</p>
+<p>Notably, Anthropic <a href="https://venturebeat.com/technology/anthropic-launches-enterprise-agent-skills-and-opens-the-standard" target="_blank" rel="noopener noreferrer">simultaneously launched</a>
+ <strong>Agent Skills</strong>, a competing standard framework for enterprise agent capabilities. The dual moves—donating MCP while introducing Agent Skills—highlight the tension between collaboration and competition. The Linux Foundation effort focuses on plumbing (how agents connect), while Agent Skills addresses capabilities (what agents can do).</p>
+<p>For developers, the foundation promises more portable agent code. Today, agents built for one platform often require significant rework to run on another. Open standards could enable &ldquo;write once, run anywhere&rdquo; agent development similar to how container standards transformed cloud computing. The foundation&rsquo;s first deliverables will include standardized agent-to-agent communication protocols and tool interfaces.</p>
+<p>The irony of OpenAI and Anthropic collaborating on infrastructure while competing fiercely on products wasn&rsquo;t lost on observers. As <a href="https://www.wired.com/story/openai-anthropic-and-block-are-teaming-up-on-ai-agent-standards/" target="_blank" rel="noopener noreferrer">Wired</a>
+ noted, &ldquo;The companies trying to build the most powerful AI agents are also the ones trying to prevent those agents from causing chaos.&rdquo; Standardization, they argue, is a prerequisite for safety at scale.</p>
+<h2 id="platform-wars-google-amazon-microsoft-unveil-agent-offerings">Platform Wars: Google, Amazon, Microsoft Unveil Agent Offerings</h2>
+<h3 id="google-from-search-to-personal-agent">Google: From Search to Personal Agent</h3>
+<p>Google <a href="https://techcrunch.com/2025/12/11/google-launched-its-deepest-ai-research-agent-yet-on-the-same-day-openai-dropped-gpt-5-2/" target="_blank" rel="noopener noreferrer">announced</a>
+ a reimagined <strong>Deep Research agent</strong> based on Gemini 3 Pro, launching the same day OpenAI released GPT-5.2. The timing was coincidental but symbolic of the intensifying race. Google&rsquo;s agent enables developers to embed research capabilities directly into applications via the Interactions API, making multi-step information gathering a building block rather than a standalone product.</p>
+<p>Separately, Google Labs <a href="https://www.androidheadlines.com/2025/12/googles-new-cc-ai-agent-wants-to-be-your-personal-assistant.html" target="_blank" rel="noopener noreferrer">unveiled</a>
+ <strong>CC</strong>, a personal assistant agent that integrates with Gmail, Calendar, and Drive to provide daily briefings and task assistance. The agent delivers morning summaries of emails, schedules, and documents—essentially automating the &ldquo;scroll through apps&rdquo; routine that starts many workdays. CC launches in early access for AI Ultra subscribers in the U.S. and Canada.</p>
+<p>On the efficiency front, Google researchers <a href="https://www.techzine.eu/news/infrastructure/137325/google-makes-breakthrough-in-efficiency-for-ai-agents/" target="_blank" rel="noopener noreferrer">developed</a>
+ a framework that makes AI agents more efficient by making them aware of their own uncertainty. Agents that know when they&rsquo;re stuck avoid wasting compute on unlikely solutions, reducing costs and latency. The <a href="https://www.techzine.eu/news/analytics/137391/google-interactions-api-makes-ai-agents-faster-and-more-efficient/" target="_blank" rel="noopener noreferrer">Interactions API</a>
+ extends this capability to developers, enabling faster agent responses.</p>
+<p>For developers, Google <a href="https://developers.googleblog.com/introducing-agent-development-kit-for-typescript-build-ai-agents-with-the-power-of-a-code-first-approach/" target="_blank" rel="noopener noreferrer">released</a>
+ the <strong>Agent Development Kit</strong> for TypeScript, providing code-first tools for building production agents. The company also <a href="https://developers.googleblog.com/introducing-a2ui-an-open-project-for-agent-driven-interfaces/" target="_blank" rel="noopener noreferrer">launched</a>
+ <strong>A2UI</strong>, an open project for agent-driven interfaces that lets agents build user interfaces on the fly. Additionally, Google <a href="https://techcrunch.com/2025/12/10/google-is-going-all-in-on-mcp-servers-agent-ready-by-design/" target="_blank" rel="noopener noreferrer">introduced</a>
+ managed MCP servers that let AI agents plug directly into Google&rsquo;s tools and services.</p>
+<h3 id="amazon-agents-for-code-and-business-processes">Amazon: Agents for Code and Business Processes</h3>
+<p>Amazon Web Services <a href="https://techcrunch.com/2025/12/02/amazon-previews-3-ai-agents-including-kiro-that-can-code-on-its-own-for-days/" target="_blank" rel="noopener noreferrer">previewed</a>
+ three new &ldquo;frontier agents&rdquo; headlined by <strong>Kiro</strong>, an autonomous coding agent that can work for days without human intervention. Unlike coding assistants that require continuous prompting, Kiro maintains context across sessions and learns from human interactions, taking on larger tasks like implementing features from specifications.</p>
+<p>AWS also announced <strong>Amazon Nova Act</strong>, now <a href="https://aws.amazon.com/blogs/aws/build-reliable-ai-agents-for-ui-workflow-automation-with-amazon-nova-act-now-generally-available/" target="_blank" rel="noopener noreferrer">generally available</a>
+, a service for building agents that automate browser-based workflows. Nova Act promises <strong>over 90% task reliability</strong> at scale by using reinforcement learning in synthetic environments—essentially training agents in simulated web gyms before exposing them to real websites. The service handles form filling, data extraction, shopping and booking, and QA testing.</p>
+<p>For orchestration, AWS <a href="https://aws.amazon.com/blogs/machine-learning/customize-agent-workflows-with-advanced-orchestration-techniques-using-strands-agents/" target="_blank" rel="noopener noreferrer">introduced</a>
+ <strong>Strands Agents</strong>, a framework for building multi-agent workflows without custom integration work. Strands connects naturally with Nova Act, enabling comprehensive automation from data gathering to UI execution.</p>
+<p>In financial services, AWS <a href="https://aws.amazon.com/blogs/industries/agentic-ai-in-financial-services-choosing-the-right-pattern-for-multi-agent-systems/" target="_blank" rel="noopener noreferrer">published</a>
+ guidance on choosing the right multi-agent patterns, reflecting the company&rsquo;s focus on enterprise use cases. The company also <a href="https://aws.amazon.com/blogs/machine-learning/streamline-ai-agent-tool-interactions-connect-api-gateway-to-agentcore-gateway-with-mcp/" target="_blank" rel="noopener noreferrer">detailed</a>
+ how to connect API Gateway to AgentCore Gateway with MCP, streamlining tool interactions.</p>
+<h3 id="microsoft-copilot-evolves-into-an-agent-platform">Microsoft: Copilot Evolves into an Agent Platform</h3>
+<p>At Microsoft Ignite 2025, the company <a href="https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/" target="_blank" rel="noopener noreferrer">showcased</a>
+ enhancements to its Copilot agent platform, including management and governance capabilities through <a href="https://cloudwars.com/ai/microsoft-fills-in-agent-365-management-governance-details-through-new-public-demos/" target="_blank" rel="noopener noreferrer">Agent 365</a>
+. Microsoft <a href="https://www.microsoft.com/en-us/research/blog/agent-lightning-adding-reinforcement-learning-to-ai-agents-without-code-rewrites/" target="_blank" rel="noopener noreferrer">introduced</a>
+ <strong>Agent Lightning</strong>, a system for adding reinforcement learning to agents without code rewrites, enabling agents to improve from experience.</p>
+<p>In research collaborations, Microsoft <a href="https://www.ox.ac.uk/news/2025-12-16-oxford-built-multi-agent-assistant-cancer-care-be-piloted-collaboration-microsoft" target="_blank" rel="noopener noreferrer">partnered</a>
+ with Oxford on a multi-agent cancer care assistant and <a href="https://www.geekwire.com/2025/microsoft-nasa-ai-hydrology-copilot-floods/" target="_blank" rel="noopener noreferrer">joined</a>
+ NASA on agents for flood prediction. The company also <a href="https://www.microsoft.com/en-gb/industry/blog/cross-industry/2025/12/18/agentic-launchpad-cohort/" target="_blank" rel="noopener noreferrer">launched</a>
+ the Agentic Launchpad, an accelerator program for AI agent startups.</p>
+<p>However, Microsoft faces enterprise <a href="https://futurism.com/artificial-intelligence/microsoft-sell-ai-agents-disaster" target="_blank" rel="noopener noreferrer">selling challenges</a>
+. Azure salespeople are reportedly struggling to meet ambitious targets as AI agents frequently fail real-world tasks. Google&rsquo;s Gemini 2.5 Pro fails approximately <strong>70% of real-world office tasks</strong> according to one report, and similar issues plague competitors. The gap between demo capabilities and production reliability remains a significant barrier to enterprise adoption.</p>
+<p>On the privacy front, Microsoft <a href="https://www.windowslatest.com/2025/12/17/microsoft-confirms-windows-11-will-ask-for-consent-before-sharing-your-personal-files-with-ai-after-outrage/" target="_blank" rel="noopener noreferrer">confirmed</a>
+ that Windows 11 will ask for consent before AI agents can access personal files, following user outrage over initial plans for broader access. The company also <a href="https://windowsreport.com/latest-windows-update-kb5072043-adds-agent-launchers-for-system-wide-ai-agents/" target="_blank" rel="noopener noreferrer">added</a>
+ agent launchers to Windows 11 via the KB5072043 update.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>Agent/Product</th>
+          <th>Primary Focus</th>
+          <th>Key Capability</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Meta</strong></td>
+          <td>Manus (acquired)</td>
+          <td>General-purpose agent</td>
+          <td>Autonomous task execution</td>
+      </tr>
+      <tr>
+          <td><strong>Google</strong></td>
+          <td>CC</td>
+          <td>Personal productivity</td>
+          <td>Email and Drive integration</td>
+      </tr>
+      <tr>
+          <td><strong>Google</strong></td>
+          <td>Deep Research Agent</td>
+          <td>Research assistance</td>
+          <td>Complex multi-step queries</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon</strong></td>
+          <td>Kiro</td>
+          <td>Software development</td>
+          <td>Autonomous coding for days</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon</strong></td>
+          <td>Nova Act</td>
+          <td>Business automation</td>
+          <td>UI workflow automation</td>
+      </tr>
+      <tr>
+          <td><strong>Microsoft</strong></td>
+          <td>Copilot Agents</td>
+          <td>Enterprise productivity</td>
+          <td>Office 365 integration</td>
+      </tr>
+      <tr>
+          <td><strong>Anthropic</strong></td>
+          <td>Agent Skills</td>
+          <td>Enterprise workflows</td>
+          <td>Standardized skill framework</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "Early December", "title": "Meta acquires Manus for $2B", "description": "Blockbuster acquisition validates agentic AI market"},
+{"date": "December 9", "title": "Agentic AI Foundation announced", "description": "OpenAI, Anthropic, Block standardize protocols"},
+{"date": "December 11", "title": "Google launches deepest research agent", "description": "Same day as OpenAI's GPT-5.2 release"},
+{"date": "Mid-December", "title": "Stanford ARTEMIS study published", "description": "AI agent outperforms 9 of 10 human hackers"},
+{"date": "December", "title": "Major platform announcements", "description": "Google CC, Amazon Kiro, Microsoft Copilot evolution"}
+]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="research-ai-agents-match-human-performance">Research: AI Agents Match Human Performance</h2>
+<h3 id="cybersecurity-artemis-outperforms-humans">Cybersecurity: ARTEMIS Outperforms Humans</h3>
+<p>Stanford University&rsquo;s <strong>ARTEMIS</strong> AI agent <a href="https://www.euronews.com/next/2025/12/15/for-15-an-hour-an-ai-agent-outperforms-human-hackers-study-shows" target="_blank" rel="noopener noreferrer">placed</a>
+ second out of ten in a penetration testing competition, outperforming nine of ten human participants. Running at <strong>$18 per hour</strong> compared to <strong>$60 per hour</strong> for a professional penetration tester, ARTEMIS discovered <strong>nine vulnerabilities</strong> in the university&rsquo;s 8,000-device network during the 10-hour evaluation period.</p>
+<p>The key to ARTEMIS&rsquo;s success was its ability to generate &ldquo;sub-agents&rdquo; that investigated vulnerabilities in parallel while the main agent continued scanning. Humans, by contrast, had to investigate each vulnerability sequentially before moving on. However, the study noted ARTEMIS still missed some vulnerabilities identified by humans and occasionally required hints.</p>
+<p>Existing AI cybersecurity agents from OpenAI and Anthropic <a href="https://securityboulevard.com/2025/12/for-18-an-hour-stanfords-ai-agent-bested-most-human-pen-testers-in-study/" target="_blank" rel="noopener noreferrer">underperformed</a>
+ in the study, with OpenAI&rsquo;s Codex and Anthropic&rsquo;s Claude Code lacking cybersecurity-specific design. The models either refused to look for vulnerabilities or stalled, highlighting the gap between general-purpose and specialized agents.</p>
+<h3 id="scientific-research-agents-run-real-experiments">Scientific Research: Agents Run Real Experiments</h3>
+<p>IIT Delhi <a href="https://currentaffairs.adda247.com/iit-delhi-introduces-ai-agent-aila-for-smart-and-autonomous-lab-research/" target="_blank" rel="noopener noreferrer">developed</a>
+ <strong>AILA</strong> (Artificially Intelligent Lab Assistant), an agent that autonomously designs, conducts, and analyzes laboratory experiments. Using an Agentic AI Framework to replicate human scientist reasoning, AILA reduces experimental time from hours or days to minutes for tasks in materials discovery, nanotechnology, biotechnology, and applied physics.</p>
+<p>The development places India at the forefront of agentic AI in experimental science, shifting AI from data analysis to active decision-making in real-world research environments. AILA doesn&rsquo;t just process experimental data—it decides what experiments to run, monitors progress, evaluates results, and determines next steps.</p>
+<p>In healthcare, Nature <a href="https://www.nature.com/articles/s44355-025-00049-5" target="_blank" rel="noopener noreferrer">published</a>
+ research on AI-based agents for chronic liver disease, demonstrating how agents can transform diagnostic and therapeutic workflows through clinical decision-making. The research shows agents can handle the complexity of multi-factor diseases while maintaining explainability.</p>
+<p>Nvidia <a href="https://radiologybusiness.com/topics/artificial-intelligence/nvidia-sees-major-shift-radiology-ai-agents-and-new-autonomous-imaging-systems" target="_blank" rel="noopener noreferrer">announced</a>
+ a major shift toward AI agents in radiology, with new autonomous imaging systems emerging. The company also <a href="https://the-decoder.com/nvidia-wants-to-create-universal-ai-agents-for-all-worlds-with-nitrogen/" target="_blank" rel="noopener noreferrer">introduced</a>
+ <strong>NitroGen</strong>, an effort to create universal AI agents for all virtual worlds, extending agent capabilities beyond specific domains.</p>
+<h3 id="multi-agent-systems-more-isnt-always-better">Multi-Agent Systems: More Isn&rsquo;t Always Better</h3>
+<p>Research from Google and MIT <a href="https://the-decoder.com/more-ai-agents-isnt-always-better-new-google-and-mit-study-finds/" target="_blank" rel="noopener noreferrer">found</a>
+ that adding more agents can lead to worse results—a &ldquo;multi-agent paradox&rdquo; that complicates enterprise deployment. The study identified diminishing returns as agent count increases, with coordination overhead and error propagation offsetting the benefits of parallel processing.</p>
+<p>The findings have practical implications. While multi-agent systems promise specialization and collaboration, poorly designed architectures can perform worse than single agents. The research suggests enterprises should carefully evaluate whether multi-agent approaches are justified for specific use cases rather than assuming more agents equals better performance.</p>
+<h3 id="coding-memory-and-other-advances">Coding, Memory, and Other Advances</h3>
+<p>Ars Technica <a href="https://arstechnica.com/ai/2025/12/the-ars-technica-ai-coding-agent-test-minesweeper-edition/" target="_blank" rel="noopener noreferrer">tested</a>
+ four AI coding agents by tasking them with rebuilding Minesweeper, with explosive results—literally and figuratively. The test revealed significant variability in agent capabilities, with some agents producing working code quickly while others struggled with basic implementation details.</p>
+<p>Vectorize <a href="https://www.prnewswire.com/news-releases/vectorize-breaks-90-on-longmemeval-with-open-source-ai-agent-memory-system-302643146.html" target="_blank" rel="noopener noreferrer">achieved</a>
+ a breakthrough on LongMemEval with an open-source AI agent memory system, addressing a key limitation in agent architectures. Memory systems enable agents to maintain context and learn from past interactions, essential for long-running autonomous workflows.</p>
+<p>Fujitsu <a href="https://global.fujitsu/en-global/technology/key-technologies/news/ta-ai-agent-interview-20251201" target="_blank" rel="noopener noreferrer">outlined</a>
+ its approach to revolutionizing AI agent collaboration, memory, and quality, focusing on enterprise-grade reliability. The company emphasized that production agents need robust collaboration protocols and persistent memory to handle real business workflows.</p>
+<h2 id="enterprise-adoption-promise-meets-reality">Enterprise Adoption: Promise Meets Reality</h2>
+<p>The gap between AI agent ambition and enterprise reality remains substantial. A <a href="https://siliconangle.com/2025/12/11/ai-agents-outpace-enterprise-reality-thecube-research-aiagentbuilder/" target="_blank" rel="noopener noreferrer">study</a>
+ by theCUBE Research found that while <strong>62% of companies</strong> see agents as key for decision-making, trust scores remain low and operational readiness lags behind investment. Trust is the critical factor determining ROI.</p>
+<p>Boston Consulting Group <a href="https://mediabrief.com/autonomous-ai-agents-raise-fresh-enterprise-risks-bcg/" target="_blank" rel="noopener noreferrer">warned</a>
+ that incidents from autonomous AI agents climbed <strong>21%</strong> from 2024 to 2025, raising fresh enterprise risks. The increase comes as companies deploy more agents without adequate governance, creating vulnerabilities around data exposure, unauthorized actions, and compliance failures.</p>
+<h3 id="industry-opportunities">Industry Opportunities</h3>
+<p>Healthcare services represent a <strong>$155 billion market opportunity</strong> for AI agents <a href="https://pitchbook.com/news/reports/q4-2025-pitchbook-analyst-note-healthcare-services-ai-agents-a-155-billion-opportunity" target="_blank" rel="noopener noreferrer">according</a>
+ to PitchBook. Applications include patient management, diagnostics, and administrative workflow automation. Healthcare IT News <a href="https://www.healthcareitnews.com/news/anz/more-ai-agents-launching-patient-management-systems" target="_blank" rel="noopener noreferrer">reports</a>
+ more AI agents launching on patient management systems specifically.</p>
+<p>Financial services present a <strong>$6.54 billion market</strong> by 2035 <a href="https://www.precedenceresearch.com/ai-agents-in-financial-services-market" target="_blank" rel="noopener noreferrer">according</a>
+ to Precedence Research, growing from $1.79 billion in 2025 at a <strong>13.84% CAGR</strong>. LSEG <a href="https://www.lseg.com/en/insights/from-interoperability-to-agents-powering-financial-workflows-with-ai" target="_blank" rel="noopener noreferrer">explored</a>
+ how agents power financial workflows, moving from simple automation to autonomous decision-making.</p>
+<p>Advertising and marketing adoption is immediate and growing. GenAI app spending hit <strong>$824 million</strong> as marketers adopt AI agents <a href="https://ppc.land/genai-app-spending-hits-824-million-as-marketers-adopt-ai-agents/" target="_blank" rel="noopener noreferrer">according</a>
+ to industry analysis. LINE Yahoo deployed advertising agents, and IAS <a href="https://www.adweek.com/media/ias-agent-campaign-optimization/" target="_blank" rel="noopener noreferrer">launched</a>
+ an AI agent for ad campaign optimization.</p>
+<h3 id="real-world-deployments">Real-World Deployments</h3>
+<p>The U.S. Department of Transportation <a href="https://meritalk.com/articles/dot-launches-department-wide-modernization-with-salesforce-ai-agents/" target="_blank" rel="noopener noreferrer">launched</a>
+ department-wide modernization with Salesforce AI agents, representing one of the largest federal agent deployments to date. The German Federal Employment Agency <a href="https://www.capgemini.com/de-de/news/kundenprojekte/the-german-federal-employment-agency-automates-jira-processes-with-ai-agents/" target="_blank" rel="noopener noreferrer">automated</a>
+ Jira processes with AI agents, demonstrating practical application in government operations.</p>
+<p>Salesforce is <a href="https://www.techzine.eu/news/data-management/137141/salesforce-to-upgrade-ai-agents-from-interns-to-experienced-employees/" target="_blank" rel="noopener noreferrer">upgrading</a>
+ its AI agents from &ldquo;interns&rdquo; to experienced employees, pushing a unified data model for safer agents. The company also <a href="https://aibusiness.com/agentic-ai/salesforce-buys-qualified-in-agentic-marketing-push" target="_blank" rel="noopener noreferrer">acquired</a>
+ Qualified in an agentic marketing push, integrating the company&rsquo;s technology into its agent platform.</p>
+<p>SoftBank <a href="https://www.softbank.jp/en/sbnews/entry/20251217_01" target="_blank" rel="noopener noreferrer">reported</a>
+ creating <strong>2.5 million agents</strong> company-wide, while Prosus is building an internal workforce of <strong>30,000 AI agents</strong> by March. Sompo <a href="https://coverager.com/sompo-to-deploy-ai-agents-across-30000-employees/" target="_blank" rel="noopener noreferrer">announced</a>
+ plans to deploy AI agents across 30,000 employees, and Concentrix <a href="https://www.quiverquant.com/news/Concentrix&#43;Corporation&#43;Launches&#43;Emotionally&#43;Aware&#43;Conversational&#43;AI&#43;Agents&#43;to&#43;Enhance&#43;Brand&#43;Experience" target="_blank" rel="noopener noreferrer">launched</a>
+ emotionally aware conversational AI agents for brand experience.</p>
+<p>Novel Energy Solutions is using AI agents from Procore to automate engineering tasks for solar farm development, improving design accuracy and accelerating project timelines. Zepto Cafe <a href="https://www.medianama.com/2025/12/223-zepto-cafe-ai-agent-orders-users/" target="_blank" rel="noopener noreferrer">tested</a>
+ an AI agent that places orders for users, and CaterAi <a href="https://www.globenewswire.com/news-release/2025/12/09/3202456/0/en/Say-Hello-To-CaterAi-The-First-AI-Agent-That-Expertly-Plans-Catering-For-Any-Event-In-Under-5-Minutes.html" target="_blank" rel="noopener noreferrer">launched</a>
+ an AI agent for event catering planning.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Industry</th>
+          <th>Market Size/Projection</th>
+          <th>Timeframe</th>
+          <th>Key Use Cases</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Healthcare Services</strong></td>
+          <td>$155 billion</td>
+          <td>Market opportunity</td>
+          <td>Patient management, diagnostics</td>
+      </tr>
+      <tr>
+          <td><strong>Financial Services</strong></td>
+          <td>$6.54 billion</td>
+          <td>By 2035</td>
+          <td>Fraud detection, trading</td>
+      </tr>
+      <tr>
+          <td><strong>Advertising &amp; Marketing</strong></td>
+          <td>$824M spending</td>
+          <td>Immediate adoption</td>
+          <td>Campaign management, personalization</td>
+      </tr>
+      <tr>
+          <td><strong>Cybersecurity</strong></td>
+          <td>$18/hour vs $60/hour</td>
+          <td>Cost advantage</td>
+          <td>Penetration testing, vulnerability scanning</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="security-and-governance-the-infrastructure-gap">Security and Governance: The Infrastructure Gap</h2>
+<h3 id="security-risks-emerge">Security Risks Emerge</h3>
+<p>Research from SquareX <a href="https://securityboulevard.com/2025/12/news-alert-squarex-research-finds-browser-ai-agents-are-proving-riskier-than-human-employees-2/" target="_blank" rel="noopener noreferrer">found</a>
+ that browser AI agents are proving riskier than human employees for certain attack vectors. Unlike human employees, browser agents aren&rsquo;t subject to security awareness training and can&rsquo;t recognize visual warning signs of phishing attacks. The research focused on OAuth attacks and noted that agents&rsquo; systematic nature makes them vulnerable to exploitation.</p>
+<p>Tenable <a href="https://securitybrief.com.au/story/tenable-hack-of-copilot-ai-agent-exposes-fraud-risks" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ how to hack Microsoft&rsquo;s Copilot AI agent, exposing fraud risks in agentic systems. The hack showed how agents could be manipulated into unauthorized actions, highlighting the need for robust guardrails.</p>
+<p>Okta <a href="https://www.scworld.com/brief/ai-agent-security-is-top-customer-concern-okta-exec-says" target="_blank" rel="noopener noreferrer">reported</a>
+ that AI agent security is the top customer concern, with enterprises worried about data exposure, unauthorized actions, and compliance violations. SC Media <a href="https://www.scworld.com/brief/ai-agent-adoption-to-expose-infrastructure-security-gaps-in-2026" target="_blank" rel="noopener noreferrer">noted</a>
+ that AI agent adoption will expose infrastructure and security gaps in 2026 as companies deploy agents without adequate preparation.</p>
+<h3 id="governance-solutions-emerge">Governance Solutions Emerge</h3>
+<p>OWASP <a href="https://www.aikido.dev/blog/owasp-top-10-agentic-applications" target="_blank" rel="noopener noreferrer">released</a>
+ the <strong>Top 10 for Agentic Applications (2026)</strong>, identifying the highest-impact security risks in autonomous, tool-using AI agent systems. The list addresses novel attack surfaces like Agent Goal Hijack and Tool Misuse that traditional application security models don&rsquo;t cover. Aikido Security <a href="https://www.techrepublic.com/article/news-owasp-ai-agent-risk-list/" target="_blank" rel="noopener noreferrer">contributed</a>
+ research to the effort, noting these risks are already emerging in real systems.</p>
+<p>Veza <a href="https://www.channele2e.com/news/veza-introduces-ai-agent-security-to-govern-and-protect-agentic-ai-at-enterprise-scale" target="_blank" rel="noopener noreferrer">introduced</a>
+ <strong>AI Agent Security</strong>, a product to govern and protect agentic AI at enterprise scale. The company <a href="https://securityboulevard.com/2025/12/veza-extends-reach-to-secure-and-govern-ai-agents/" target="_blank" rel="noopener noreferrer">extended</a>
+ its platform to address agent-specific risks, focusing on identity and privilege management.</p>
+<p>Superagent <a href="https://www.helpnetsecurity.com/2025/12/29/superagent-framework-guardrails-agentic-ai/" target="_blank" rel="noopener noreferrer">launched</a>
+ an open-source framework for guardrails around agentic AI, providing developers with tools to implement safety constraints. Human Security <a href="https://www.scworld.com/brief/human-security-enhances-ai-agent-security-with-amazon-bedrock-agentcore-integration" target="_blank" rel="noopener noreferrer">enhanced</a>
+ AI agent security through Amazon Bedrock AgentCore integration.</p>
+<p>For banking, American Banker <a href="https://www.americanbanker.com/opinion/ai-agents-are-going-to-test-the-limits-of-bank-compliance" target="_blank" rel="noopener noreferrer">argued</a>
+ that &ldquo;Know Your Customer&rdquo; is evolving into &ldquo;Know Your Agent,&rdquo; as financial institutions need to understand not just their customers but also the agents acting on their behalf. Fox Business <a href="https://www.foxbusiness.com/video/6386248671112" target="_blank" rel="noopener noreferrer">reported</a>
+ on the rise of &ldquo;rogue&rdquo; AI agents pushing companies to lock down data.</p>
+<h3 id="consent-and-privacy-questions">Consent and Privacy Questions</h3>
+<p>Microsoft&rsquo;s policy change on Windows 11 AI agent access to personal files <a href="https://www.windowslatest.com/2025/12/17/microsoft-confirms-windows-11-will-ask-for-consent-before-sharing-your-personal-files-with-ai-after-outrage/" target="_blank" rel="noopener noreferrer">sparked</a>
+ user outrage, leading the company to confirm that consent will be required. The incident raised broader questions about agent access to sensitive data.</p>
+<p>Tech Policy Press <a href="https://techpolicy.press/when-an-ai-agent-says-i-agree-whos-consenting" target="_blank" rel="noopener noreferrer">explored</a>
+ the question of when an AI agent says &ldquo;I agree,&rdquo; who&rsquo;s consenting—the user or the agent? As agents make more autonomous decisions, the legal frameworks around consent and authorization will need clarification.</p>
+<p>VentureBeat <a href="https://venturebeat.com/infrastructure/agent-autonomy-without-guardrails-is-an-sre-nightmare" target="_blank" rel="noopener noreferrer">warned</a>
+ that agent autonomy without guardrails creates site reliability engineering nightmares, as unpredictable agent behavior can cascade into system-wide failures.</p>
+<h2 id="market-movers-and-new-entrants">Market Movers and New Entrants</h2>
+<h3 id="product-launches-and-acquisitions">Product Launches and Acquisitions</h3>
+<p><strong>AppZen</strong> <a href="https://www.prnewswire.com/news-releases/appzen-launches-ai-agent-studio-disrupting-outsourcing-with-digital-coworkers-302638435.html" target="_blank" rel="noopener noreferrer">launched</a>
+ <strong>AI Agent Studio</strong>, allowing finance teams to create autonomous agents that act as digital coworkers. During soft launch, companies identified more than <strong>100 high-impact use cases</strong> across travel and expense and accounts payable, with some agents forecast to save hundreds or thousands of hours annually.</p>
+<p><strong>Salesforce</strong> <a href="https://aibusiness.com/agentic-ai/salesforce-buys-qualified-in-agentic-marketing-push" target="_blank" rel="noopener noreferrer">acquired</a>
+ Qualified as part of its agentic marketing push, integrating the company&rsquo;s technology into its agent platform. The company is <a href="https://www.techzine.eu/news/data-management/137141/salesforce-to-upgrade-ai-agents-from-interns-to-experienced-employees/" target="_blank" rel="noopener noreferrer">upgrading</a>
+ AI agents from &ldquo;interns&rdquo; to experienced employees.</p>
+<p><strong>Stripe</strong> <a href="https://smallbiztrends.com/stripe-launches-agentic-commerce-suite-to-simplify-ai-driven-sales/" target="_blank" rel="noopener noreferrer">launched</a>
+ an Agentic Commerce Suite to simplify AI-driven sales, addressing the payment infrastructure needs of agent-based commerce. <strong>Zoovu</strong> <a href="https://www.businesswire.com/news/home/20251211046138/en/Zoovu-Launches-MCP-Server-to-Give-AI-Agents-the-Product-Intelligence-Required-for-Agentic-Commerce" target="_blank" rel="noopener noreferrer">launched</a>
+ an MCP server to give AI agents product intelligence for agentic commerce.</p>
+<p><strong>Certinia</strong> <a href="https://www.cpapracticeadvisor.com/2025/12/13/certinia-2026-winter-release-includes-new-ai-agents-dynamic-playbooks-and-faster-quoting/174234/" target="_blank" rel="noopener noreferrer">released</a>
+ its 2026 Winter Release with new AI agents, dynamic playbooks, and faster quoting. <strong>Dext</strong> <a href="https://www.cpapracticeadvisor.com/2025/12/18/dext-launches-ai-agent-for-bookkeeping-automation/175233/" target="_blank" rel="noopener noreferrer">launched</a>
+ an AI agent for bookkeeping automation. <strong>Zywave</strong> <a href="https://www.insurancejournal.com/news/national/2025/12/17/851445.htm" target="_blank" rel="noopener noreferrer">released</a>
+ a suite of specialized AI agents for insurance.</p>
+<p><strong>IAS</strong> <a href="https://www.adweek.com/media/ias-agent-campaign-optimization/" target="_blank" rel="noopener noreferrer">launched</a>
+ an AI agent for ad campaign optimization, moving beyond verification into optimization. <strong>Bairong</strong> <a href="https://www.prnewswire.com/apac/news-releases/ai-agent-paradigm-shift-bairong-launches-raas-strategy-and-results-cloud-platform-302646829.html" target="_blank" rel="noopener noreferrer">launched</a>
+ a RaaS (Robot as a Service) strategy and Results Cloud Platform. <strong>Infinitus</strong> <a href="https://www.prnewswire.com/news-releases/infinitus-launches-next-generation-clinical-ai-agents-302642848.html" target="_blank" rel="noopener noreferrer">launched</a>
+ next-generation clinical AI agents.</p>
+<p><strong>Fincantieri</strong> <a href="https://www.agenzianova.com/en/news/Fincantieri%27s-new-corporate-website-with-Captain-Agent-IA-revolutionizing-the-group%27s-communications./" target="_blank" rel="noopener noreferrer">launched</a>
+ <strong>captAIn</strong>, an AI agent for corporate communications. <strong>Cerence AI</strong> <a href="https://www.quiverquant.com/news/Cerence&#43;AI&#43;Unveils&#43;New&#43;Conversational&#43;AI&#43;Agents&#43;for&#43;Automotive&#43;Dealerships&#43;and&#43;OEMs&#43;at&#43;CES&#43;2026" target="_blank" rel="noopener noreferrer">unveiled</a>
+ conversational AI agents for automotive dealerships and OEMs at CES 2026.</p>
+<h3 id="industry-partnerships-and-infrastructure">Industry Partnerships and Infrastructure</h3>
+<p><strong>Akamai and Visa</strong> <a href="https://www.retailbiz.com.au/technology/akamai-visa-team-up-to-secure-ai-agent-transactions-for-merchants/" target="_blank" rel="noopener noreferrer">partnered</a>
+ to secure AI agent transactions for merchants, introducing the Trusted Agent Protocol to combat fraud. <strong>Skyfire</strong> <a href="https://www.businesswire.com/news/home/20251218520399/en/Skyfire-Demonstrates-Secure-Agentic-Commerce-Purchase-Using-the-KYAPay-Protocol-and-Visa-Intelligent-Commerce" target="_blank" rel="noopener noreferrer">demonstrated</a>
+ secure agentic commerce using the KYAPay protocol and Visa Intelligent Commerce.</p>
+<p><strong>AIREV and Intel</strong> <a href="https://www.zawya.com/en/press-release/companies-news/airev-and-intel-partner-to-launch-ai-agents-that-run-entirely-on-your-pc-sw71hbo1" target="_blank" rel="noopener noreferrer">partnered</a>
+ to launch AI agents that run entirely on PCs, addressing privacy and latency concerns with cloud-based agents. <strong>Workato</strong> <a href="https://www.businesswire.com/news/home/20251211198989/en/Workato-Partners-with-Confluent-to-Power-AI-Agents-That-Detect-and-Act-in-Real-Time" target="_blank" rel="noopener noreferrer">partnered</a>
+ with Confluent to power AI agents that detect and act in real time.</p>
+<p><strong>FIX Trading Community</strong> <a href="https://www.globaltrading.net/fix-targets-machine-usable-execution-tags-for-ai-agents/" target="_blank" rel="noopener noreferrer">targeted</a>
+ &ldquo;machine-usable&rdquo; execution tags for AI agents, updating financial messaging standards for agentic systems. <strong>Oracle</strong> <a href="https://blogs.oracle.com/ai-and-datascience/announcing-ag-ui-integration-for-agent-spec" target="_blank" rel="noopener noreferrer">announced</a>
+ AG-UI integration for Open Agent Specification, enabling reusable agents with agentic frontends.</p>
+<h3 id="frameworks-and-tools">Frameworks and Tools</h3>
+<p><strong>GitHub</strong> <a href="https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/" target="_blank" rel="noopener noreferrer">published</a>
+ top blog posts on agentic AI, MCP, and spec-driven development. <strong>InfoQ</strong> <a href="https://www.infoq.com/news/2025/12/agent-sandbox-kubernetes/" target="_blank" rel="noopener noreferrer">covered</a>
+ an open-source Agent Sandbox enabling secure deployment of AI agents on Kubernetes.</p>
+<p><strong>The New Stack</strong> <a href="https://thenewstack.io/the-new-operational-stack-from-iac-to-platforms-to-ai-agents/" target="_blank" rel="noopener noreferrer">explored</a>
+ the evolution from IaC to platforms to AI agents, tracing the changing operational stack. <strong>Informatica</strong> <a href="https://www.informatica.com/products/ai-agent-engineering.html" target="_blank" rel="noopener noreferrer">introduced</a>
+ an AI Agent Engineering Platform.</p>
+<p><strong>Notion</strong> <a href="https://www.testingcatalog.com/notion-develops-custom-ai-agents-to-power-your-ai-first-organisation/" target="_blank" rel="noopener noreferrer">developed</a>
+ custom AI agents for AI-first organizations. <strong>ONLYOFFICE</strong> <a href="https://www.makeuseof.com/onlyoffice-desktop-editors-9-2/" target="_blank" rel="noopener noreferrer">released</a>
+ Desktop Editors 9.2 with an AI agent built in.</p>
+<p><strong>Tangentia</strong> <a href="https://www.digitalcommerce360.com/2025/12/23/tangentia-ai-agent-edi-platform-automate-error-handling/" target="_blank" rel="noopener noreferrer">added</a>
+ an AI agent to its EDI platform to automate error handling. <strong>Patronus AI</strong> <a href="https://www.engineering.com/patronus-ai-introduces-generative-simulators-for-agent-testing/" target="_blank" rel="noopener noreferrer">introduced</a>
+ generative simulators for agent testing.</p>
+<h3 id="regional-developments">Regional Developments</h3>
+<p><strong>Japan&rsquo;s</strong> AI agent ecosystem <a href="https://www.cryptopolitan.com/japans-ai-agents-looks-nothing-like-silicon-valleys/" target="_blank" rel="noopener noreferrer">looks</a>
+ distinct from Silicon Valley&rsquo;s, with different priorities and implementation patterns. GPTBots <a href="https://www.globenewswire.com/news-release/2025/12/18/3207518/0/en/GPTBots-Presents-Its-Next-Gen-AI-DX-Solutions-for-Japanese-Enterprises-at-AI-Agent-Expo" target="_blank" rel="noopener noreferrer">presented</a>
+ next-gen AI DX solutions for Japanese enterprises at AI Agent Expo.</p>
+<p><strong>China&rsquo;s</strong> Z.ai <a href="https://tech.yahoo.com/ai/meta-ai/articles/chinas-z-ai-open-sources-093000788.html" target="_blank" rel="noopener noreferrer">open-sourced</a>
+ an AI agent tool for phones after ByteDance privacy backlash. <strong>Zhipu AI</strong> <a href="https://technode.com/2025/12/09/zhipu-ai-open-sources-autoglm-an-ai-agent-model-capable-of-full-phone-operation/" target="_blank" rel="noopener noreferrer">open-sourced</a>
+ AutoGLM, an AI agent model capable of full phone operation.</p>
+<h3 id="books-and-education">Books and Education</h3>
+<p><strong>&ldquo;AI Agents at Work&rdquo;</strong> <a href="https://www.tue.nl/en/our-university/news/book-launch-ai-agents-at-work-the-definitive-practice-guide-for-leaders/" target="_blank" rel="noopener noreferrer">launched</a>
+ as a practice guide for leaders. <strong>Kaggle and Google</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap/" target="_blank" rel="noopener noreferrer">hosted</a>
+ a 5-Day AI Agents Intensive Course with <strong>over 1.5 million learners</strong>, generating <strong>over 11,000 capstone project submissions</strong>.</p>
+<p><strong>SaaStr</strong> <a href="https://www.saastr.com/we-deployed-20-ai-agents-and-replaced-our-entire-sdr-team-heres-what-actually-works-video-pod/" target="_blank" rel="noopener noreferrer">published</a>
+ results from replacing its entire human SDR team with <strong>over 20 AI agents</strong>, which sent <strong>over 60,000 emails</strong> and booked <strong>130+ meetings</strong>. The company also <a href="https://www.saastr.com/how-we-use-20-ai-agents-for-marketing-go-to-market-with-saastrs-ceo-and-chief-ai-officer/" target="_blank" rel="noopener noreferrer">shared</a>
+ how it uses 20+ AI agents for marketing and go-to-market.</p>
+<h2 id="looking-ahead-what-2026-holds-for-ai-agents">Looking Ahead: What 2026 Holds for AI Agents</h2>
+<p>The $2 billion Manus acquisition validates the agentic AI market but also accelerates competitive pressure. Standardization efforts through the Agentic AI Foundation suggest the industry recognizes fragmentation is slowing adoption. Platform announcements from all major players mean 2026 will be about execution, not announcements.</p>
+<p>Research shows agents can match human performance in specific domains—ARTEMIS outperforming human penetration testers, AILA conducting real experiments, Oxford&rsquo;s multi-agent cancer care assistant—but also reveals real limitations. The multi-agent paradox research from Google and MIT demonstrates that more agents don&rsquo;t automatically mean better results. Microsoft&rsquo;s selling challenges, with agents failing real-world tasks at high rates, underscore the gap between demos and production.</p>
+<p>Security concerns are the gating factor for enterprise adoption. SquareX research showing browser AI agents are riskier than human employees, Tenable&rsquo;s Copilot hack exposing fraud risks, and BCG&rsquo;s warning of a 21% increase in incidents all point to the same reality: security infrastructure hasn&rsquo;t caught up to agent capabilities.</p>
+<p>The key question for 2026: can agents move from impressive demos to reliable, secure, production-ready systems? Progress is real but so are the challenges. Enterprises need agents that work consistently within existing workflows, not standalone tools that require rethinking entire processes. They need governance frameworks that prevent unauthorized actions while preserving autonomy. They need security models that address agent-specific risks like goal hijacking and tool misuse.</p>
+<p>The year ahead will likely see increased focus on agent reliability, measurement, and governance. Companies that can demonstrate production-grade performance with robust security will pull ahead. Those that continue shipping demos masquerading as products will face enterprise pushback.</p>
+<p>Agentic AI is moving from experimental to essential, but the path forward requires solving real problems in reliability and security, not adding more features. The $2 billion bet on Manus suggests the market believes those problems are solvable. 2026 will test that belief.</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Record Qubits, Error Correction, and GPU Integration: Quantum Computing in October</title>
       <link>https://cchen.me/newsletter/2025-10-31-quantum-computing/</link>
@@ -243,6 +670,366 @@
 })();
 </script>
 
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>AI Agents Enter the Workforce: OpenAI&#39;s Operator, Google&#39;s Co-Scientist, and Enterprise Race</title>
+      <link>https://cchen.me/newsletter/2025-02-28-ai-agent/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://cchen.me/newsletter/2025-02-28-ai-agent/</guid>
+      <description>&lt;p&gt;This comprehensive review covers &lt;strong&gt;118 articles&lt;/strong&gt; published in &lt;strong&gt;February 2025&lt;/strong&gt;, surveying the rapid emergence of AI agents as autonomous digital workers. &lt;strong&gt;OpenAI&lt;/strong&gt; launched &lt;strong&gt;Operator&lt;/strong&gt;, an AI agent that autonomously browses the web and completes tasks. &lt;strong&gt;Google&lt;/strong&gt; unveiled an &lt;strong&gt;AI co-scientist&lt;/strong&gt; for research. Meanwhile, &lt;strong&gt;Workday&lt;/strong&gt;, &lt;strong&gt;ServiceNow&lt;/strong&gt;, and &lt;strong&gt;SAP&lt;/strong&gt; are racing to build infrastructure to manage fleets of AI agents as digital employees.&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;key-metrics&#34; class=&#34;newsletter-metrics-container&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+    const data = 
+{
+&#34;metrics&#34;: [
+{&#34;label&#34;: &#34;Operator Status&#34;, &#34;value&#34;: &#34;Launched&#34;, &#34;context&#34;: &#34;OpenAI&#39;s web-browsing agent&#34;},
+{&#34;label&#34;: &#34;Olas Funding&#34;, &#34;value&#34;: &#34;$13.8M&#34;, &#34;context&#34;: &#34;For AI agent store&#34;},
+{&#34;label&#34;: &#34;Christie&#39;s Sales&#34;, &#34;value&#34;: &#34;$100M&#34;, &#34;context&#34;: &#34;Via AI agents&#34;},
+{&#34;label&#34;: &#34;India Deployments&#34;, &#34;value&#34;: &#34;40%&#34;, &#34;context&#34;: &#34;Of global AI agent deployments&#34;}
+]
+}
+;
+    const containerId = &#34;key-metrics&#34;;
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === &#39;loading&#39;) {
+        document.addEventListener(&#39;DOMContentLoaded&#39;, init);
+    } else {
+        init();
+    }
+})();
+&lt;/script&gt;
+
+&lt;h2 id=&#34;the-big-launches&#34;&gt;The Big Launches&lt;/h2&gt;
+&lt;p&gt;OpenAI and Google led February&amp;rsquo;s product announcements, introducing AI agents that autonomously navigate the web and conduct research.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This comprehensive review covers <strong>118 articles</strong> published in <strong>February 2025</strong>, surveying the rapid emergence of AI agents as autonomous digital workers. <strong>OpenAI</strong> launched <strong>Operator</strong>, an AI agent that autonomously browses the web and completes tasks. <strong>Google</strong> unveiled an <strong>AI co-scientist</strong> for research. Meanwhile, <strong>Workday</strong>, <strong>ServiceNow</strong>, and <strong>SAP</strong> are racing to build infrastructure to manage fleets of AI agents as digital employees.</p>
+
+
+
+
+<div id="key-metrics" class="newsletter-metrics-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"metrics": [
+{"label": "Operator Status", "value": "Launched", "context": "OpenAI's web-browsing agent"},
+{"label": "Olas Funding", "value": "$13.8M", "context": "For AI agent store"},
+{"label": "Christie's Sales", "value": "$100M", "context": "Via AI agents"},
+{"label": "India Deployments", "value": "40%", "context": "Of global AI agent deployments"}
+]
+}
+;
+    const containerId = "key-metrics";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createMetricCards(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="the-big-launches">The Big Launches</h2>
+<p>OpenAI and Google led February&rsquo;s product announcements, introducing AI agents that autonomously navigate the web and conduct research.</p>
+<p><strong>OpenAI launched Operator</strong>, an AI agent that browses the web and completes tasks on behalf of users. Unlike traditional chatbots, Operator autonomously navigates websites, fills out forms, and clicks buttons. The agent <a href="https://techcrunch.com/2025/02/21/openai-rolls-out-its-ai-agent-operator-in-several-countries/" target="_blank" rel="noopener noreferrer">rolled out to ChatGPT Pro users</a>
+ in multiple countries in February, <a href="https://www.engadget.com/ai/chatgpts-ai-agent-operator-is-now-available-for-most-pro-users-133050651.html" target="_blank" rel="noopener noreferrer">available for most Pro users</a>
+ at the $200/month tier. Operator uses a computer-vision model to &ldquo;see&rdquo; web pages and take action.</p>
+<p>OpenAI also announced <strong>Deep Research</strong>, an AI agent powered by the o3 model that conducts multi-step research tasks. The agent <a href="https://venturebeat.com/ai/openais-surprise-new-o3-powered-deep-research-shows-the-power-of-the-ai-agent-era" target="_blank" rel="noopener noreferrer">achieves a 26.6% accuracy</a>
+ on &ldquo;Humanity&rsquo;s Last Exam&rdquo; benchmark across 3,000 questions and 100 subjects. Deep Research browses the web for 5 to 30 minutes, synthesizing information from hundreds of sources into comprehensive reports with citations. OpenAI CEO Sam Altman described it as &ldquo;like a superpower; experts on demand!&rdquo; The capability launched first for Pro users with <a href="https://www.maginative.com/article/openai-unveils-deep-research-an-ai-agent-that-conducts-multi-step-research-tasks/" target="_blank" rel="noopener noreferrer">100 queries per month</a>
+, with expansion planned to Plus, Team, and Enterprise tiers.</p>
+<p><strong>Google introduced an AI co-scientist</strong>, a multi-agent system built with Gemini 2.0 designed to help scientists generate novel hypotheses and research proposals. The system uses specialized agents—Generation, Reflection, Ranking, Evolution, Proximity, and Meta-review—that mirror the scientific method. In biomedical applications, the AI co-scientist <a href="https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/" target="_blank" rel="noopener noreferrer">proposed three novel drug repurposing candidates</a>
+ for acute myeloid leukemia that were validated in laboratory experiments. The company is opening access through a Trusted Tester Program for research organizations.</p>
+<p>Google also launched <strong>&ldquo;Ask for Me,&rdquo;</strong> an experimental AI agent that calls businesses on a user&rsquo;s behalf. Currently available through Search Labs in the U.S., the agent <a href="https://www.cxtoday.com/contact-center/google-launches-an-ai-agent-that-will-call-customer-service-for-you/" target="_blank" rel="noopener noreferrer">calls mechanics and nail salons</a>
+ to inquire about pricing and availability. This represents a potential evolution of Google&rsquo;s discontinued Duplex technology and signals a move toward machine-to-machine customer service interactions. Gartner predicts that <a href="https://www.cxtoday.com/contact-center/google-launches-an-ai-agent-that-will-call-customer-service-for-you/" target="_blank" rel="noopener noreferrer">20% of contact center traffic</a>
+ could come from machine customers by 2026.</p>
+<p>The browser-use agent space is seeing competition. <strong>Convergence&rsquo;s Proxy</strong> agent <a href="https://venturebeat.com/business/the-rise-of-browser-use-agents-why-convergences-proxy-is-beating-openais-operator" target="_blank" rel="noopener noreferrer">scored 88% on the WebVoyager benchmark</a>
+, compared to Operator&rsquo;s 87%. Proxy offers an unlimited plan at $20/month versus Operator&rsquo;s $200/month Pro tier, though OpenAI&rsquo;s agent benefits from integration with the broader ChatGPT ecosystem.</p>
+
+
+
+
+<div id="week-timeline" class="newsletter-timeline-container"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"events": [
+{"date": "Early February", "title": "OpenAI announces Deep Research mode", "description": "New o3-powered research agent for multi-step tasks"},
+{"date": "Early February", "title": "Google launches AI co-scientist", "description": "Multi-agent system for scientific research"},
+{"date": "Mid-February", "title": "Operator rolls out to Pro users", "description": "OpenAI's browser-use agent expands internationally"},
+{"date": "Mid-February", "title": "Workday unveils agent management system", "description": "Agent System of Record for digital workforce"},
+{"date": "Late February", "title": "Olas launches $13.8M-backed agent store", "description": "First decentralized AI agent marketplace"},
+{"date": "Late February", "title": "Salesforce notes 'modest' agent returns", "description": "Revenue forecast falls short of analyst expectations"}
+]
+}
+;
+    const containerId = "week-timeline";
+
+    function init() {
+        if (window.NewsletterViz) {
+            NewsletterViz.createTimeline(containerId, data);
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="enterprise-platform-wars">Enterprise Platform Wars</h2>
+<p>The most significant trend in February was the race to build AI agent management infrastructure. <strong>Workday</strong>, <strong>ServiceNow</strong>, and <strong>SAP</strong> are positioning themselves as the systems of record for managing AI agents as digital employees.</p>
+<p><strong>Workday unveiled the Workday Agent System of Record</strong>, a platform to help organizations manage their entire fleet of AI agents. The system provides tools for governance, management, and optimization of digital workforces, including onboarding, role definition, cost tracking, and compliance. <a href="https://salesforcedevops.net/index.php/2025/02/20/ai-agents-take-center-stage-workday-servicenow-and-sap-challenge-agentforce/" target="_blank" rel="noopener noreferrer">Workday processes over 800 billion transactions</a>
+ annually through its Illuminate AI platform, giving it deep visibility into workforce operations.</p>
+<p>Workday also introduced <strong>role-based AI agents</strong> with configurable skills that can perform hundreds of individual tasks. New agents announced include contract, payroll, financial auditing, and policy agents. The approach treats AI agents like employees in an HR system—a shift from &ldquo;using AI&rdquo; to &ldquo;managing a workforce of AI agents.&rdquo; Workday <a href="https://joshbersin.com/2025/02/workday-makes-a-play-to-manage-your-ai-agents/" target="_blank" rel="noopener noreferrer">serves as the system of record</a>
+ for 10,500 companies worldwide.</p>
+<p>&ldquo;The workforce of the future will include both humans and AI agents,&rdquo; said <a href="https://futurecio.tech/workday-unveils-new-system-to-manage-ai-agents/" target="_blank" rel="noopener noreferrer">Aneel Bhusri</a>
+, Workday&rsquo;s co-founder and executive chair. &ldquo;Businesses that don&rsquo;t learn to manage this incredibly complex reality will fall quickly behind.&rdquo;</p>
+<p><strong>SAP unleashed several &ldquo;ready-to-use&rdquo; AI agents</strong> powered by its Joule virtual assistant. The agents are available across customer service, sales, and finance, including a Cash Collection agent that collaborates across departments to resolve disputes. SAP also introduced a <strong>custom agent builder</strong> in Joule Studio, allowing citizen developers to create tailored AI agents using a no-code tool. The company is positioning Joule as an &ldquo;AI orchestrator&rdquo; that can assemble teams of agents to perform complex end-to-end processes.</p>
+<p><strong>ServiceNow is positioning itself as the &ldquo;control tower&rdquo;</strong> for AI agents across IT, customer service, and HR workflows. Its AI Agent Orchestrator and AI Agent Studio enable organizations to build and manage agents with real-time access to enterprise data through the Workflow Data Fabric. The focus is on cross-functional enterprise automation, particularly in IT service management.</p>
+<p><strong>Oracle announced AI agents for HR</strong> through its Fusion Cloud HCM suite. The agents help HR leaders reshape the employee experience by automating routine tasks and providing intelligent recommendations. Oracle also expanded its B2C Service Center with <strong>Agent Suggestions powered by generative AI</strong>, allowing live agents to receive contextually relevant suggestions from multiple data sources including OCI Generative AI, Azure OpenAI, and custom REST endpoints.</p>
+<p>The competition is intense. Salesforce, which announced Agentforce 2.0 in December 2024, <a href="https://www.bloomberg.com/news/articles/2025-02-26/salesforce-gives-tepid-growth-outlook-dashing-ai-agent-hopes" target="_blank" rel="noopener noreferrer">issued a revenue forecast</a>
+ that fell short of analyst expectations, with projected revenue of $40.5 billion to $40.9 billion for fiscal year 2026 versus the $41.5 billion estimate. This tempered enthusiasm about AI agent returns, with <a href="https://www.cfodive.com/news/salesforce-expects-ai-agent-push-yield-modest-returns/741201/" target="_blank" rel="noopener noreferrer">CFO Dive reporting</a>
+ that Salesforce expects &ldquo;modest&rdquo; returns from its AI agent push this year.</p>
+
+
+
+
+
+
+<div id="platform-announcements" class="echarts-container" style="height: 400px;"></div>
+
+<script>
+(function() {
+    const data = 
+{
+"title": "AI Agent Platform Announcements by Company",
+"categories": ["Workday", "Google", "Microsoft", "SAP", "Oracle", "ServiceNow"],
+"series": [{"name": "Announcements", "data": [6, 5, 4, 3, 2, 2]}],
+"yAxisLabel": "Count"
+}
+;
+    const type = "bar";
+    const containerId = "platform-announcements";
+
+    
+    function init() {
+        if (window.NewsletterViz) {
+            switch(type) {
+                case 'bar':
+                    NewsletterViz.createBarChart(containerId, data);
+                    break;
+                case 'line':
+                    NewsletterViz.createLineChart(containerId, data);
+                    break;
+                case 'pie':
+                    NewsletterViz.createPieChart(containerId, data);
+                    break;
+            }
+        } else {
+            setTimeout(init, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+<h2 id="company-rollouts">Company Rollouts</h2>
+<p>Enterprises are deploying AI agents across diverse sectors, with concrete results emerging in healthcare, financial services, customer service, and logistics.</p>
+<h3 id="healthcare">Healthcare</h3>
+<p><strong>Innovaccer launched a suite of AI agents called &ldquo;Agents of Care&rdquo;</strong> designed to automate repetitive administrative tasks that contribute to clinician burnout. The agents handle scheduling, patient intake, referrals, and 24-hour support for patient inquiries. One agent conducts voice-activated protocol intake calls, asking patients questions about their emergency room visit and scheduling follow-ups. A referral agent connects patients with specialists and manages appointment logistics.</p>
+<p>The rollout comes amid a projected <a href="https://www.cnbc.com/2025/02/17/innovaccer-launches-ai-agents-for-doctors-hospitals-to-fix-burnout.html" target="_blank" rel="noopener noreferrer">shortage of 100,000 healthcare workers</a>
+ by 2028, according to consulting firm Mercer. Clinicians spend nearly nine hours per week on documentation alone, according to a Google Cloud study. Innovaccer, which recently raised $275 million in funding from investors including Generation Investment Management and Microsoft&rsquo;s M12, is testing the agents at five health systems with general availability planned in two to three months.</p>
+<h3 id="financial-services">Financial Services</h3>
+<p><strong>BNY Mellon is managing &ldquo;armies of AI agents&rdquo;</strong> through its Eliza tool, an open-source system that enables multi-agent negotiations. The bank, America&rsquo;s oldest, has deployed AI agents that can <a href="https://venturebeat.com/ai/how-big-u-s-bank-bny-manages-armies-of-ai-agents" target="_blank" rel="noopener noreferrer">negotiate with each other</a>
+ to optimize internal processes. The system began development in 2023 and was released in 2024, with plans to upgrade to Eliza 2.0.</p>
+<p><strong>Goldman Sachs and Capital One are preparing for self-driving AI agents</strong>, according to American Banker. The financial institutions are exploring how agents can automate workflows while maintaining compliance in highly regulated environments. <strong>Routable added a fraud-detecting AI agent</strong> to its AP automation platform, identifying suspicious invoices and payment anomalies.</p>
+<h3 id="customer-service">Customer Service</h3>
+<p><strong>Cresta announced rapidly scaling AI voice agents in production</strong>, with strong results from deployments at Brinks Home Security. The AI Agent combines cutting-edge language models with business logic to deliver empathetic, human-like conversations that resolve complex issues. Brinks Home reported a <a href="https://www.prnewswire.com/news-releases/cresta-announces-rapidly-scaling-ai-voice-agents-in-production-302386857.html" target="_blank" rel="noopener noreferrer">30-point increase in Net Promoter Score</a>
+ following the deployment.</p>
+<p><strong>Jotform launched AI Agents</strong> to transform customer service with a no-code solution. The platform enables organizations to deploy AI-powered virtual agents that manage inquiries and guide users through complex processes like booking, onboarding, and appointment scheduling. Jotform has over <a href="https://www.prnewswire.com/news-releases/jotform-announces-ai-agents-to-transform-customer-service-302382540.html" target="_blank" rel="noopener noreferrer">30 million users worldwide</a>
+.</p>
+<p><strong>HubSpot&rsquo;s Agent.ai platform raced past 500,000 users</strong> after launching at INBOUND 2024. The platform, founded by HubSpot CTO Dharmesh Shah, grew from 250,000 users at the start of 2025, demonstrating rapid adoption. More than 5,000 people have used the low-code tool to build custom agents, and users have submitted 13,000 ratings and reviews with an average of 3.99 stars.</p>
+<h3 id="real-estate">Real Estate</h3>
+<p><strong>Christie&rsquo;s is using AI agents to sell real estate</strong> and has generated <strong>$100 million in sales</strong> through the technology, according to Fox Business. The real estate giant&rsquo;s Porta da Frente division has deployed agents to handle property transactions, demonstrating concrete ROI from AI agent adoption.</p>
+<h3 id="telecom-and-logistics">Telecom and Logistics</h3>
+<p><strong>Deutsche Telekom partnered with Google Cloud</strong> on agentic AI for autonomous networks. The collaboration aims to develop AI agents that can manage network operations autonomously, improving efficiency and reducing manual intervention.</p>
+<p><strong>FourKites unveiled Tracy &amp; Sam</strong>, two AI agents for supply chain efficiency. Tracy handles track and trace functions, automating repetitive tasks 24/7 and proactively contacting carriers to ensure data accuracy. Sam focuses on supplier collaboration, processing purchase orders and invoices. Early adopter <strong>Unilever reported improvements within four weeks</strong> of implementing Tracy, with the agent helping exception management and tracking quality. FourKites claims the Digital Workforce can <a href="https://itbrief.asia/story/fourkites-unveils-ai-agents-tracy-sam-for-efficiency-boost" target="_blank" rel="noopener noreferrer">increase shipment handling by 40%</a>
+ and automate up to 80% of routine tasks.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Sector</th>
+          <th>Company</th>
+          <th>Use Case</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Healthcare</td>
+          <td>Innovaccer</td>
+          <td>Scheduling, patient intake, referrals</td>
+          <td>Launched, testing at 5 systems</td>
+      </tr>
+      <tr>
+          <td>Financial Services</td>
+          <td>BNY Mellon</td>
+          <td>Managing agent fleets, multi-agent negotiations</td>
+          <td>In production</td>
+      </tr>
+      <tr>
+          <td>Real Estate</td>
+          <td>Christie&rsquo;s</td>
+          <td>Property sales</td>
+          <td>$100M in sales</td>
+      </tr>
+      <tr>
+          <td>Customer Service</td>
+          <td>Cresta</td>
+          <td>Voice agents with Brinks Home</td>
+          <td>Scaling in production</td>
+      </tr>
+      <tr>
+          <td>Customer Service</td>
+          <td>HubSpot/Agent.ai</td>
+          <td>Network of autonomous agents</td>
+          <td>500,000+ users</td>
+      </tr>
+      <tr>
+          <td>Telecom</td>
+          <td>Deutsche Telekom</td>
+          <td>Network operations with Google Cloud</td>
+          <td>Pilot</td>
+      </tr>
+      <tr>
+          <td>Logistics</td>
+          <td>FourKites</td>
+          <td>Tracy &amp; Sam efficiency agents</td>
+          <td>Launched</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="developer-tools--infrastructure">Developer Tools &amp; Infrastructure</h2>
+<p>A new distribution model is emerging: AI agent marketplaces. Cloud platforms are also making it easier to build agents, and developer tools are adding agent capabilities.</p>
+<h3 id="marketplaces--stores">Marketplaces &amp; Stores</h3>
+<p><strong>Olas launched the first-ever AI agent store</strong> with $13.8 million in backing. The decentralized marketplace enables developers to publish and monetize AI agents, similar to app stores. The funding <a href="https://venturebeat.com/business/olas-launches-first-ever-ai-agent-store-with-13-8m-backing" target="_blank" rel="noopener noreferrer">raised by Olas</a>
+ aims to accelerate the development of an ecosystem where agents can be discovered, composed, and deployed.</p>
+<p><strong>Enso launched an AI agent marketplace</strong> in partnership with LangChain. The platform offers pre-built agents for business tasks, enabling organizations to deploy AI automation without building from scratch.</p>
+<h3 id="cloud-platforms">Cloud Platforms</h3>
+<p><strong>Microsoft Azure announced Azure AI Agent Service</strong> in public preview, available through AI Foundry SDK and Portal. The service enables developers to build secure, stateful, autonomous AI agents in code-first environments. Microsoft also unveiled <strong>GPT-4.5</strong>, the latest general-purpose model, alongside specialized models including Phi-4, Phi-4-Vision, Phi-4-Coding, and Phi-4-Audio. The Azure AI Foundry model library now exceeds <a href="https://azure.microsoft.com/en-us/blog/announcing-new-models-customization-tools-and-enterprise-agent-upgrades-in-azure-ai-foundry/" target="_blank" rel="noopener noreferrer">1,800 offerings</a>
+.</p>
+<p><strong>Amazon Web Services (AWS) introduced Amazon Q Developer Agents</strong>, streamlining development with AI-powered coding assistance. AWS also published guidance on building agentic AI solutions with DeepSeek-R1, CrewAI, and Amazon SageMaker AI.</p>
+<p><strong>Google Cloud announced tools to build scalable AI agents</strong> with Langbase and the Gemini API. The platform enables developers to create agents that leverage Gemini 2.0 for complex reasoning tasks.</p>
+<p><strong>Snowflake launched AI agents powered by Anthropic&rsquo;s Claude</strong>, integrating the large language model into its data cloud platform. The agents can analyze data and generate insights within Snowflake&rsquo;s infrastructure.</p>
+<p><strong>Zoho Corporation announced Zia Agents</strong>, a platform supporting autonomous agents across its portfolio of 100+ products. Zia Agents, Agent Studio, and Agent Marketplace empower enterprises to access, build, and distribute intelligent digital agents. The company, which <a href="https://www.businesswire.com/news/home/20250204066995/en/Zoho-Corporation-Announces-Zia-Agents-AI-Platform-Supporting-Autonomous-Agents-Across-Organizations-Broad-Portfolio" target="_blank" rel="noopener noreferrer">onboarded 110,000 new customers</a>
+ in 2024, is previewing pre-built, task-specific agents that will deploy across its combined portfolio.</p>
+<h3 id="developer-tools">Developer Tools</h3>
+<p><strong>GitHub Copilot unveiled &ldquo;The agent awakens,&rdquo;</strong> adding agent capabilities to the development platform. The upgrade enables Copilot to handle more complex coding workflows autonomously.</p>
+<p><strong>Postman introduced AI Agent Builder</strong> with three key features: visual agent design, testing, and deployment. The tool helps developers create agents that interact with APIs.</p>
+<p><strong>Docker added agent capabilities</strong> for containerized applications, enabling AI-driven operations within its platform.</p>
+<h3 id="infrastructure-considerations">Infrastructure Considerations</h3>
+<p>The infrastructure stack for AI agents is evolving. The New Stack reported on <a href="https://thenewstack.io/why-ai-agents-need-an-operational-database/" target="_blank" rel="noopener noreferrer">why AI agents need an operational database</a>
+, highlighting the need for databases that can handle the state management, transaction consistency, and real-time requirements of agentic workloads.</p>
+<p>Cisco&rsquo;s Outshift group predicted that <a href="https://venturebeat.com/ai/20000-ai-agents-per-company-how-will-them-all-work-together/" target="_blank" rel="noopener noreferrer">average-size organizations will deploy 20,000 AI agents</a>
+, with enterprises handling hundreds of thousands. This has sparked discussion of an &ldquo;Internet of Agents&rdquo;—an open, interoperable framework for agent-to-agent communication.</p>
+<h2 id="research-and-innovation">Research and Innovation</h2>
+<p>Research institutions and companies are exploring novel applications of AI agents, from robotics to chip design.</p>
+<p><strong>Microsoft Research introduced Magma</strong>, an AI foundation model that combines visual and language processing to control both software interfaces and robotic systems. Unlike prior systems requiring separate models for perception and control, Magma integrates these abilities. The model scored <a href="https://arstechnica.com/ai/2025/02/microsofts-new-ai-agent-can-control-software-and-robots/" target="_blank" rel="noopener noreferrer">80.0 on the VQAv2 benchmark</a>
+, higher than GPT-4V&rsquo;s 77.2, and achieved 87.4 on the POPE benchmark. Microsoft plans to release the code publicly on GitHub.</p>
+<p><strong>NVIDIA introduced Marco</strong>, a multi-AI agent framework for chip design. The configurable graph-based system enables multiple agents to collaborate on complex chip design tasks, representing a novel application of agentic AI in semiconductor engineering.</p>
+<p><strong>University of Oulu researchers developed MAI</strong> (metacognitive AI agent), an AI tutor that taught physics to 12-13-year-old students in Finland. Unlike traditional AI applications that provide ready-made answers, MAI supports independent problem-solving by prompting students to think. The pilot found that students &ldquo;appreciated MAI&rsquo;s prompting feature&rdquo; and that the agent helped group work dynamics.</p>
+<p><strong>Napkin AI launched a &lsquo;design agency&rsquo; of AI agents</strong> that generates professional graphics from text prompts in under five seconds. The company <a href="https://venturebeat.com/business/napkin-vertical-ai-agents-design" target="_blank" rel="noopener noreferrer">doubled its user base to 2 million</a>
+ in six weeks. The platform uses a team of specialized AI agents—an orchestrator LLM assigns tasks to styling, rendering, and layout agents—demonstrating a vertical approach to agentic AI.</p>
+<p><strong>Logie AI launched &ldquo;Influencer&rsquo;s Agent Army&rdquo;</strong> for affiliate marketing, automating influencer campaign management at scale.</p>
+<p><strong>Various researchers are exploring car-buying agents</strong>, AI agents that would handle vehicle research, pricing negotiation, and purchase. Computerworld reported on <a href="https://www.computerworld.com/article/3822146/an-ai-agent-could-help-you-buy-your-next-car.html" target="_blank" rel="noopener noreferrer">how an AI agent could help you buy your next car</a>
+.</p>
+<p><strong>Microsoft published ExACT</strong> (Improving AI agents&rsquo; decision-making via test-time compute scaling), a research framework for enhancing agent performance through increased computational investment during task execution.</p>
+<h2 id="challenges-and-concerns">Challenges and Concerns</h2>
+<p>While AI agents are advancing rapidly, researchers and practitioners are raising important concerns about deployment, safety, and societal impact.</p>
+<p><strong>Researchers warned that fully autonomous AI agents &ldquo;should not be deployed.&rdquo;</strong> A paper reviewed in Process Excellence Network stated, &ldquo;We find no clear benefit of fully autonomous AI agents, but many foreseeable harms from ceding full human control.&rdquo; The researchers found that risks increase with system autonomy, particularly safety risks that affect human life. They recommended adoption of agent levels, human control mechanisms, and safety verification.</p>
+<p><strong>A Microsoft and Carnegie Mellon University study</strong> found that some workers risk becoming overly reliant on generative AI, with problem-solving skills declining as a result. The survey of 319 knowledge workers collected 936 examples of AI use, finding that higher confidence in AI correlates with less critical thinking.</p>
+<p><strong>Job displacement concerns</strong> are emerging. Microsoft executive Georg Glantschnig <a href="https://www.cfodive.com/news/ai-agents-cause-finance-jobs-disappear-microsoft-exec/739122/" target="_blank" rel="noopener noreferrer">told CFO Dive</a>
+ that some finance jobs may &ldquo;disappear&rdquo; as AI agents automate labor-intensive processes like financial close. However, he noted that new roles like &ldquo;agent business administrators&rdquo; are emerging.</p>
+<p><strong>Security risks are multiplying.</strong> Malwarebytes <a href="https://www.malwarebytes.com/blog/news/2025/02/new-ai-agents-could-hold-people-for-ransom-in-2025" target="_blank" rel="noopener noreferrer">reported on new AI agents</a>
+ that could hold people for ransom, representing an evolution of ransomware threats.</p>
+<p><strong>Business model questions persist.</strong> Reuters <a href="https://www.reuters.com/breakingviews/ai-agents-have-clear-mission-hazy-business-model-2025-02-20/" target="_blank" rel="noopener noreferrer">Breakingviews analysis</a>
+ noted that AI agents have a clear mission but hazy business models. Investors see vast potential—Ark Investments estimates AI agents could enable $9 trillion of global e-commerce sales by 2030—but monetization paths remain uncertain.</p>
+<p><strong>Confusion about what agents actually are</strong> persists. UC Today <a href="https://www.uctoday.com/unified-communications/ai-agent-confusion-from-digital-assistants-to-autonomous-co-workers/" target="_blank" rel="noopener noreferrer">documented &ldquo;AI Agent Confusion&rdquo;</a>
+, noting that the term ranges from simple chatbots to fully autonomous systems, making it difficult for enterprises to evaluate solutions.</p>
+<p><strong>UX concerns are growing.</strong> Built In <a href="https://builtin.com/articles/prepare-ai-agents-mainstream" target="_blank" rel="noopener noreferrer">identified three things needed</a>
+ before AI agents go mainstream: improved trust and transparency, better error handling, and seamless integration into existing workflows.</p>
+<p><strong>Privacy issues</strong> are emerging. SC Media <a href="https://www.scworld.com/perspective/five-privacy-concerns-around-agentic-ai" target="_blank" rel="noopener noreferrer">outlined five privacy concerns</a>
+ around agentic AI, including data collection, surveillance, and the potential for agents to expose sensitive information.</p>
+<p><strong>Responsible AI is becoming a priority.</strong> IBM <a href="https://in.newsroom.ibm.com/The-Rise-of-Responsible-AI-Agents" target="_blank" rel="noopener noreferrer">published &ldquo;The Rise of Responsible AI Agents&rdquo;</a>
+, emphasizing the need for ethical development practices.</p>
+<p><strong>Legal perspectives</strong> are emerging. Above the Law <a href="https://abovethelaw.com/2025/02/agents-vs-agentic-ai-what-in-house-counsel-need-to-know-about-these-2-ai-frontiers/" target="_blank" rel="noopener noreferrer">published guidance for in-house counsel</a>
+ on agents versus agentic AI, highlighting legal considerations for enterprise adoption.</p>
+<p><strong>Implementation challenges</strong> are significant. A Constellation Research report noted that AI agents bring new consumption models to SaaS, asking whether this represents a &ldquo;Goldilocks or headache&rdquo; for enterprises managing software costs.</p>
+<h2 id="funding-and-startups">Funding and Startups</h2>
+<p>Startup activity and funding rounds reflect growing investor interest in AI agent infrastructure and applications.</p>
+<p><strong>Olas raised $13.8 million</strong> to launch its decentralized AI agent store, <a href="https://venturebeat.com/business/olas-launches-first-ever-ai-agent-store-with-13-8m-backing" target="_blank" rel="noopener noreferrer">according to VentureBeat</a>
+. The funding aims to build a marketplace where agents can be discovered, composed, and deployed.</p>
+<p><strong>Qeen.ai, an AI agents for e-commerce startup</strong> founded by Google and DeepMind alumni, <a href="https://techcrunch.com/2025/02/04/google-and-deepmind-alums-raises-10m-for-qee/" target="_blank" rel="noopener noreferrer">raised a $10 million seed round</a>
+. The company, which employs 50 people, offers autonomous agents for e-commerce automation.</p>
+<p><strong>Pinkfish emerged from stealth</strong> with a $7.6 million pre-seed round led by Norwest Venture Partners. The startup helps enterprises build AI agents through natural language processing, with <a href="https://techcrunch.com/2025/02/11/pinkfish-helps-enterprises-build-ai-agents-through-natural-language-processing/" target="_blank" rel="noopener noreferrer">more than 200 integrations</a>
+ including Salesforce and Zendesk. Customers include Ipsy, Elevate, and Talkdesk.</p>
+<p><strong>SoftBank and OpenAI partnered</strong> to push AGI and agents, <a href="https://www.axios.com/2025/02/03/altman-ai-agents-openai-agi-japan" target="_blank" rel="noopener noreferrer">according to Axios</a>
+. The partnership aims to accelerate the development of artificial general intelligence with Japanese focus.</p>
+<p><strong>Nvidia&rsquo;s revenue is surging</strong> from agentic AI demand. CEO Jensen Huang <a href="https://www.pymnts.com/earnings/2025/nvidia-ceo-q4-revenue-up-80-yoy-as-agentic-ai-aims-to-transform-businesses/" target="_blank" rel="noopener noreferrer">reported that Blackwell GPU architecture</a>
+ booked $11 billion in Q4 revenue, with data center revenues more than doubling. The company sees agentic AI as the next stage after generative AI, with &ldquo;physical AI&rdquo; like robots following after.</p>
+<p><strong>India accounts for 40% of AI agent deployments</strong> globally for Automation Anywhere, <a href="https://www.entrepreneur.com/en-in/technology/india-accounts-for-40-of-ai-agent-deployments-globally/486851" target="_blank" rel="noopener noreferrer">driven by global capability centers</a>
+ and large enterprises. The company reported two-fold growth in AI agent deals and an 80% success rate from proof-of-concept to production.</p>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>Three distinct trends emerge from February&rsquo;s developments:</p>
+<p><strong>First, AI agents are moving from prototypes to production.</strong> OpenAI&rsquo;s Operator and Google&rsquo;s AI co-scientist represent productized agents available to users, not just research demonstrations. The focus is shifting from &ldquo;what can agents do?&rdquo; to &ldquo;how do we deploy and manage them at scale?&rdquo;</p>
+<p><strong>Second, enterprises are building agent management systems.</strong> Workday&rsquo;s Agent System of Record, ServiceNow&rsquo;s AI Agent Orchestrator, and SAP&rsquo;s Joule represent infrastructure for treating AI agents as digital employees. This reflects the recognition that managing fleets of agents requires new categories of enterprise software.</p>
+<p><strong>Third, new distribution channels are emerging.</strong> Agent marketplaces from Olas and Enso represent a new model for discovering and deploying AI agents. This could accelerate adoption by making agents easier to find and integrate.</p>
+<p>The corporate venturing community is actively investing. <a href="https://globalventuring.com/corporate/information-technology/corporates-rush-to-invest-in-ai-agents/" target="_blank" rel="noopener noreferrer">Global Corporate Venturing reported</a>
+ that companies are rushing to invest in AI agent startups, sensing both opportunity and competitive threat.</p>
+<p>Looking at a 10-year horizon, <a href="https://www.nfx.com/post/ai-agent-marketplaces" target="_blank" rel="noopener noreferrer">NFX predicted the rise of an &ldquo;AI agent economy&rdquo;</a>
+, where agent marketplaces become the primary distribution channel for software and services.</p>
+<p>However, expectations are outpacing reality. <a href="https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality" target="_blank" rel="noopener noreferrer">IBM&rsquo;s analysis of &ldquo;AI Agents in 2025: Expectations vs. Reality&rdquo;</a>
+ noted that while excitement is high, many deployments remain in pilot or experimentation phases. Salesforce&rsquo;s tempered revenue forecast reinforces that AI agent adoption will be gradual rather than explosive.</p>
+<p>The workplace of the future will include both humans and AI agents. As <a href="https://www.axios.com/2025/02/25/ai-agents-slack-chat-worplace" target="_blank" rel="noopener noreferrer">Axios noted</a>
+, workplace chat will feature more AI agents and fewer humans over time. The question is not whether AI agents will enter the workforce, but how quickly enterprises will adapt their management practices, security protocols, and workforce strategies to accommodate them.</p>
+<p>2025 is shaping up to be the year of enterprise experimentation with AI agents—testing use cases, building management infrastructure, and learning what works. The transition to widespread production deployments will take longer, but the foundation is being laid now.</p>
 ]]></content:encoded>
     </item>
     
